@@ -1,0 +1,38 @@
+{
+  "schema": "LeanPaper.HistoricalLocatorMap.v1",
+  "locators": {
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\Root011_PDROC_CalibratedAssembly_Public_004.lean": {
+      "local_relative_to_lean": ".lake/workpads/Root011_PDROC_CalibratedAssembly_Public_004.lean",
+      "sha256": "14baf3a79ede4f6bd3f5c8b3e78b7b7fb7c16f6378743be203b371ba77fd7707"
+    },
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch011.calibrated.public001.log": {
+      "local_relative_to_lean": ".lake/workpads/RootBatch011.calibrated.public001.log",
+      "sha256": "290908cda0c3f8f489c19d3b33b2bb66f2ea07b732d7c073b3a62b801784f263"
+    },
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\Root011_PDLower_Final_Public_015.lean": {
+      "local_relative_to_lean": ".lake/workpads/Root011_PDLower_Final_Public_015.lean",
+      "sha256": "99cebf93508c7a96c6d4fdc942d71a28aaa69ee4e44890042a842a26c84d99ad"
+    },
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch011.pricefinal.public01.log": {
+      "local_relative_to_lean": ".lake/workpads/RootBatch011.pricefinal.public01.log",
+      "sha256": "adb0785c6b15af6652e652833e4a3722529d9e02138942b977a82aad567c6626"
+    },
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_Public_001.lean": {
+      "local_relative_to_lean": ".lake/workpads/RootBatch012_Public_001.lean",
+      "sha256": "cf59566bffe8a824aa0e5d2dbb5c897bca04d0131994e52cd684463a4d9be065"
+    },
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_accepted_logs\\RootBatch012_public_public_001.log": {
+      "local_relative_to_lean": ".lake/workpads/RootBatch012_accepted_logs/RootBatch012_public_public_001.log",
+      "sha256": "63264cc7b63cc57c1c0672ce828d6ca0cc5601f7dd5f540d4e08f5aecf2fbcfc"
+    },
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_accepted_context\\lean\\.lake\\workpads\\RootBatch013_Public_001.lean": {
+      "local_relative_to_lean": ".lake/workpads/RootBatch013_accepted_context/lean/.lake/workpads/RootBatch013_Public_001.lean",
+      "sha256": "903421f0b8d8f1ba465a2bdf4c317fe7e3521eb4bc546302d2bf44a34103c768"
+    },
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_accepted_logs\\RootBatch013_public_public_001.log": {
+      "local_relative_to_lean": ".lake/workpads/RootBatch013_accepted_logs/RootBatch013_public_public_001.log",
+      "sha256": "ce3f603d2a374e734191958a058460cf51c22b58731ec58efc572c2820a49f88"
+    }
+  },
+  "meaning": "Historical physical caller/log locations only. Source statements, source hashes, epoch and original evidence are not rewritten."
+}

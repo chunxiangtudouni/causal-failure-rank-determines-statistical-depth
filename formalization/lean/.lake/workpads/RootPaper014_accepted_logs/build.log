@@ -1,0 +1,7 @@
+ℹ [3675/5354] Replayed PaperProofs.Common.B23PaperClosure
+info: PaperProofs/Common/B23PaperClosure.lean:17:0: 'PaperProofs.Common.Native.B23PaperClosure.full_paper_claims' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3676/5354] Replayed PaperProofs.Structure.L01PaperClosure
+info: PaperProofs/Structure/L01PaperClosure.lean:16:0: 'PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+All targets up-to-date (5354 jobs).

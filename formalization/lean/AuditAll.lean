@@ -1,0 +1,3422 @@
+module
+
+import all PaperProofs.Paid.PDLower_PriceFinal_001
+
+import all PaperProofs.Paid.PDLower_NativeFinal_001
+
+import all PaperProofs.Common.PSTR_ST_TablePolicyBridge_045
+
+import all PaperProofs.Common.PSTR_ST_InfiniteRankClaims_010
+
+import all PaperProofs.Paid.PDROC_CalibratedAssembly_004
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_013
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_008
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_007
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_006
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_005
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_004
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_003
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_002
+
+import all PaperProofs.Paid.PDROC_CalibratedIdeal_001
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_017
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_016
+
+import all PaperProofs.Paid.PDROC_CalibratedSignature_006
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_015
+
+import all PaperProofs.Paid.PDROC_CalibratedSignature_004
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_014
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_013
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_012
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_011
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_010
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_009
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_008
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_007
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_006
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_005
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_004
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_003
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_002
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_012
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_011
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_010
+
+import all PaperProofs.Paid.PDROC_CalibratedSignature_005
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_009
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_008
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_007
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_006
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_005
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_004
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_003
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_002
+
+import all PaperProofs.Paid.PDROC_CalibratedLaw_001
+
+import all PaperProofs.Paid.PDROC_CalibratedRuntime_001
+
+import all PaperProofs.Paid.PDROC_CalibratedAssembly_003
+
+import all PaperProofs.Paid.PDROC_CalibratedAssembly_002
+
+import all PaperProofs.Paid.PDROC_CalibratedSelector_001
+
+import all PaperProofs.Paid.PDROC_CalibratedAssembly_001
+
+import all PaperProofs.Paid.PDROC_CalibratedSignature_003
+
+import all PaperProofs.Paid.PDROC_CalibratedSignature_002
+
+import all PaperProofs.Paid.PDROC_CalibratedSignature_001
+
+import all PaperProofs.Structure.PSTR_UniformQueryClaims_124
+
+import all PaperProofs.Structure.PSTR_UniformQueryRoom_123
+
+import all PaperProofs.Structure.PSTR_UniformQuery_122
+
+import all PaperProofs.Structure.PSTR_UniformZeroQuery_112
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroQuery_096
+
+import all PaperProofs.Structure.PSTR_HD_ZeroLiveClaims_013
+
+import all PaperProofs.Structure.PSTR_HD_ZeroLiveSafety_012
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroOriginalIteration_095
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroIteration_094
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroWriteRep_093
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroAdvanceRun_092
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroReturn_091
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroAdvance_090
+
+import all PaperProofs.Structure.PSTR_HD_HeadsZeroHeap_089
+
+import all PaperProofs.Structure.PSTR_HD_HeadsUniformDispatch_080
+
+import all PaperProofs.Structure.PSTR_HD_HeadsOriginalInitial_079
+
+import all PaperProofs.Structure.PSTR_HD_HeadsOriginalIteration_078
+
+import all PaperProofs.Structure.PSTR_HD_HeadsIteration_077
+
+import all PaperProofs.Structure.PSTR_HD_HeadsAppendRun_076
+
+import all PaperProofs.Structure.PSTR_HD_HeadsDecisionRun_075
+
+import all PaperProofs.Structure.PSTR_HD_HeadsDecision_074
+
+import all PaperProofs.Structure.PSTR_HD_HeadsWriteSafe_073
+
+import all PaperProofs.Structure.PSTR_HD_HeadsAdvanceSafe_072
+
+import all PaperProofs.Structure.PSTR_HD_HeadsAdvancePrefixes_071
+
+import all PaperProofs.Structure.PSTR_HD_HeadsAdvanceRun_070
+
+import all PaperProofs.Structure.PSTR_HD_HeadsTerminalOutput_069
+
+import all PaperProofs.Structure.PSTR_HD_HeadsTerminal_068
+
+import all PaperProofs.Structure.PSTR_HD_HeadsInitialRun_067
+
+import all PaperProofs.Structure.PSTR_HD_HeadsReturn_066
+
+import all PaperProofs.Structure.PSTR_HD_HeadsFrames_065
+
+import all PaperProofs.Structure.PSTR_HD_HeadsSlices_064
+
+import all PaperProofs.Structure.PSTR_HD_HeadsBranches_063
+
+import all PaperProofs.Structure.PSTR_HD_HeadsSerialized_062
+
+import all PaperProofs.Structure.PSTR_HD_HeadsBackJump_061
+
+import all PaperProofs.Structure.PSTR_HD_HeadsRecorded_060
+
+import all PaperProofs.Structure.PSTR_HD_HeadsTests_059
+
+import all PaperProofs.Structure.PSTR_HD_HeadsProgram_058
+
+import all PaperProofs.Structure.PSTR_HD_HeadsStage_057
+
+import all PaperProofs.Structure.PSTR_HD_HeadsFinish_056
+
+import all PaperProofs.Structure.PSTR_HD_HeadsAppend_055
+
+import all PaperProofs.Structure.PSTR_HD_HeadsInitialize_054
+
+import all PaperProofs.Structure.PSTR_HD_HeadsGuard_053
+
+import all PaperProofs.Common.PSTR_HD_HeadScan_052
+
+import all PaperProofs.Structure.PSTR_HD_HeadsEndpoint_051
+
+import all PaperProofs.Structure.PSTR_UniformPositiveQuery_121
+
+import all PaperProofs.Structure.PSTR_CountAllocation_102
+
+import all PaperProofs.Structure.PSTR_QueryReturn_111
+
+import all PaperProofs.Structure.PSTR_UniformQueryEmbeddings_114
+
+import all PaperProofs.Structure.PSTR_UniformQueryCode_113
+
+import all PaperProofs.Structure.PSTR_HD_ZeroLive_011
+
+import all PaperProofs.Structure.PSTR_HD_ZeroHeadsLayout_008
+
+import all PaperProofs.Structure.PSTR_HD_ZeroHeadsOriginal_007
+
+import all PaperProofs.Structure.PSTR_HD_ZeroHeadsWord_006
+
+import all PaperProofs.Structure.PSTR_HD_ZeroHeadsSafety_005
+
+import all PaperProofs.Structure.PSTR_HD_ZeroHeadsFacts_004
+
+import all PaperProofs.Structure.PSTR_HD_ZeroHeads_003
+
+import all PaperProofs.Structure.PSTR_UniformCountProducer_120
+
+import all PaperProofs.Structure.PSTR_UniformCountSafe_119
+
+import all PaperProofs.Structure.PSTR_UniformBootstrapSafe_116
+
+import all PaperProofs.Structure.PSTR_UniformStoreAccess_115
+
+import all PaperProofs.Structure.PSTR_UniformReadyOutside_118
+
+import all PaperProofs.Structure.PSTR_UniformCountReady_108
+
+import all PaperProofs.Structure.PSTR_UniformPositiveBootstrap_107
+
+import all PaperProofs.Structure.PSTR_UniformBootstrapOutside_117
+
+import all PaperProofs.Structure.PSTR_UniformEntrySafe_110
+
+import all PaperProofs.Structure.PSTR_UniformWidthEntry_106
+
+import all PaperProofs.Structure.PSTR_UniformBootstrapCode_105
+
+import all PaperProofs.Structure.PSTR_ZeroWidthGuard_104
+
+import all PaperProofs.Paid.PDLower_UniformPrice_001
+
+import all PaperProofs.Paid.PDLower_ZeroToolsSaturation_001
+
+import all PaperProofs.Paid.PDROC_NativeSeparation_002
+
+import all PaperProofs.Common.PSTR_TM_NativeMul_112
+
+import all PaperProofs.Common.PSTR_TM_TrimRun_111
+
+import all PaperProofs.Common.PSTR_TM_TrimBackward_110
+
+import all PaperProofs.Common.PSTR_TM_TrimRewind_109
+
+import all PaperProofs.Common.PSTR_TM_MulWidth_108
+
+import all PaperProofs.Common.PSTR_TM_MulProjectRun_107
+
+import all PaperProofs.Common.PSTR_TM_MulProjectPrepare_106
+
+import all PaperProofs.Common.PSTR_TM_PairRewind_105
+
+import all PaperProofs.Common.PSTR_TM_TrimValue_104
+
+import all PaperProofs.Common.PSTR_TM_TrimCode_103
+
+import all PaperProofs.Common.PSTR_TM_MulProjectUnit_102
+
+import all PaperProofs.Common.PSTR_TM_MulProjectLift_101
+
+import all PaperProofs.Common.PSTR_TM_MulProjectCode_100
+
+import all PaperProofs.Common.PSTR_TM_RawMulResident_099
+
+import all PaperProofs.Common.PSTR_TM_MulExpandRun_098
+
+import all PaperProofs.Common.PSTR_TM_MulExpandUnit_097
+
+import all PaperProofs.Common.PSTR_TM_MulExpandLift_096
+
+import all PaperProofs.Common.PSTR_TM_MulExpandCode_095
+
+import all PaperProofs.Common.PSTR_TM_MulResident_094
+
+import all PaperProofs.Common.PSTR_TM_MulLoopRun_093
+
+import all PaperProofs.Common.PSTR_TM_MulLoopIteration_092
+
+import all PaperProofs.Common.PSTR_TM_MulLoopValue_091
+
+import all PaperProofs.Common.PSTR_TM_MulLoopLift_090
+
+import all PaperProofs.Common.PSTR_TM_ThresholdStep_089
+
+import all PaperProofs.Common.PSTR_TM_MulLoopCode_088
+
+import all PaperProofs.Common.PSTR_TM_MulAppendTrace_087
+
+import all PaperProofs.Common.PSTR_TM_MulAppendCode_086
+
+import all PaperProofs.Common.PSTR_TM_MulRewind_085
+
+import all PaperProofs.Common.PSTR_TM_MulHalfTrace_084
+
+import all PaperProofs.Common.PSTR_TM_MulHalfValue_083
+
+import all PaperProofs.Common.PSTR_TM_MulHalfCode_082
+
+import all PaperProofs.Common.PSTR_TM_MulPassTrace_081
+
+import all PaperProofs.Common.PSTR_TM_MulPassValue_080
+
+import all PaperProofs.Common.PSTR_TM_MulPassCode_079
+
+import all PaperProofs.Common.PSTR_TM_NativeB1_078
+
+import all PaperProofs.Common.PSTR_TM_B1Run_077
+
+import all PaperProofs.Common.PSTR_TM_B1Cleanup_076
+
+import all PaperProofs.Common.PSTR_TM_B1Invariant_075
+
+import all PaperProofs.Common.PSTR_TM_B1Iteration_074
+
+import all PaperProofs.Common.PSTR_TM_B1CounterCall_073
+
+import all PaperProofs.Common.PSTR_TM_B1LoopLift_072
+
+import all PaperProofs.Common.PSTR_TM_B1LoopCode_071
+
+import all PaperProofs.Common.PSTR_TM_B1PrepareTrace_070
+
+import all PaperProofs.Common.PSTR_TM_B1PrepareCode_069
+
+import all PaperProofs.Common.PSTR_TM_B1Value_068
+
+import all PaperProofs.Common.PSTR_TM_ColumnRewind_067
+
+import all PaperProofs.Common.PSTR_TM_ShiftColumnTrace_066
+
+import all PaperProofs.Common.PSTR_TM_ShiftColumnCode_065
+
+import all PaperProofs.Common.PSTR_TM_CounterFrame_064
+
+import all PaperProofs.Common.PSTR_TM_NativeDouble_063
+
+import all PaperProofs.Common.PSTR_TM_DoubleTrace_062
+
+import all PaperProofs.Common.PSTR_TM_DoubleCode_061
+
+import all PaperProofs.Common.PSTR_TM_NativeLe_060
+
+import all PaperProofs.Common.PSTR_TM_CompareRun_059
+
+import all PaperProofs.Common.PSTR_TM_CompareErase_058
+
+import all PaperProofs.Common.PSTR_TM_CompareFinishCode_057
+
+import all PaperProofs.Common.PSTR_TM_CompareValue_056
+
+import all PaperProofs.Common.PSTR_TM_CompareTrace_055
+
+import all PaperProofs.Common.PSTR_TM_CompareCode_054
+
+import all PaperProofs.Common.PSTR_TM_NativeAdd_053
+
+import all PaperProofs.Common.PSTR_TM_AddCanonical_052
+
+import all PaperProofs.Common.PSTR_TM_CompactRun_051
+
+import all PaperProofs.Common.PSTR_TM_CompactSetup_050
+
+import all PaperProofs.Common.PSTR_TM_CompactFinish_049
+
+import all PaperProofs.Common.PSTR_TM_CompactUnit_048
+
+import all PaperProofs.Common.PSTR_TM_CompactCopy_047
+
+import all PaperProofs.Common.PSTR_TM_CompactCode_046
+
+import all PaperProofs.Common.PSTR_TM_RawPack_045
+
+import all PaperProofs.Common.PSTR_TM_PackRun_044
+
+import all PaperProofs.Common.PSTR_TM_PackLoop_043
+
+import all PaperProofs.Common.PSTR_TM_PackZeroB_042
+
+import all PaperProofs.Common.PSTR_TM_PackZeroA_041
+
+import all PaperProofs.Common.PSTR_TM_PackEOF_040
+
+import all PaperProofs.Common.PSTR_TM_PackFinish_039
+
+import all PaperProofs.Common.PSTR_TM_PackColumns_038
+
+import all PaperProofs.Common.PSTR_TM_PackLift_037
+
+import all PaperProofs.Common.PSTR_TM_PackCode_036
+
+import all PaperProofs.Common.PSTR_TM_PadTrace_035
+
+import all PaperProofs.Common.PSTR_TM_PadInsert_034
+
+import all PaperProofs.Common.PSTR_TM_OperandStart_033
+
+import all PaperProofs.Common.PSTR_TM_AlignUnit_032
+
+import all PaperProofs.Common.PSTR_TM_AlignShift_031
+
+import all PaperProofs.Common.PSTR_TM_AlignCode_030
+
+import all PaperProofs.Common.PSTR_TM_TwoRawOperands_029
+
+import all PaperProofs.Common.PSTR_TM_ContextRaw_028
+
+import all PaperProofs.Common.PSTR_TM_OperandCursor_027
+
+import all PaperProofs.Common.PSTR_TM_AddRun_026
+
+import all PaperProofs.Common.PSTR_TM_AddTrace_025
+
+import all PaperProofs.Common.PSTR_TM_BinaryAdd_024
+
+import all PaperProofs.Common.PSTR_TM_NaturalDatum_023
+
+import all PaperProofs.Common.PSTR_TM_Prepend_022
+
+import all PaperProofs.Common.PSTR_TM_NativeIncrement_021
+
+import all PaperProofs.Common.PSTR_TM_Canonical_020
+
+import all PaperProofs.Common.PSTR_TM_UnblockTrace_019
+
+import all PaperProofs.Common.PSTR_TM_Unblock_018
+
+import all PaperProofs.Common.PSTR_TM_NatValue_017
+
+import all PaperProofs.Common.PSTR_TM_ProtectedIncrement_016
+
+import all PaperProofs.Common.PSTR_TM_FullRawPadding_015
+
+import all PaperProofs.Common.PSTR_TM_PaddingTrace_014
+
+import all PaperProofs.Common.PSTR_TM_PaddedNat_012
+
+import all PaperProofs.Common.PSTR_TM_IncrementFrame_013
+
+import all PaperProofs.Common.PSTR_TM_RawNat_010
+
+import all PaperProofs.Common.PSTR_TM_SuffixCounterexample_011
+
+import all PaperProofs.Common.PSTR_TM_Increment_009
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Actual_004b
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Strategy_002f
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Commands_001b
+
+import all PaperProofs.Structure.PSTR_CommandPrefixes_054
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Strategy_002e
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Strategy_002d
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Strategy_002c
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Strategy_002b
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Strategy_002a
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Actual_004a
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_History_003a
+
+import all PaperProofs.Structure.PA17_L01HistoryPrefix_Commands_001a
+
+import all PaperProofs.Common.PSTR_ST_CommandBounds_044
+
+import all PaperProofs.Common.PSTR_ST_SharpUpperClaims_043
+
+import all PaperProofs.Common.PSTR_ST_TableNativeRisk_017
+
+import all PaperProofs.Common.PSTR_ST_TableMass_013
+
+import all PaperProofs.Common.PSTR_ST_TableEntry_012
+
+import all PaperProofs.Common.PSTR_ST_TableTermination_011
+
+import all PaperProofs.Common.PSTR_ST_TableTruncation_016
+
+import all PaperProofs.Common.PSTR_ST_SelectorSharpCost_042
+
+import all PaperProofs.Common.PSTR_ST_SelectorCostInduction_041
+
+import all PaperProofs.Common.PSTR_ST_LocalFeeAssembly_040
+
+import all PaperProofs.Common.PSTR_ST_LocalFeeEqualities_039
+
+import all PaperProofs.Common.PSTR_ST_SelectorTwoChildCost_033
+
+import all PaperProofs.Common.PSTR_ST_SelectorWriteError_030
+
+import all PaperProofs.Common.PSTR_ST_SelectorDecision_029
+
+import all PaperProofs.Common.PSTR_ST_SelectorCostRecurrence_032
+
+import all PaperProofs.Common.PSTR_ST_SelectorBranch_028
+
+import all PaperProofs.Common.PSTR_ST_SelectorEntryTrace_024
+
+import all PaperProofs.Common.PSTR_ST_SelectorCostSteps_027
+
+import all PaperProofs.Common.PSTR_ST_SelectorInfinite_023
+
+import all PaperProofs.Common.PSTR_ST_SelectorIntegration_031
+
+import all PaperProofs.Common.PSTR_ST_SelectorObservation_026
+
+import all PaperProofs.Common.PSTR_ST_SelectorOrigin_025
+
+import all PaperProofs.Common.PSTR_ST_SelectorSuffixRun_022
+
+import all PaperProofs.Common.PSTR_ST_SelectorEntry_021
+
+import all PaperProofs.Common.PSTR_ST_SelectorSuffixReplay_020
+
+import all PaperProofs.Common.PSTR_ST_SelectorAlignment_019
+
+import all PaperProofs.Common.PSTR_ST_SelectorPolicy_018
+
+import all PaperProofs.Common.PSTR_ST_SelectorRule_015
+
+import all PaperProofs.Common.PSTR_ST_Selector_014
+
+import all PaperProofs.Common.PSTR_ST_TableInfinite_009
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRelocate_029b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRelocate_029a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeProgram_027b
+
+import all PaperProofs.Structure.PSTR_CountCost_067
+
+import all PaperProofs.Structure.PSTR_WidthOriginal_037
+
+import all PaperProofs.Structure.PSTR_RuntimeWidthBounds_009
+
+import all PaperProofs.Structure.PSTR_WidthHeap_036
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeProgram_027a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeFootprint_028a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeEntry_020e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeQuery_026c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeQuery_026b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReplyCorrect_022d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReplyCorrect_022c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReplyCorrect_022f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReplyCorrect_022b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReply_016c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReply_016b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReply_016a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReplyCorrect_022e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeReplyCorrect_022a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_Input_025c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_Input_025b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_Input_025a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ba
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009az
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_Init_024a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ay
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ax
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009av
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009aw
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009au
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ao
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ap
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009am
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009at
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009as
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ak
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009aj
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ai
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ah
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ar
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009aq
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009an
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009al
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ag
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009af
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ae
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ad
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ac
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009ab
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009aa
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009z
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009y
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009x
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009w
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009v
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009u
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009t
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009s
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009r
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009q
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009p
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009o
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009n
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009g
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009m
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009l
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009k
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009j
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009i
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRead_007e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009h
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeSelect_009a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeQuery_026a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Semantics_019e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Semantics_019d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Semantics_019c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018h
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018g
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015r
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Access_017f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Access_017e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Access_017d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Access_017c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Access_017b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Access_017a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Safety_018a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Semantics_019b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Semantics_019a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015q
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015p
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015m
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015l
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015k
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015j
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015i
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015n
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015h
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010q
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015o
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010p
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015g
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_Control_015a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010o
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010m
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010i
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010l
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010k
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010h
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRead_007d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRead_007c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeTests_010a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeEntry_020d
+
+import all PaperProofs.Structure.PSTR_ArbitrarySafe_101
+
+import all PaperProofs.Structure.PSTR_CountCompleteSafe_100
+
+import all PaperProofs.Structure.PSTR_BootstrapSafe_099
+
+import all PaperProofs.Structure.PSTR_BootstrapStoreAccess_098
+
+import all PaperProofs.Structure.PSTR_LiveHeaderSafety_004
+
+import all PaperProofs.Structure.PSTR_WidthAccess_097
+
+import all PaperProofs.Structure.PSTR_IterationsSafe_096
+
+import all PaperProofs.Structure.PSTR_IterationSafe_095
+
+import all PaperProofs.Structure.PSTR_AdvanceSafe_094
+
+import all PaperProofs.Structure.PSTR_OuterStoreAccess_092
+
+import all PaperProofs.Structure.PSTR_CountedSafe_093
+
+import all PaperProofs.Structure.PSTR_LeafEntrySafe_091
+
+import all PaperProofs.Structure.PSTR_NodeLeafSafe_090
+
+import all PaperProofs.Structure.PSTR_LeafUsedAccess_089
+
+import all PaperProofs.Structure.PSTR_BranchAccess_088
+
+import all PaperProofs.Structure.PSTR_OuterReadAccess_087
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeEntry_020c
+
+import all PaperProofs.Structure.PSTR_ArbitraryOutside_086
+
+import all PaperProofs.Structure.PSTR_CountCompleteOutside_085
+
+import all PaperProofs.Structure.PSTR_IterationsOutside_083
+
+import all PaperProofs.Structure.PSTR_IterationOutside_082
+
+import all PaperProofs.Structure.PSTR_AdvanceOutside_081
+
+import all PaperProofs.Structure.PSTR_CountedOutside_080
+
+import all PaperProofs.Structure.PSTR_LeafCountPrefix_072
+
+import all PaperProofs.Structure.PSTR_LeafCertifiedPrefix_070
+
+import all PaperProofs.Structure.PSTR_LeafPrefix_068
+
+import all PaperProofs.Structure.PSTR_BootstrapOutside_084
+
+import all PaperProofs.Structure.PSTR_BootstrapPrefix_077
+
+import all PaperProofs.Structure.PSTR_WidthPrefix_035
+
+import all PaperProofs.Structure.PSTR_OuterStoreFrame_069
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeEntry_020b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeEntry_020a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeHeader_011g
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeHeader_011f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeHeader_011e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeHeader_011d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeHeader_011c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRead_007b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeHeader_011b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeHeader_011a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRead_007a
+
+import all PaperProofs.Structure.PSTR_RuntimePackedReadSafety_010
+
+import all PaperProofs.Structure.PSTR_ArbitraryCount_071
+
+import all PaperProofs.Structure.PSTR_ArbitraryEntry_060
+
+import all PaperProofs.Structure.PSTR_CountComplete_066
+
+import all PaperProofs.Structure.PSTR_CountIteration_065
+
+import all PaperProofs.Structure.PSTR_CountAdvanceStep_064
+
+import all PaperProofs.Structure.PSTR_NodeCounted_063
+
+import all PaperProofs.Structure.PSTR_HD_CountSlots_050
+
+import all PaperProofs.Structure.PSTR_HD_CountRefines_049
+
+import all PaperProofs.Structure.PSTR_HD_CountCost_048
+
+import all PaperProofs.Structure.PSTR_HD_CountAllPrefixes_047
+
+import all PaperProofs.Structure.PSTR_HD_CountFetchSafe_046
+
+import all PaperProofs.Structure.PSTR_HD_CountBranchSafe_045
+
+import all PaperProofs.Structure.PSTR_HD_CountPhaseSafe_044
+
+import all PaperProofs.Structure.PSTR_HD_CountPrefixFetch_043
+
+import all PaperProofs.Structure.PSTR_HD_CountSetupSafe_042
+
+import all PaperProofs.Structure.PSTR_HD_CountSafeBlocks_041
+
+import all PaperProofs.Structure.PSTR_HD_CountPrefixCompose_040
+
+import all PaperProofs.Structure.PSTR_HD_CountFrameBlocks_039
+
+import all PaperProofs.Structure.PSTR_HD_CountMemoryBlocks_038
+
+import all PaperProofs.Structure.PSTR_HD_CountRun_037
+
+import all PaperProofs.Structure.PSTR_HD_CountIteration_036
+
+import all PaperProofs.Structure.PSTR_HD_CountInvariant_035
+
+import all PaperProofs.Structure.PSTR_HD_CountFetch_034
+
+import all PaperProofs.Structure.PSTR_HD_CountSpec_033
+
+import all PaperProofs.Structure.PSTR_HD_CountBody_032
+
+import all PaperProofs.Structure.PSTR_HD_CountSetup_031
+
+import all PaperProofs.Structure.PSTR_HD_CountWordBlocks_030
+
+import all PaperProofs.Structure.PSTR_LeafCountEntry_062
+
+import all PaperProofs.Structure.PSTR_CountReady_061
+
+import all PaperProofs.Structure.PSTR_CountProgram_059
+
+import all PaperProofs.Structure.PSTR_OriginalCountRoom_056
+
+import all PaperProofs.Structure.PSTR_CountLogical_055
+
+import all PaperProofs.Structure.PSTR_CountBootstrap_040
+
+import all PaperProofs.Structure.PSTR_BootstrapIn_058
+
+import all PaperProofs.Structure.PSTR_BootstrapSlices_057
+
+import all PaperProofs.Structure.PSTR_CountBootstrapCode_039
+
+import all PaperProofs.Structure.PSTR_CountInit_038
+
+import all PaperProofs.Structure.PSTR_WidthPrologue_034
+
+import all PaperProofs.Structure.PSTR_LiveHeader_003
+
+import all PaperProofs.Structure.PSTR_WidthEmbedded_033
+
+import all PaperProofs.Structure.PSTR_WidthKernel_032
+
+import all PaperProofs.Structure.PSTR_WidthActive_031
+
+import all PaperProofs.Structure.PSTR_RuntimeWidthRun_007
+
+import all PaperProofs.Structure.PSTR_RuntimeWidthWord_006
+
+import all PaperProofs.Structure.PSTR_RuntimeWidth_005
+
+import all PaperProofs.Structure.PSTR_OuterCountCode_053
+
+import all PaperProofs.Structure.PSTR_HD_CountProgram_029
+
+import all PaperProofs.Structure.PSTR_HD_CountBounds_028
+
+import all PaperProofs.Structure.PSTR_HD_CountEntry_027
+
+import all PaperProofs.Structure.PSTR_HD_CountFrame_026
+
+import all PaperProofs.Structure.PSTR_CountChildRows_052
+
+import all PaperProofs.Structure.PSTR_CountMemory_051
+
+import all PaperProofs.Structure.PSTR_CountAdvance_049
+
+import all PaperProofs.Structure.PSTR_ParentCopy_043
+
+import all PaperProofs.Structure.PSTR_ParentSentinel_042
+
+import all PaperProofs.Structure.PSTR_ReplyCapacity_025
+
+import all PaperProofs.Structure.PSTR_CountRestore_048
+
+import all PaperProofs.Structure.PSTR_NodeLeaf_047
+
+import all PaperProofs.Structure.PSTR_LeafBitmapEmbedded_044
+
+import all PaperProofs.Structure.PSTR_LeafBitmap_030
+
+import all PaperProofs.Structure.PSTR_LeafUsedEmbedded_029
+
+import all PaperProofs.Structure.PSTR_LeafUsedRun_028
+
+import all PaperProofs.Structure.PSTR_LeafUsed_027
+
+import all PaperProofs.Structure.PSTR_LeafPrepare_046
+
+import all PaperProofs.Structure.PSTR_HD_CountWorkspace_025
+
+import all PaperProofs.Structure.PSTR_HD_StaticLeaf_024
+
+import all PaperProofs.Structure.PSTR_HD_StaticFieldsSafety_023
+
+import all PaperProofs.Structure.PSTR_HD_StaticFields_022
+
+import all PaperProofs.Structure.PSTR_HD_StaticRead_021
+
+import all PaperProofs.Structure.PSTR_CountControl_050
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeCanonical_021a
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RankSuffix_014
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RankFrame_012
+
+import all PaperProofs.Structure.PSTR_RepairHeap_024
+
+import all PaperProofs.Structure.PSTR_RepairCapacity_018
+
+import all PaperProofs.Structure.PSTR_RepairReply_023
+
+import all PaperProofs.Structure.PSTR_ReplySpill_022
+
+import all PaperProofs.Structure.PSTR_RuntimeRepair_017
+
+import all PaperProofs.Structure.PSTR_AdvanceHeap_016
+
+import all PaperProofs.Structure.PSTR_RuntimeAdvance_015
+
+import all PaperProofs.Structure.PSTR_MarkUsedHeap_014
+
+import all PaperProofs.Structure.PSTR_MarkUsedBits_012
+
+import all PaperProofs.Structure.PSTR_RuntimeMarkUsed_011
+
+import all PaperProofs.Structure.PSTR_RuntimePackedRead_008
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRanks_008g
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRanks_008f
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRanks_008e
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRanks_008d
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRanks_008c
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRanks_008b
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_RuntimeRanks_008a
+
+import all PaperProofs.Structure.PSTR_HD_WordSegments_014
+
+import all PaperProofs.Structure.PA17_A19QueryBridge_Numeric_006b
+
+import all PaperProofs.Structure.PSTR_QueryLayout_041
+
+import all PaperProofs.Structure.PSTR_HD_StaticHeap_020
+
+import all PaperProofs.Structure.PSTR_HD_StaticLayout_019
+
+import all PaperProofs.Statistics.PStar_MAIN_SeedInformation001
+
+import all PaperProofs.Paid.PDROC_CalibratedCompletedQualification_001
+
+import all PaperProofs.Paid.PDROC_CalibratedResources_003
+
+import all PaperProofs.Paid.PDROC_CalibratedResources_002
+
+import all PaperProofs.Paid.PDROC_CalibratedResources_001
+
+import all PaperProofs.Retained.RootRetainedComplete_001
+
+import all PaperProofs.Retained.RootRetainedInfinite_003
+
+import all PaperProofs.Retained.RootRetainedInfinite_002
+
+import all PaperProofs.Retained.RootRetainedInfinite_001
+
+import all PaperProofs.Paid.PDMenu_MultiplierSearchComplete_158
+
+import all PaperProofs.Paid.PDMenu_ZeroChargeAndPositive_152
+
+import all PaperProofs.Paid.PDMenu_FirstPositivePathFloor_151
+
+import all PaperProofs.Paid.PDMenu_FirstPositiveEvent_150
+
+import all PaperProofs.Paid.PDMenu_FirstPositiveCensor_149
+
+import all PaperProofs.Paid.PDMenu_ZeroChargeNative_148
+
+import all PaperProofs.Paid.PDMenu_SearchFiniteTermination_157
+
+import all PaperProofs.Paid.PDMenu_SearchBudgetStops_155
+
+import all PaperProofs.Paid.PDMenu_SearchFloorBudget_154
+
+import all PaperProofs.Paid.PDROC_ZeroChargeLower_003
+
+import all PaperProofs.Paid.PDROC_ZeroChargeLower_Transport_001
+
+import all PaperProofs.Paid.PDROC_ZeroChargeLower_002
+
+import all PaperProofs.Paid.PDROC_ZeroChargeLower_001
+
+import all PaperProofs.Paid.PDMenu_SearchWidth_153
+
+import all PaperProofs.Paid.PDMenu_SearchZeroExit_156
+
+import all PaperProofs.Paid.PDMenu_ZeroChargeBill_145
+
+import all PaperProofs.Paid.PDMenu_ZeroChargeNoPositive_144
+
+import all PaperProofs.Paid.PDMenu_ZeroChargeActualRisk_147
+
+import all PaperProofs.Paid.PDMenu_ZeroChargeBlindRisk_146
+
+import all PaperProofs.Paid.PDROC_ZeroChargeLower_Binomial_001
+
+import all PaperProofs.Paid.PDMenu_ZeroChargeBlindTable_143
+
+import all PaperProofs.Paid.PDLower_UniformLower_001
+
+import all PaperProofs.Star.PStar_CompletedQualification_045
+
+import all PaperProofs.Star.PStar_RawScope_044
+
+import all PaperProofs.Retained.PRet_CompleteUpper_124
+
+import all PaperProofs.Retained.PRet_ReferenceCost_123
+
+import all PaperProofs.Retained.PRet_InfiniteRisk_001
+
+import all PaperProofs.Retained.PRet_ActualCost_122
+
+import all PaperProofs.Retained.PRet_NativeUpper_121
+
+import all PaperProofs.Retained.PRet_Overflow_Original_003
+
+import all PaperProofs.Retained.PRet_Overflow_Union_002
+
+import all PaperProofs.Retained.PRet_Overflow_Kernel_001
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_EntryPartition_001
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_Branch_001
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_EntryLaw_001
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_008
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_007
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_006
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_005
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_004
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_003
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_002
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelopeRun_001
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Floor_007
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Original_018
+
+import all PaperProofs.Retained.PDROC_RetainedReturn_002
+
+import all PaperProofs.Retained.PDROC_RetainedReturn_001
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Telescope_014
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_AtomMass_013
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_ChildEnvelope_012
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_EntryIntegral_011
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_FailureCover_017
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_StateFacts_016
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Transition_010
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Rank_006
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_ErrorMass_009
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Events_008
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_OpenSteps_015
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Realization_005
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Origin_004
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_ReviewStrict_003
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Testing_002
+
+import all PaperProofs.Retained.PRet_RiskMassFlow_Target_001
+
+import all PaperProofs.Star.PStar_NativePrice_042
+
+import all PaperProofs.Star.PStar_CompletePrice_043
+
+import all PaperProofs.Star.PStar_ActualPrice_041
+
+import all PaperProofs.Paid.PDMenu_SearchStoppedTwoFactor_142
+
+import all PaperProofs.Paid.PDMenu_SearchExactMixtureGap_141
+
+import all PaperProofs.Paid.PDMenu_SearchBracketPrices_140
+
+import all PaperProofs.Paid.PDMenu_SearchSlopeGap_137
+
+import all PaperProofs.Paid.PDMenu_SearchBracketMixture_138
+
+import all PaperProofs.Paid.PDMenu_SearchExactState_139
+
+import all PaperProofs.Paid.PDMenu_SearchBracketInvariant_134
+
+import all PaperProofs.Paid.PDMenu_SearchWeakDuality_136
+
+import all PaperProofs.Paid.PDMenu_SearchMixtureRecords_135
+
+import all PaperProofs.Paid.PDMenu_SearchCoinIntegral_133
+
+import all PaperProofs.Star.PStar_UniversalStageBill_037
+
+import all PaperProofs.Star.PStar_UniversalReviewBound_036
+
+import all PaperProofs.Star.PStar_UniversalHeadError_035
+
+import all PaperProofs.Star.PStar_UniversalExpectedCost_038
+
+import all PaperProofs.Star.PStar_UniversalConstruction_039
+
+import all PaperProofs.Star.PStar_PastTestErrors_030
+
+import all PaperProofs.Star.PStar_CountTerminal_029
+
+import all PaperProofs.Star.PStar_CountStageBill_032
+
+import all PaperProofs.Star.PStar_CountReviewBound_031
+
+import all PaperProofs.Star.PStar_CountExpectedCost_034
+
+import all PaperProofs.Star.PStar_CountConstruction_040
+
+import all PaperProofs.Star.PStar_CountAllowanceLaw_033
+
+import all PaperProofs.Star.RootStarPriceEnvelope_001
+
+import all PaperProofs.Star.RootStarCostSum_001
+
+import all PaperProofs.Star.RootStarOverflow_014
+
+import all PaperProofs.Star.RootStarOverflow_013
+
+import all PaperProofs.Star.RootStarOverflow_012
+
+import all PaperProofs.Star.RootStarOverflow_011
+
+import all PaperProofs.Paid.PDMenu_SearchInitialBracket_132
+
+import all PaperProofs.Paid.PDMenu_MenuZeroSolve_125
+
+import all PaperProofs.Paid.PDMenu_SearchInitialBounds_131
+
+import all PaperProofs.Paid.PDMenu_SearchSolveFacts_130
+
+import all PaperProofs.Paid.PDMenu_SearchSolveCorrect_126
+
+import all PaperProofs.Paid.PDMenu_MenuCompilerComplete_129
+
+import all PaperProofs.Paid.PDROC_MenuNativeAbort_002
+
+import all PaperProofs.Paid.PDROC_MenuMeans_001
+
+import all PaperProofs.Paid.PDROC_MenuExpected_005
+
+import all PaperProofs.Paid.PDROC_MenuExpected_004
+
+import all PaperProofs.Paid.PDMenu_MenuTableLocality_080
+
+import all PaperProofs.Paid.PDMenu_MenuStoredRecursion_079
+
+import all PaperProofs.Paid.PDMenu_MenuRowLocality_078
+
+import all PaperProofs.Paid.PDROC_MenuExpected_003
+
+import all PaperProofs.Paid.PDROC_MenuExpected_002
+
+import all PaperProofs.Paid.PDROC_MenuExpected_001
+
+import all PaperProofs.Paid.PDMenu_MenuPathMeasurable_089
+
+import all PaperProofs.Paid.PDMenu_MenuAbortAssembly_124
+
+import all PaperProofs.Paid.PDMenu_MenuFiniteEntryInduction_123
+
+import all PaperProofs.Paid.PDMenu_MenuAbandonRecords_117
+
+import all PaperProofs.Paid.PDMenu_MenuTerminalRecords_116
+
+import all PaperProofs.Paid.PDMenu_MenuRepairEntryRecords_122
+
+import all PaperProofs.Paid.PDMenu_MenuCorrectEntryRecords_120
+
+import all PaperProofs.Paid.PDROC_MenuNativeAbort_001
+
+import all PaperProofs.Paid.PDMenu_MenuEmptyRepair_111
+
+import all PaperProofs.Paid.PDMenu_MenuEntryRecordTarget_115
+
+import all PaperProofs.Paid.PDMenu_MenuSummaryBranches_113
+
+import all PaperProofs.Paid.PDMenu_MenuEntryBranches_112
+
+import all PaperProofs.Paid.PDMenu_MenuPastPhysical_100
+
+import all PaperProofs.Paid.PDMenu_MenuRepairRecords_109
+
+import all PaperProofs.Paid.PDMenu_MenuRepairRun_105
+
+import all PaperProofs.Paid.PDMenu_MenuRepairPhases_104
+
+import all PaperProofs.Paid.PDMenu_MenuNativeActionRun_103
+
+import all PaperProofs.Paid.PDMenu_MenuAdvanceRun_098
+
+import all PaperProofs.Paid.PDMenu_MenuFreshRepair_102
+
+import all PaperProofs.Paid.PDMenu_MenuWrittenFrame_097
+
+import all PaperProofs.Paid.PDMenu_MenuNativeRecordABI_114
+
+import all PaperProofs.Paid.PDMenu_MenuFiniteWorld_099
+
+import all PaperProofs.Paid.PDMenu_MenuHaltedRecords_108
+
+import all PaperProofs.Paid.PDMenu_MenuBillCount_072
+
+import all PaperProofs.Paid.PDMenu_MenuWrittenEntryRecords_119
+
+import all PaperProofs.Paid.PDMenu_MenuSegmentCharge_106
+
+import all PaperProofs.Paid.PDMenu_MenuWrittenState_101
+
+import all PaperProofs.Paid.PDMenu_MenuEntryEndpoint_118
+
+import all PaperProofs.Paid.PDMenu_MenuPhysicalSnapshot_084
+
+import all PaperProofs.Paid.PDMenu_MenuEntrySnapshot_076
+
+import all PaperProofs.Paid.PDMenu_MenuSettledPast_075
+
+import all PaperProofs.Paid.PDMenu_MenuAdvanceNative_074
+
+import all PaperProofs.Paid.PDMenu_MenuAdvanceShape_073
+
+import all PaperProofs.Paid.PDMenu_MenuUsedSegment_083
+
+import all PaperProofs.Paid.PDMenu_MenuUnusedTool_081
+
+import all PaperProofs.Paid.PDMenu_MenuAllocationChoice_082
+
+import all PaperProofs.Paid.PDMenu_MenuSuffixSample_110
+
+import all PaperProofs.Paid.PDMenu_MenuAnalysisLaw_088
+
+import all PaperProofs.Paid.PDMenu_MenuSeedSplit_071
+
+import all PaperProofs.Paid.PDMenu_MenuPathSummary_087
+
+import all PaperProofs.Paid.PDMenu_MenuEntryRun_096
+
+import all PaperProofs.Paid.PDMenu_MenuEndpointRun_095
+
+import all PaperProofs.Paid.PDMenu_MenuReviewFrom_093
+
+import all PaperProofs.Paid.PDMenu_MenuFramedEndpoint_094
+
+import all PaperProofs.Paid.PDMenu_MenuAnalysisHitting_092
+
+import all PaperProofs.Paid.PDMenu_MenuAnalysisEndpoint_086
+
+import all PaperProofs.Paid.PDMenu_MenuFramedTesting_091
+
+import all PaperProofs.Paid.PDMenu_MenuReviewFrame_090
+
+import all PaperProofs.Paid.PDMenu_MenuSnapshotPackets_085
+
+import all PaperProofs.Paid.PDMenu_MenuNativeValue_128
+
+import all PaperProofs.Paid.PDMenu_MenuNativeValueStep_127
+
+import all PaperProofs.Star.PStar_UniversalTestErrors_026
+
+import all PaperProofs.Star.PStar_UniversalIdealRisk_028
+
+import all PaperProofs.Star.PStar_TwoErrorProbability_027
+
+import all PaperProofs.Star.PStar_StopLaw_018
+
+import all PaperProofs.Star.PStar_SingletonsAbort_016
+
+import all PaperProofs.Star.PStar_EarlyHalt_021
+
+import all PaperProofs.Star.PStar_CurrentStop_017
+
+import all PaperProofs.Star.PStar_CurrentFailure_020
+
+import all PaperProofs.Star.PStar_CurrentBlocked_015
+
+import all PaperProofs.Star.PStar_CurrentAbort_014
+
+import all PaperProofs.Star.PStar_CountTestErrors_023
+
+import all PaperProofs.Star.PStar_CountProbability_019
+
+import all PaperProofs.Star.PStar_CountIdealRisk_025
+
+import all PaperProofs.Star.PStar_CountErrorProbability_024
+
+import all PaperProofs.Star.PStar_ActualHalt_022
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelope_005
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelope_004
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelope_003
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelope_002
+
+import all PaperProofs.Retained.PDROC_RetainedEnvelope_001
+
+import all PaperProofs.Star.PDROC_StarFirstExit_Local_006
+
+import all PaperProofs.Star.PDROC_StarLRHead_014
+
+import all PaperProofs.Star.PDROC_StarFirstExit_Local_005
+
+import all PaperProofs.Star.PDROC_StarFirstExit_Local_004
+
+import all PaperProofs.Star.PDROC_StarFirstExit_Local_003
+
+import all PaperProofs.Star.PDROC_StarLRHead_013
+
+import all PaperProofs.Star.PDROC_StarFirstExit_Local_002
+
+import all PaperProofs.Star.PDROC_StarFirstExit_Local_001
+
+import all PaperProofs.Star.PStarLR_PostHeadCompletion_021
+
+import all PaperProofs.Star.PStarLR_LateHaltWritten_020
+
+import all PaperProofs.Star.PStarLR_GlobalRisk_022
+
+import all PaperProofs.Star.PStar_TargetGates_013
+
+import all PaperProofs.Star.PStar_StageProduct_011
+
+import all PaperProofs.Star.PStar_LocalWorld_012
+
+import all PaperProofs.Retained.PRet_Truncation_120
+
+import all PaperProofs.Retained.PRet_ObservationEnvelope_119
+
+import all PaperProofs.Retained.PRet_Completion_Original_006
+
+import all PaperProofs.Retained.PRet_Completion_Halt_005
+
+import all PaperProofs.Retained.PRet_Completion_Stopping_004
+
+import all PaperProofs.Retained.PRet_Completion_Guards_003
+
+import all PaperProofs.Retained.PRet_Completion_Choices_002
+
+import all PaperProofs.Retained.PRet_Completion_Selection_001
+
+import all PaperProofs.Star.PDROC_StarFirstExit_003
+
+import all PaperProofs.Star.PDROC_StarFirstExit_002
+
+import all PaperProofs.Star.PDROC_StarFirstExit_001
+
+import all PaperProofs.Star.PStar_TargetHistory_010
+
+import all PaperProofs.Star.PStar_CurrentToolIdentity_008
+
+import all PaperProofs.Star.PStar_CurrentPastExecution_009
+
+import all PaperProofs.Star.PStar_CurrentImmediate_007
+
+import all PaperProofs.Star.RootStarOverflow_010
+
+import all PaperProofs.Star.RootStarOverflow_009
+
+import all PaperProofs.Star.RootStarOverflow_008
+
+import all PaperProofs.Retained.PRet_Alignment_Actual_005
+
+import all PaperProofs.Retained.PRet_Alignment_Advance_004
+
+import all PaperProofs.Retained.PRet_Alignment_PastFrame_003
+
+import all PaperProofs.Retained.PRet_Alignment_ReplaySound_002
+
+import all PaperProofs.Retained.PRet_Alignment_RankCase_001
+
+import all PaperProofs.Star.RootStarOverflow_007
+
+import all PaperProofs.Star.RootStarOverflow_006
+
+import all PaperProofs.Star.RootStarOverflow_005
+
+import all PaperProofs.Star.PStar_CurrentSelection_002
+
+import all PaperProofs.Star.PStar_CurrentLegality_006
+
+import all PaperProofs.Star.PStar_CurrentExecution_004
+
+import all PaperProofs.Star.PStar_CurrentChoice_001
+
+import all PaperProofs.Star.PStar_CurrentCases_005
+
+import all PaperProofs.Star.PStar_CurrentAllocation_003
+
+import all PaperProofs.Star.PDROC_StarOverflowTail_002
+
+import all PaperProofs.Star.PDROC_StarOverflowTail_001
+
+import all PaperProofs.Star.RootStarOverflow_004
+
+import all PaperProofs.Star.RootStarOverflow_003
+
+import all PaperProofs.Star.RootStarOverflow_002
+
+import all PaperProofs.Star.RootStarOverflow_001
+
+import all PaperProofs.Retained.PRet_NativeImplementation_118
+
+import all PaperProofs.Retained.PRet_BudgetReplay_117
+
+import all PaperProofs.Retained.PRet_ScriptFrame_116
+
+import all PaperProofs.Star.PStarLR_ToolChoice_006
+
+import all PaperProofs.Star.PStarLR_TestingLegality_012
+
+import all PaperProofs.Star.PStarLR_TerminalHalt_016
+
+import all PaperProofs.Star.PStarLR_TerminalCriterion_019
+
+import all PaperProofs.Star.PStarLR_RunFrame_001
+
+import all PaperProofs.Star.PStarLR_ReportedBarrier_008
+
+import all PaperProofs.Star.PStarLR_RepairSelection_010
+
+import all PaperProofs.Star.PStarLR_RealThreshold_004
+
+import all PaperProofs.Star.PStarLR_RealTestLaw_007
+
+import all PaperProofs.Star.PStarLR_PrefixFrame_003
+
+import all PaperProofs.Star.PStarLR_OriginalLegality_015
+
+import all PaperProofs.Star.PStarLR_LateReports_005
+
+import all PaperProofs.Star.PStarLR_GoodBarrier_017
+
+import all PaperProofs.Star.PStarLR_ExecutionLegality_014
+
+import all PaperProofs.Star.PStarLR_Complete_023
+
+import all PaperProofs.Star.PStarLR_ChoiceExists_009
+
+import all PaperProofs.Star.PStarLR_BadCorrection_018
+
+import all PaperProofs.Star.PStarLR_AllocationLegality_013
+
+import all PaperProofs.Star.PStarLR_AllocationInvariant_011
+
+import all PaperProofs.Star.PStarLR_ActionShape_002
+
+import all PaperProofs.Star.PDROC_StarLRHead_009
+
+import all PaperProofs.Star.PDROC_StarLRHead_008
+
+import all PaperProofs.Star.PDROC_StarLRHead_007
+
+import all PaperProofs.Star.PDROC_StarLRHead_006
+
+import all PaperProofs.Star.PDROC_StarLRHead_005
+
+import all PaperProofs.Star.PDROC_StarLRHead_004
+
+import all PaperProofs.Star.PDROC_StarLRHead_003
+
+import all PaperProofs.Star.PDROC_StarLRHead_002
+
+import all PaperProofs.Star.PDROC_StarLRHead_001
+
+import all PaperProofs.Paid.PDROC_DataBits_011
+
+import all PaperProofs.Paid.PDROC_DataBits_Mixture_002
+
+import all PaperProofs.Paid.PDROC_DataBits_010
+
+import all PaperProofs.Paid.PDROC_DataBits_Search_002
+
+import all PaperProofs.Paid.PDROC_DataBits_Search_001
+
+import all PaperProofs.Paid.PDROC_DataBits_Counts_003
+
+import all PaperProofs.Paid.PDROC_DataBits_Counts_002
+
+import all PaperProofs.Paid.PDROC_DataBits_Counts_001
+
+import all PaperProofs.Paid.PDROC_DataBits_Gap_001
+
+import all PaperProofs.Paid.PDROC_DataBits_009
+
+import all PaperProofs.Paid.PDROC_DataBits_008
+
+import all PaperProofs.Paid.PDROC_DataBits_007
+
+import all PaperProofs.Paid.PDROC_DataBits_006
+
+import all PaperProofs.Paid.PDROC_DataBits_005
+
+import all PaperProofs.Paid.PDROC_DataBits_CalibrationFormal_001
+
+import all PaperProofs.Paid.PDROC_DataBits_Mixture_001
+
+import all PaperProofs.Paid.PDROC_DataBits_004
+
+import all PaperProofs.Paid.PDROC_DataBits_003
+
+import all PaperProofs.Paid.PDROC_DataBits_002
+
+import all PaperProofs.Paid.PDROC_DataBits_001
+
+import all PaperProofs.Star.RootStarLower_003
+
+import all PaperProofs.Retained.RootRetainedClosure_001
+
+import all PaperProofs.Retained.RootRetainedQueries_002
+
+import all PaperProofs.Retained.RootRetainedQueries_001
+
+import all PaperProofs.Star.RootStarLower_002
+
+import all PaperProofs.Star.RootStarLower_001
+
+import all PaperProofs.Retained.PRet_RetainedSuffixGuard_078
+
+import all PaperProofs.Retained.PRet_NestedEntryRow_081
+
+import all PaperProofs.Retained.PRet_NestedComparison_074
+
+import all PaperProofs.Retained.PRet_NestedChildPolicy_095
+
+import all PaperProofs.Retained.PRet_JointSuffixSuccess_105
+
+import all PaperProofs.Retained.PRet_JointSuffixSuccess_104
+
+import all PaperProofs.Retained.PRet_JointExtraction_076
+
+import all PaperProofs.Retained.PRet_JointCharges_075
+
+import all PaperProofs.Retained.PRet_JointChargePullback_111
+
+import all PaperProofs.Retained.PRet_HeadReportedSet_083
+
+import all PaperProofs.Retained.PRet_GenericHeadWeights_089
+
+import all PaperProofs.Retained.PRet_GenericHeadBayes_082
+
+import all PaperProofs.Retained.PRet_FutureBillDecomposition_086
+
+import all PaperProofs.Retained.PRet_FreshTerminalLower_092
+
+import all PaperProofs.Retained.PRet_FreshSuffixSelection_099
+
+import all PaperProofs.Retained.PRet_FreshSuffixRun_101
+
+import all PaperProofs.Retained.PRet_FreshSuffixRule_100
+
+import all PaperProofs.Retained.PRet_FreshSeedPullback_094
+
+import all PaperProofs.Retained.PRet_FreshRecursion_115
+
+import all PaperProofs.Retained.PRet_FreshNoEntry_085
+
+import all PaperProofs.Retained.PRet_FreshIndependentPolicy_112
+
+import all PaperProofs.Retained.PRet_FreshHeadTotal_091
+
+import all PaperProofs.Retained.PRet_FreshHeadRun_080
+
+import all PaperProofs.Retained.PRet_FreshHeadReach_090
+
+import all PaperProofs.Retained.PRet_FreshHeadPolicy_079
+
+import all PaperProofs.Retained.PRet_FreshHeadFailure_088
+
+import all PaperProofs.Retained.PRet_FreshHeadEntry_098
+
+import all PaperProofs.Retained.PRet_FreshHeadEntry_087
+
+import all PaperProofs.Retained.PRet_FreshHeadBill_108
+
+import all PaperProofs.Retained.PRet_FreshHeadAdvance_097
+
+import all PaperProofs.Retained.PRet_FreshExpectation_113
+
+import all PaperProofs.Retained.PRet_FreshContinuationPolicy_096
+
+import all PaperProofs.Retained.PRet_FreshBranchValues_084
+
+import all PaperProofs.Retained.PRet_FreshBellmanUpper_114
+
+import all PaperProofs.Retained.PRet_FreshBellmanLower_093
+
+import all PaperProofs.Retained.PRet_FreshBellmanBounds_077
+
+import all PaperProofs.Retained.PRet_FreshActualSuccess_109
+
+import all PaperProofs.Retained.PRet_FreshActualRun_106
+
+import all PaperProofs.Retained.PRet_FreshActualEntry_103
+
+import all PaperProofs.Retained.PRet_FreshActualChoice_107
+
+import all PaperProofs.Retained.PRet_FreshActualCharge_110
+
+import all PaperProofs.Retained.PRet_AmbientSuccess_072
+
+import all PaperProofs.Retained.PRet_AmbientJoint_071
+
+import all PaperProofs.Retained.PRet_AmbientComparator_073
+
+import all PaperProofs.Retained.PRet_ActiveSuffixRun_102
+
+import all PaperProofs.Paid.PDROC_Sampler_007
+
+import all PaperProofs.Paid.PDROC_EndpointFinal_001
+
+import all PaperProofs.Paid.PDROC_Calibration_002
+
+import all PaperProofs.Paid.PDROC_Calibration_001
+
+import all PaperProofs.Paid.PDROC_EndpointDP_007
+
+import all PaperProofs.Paid.PDROC_EndpointDP_002
+
+import all PaperProofs.Paid.PDROC_EndpointDP_001
+
+import all PaperProofs.Paid.PDROC_EndpointBounds_005
+
+import all PaperProofs.Paid.PDROC_EndpointWalk_001
+
+import all PaperProofs.Retained.RootRetainedHead_004
+
+import all PaperProofs.Retained.RootRetainedHead_003
+
+import all PaperProofs.Retained.RootRetainedHead_002
+
+import all PaperProofs.Retained.RootRetainedHead_001
+
+import all PaperProofs.Paid.PDMenu_MenuGuard_068
+
+import all PaperProofs.Paid.PDMenu_MenuRepairPermissions_067
+
+import all PaperProofs.Paid.PDMenu_MenuHistoryPermissions_066
+
+import all PaperProofs.Paid.PDMenu_MenuLiteralHitting_064
+
+import all PaperProofs.Paid.PDMenu_MenuLeastEndpoint_065
+
+import all PaperProofs.Paid.PDMenu_MenuTableValues_063
+
+import all PaperProofs.Paid.PDMenu_MenuStepValues_062
+
+import all PaperProofs.Paid.PDMenu_MenuTableBounds_061
+
+import all PaperProofs.Paid.PDMenu_MenuEntryBounds_060
+
+import all PaperProofs.Paid.PDLower_DelayedCounterexample_001
+
+import all PaperProofs.Paid.PDLower_BlindNumeric_002
+
+import all PaperProofs.Paid.PA17_D31Witness_Terminal_013
+
+import all PaperProofs.Paid.PA17_D31Witness_Success_015
+
+import all PaperProofs.Paid.PA17_D31Witness_Policy_008
+
+import all PaperProofs.Paid.PA17_D31Witness_Path_007
+
+import all PaperProofs.Paid.PA17_D31Witness_Original_017
+
+import all PaperProofs.Paid.PA17_D31Witness_Nonbinding_006
+
+import all PaperProofs.Paid.PA17_D31Witness_Law_004
+
+import all PaperProofs.Paid.PA17_D31Witness_Incidence_011
+
+import all PaperProofs.Paid.PA17_D31Witness_Guard_003
+
+import all PaperProofs.Paid.PA17_D31Witness_Guard_002
+
+import all PaperProofs.Paid.PA17_D31Witness_FullError_010
+
+import all PaperProofs.Paid.PA17_D31Witness_Fields_016
+
+import all PaperProofs.Paid.PA17_D31Witness_Coverage_012
+
+import all PaperProofs.Paid.PA17_D31Witness_Count_014
+
+import all PaperProofs.Paid.PA17_D31Witness_Cost_005
+
+import all PaperProofs.Paid.PA17_D31Witness_Completion_009
+
+import all PaperProofs.Paid.PA17_D31Witness_001
+
+import all PaperProofs.Retained.RootRetainedAsymp_003
+
+import all PaperProofs.Retained.RootRetainedAsymp_002
+
+import all PaperProofs.Retained.RootRetainedAsymp_001
+
+import all PaperProofs.Retained.PRet_PreBirthEntryLaw_046
+
+import all PaperProofs.Retained.PRet_OutputCompletion_049
+
+import all PaperProofs.Retained.PRet_NativeFreshSuccess_064
+
+import all PaperProofs.Retained.PRet_LiftedPacketFrames_052
+
+import all PaperProofs.Retained.PRet_FullHistoryBridge_068
+
+import all PaperProofs.Retained.PRet_FreshNearOpt_069
+
+import all PaperProofs.Retained.PRet_FreshExtractionPolicy_047
+
+import all PaperProofs.Retained.PRet_FreshCharge_065
+
+import all PaperProofs.Retained.PRet_FreshCancellation_070
+
+import all PaperProofs.Retained.PRet_ExtractionActions_051
+
+import all PaperProofs.Retained.PRet_EntryWriteStep_056
+
+import all PaperProofs.Retained.PRet_EntrySaturation_059
+
+import all PaperProofs.Retained.PRet_EntryRun_057
+
+import all PaperProofs.Retained.PRet_EntryRow_067
+
+import all PaperProofs.Retained.PRet_EntryReviewStep_055
+
+import all PaperProofs.Retained.PRet_EntryReplayAppend_053
+
+import all PaperProofs.Retained.PRet_EntryReplay_045
+
+import all PaperProofs.Retained.PRet_EntryProgress_061
+
+import all PaperProofs.Retained.PRet_EntryPenalty_066
+
+import all PaperProofs.Retained.PRet_EntryPacketInvariant_054
+
+import all PaperProofs.Retained.PRet_EntryMismatch_063
+
+import all PaperProofs.Retained.PRet_EntryInvariant_050
+
+import all PaperProofs.Retained.PRet_EntryHalt_060
+
+import all PaperProofs.Retained.PRet_EntryCompletion_062
+
+import all PaperProofs.Retained.PRet_EntryCharges_058
+
+import all PaperProofs.Retained.PRet_ActualReportedErrors_048
+
+import all PaperProofs.Retained.PRet_FullMatchingRank_043
+
+import all PaperProofs.Retained.PRet_FreshTerminalBoundary_040
+
+import all PaperProofs.Retained.PRet_FreshOldObligation_039
+
+import all PaperProofs.Retained.PRet_FreshOldMonotonicity_041
+
+import all PaperProofs.Retained.PRet_FreshLocalPrices_042
+
+import all PaperProofs.Retained.PRet_FreshInfiniteBoundary_044
+
+import all PaperProofs.Star.RootStarEnvelope_003
+
+import all PaperProofs.Star.RootStarEnvelope_002
+
+import all PaperProofs.Star.RootStarEnvelope_001
+
+import all PaperProofs.Paid.PDLower_BlindZeroQuota_002
+
+import all PaperProofs.Paid.PDLower_BlindZeroQuota_001
+
+import all PaperProofs.Paid.PDLower_BlindTruthLaw_001
+
+import all PaperProofs.Paid.PDLower_BlindRetarget_001
+
+import all PaperProofs.Paid.PDLower_BlindNumeric_001
+
+import all PaperProofs.Paid.PDLower_BlindMinimum_001
+
+import all PaperProofs.Paid.PDLower_BlindCapacity_001
+
+import all PaperProofs.Paid.PDLower_BlindAdversary_001
+
+import all PaperProofs.Paid.PDMenu_PaidPenaltyProgram_059
+
+import all PaperProofs.Paid.PDMenu_PaidBellmanLower_058
+
+import all PaperProofs.Paid.PDMenu_PaidShiftedLower_057
+
+import all PaperProofs.Paid.PDMenu_PaidAllPolicyLower_056
+
+import all PaperProofs.Paid.PDMenu_PaidTerminalLower_053
+
+import all PaperProofs.Paid.PDMenu_PaidPastExecutionCharge_052
+
+import all PaperProofs.Paid.PDMenu_PaidHeadIntegratedLower_055
+
+import all PaperProofs.Paid.PDMenu_PaidRecordBranches_054
+
+import all PaperProofs.Paid.PDMenu_PaidMissedExecution_051
+
+import all PaperProofs.Paid.PDMenu_PaidGoodEntryPartition_050
+
+import all PaperProofs.Paid.PDMenu_PaidHeadWeights_049
+
+import all PaperProofs.Paid.PDMenu_PaidBadEntryPartition_048
+
+import all PaperProofs.Paid.PDMenu_PaidErasedReplayLower_047
+
+import all PaperProofs.Paid.PDMenu_PaidErasedSuffixLower_046
+
+import all PaperProofs.Paid.PDMenu_PaidBellmanUpper_045
+
+import all PaperProofs.Paid.PDMenu_PaidEndpointUpper_044
+
+import all PaperProofs.Paid.PDMenu_PaidUpperAlgebra_042
+
+import all PaperProofs.Paid.PDMenu_EndpointNativeWeights_039
+
+import all PaperProofs.Paid.PDMenu_FreshSuffixPolicies_041
+
+import all PaperProofs.Paid.PDMenu_PaidInputTransport_038
+
+import all PaperProofs.Paid.PDMenu_PaidIndependentUpper_043
+
+import all PaperProofs.Paid.PDMenu_PaidIndependentPolicy_040
+
+import all PaperProofs.Star.RootStarQuota_002
+
+import all PaperProofs.Star.RootStarQuota_001
+
+import all PaperProofs.Statistics.RootBSCEndpointPenalty001
+
+import all PaperProofs.Paid.PDROC_NativeSeparation_001
+
+import all PaperProofs.Paid.PDROC_Separation_003
+
+import all PaperProofs.Paid.PDROC_Separation_001
+
+import all PaperProofs.Star.RootStarRank_003
+
+import all PaperProofs.Star.RootStarRank_002
+
+import all PaperProofs.Star.RootStarRank_001
+
+import all PaperProofs.Paid.PDLower_FreeSqueeze_001
+
+import all PaperProofs.Paid.PDLower_RankCoefficient_003
+
+import all PaperProofs.Paid.PDLower_RankCoefficient_002
+
+import all PaperProofs.Paid.PDLower_RankCoefficient_001
+
+import all PaperProofs.Paid.PDROC_OverlayFinal_001
+
+import all PaperProofs.Paid.PDROC_OverlayAssembly_006
+
+import all PaperProofs.Paid.PDROC_OverlaySuccess_006
+
+import all PaperProofs.Paid.PDROC_OverlaySuccess_005
+
+import all PaperProofs.Paid.PDROC_OverlaySuccess_004
+
+import all PaperProofs.Paid.PDROC_OverlayAssembly_005
+
+import all PaperProofs.Paid.PDROC_OverlayCosts_012
+
+import all PaperProofs.Paid.PDROC_OverlayCosts_011
+
+import all PaperProofs.Paid.PDROC_OverlayCosts_010
+
+import all PaperProofs.Paid.PDROC_OverlayCells_005
+
+import all PaperProofs.Paid.PDROC_OverlayCells_004
+
+import all PaperProofs.Paid.PDROC_OverlayCells_003
+
+import all PaperProofs.Paid.PDROC_OverlayCells_002
+
+import all PaperProofs.Paid.PDROC_OverlayCells_001
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_008
+
+import all PaperProofs.Paid.PDROC_OverlayFlow_001
+
+import all PaperProofs.Paid.PDROC_OverlayAssembly_004
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_045
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_007
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_006
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_005
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_004
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_023
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_003
+
+import all PaperProofs.Paid.PDROC_OverlayFreshPorts_001
+
+import all PaperProofs.Paid.PDROC_OverlayCapture_002
+
+import all PaperProofs.Paid.PDROC_OverlayCapture_001
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_002
+
+import all PaperProofs.Paid.PDROC_OverlayKernel_010
+
+import all PaperProofs.Paid.PDROC_OverlayLaw_001
+
+import all PaperProofs.Paid.PDROC_OverlayEntry_007
+
+import all PaperProofs.Paid.PDROC_OverlayEntry_006
+
+import all PaperProofs.Paid.PDROC_OverlayFresh_003
+
+import all PaperProofs.Paid.PDROC_OverlayFresh_002
+
+import all PaperProofs.Paid.PDROC_OverlayFresh_001
+
+import all PaperProofs.Paid.PDROC_OverlayEntry_001
+
+import all PaperProofs.Paid.PDROC_OverlayKernel_008
+
+import all PaperProofs.Paid.PDROC_OverlayCoins_003
+
+import all PaperProofs.Paid.PDROC_OverlayCoins_002
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_044
+
+import all PaperProofs.Paid.PDROC_OverlayCorrect_002
+
+import all PaperProofs.Paid.PDROC_OverlayGhostExit_003
+
+import all PaperProofs.Paid.PDROC_OverlayGhostExit_002
+
+import all PaperProofs.Paid.PDROC_OverlayGhost_001
+
+import all PaperProofs.Paid.PDROC_OverlayGhostExit_001
+
+import all PaperProofs.Paid.PDROC_OverlayCorrect_001
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_039
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_038
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_036
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_035
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_043
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_042
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_034
+
+import all PaperProofs.Paid.PDROC_OverlaySuccess_007
+
+import all PaperProofs.Paid.PDROC_OverlaySuccess_003
+
+import all PaperProofs.Paid.PDROC_OverlaySuccess_002
+
+import all PaperProofs.Paid.PDROC_OverlaySuccess_001
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_033
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_037
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_032
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_031
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_030
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_029
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_022
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_028
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_027
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_025
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_020
+
+import all PaperProofs.Paid.PDROC_OverlayTermination_001
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_009
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_006
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_008
+
+import all PaperProofs.Paid.PDROC_OverlayCoins_001
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_007
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_026
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_024
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_021
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_004
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_005
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_003
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_002
+
+import all PaperProofs.Paid.PDROC_OverlaySimulator_001
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035z
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035y
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035x
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035w
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035v
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035u
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035t
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035s
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035r
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035q
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035p
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035o
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035n
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035m
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035l
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035k
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035j
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035i
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035h
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035g
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035f
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035e
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035d
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035c
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035b
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035ai
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035ah
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035af
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035ae
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035ad
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035ac
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035ab
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035aa
+
+import all PaperProofs.Structure.PA17_UniformGenerator_035a
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044o
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044n
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044l
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044k
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044j
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044i
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044h
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044g
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044f
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044e
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044d
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044c
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044b
+
+import all PaperProofs.Structure.PA17_QueryTemplates_044a
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041o
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041n
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041m
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041l
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041k
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041j
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041i
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041h
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041g
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041f
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041e
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041d
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041c
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041b
+
+import all PaperProofs.Structure.PA17_ProgramTemplates_041a
+
+import all PaperProofs.Structure.PA17_PackingBounds_043
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034k
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034j
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034i
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034h
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034g
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034f
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034e
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034d
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034c
+
+import all PaperProofs.Structure.PA17_PackedTranslator_034b
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046l
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046k
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046j
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046i
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046h
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046g
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046f
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046e
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046d
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046c
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046b
+
+import all PaperProofs.Structure.PA17_PackedTemplates_046a
+
+import all PaperProofs.Structure.PA17_PackedStore_042d
+
+import all PaperProofs.Structure.PA17_PackedStore_042c
+
+import all PaperProofs.Structure.PA17_PackedStore_042b
+
+import all PaperProofs.Structure.PA17_PackedStore_042a
+
+import all PaperProofs.Structure.PA17_PackedPhase_045f
+
+import all PaperProofs.Structure.PA17_PackedPhase_045e
+
+import all PaperProofs.Structure.PA17_PackedPhase_045d
+
+import all PaperProofs.Structure.PA17_PackedPhase_045c
+
+import all PaperProofs.Structure.PA17_PackedPhase_045b
+
+import all PaperProofs.Structure.PA17_PackedPhase_045a
+
+import all PaperProofs.Structure.PA17_GeneratorStatic_048d
+
+import all PaperProofs.Structure.PA17_GeneratorStatic_048c
+
+import all PaperProofs.Structure.PA17_GeneratorStatic_048b
+
+import all PaperProofs.Structure.PA17_GeneratorStatic_048a
+
+import all PaperProofs.Structure.PA17_Generator_001
+
+import all PaperProofs.Structure.PA17_GenerationBounds_047c
+
+import all PaperProofs.Structure.PA17_GenerationBounds_047b
+
+import all PaperProofs.Structure.PA17_GenerationBounds_047a
+
+import all PaperProofs.Structure.PA17_FullGivenTree_049
+
+import all PaperProofs.Structure.PA17_ConstantBounds_040
+
+import all PaperProofs.Retained.PRet_NativeRearrangement_038
+
+import all PaperProofs.Retained.PRet_SuccessPreservation_037
+
+import all PaperProofs.Retained.PRet_HaltedPairs_036
+
+import all PaperProofs.Retained.PRet_TerminalCompletion_035
+
+import all PaperProofs.Retained.PRet_EarlyReports_034
+
+import all PaperProofs.Retained.PRet_ActualPaymentList_033
+
+import all PaperProofs.Retained.PRet_ActualPaymentPair_032
+
+import all PaperProofs.Retained.PRet_PaymentSelectors_031
+
+import all PaperProofs.Retained.PRet_BarrierSource_030
+
+import all PaperProofs.Retained.PRet_BarrierArrival_029
+
+import all PaperProofs.Retained.PRet_PrebarrierProgress_028
+
+import all PaperProofs.Retained.PRet_SourceSuccess_027
+
+import all PaperProofs.Retained.PRet_ReplaySaturation_026
+
+import all PaperProofs.Retained.PRet_FiniteSourceHalt_025
+
+import all PaperProofs.Retained.PRet_PathwiseDomination_024
+
+import all PaperProofs.Retained.PRet_RunReplay_023
+
+import all PaperProofs.Retained.PRet_InformationStep_022
+
+import all PaperProofs.Retained.PRet_PaymentPrefix_021
+
+import all PaperProofs.Retained.PRet_ActualPacketReplay_020
+
+import all PaperProofs.Retained.PRet_ActionOrigins_019
+
+import all PaperProofs.Retained.PRet_ExecutionPrefixes_018
+
+import all PaperProofs.Retained.PRet_ReplayConsequences_017
+
+import all PaperProofs.Retained.PRet_ReplayInvariant_016
+
+import all PaperProofs.Retained.PRet_PastWritten_015
+
+import all PaperProofs.Retained.PRet_ShadowAppend_014
+
+import all PaperProofs.Retained.PRet_AdministrativeFrames_013
+
+import all PaperProofs.Retained.PRet_ShadowInitial_012
+
+import all PaperProofs.Retained.PRet_DelayedTerminalOnly_011
+
+import all PaperProofs.Retained.PRet_DelayedPolicy_010
+
+import all PaperProofs.Retained.PRet_SourceResponse_009
+
+import all PaperProofs.Retained.PRet_InformationPackets_006
+
+import all PaperProofs.Retained.PRet_PublicAdministrativeReplay_005
+
+import all PaperProofs.Retained.PRet_EventualPairs_004
+
+import all PaperProofs.Retained.PRet_AdministrativeClock_003
+
+import all PaperProofs.Paid.PDLower_NoCorrection_001
+
+import all PaperProofs.Paid.PDLower_Majority_005
+
+import all PaperProofs.Paid.PDLower_Majority_004
+
+import all PaperProofs.Paid.PDLower_Majority_003
+
+import all PaperProofs.Paid.PDLower_Majority_002
+
+import all PaperProofs.Paid.PDLower_Majority_001
+
+import all PaperProofs.Paid.PDLower_MajorityScale_004
+
+import all PaperProofs.Paid.PDLower_MajorityScale_003
+
+import all PaperProofs.Paid.PDLower_MajorityScale_002
+
+import all PaperProofs.Paid.PDLower_MajorityScale_001
+
+import all PaperProofs.Paid.PDMenu_MajorityRisk_037
+
+import all PaperProofs.Paid.PDMenu_MajorityRiskReduction_036
+
+import all PaperProofs.Paid.PDMenu_MajorityOutputs_035
+
+import all PaperProofs.Paid.PDMenu_MajorityActualBill_034
+
+import all PaperProofs.Paid.PDMenu_MajorityTermination_033
+
+import all PaperProofs.Paid.PDMenu_MajorityInvariant_032
+
+import all PaperProofs.Paid.PDMenu_MajorityControl_031
+
+import all PaperProofs.Paid.PDMenu_MajorityNoCorrection_030
+
+import all PaperProofs.Paid.PDMenu_PaidEntryPartition_029
+
+import all PaperProofs.Paid.PDMenu_CurrentReplayDirac_027
+
+import all PaperProofs.Paid.PDMenu_CurrentReplayPaidCharge_026
+
+import all PaperProofs.Paid.PDMenu_CurrentReplayFees_025
+
+import all PaperProofs.Paid.PDMenu_CurrentReplayFacts_024
+
+import all PaperProofs.Paid.PDMenu_CurrentReplayRun_023
+
+import all PaperProofs.Paid.PDMenu_CurrentReplayStep_022
+
+import all PaperProofs.Paid.PDMenu_FreshSuffixPaid_021
+
+import all PaperProofs.Paid.PDMenu_HeadActualFee_011
+
+import all PaperProofs.Paid.PDMenu_PaidHeadExpectation_020
+
+import all PaperProofs.Paid.PDMenu_PaidBranchExpectation_017
+
+import all PaperProofs.Paid.PDMenu_PaidHeadPointwise_019
+
+import all PaperProofs.Paid.PDMenu_PaidBranchCharge_018
+
+import all PaperProofs.Paid.PDMenu_ActualContinuationCharge_016
+
+import all PaperProofs.Paid.PDMenu_SuffixActualCharge_008
+
+import all PaperProofs.Paid.PDMenu_CurrentContinuationRun_015
+
+import all PaperProofs.Paid.PDMenu_CurrentJoin_014
+
+import all PaperProofs.Paid.PDMenu_CurrentSuffixGuard_012
+
+import all PaperProofs.Paid.PDMenu_CurrentFirstEntry_013
+
+import all PaperProofs.Paid.PDMenu_CurrentPaymentPhases_009
+
+import all PaperProofs.Paid.PDMenu_CurrentHeadRuns_007
+
+import all PaperProofs.Paid.PDMenu_CalibratedBasics_010
+
+import all PaperProofs.Paid.PDMenu_CalibrationMarks_005
+
+import all PaperProofs.Paid.RootPaidPerspective001
+
+import all PaperProofs.Paid.RootPaidToolDelete012
+
+import all PaperProofs.Paid.RootPaidToolRename011
+
+import all PaperProofs.Paid.RootPaidToolRename010
+
+import all PaperProofs.Paid.RootPaidToolRename009
+
+import all PaperProofs.Paid.RootPaidToolTransport008
+
+import all PaperProofs.Paid.RootPaidToolTransport007
+
+import all PaperProofs.Paid.RootPaidToolTransport006
+
+import all PaperProofs.Paid.PDMenu_PaidSuccessorOrder_028
+
+import all PaperProofs.Paid.RootPaidToolTransport005
+
+import all PaperProofs.Paid.RootPaidToolTransport004
+
+import all PaperProofs.Paid.RootPaidToolTransport003
+
+import all PaperProofs.Paid.RootPaidToolTransport002
+
+import all PaperProofs.Paid.RootPaidToolTransport001
+
+import all PaperProofs.Paid.PDMenu_CurrentHeadKernel_006
+
+import all PaperProofs.Paid.PDLower_Price_001
+
+import all PaperProofs.Paid.PDLower_Posterior_009
+
+import all PaperProofs.Paid.PDLower_Posterior_008
+
+import all PaperProofs.Paid.PDLower_Posterior_007
+
+import all PaperProofs.Paid.PDLower_Posterior_006
+
+import all PaperProofs.Paid.PDLower_Posterior_005
+
+import all PaperProofs.Paid.PDLower_Posterior_004
+
+import all PaperProofs.Paid.PDLower_Posterior_003
+
+import all PaperProofs.Paid.PDLower_Posterior_002
+
+import all PaperProofs.Paid.PDLower_Posterior_001
+
+import all PaperProofs.Paid.PDLower_FeeScale_005
+
+import all PaperProofs.Paid.PDLower_FeeScale_004
+
+import all PaperProofs.Paid.PDLower_FeeScale_003
+
+import all PaperProofs.Paid.PDLower_FeeScale_002
+
+import all PaperProofs.Paid.PDLower_FeeScale_001
+
+import all PaperProofs.Paid.PDLower_Cost_005
+
+import all PaperProofs.Paid.PDLower_Cost_004
+
+import all PaperProofs.Paid.PDLower_Cost_003
+
+import all PaperProofs.Paid.PDLower_Cost_002
+
+import all PaperProofs.Paid.PDLower_Cost_001
+
+import all PaperProofs.Paid.PDROC_OverlayAssembly_003
+
+import all PaperProofs.Paid.PDROC_OverlayAssembly_001
+
+import all PaperProofs.Paid.PDROC_OverlayInterface_001
+
+import all PaperProofs.Paid.PDROC_OverlayKernel_003
+
+import all PaperProofs.Paid.PDROC_OverlayKernel_002
+
+import all PaperProofs.Paid.PDROC_OverlayKernel_001
+
+import all PaperProofs.Paid.PDLower_Allowance_003
+
+import all PaperProofs.Paid.PDLower_Allowance_002
+
+import all PaperProofs.Paid.PDLower_Allowance_001
+
+import all PaperProofs.Common.PSTR_HD_TableHeads_002
+
+import all PaperProofs.Common.PSTR_HD_Heads_001
+
+import all PaperProofs.Common.PSTR_TM_Arithmetic_008
+
+import all PaperProofs.Common.PSTR_TM_Payload_007
+
+import all PaperProofs.Common.PSTR_TM_Output_006
+
+import all PaperProofs.Common.PSTR_TM_Seq_005
+
+import all PaperProofs.Common.PSTR_TM_Length_004
+
+import all PaperProofs.Common.PSTR_TM_Header_003
+
+import all PaperProofs.Common.PSTR_TM_Trace_002
+
+import all PaperProofs.Common.PSTR_TM_Codec_001
+
+import all PaperProofs.Common.PSTR_ST_TableOverflow_006
+
+import all PaperProofs.Common.PSTR_ST_TableDecision_005
+
+import all PaperProofs.Common.PSTR_ST_TableOrigin_004
+
+import all PaperProofs.Common.PSTR_ST_EntryFloor_008
+
+import all PaperProofs.Common.PSTR_ST_ActiveFloor_007
+
+import all PaperProofs.Common.PSTR_ST_TableAlignment_003
+
+import all PaperProofs.Retained.PRet_RetainedGuard_007
+
+import all PaperProofs
+import all PaperProofs.Statistics.LocalSeedScope
+import all PaperProofs.Common.ReferenceGlobalCost
+import all PaperProofs.Common.HistorySuffixReplay
+import all PaperProofs.Common.HistorySuffixTransport
+import all PaperProofs.Common.HistorySuffixStep
+import all PaperProofs.Common.HistorySuffixRun
+import all PaperProofs.Common.HistorySuffixFullRun
+import all PaperProofs.Common.NormalResourceClaims
+import all PaperProofs.Common.NormalFeeClaims
+import all PaperProofs.Common.GeneralNormalFeeReference
+import all PaperProofs.Common.ReferenceTwoBranchCost
+import all PaperProofs.Common.HistorySuffixCharge
+import all PaperProofs.Structure.AlgorithmClaims
+import all PaperProofs.Structure.RawTreePreprocessingClaims
+import all PaperProofs.Structure.CompactControllerClaims
+import all PaperProofs.Common.RationalControllerComputation
+import all PaperProofs.Common.SymbolicPrice
+import all PaperProofs.Common.HistorySuffixSuccess
+import all PaperProofs.Common.HistorySuffixBridge
+import all PaperProofs.Common.HealthyHistoryScope
+import all PaperProofs.Common.CompactPriceClaims
+import all PaperProofs.Paid.ComputationalClaims
+import all PaperProofs.Structure.RawClosureRAM
+import all PaperProofs.Common.ReferenceCostRecursion
+import all PaperProofs.Statistics.BadRiskAsymptotics
+import all PaperProofs.Common.NativeHeadTest
+import all PaperProofs.Statistics.IteratedLogComparison
+import all PaperProofs.Common.RestrictedHistorySuffixBridge
+import all PaperProofs.Structure.IndexedCellRAM
+import all PaperProofs.Common.FreshCoefficient
+import all PaperProofs.Common.NativeBellmanLower
+import all PaperProofs.Common.ReferenceCostAsymptotics
+import all PaperProofs.Common.EntryContinuationPartition
+import all PaperProofs.Common.NativeHeadContinuation
+import all PaperProofs.Common.NativeHeadAccounting
+import all PaperProofs.Common.NativeHeadBranchPartition
+import all PaperProofs.Common.ReferenceSharpNativeUpper
+import all PaperProofs.Common.NativeHeadTerminalLower
+import all PaperProofs.Common.NativeHeadTotalLower
+import all PaperProofs.Common.FixedGraphPriceAssembly
+import all PaperProofs.Common.NativeHeadBayes
+import all PaperProofs.Common.FreshSuffixComposition
+import all PaperProofs.Common.NativePenaltyHeadLower
+import all PaperProofs.Common.HealthyInfiniteRank
+import all PaperProofs.Common.NativeSuffixRunLift
+import all PaperProofs.Retained.CompletedQualification
+import all PaperProofs.Common.HealthyHistoryCounterexample
+import all PaperProofs.Common.NativeBellmanUpper
+import all PaperProofs.Common.NativeBellmanSuccessLift
+import all PaperProofs.Common.NativeBellmanGuardLift
+import all PaperProofs.Common.HealthyPrewriteCounterexample
+import all PaperProofs.Common.NativeBellmanHistoryLift
+import all PaperProofs.Common.NativeBellmanWorldSplit
+import all PaperProofs.Common.NativeBellmanContinuationRun
+import all PaperProofs.Common.NativeBellmanPrivateSeeds
+import all PaperProofs.Common.NativeBellmanChargeUpper
+import all PaperProofs.Common.NativeBellmanFiniteStop
+import all PaperProofs.Common.NativeBellmanExpectation
+import all PaperProofs.Common.NativeBellmanValueUpper
+import all PaperProofs.Statistics.LocalIteratedComposition
+import all PaperProofs.Common.HealthyBadMinimum
+import all PaperProofs.Common.HealthySuffixStep
+import all PaperProofs.Common.HealthyPenaltyAsymptotics
+import all PaperProofs.Common.HealthyPriceClosure
+import all PaperProofs.Structure.PackingMachine
+import all PaperProofs.Structure.UniformNormalizationRAM
+import all PaperProofs.Structure.PackingWordRefinement
+import all PaperProofs.Structure.PackingExecutionCost
+import all PaperProofs.Structure.RawIncidenceLaminarRAM
+import all PaperProofs.Structure.PackingWordBounds
+import all PaperProofs.Structure.UniformTreeMetadataRAM
+import all PaperProofs.Structure.RawIncidenceCostBounds
+import all PaperProofs.Structure.UniformFreeCapacityRAM
+import all PaperProofs.Structure.RawIncidenceLaminarFullRAM
+import all PaperProofs.Structure.PackedCapacityRAM
+import all PaperProofs.Structure.RawIncidenceScanSafety
+import all PaperProofs.Structure.RawIncidenceMacroSafety
+import all PaperProofs.Structure.UniformFreeTableRAM
+import all PaperProofs.Structure.RawIncidenceOuterSafety
+import all PaperProofs.Basic
+import all PaperProofs.Common.Model
+import all PaperProofs.Common.Input
+import all PaperProofs.Common.Value
+import all PaperProofs.Common.World
+import all PaperProofs.Common.WorldFreshness
+import all PaperProofs.Common.NativeProtocol
+import all PaperProofs.Common.NativeExecution
+import all PaperProofs.Common.NativeAccounting
+import all PaperProofs.Common.NativeInvariant
+import all PaperProofs.Common.NativeRun
+import all PaperProofs.Common.NativeDeadlines
+import all PaperProofs.Common.NativeRelaxation
+import all PaperProofs.Common.NativeContracts
+import all PaperProofs.Common.NativeFreshness
+import all PaperProofs.Common.NativeCausality
+import all PaperProofs.Common.NativeSeed
+import all PaperProofs.Common.NativePartial
+import all PaperProofs.Common.NativePenalty
+import all PaperProofs.Common.NormalCharges
+import all PaperProofs.Common.SuffixInput
+import all PaperProofs.Common.NativeCostBound
+import all PaperProofs.Structure.Game
+import all PaperProofs.Structure.Rank
+import all PaperProofs.Structure.Capacity
+import all PaperProofs.Structure.UsedGame
+import all PaperProofs.Structure.LaminarTree
+import all PaperProofs.Structure.LaminarTreePartition
+import all PaperProofs.Structure.LaminarTreeExecutable
+import all PaperProofs.Structure.LaminarExtension
+import all PaperProofs.Structure.LaminarClosure
+import all PaperProofs.Structure.LaminarNormalize
+import all PaperProofs.Structure.LaminarTable
+import all PaperProofs.Structure.LaminarRankExtraction
+import all PaperProofs.Structure.LaminarToolExtraction
+import all PaperProofs.Structure.LaminarPlanExtraction
+import all PaperProofs.Structure.RestrictedGame
+import all PaperProofs.Structure.IndexedNodeCache
+import all PaperProofs.Statistics.Experiment
+import all PaperProofs.Statistics.LocalTest
+import all PaperProofs.Statistics.ChannelKL
+import all PaperProofs.Statistics.BinaryKL
+import all PaperProofs.Statistics.DecisionLaw
+import all PaperProofs.Statistics.StoppedDecision
+import all PaperProofs.Statistics.StoppedInformation
+import all PaperProofs.Statistics.StoppedWald
+import all PaperProofs.Statistics.LocalInformation
+import all PaperProofs.Statistics.LocalUpper
+import all PaperProofs.Statistics.LocalLower
+import all PaperProofs.Statistics.PosteriorSPRT
+import all PaperProofs.Statistics.LocalPrice
+import all PaperProofs.Statistics.RationalRisk
+import all PaperProofs.Statistics.IteratedLog
+import all PaperProofs.Statistics.ControllerThresholds
+import all PaperProofs.Statistics.Coefficient
+import all PaperProofs.Paid.Model
+import all PaperProofs.Common.AvailableValue
+import all PaperProofs.Common.HealthyValue
+import all PaperProofs.Common.NativeAccountingIrrelevance
+import all PaperProofs.Common.NativeContractMetadata
+import all PaperProofs.Common.NativeEmpty
+import all PaperProofs.Common.NativeHistoryReplay
+import all PaperProofs.Common.NativeTestingKernel
+import all PaperProofs.Retained.Game
+import all PaperProofs.Retained.Matroid
+import all PaperProofs.Retained.Model
+import all PaperProofs.Retained.NativeMatching
+import all PaperProofs.Retained.Terminal
+import all PaperProofs.Statistics.RationalQuota
+import all PaperProofs.Statistics.ReferenceBudgets
+import all PaperProofs.Statistics.SPRTOverflow
+import all PaperProofs.Structure.CapacityBits
+import all PaperProofs.Structure.IndexedNormalize
+import all PaperProofs.Structure.IndexedRAM
+import all PaperProofs.Structure.IndexedTreeMetadata
+import all PaperProofs.Common.AvailablePartial
+import all PaperProofs.Common.NativeCapTransfer
+import all PaperProofs.Common.NativeObservedWords
+import all PaperProofs.Star.Model
+import all PaperProofs.Statistics.BinarySymmetric
+import all PaperProofs.Structure.IndexedEntry
+import all PaperProofs.Common.PenaltyAsymptotics
+import all PaperProofs.Common.ReferenceBudgetReplay
+import all PaperProofs.Paid.BSCAdapter
+import all PaperProofs.Statistics.BSCInformation
+import all PaperProofs.Statistics.PenaltyScales
+import all PaperProofs.Statistics.SymmetricHitting
+import all PaperProofs.Structure.IndexedTable
+import all PaperProofs.Structure.RankEvaluator
+import all PaperProofs.Common.NativePricing
+import all PaperProofs.Common.ReferenceReplayAvailable
+import all PaperProofs.Common.ReferenceController
+import all PaperProofs.Common.ReferenceControllerPreservation
+import all PaperProofs.Common.ReferenceControllerQuota
+import all PaperProofs.Common.ReferenceCertification
+import all PaperProofs.Structure.IndexedStaticMetadata
+import all PaperProofs.Structure.IndexedAncestors
+import all PaperProofs.Statistics.SymmetricHittingExact
+import all PaperProofs.Statistics.BSCRoc
+import all PaperProofs.Paid.Pricing
+import all PaperProofs.Paid.Claims
+import all PaperProofs.Common.ReferenceTruncation
+import all PaperProofs.Common.ReferenceOverflowRealization
+import all PaperProofs.Common.ReferenceNativeUpper
+import all PaperProofs.Common.NativeHorizon
+import all PaperProofs.Common.NativePreReport
+import all PaperProofs.Statistics.BSCStoppedPosterior
+import all PaperProofs.Star.LatePosterior
+import all PaperProofs.Common.NativeRepairCount
+import all PaperProofs.Common.NativePreReportCausality
+import all PaperProofs.Common.ReferenceDecisionRealization
+import all PaperProofs.Paid.PenaltyProgram
+import all PaperProofs.Paid.Survival
+import all PaperProofs.Common.NativePreReportBoundary
+import all PaperProofs.Common.ReferenceCompletion
+import all PaperProofs.Star.Claims
+import all PaperProofs.Paid.BridgeClaims
+import all PaperProofs.Structure.IndexedDescent
+import all PaperProofs.Common.ReferenceTermination
+import all PaperProofs.Star.PreReportPosterior
+import all PaperProofs.Star.PreReportFailure
+import all PaperProofs.Paid.MenuCompiler
+import all PaperProofs.Common.ReferenceEntryFlow
+import all PaperProofs.Structure.IndexedQuery
+import all PaperProofs.Star.NativeInformation
+import all PaperProofs.Star.LateLower
+import all PaperProofs.Paid.MultiplierSearch
+import all PaperProofs.Statistics.ReferenceBudgetMass
+import all PaperProofs.Structure.IndexedUsedCounts
+import all PaperProofs.Structure.ControllerBoundaries
+import all PaperProofs.Statistics.ReferenceBudgetMassTelescope
+import all PaperProofs.Common.ReferenceMassFlow
+import all PaperProofs.Common.ReferenceNativeRisk
+import all PaperProofs.Paid.CalibratedBackend
+import all PaperProofs.Common.BoundedNormalIO
+import all PaperProofs.Common.NormalFeeFamily
+import all PaperProofs.Common.ReferenceObservationCost
+import all PaperProofs.Paid.NativeJointClaims
+import all PaperProofs.Paid.CachedFrontend
+import all PaperProofs.Common.ReferenceSuffixReplay
+import all PaperProofs.Common.HistoryPenaltyBridge
+import all PaperProofs.Structure.IndexedClosureRAM
+import all PaperProofs.Retained.Controller
+import all PaperProofs.Structure.IndexedIntersectionRAM
+import all PaperProofs.Common.HistorySuffixController
+import all PaperProofs.Paid.RepresentationClaims
+import all PaperProofs.Common.FreshSuffixWorld
+import all PaperProofs.Common.HistorySuffixWorld
+import all PaperProofs.Common.ReferenceSuffixRun
+import all PaperProofs.Structure.RawIncidenceMacroRunSafety
+import all PaperProofs.Structure.RawIncidenceCounterSafety
+import all PaperProofs.Structure.RawIncidenceDecisionSafety
+import all PaperProofs.Structure.RawIncidenceCheckerPhase
+import all PaperProofs.Structure.RawIncidenceInitSafety
+import all PaperProofs.Structure.RawIncidenceScanRunSafety
+import all PaperProofs.Structure.UniformFreeTableSafety
+import all PaperProofs.Structure.PackingMemoryFrame
+import all PaperProofs.Structure.PackingProgramPrefix
+import all PaperProofs.Structure.RawTreeSerialization
+import all PaperProofs.Structure.RawCandidateOrder
+import all PaperProofs.Structure.RawIncidenceCheckerBoundary
+import all PaperProofs.Structure.RawTreeOutputWords
+import all PaperProofs.Structure.RawCandidateIncidenceRAM
+import all PaperProofs.Structure.RawCandidateStableOrder
+import all PaperProofs.Structure.RawCandidateIncidenceBlock
+import all PaperProofs.Structure.RawIncidenceWorkspace
+import all PaperProofs.Structure.RawIncidenceDispatcher
+import all PaperProofs.Structure.RawCandidateParents
+import all PaperProofs.Structure.RawCandidatePairScan
+import all PaperProofs.Structure.RawCandidateWorkspaceInit
+import all PaperProofs.Structure.RawCandidateRetentionFlags
+import all PaperProofs.Structure.RawCandidateRankPositions
+import all PaperProofs.Structure.RawCandidateWorkspaceBounds
+import all PaperProofs.Structure.RawCandidateConstructorPrefix
+import all PaperProofs.Structure.RawCandidateWorkspaceBaseRAM
+import all PaperProofs.Structure.RawCandidateRankScan
+import all PaperProofs.Structure.RawCandidateRetentionRAM
+import all PaperProofs.Structure.RawCandidateOrderingRAM
+import all PaperProofs.Structure.RawCandidateWorkspaceBaseWord
+import all PaperProofs.Structure.RawCandidateParentScan
+import all PaperProofs.Structure.RawCandidateParentEncoding
+import all PaperProofs.Structure.RawCandidateSerializedInputLayout
+import all PaperProofs.Structure.RawCandidateSerializedInputRAM
+import all PaperProofs.Structure.RawCandidateChildrenLayout
+import all PaperProofs.Structure.RawCandidateParentRAM
+import all PaperProofs.Structure.RawCandidateSerializedReady
+import all PaperProofs.Structure.RawCandidateSerializedRawCopy
+import all PaperProofs.Structure.RawCandidateMetadataPrefix
+import all PaperProofs.Structure.RawCandidateSerializedInputRun
+import all PaperProofs.Structure.RawCandidateSerializedChildrenRAM
+import all PaperProofs.Structure.RawCandidateChildrenPrefix
+import all PaperProofs.Structure.RawCandidateSerializedChildrenRun
+import all PaperProofs.Structure.RawTreeOutputFinalizeRAM
+import all PaperProofs.Structure.RawCandidateTreePrefix
+import all PaperProofs.Structure.RawCandidateSerializationAssembly
+import all PaperProofs.Structure.RawTreePreprocessingNat
+import all PaperProofs.Structure.RawTreePreprocessingCodeBounds
+import all PaperProofs.Structure.RawTreePreprocessingCostBounds
+import all PaperProofs.Structure.RawTreePreprocessingWordInterface
+import all PaperProofs.Structure.RawCandidateWorkspaceInitWord
+import all PaperProofs.Structure.RawTreePreprocessingStartWord
+import all PaperProofs.Structure.RawTreePreprocessingRejectWord
+import all PaperProofs.Structure.RawCandidateIncidenceWord
+import all PaperProofs.Structure.RawCandidateWorkspaceWordMacros
+import all PaperProofs.Structure.RawCandidateRetentionWordChunks
+import all PaperProofs.Structure.RawCandidatePairScanWord
+import all PaperProofs.Structure.RawCandidateRetentionWordBounds
+import all PaperProofs.Structure.RawCandidateRetentionWordSafety
+import all PaperProofs.Statistics.PDROC_Mixture_001
+import all PaperProofs.Statistics.PDROC_Attainment_001
+import all PaperProofs.Statistics.PDROC_ExactAttainment_001
+import all PaperProofs.Structure.PA17_HeapAncestors_001
+import all PaperProofs.Structure.PA17_TagBridge_001
+import all PaperProofs.Structure.PA17_StageMap_001
+import all PaperProofs.Structure.RawCandidateRetentionWordDataPieces
+import all PaperProofs.Structure.RawCandidateRetentionWordPieces
+import all PaperProofs.Statistics.PDROC_Lower_001
+import all PaperProofs.Statistics.PDROC_Lower_002
+import all PaperProofs.Statistics.PDROC_Integral_001
+import all PaperProofs.Statistics.PDROC_ExactROC_002
+import all PaperProofs.Paid.PDROC_Records_001
+import all PaperProofs.Structure.RawCandidateRetentionWordCard
+import all PaperProofs.Structure.RawCandidateRetentionWordInner
+import all PaperProofs.Structure.RawCandidateRetentionWordLoop
+import all PaperProofs.Structure.PA17_UniformCell_002
+import all PaperProofs.Structure.PA17_CellLayout_003
+import all PaperProofs.Structure.RawTreePreprocessingRetentionWord
+import all PaperProofs.Structure.RawCandidateOrderingArrayWord
+import all PaperProofs.Structure.RawCandidateOrderingWord
+import all PaperProofs.Structure.RawCandidateParentWordChunks
+import all PaperProofs.Structure.RawCandidateParentWordAddress
+import all PaperProofs.Structure.RawCandidateParentWordSafety
+import all PaperProofs.Structure.RawTreePreprocessingOrderingWord
+import all PaperProofs.Structure.RawCandidateParentWordPieces
+import all PaperProofs.Structure.RawCandidateParentWord
+import all PaperProofs.Structure.RawTreePreprocessingParentWord
+import all PaperProofs.Structure.RawCandidateSerializedInputWordCache
+import all PaperProofs.Structure.RawCandidateSerializedInputWordChunks
+import all PaperProofs.Structure.RawCandidateSerializedInputWordPieces
+import all PaperProofs.Structure.RawCandidateSerializedChildrenWordChunks
+import all PaperProofs.Structure.RawCandidateSerializedChildrenWordAddress
+import all PaperProofs.Structure.RawTreePreprocessingFooterWord
+import all PaperProofs.Structure.RawCandidateSerializedChildrenWordPieces
+import all PaperProofs.Structure.RawCandidateSerializedChildrenWord
+import all PaperProofs.Structure.RawCandidateSerializedInputWordDataPieces
+import all PaperProofs.Structure.RawCandidateSerializedInputWordHeaders
+import all PaperProofs.Structure.RawTreePreprocessingSerializationWord
+import all PaperProofs.Structure.RawCandidateSerializedInputWord
+import all PaperProofs.Structure.RawTreePreprocessingA06Closure
+import all PaperProofs.Structure.PA17_MetadataAssembly_003
+import all PaperProofs.Structure.PA17_TableCell_004
+import all PaperProofs.Structure.PA17_TerminalRow_002
+import all PaperProofs.Structure.PA17_TablePrepare_004
+import all PaperProofs.Structure.PA17_RowSchedule_004
+import all PaperProofs.Structure.PA17_TableBuild_005
+import all PaperProofs.Structure.PA17_BuildResources_006
+import all PaperProofs.Structure.PA17_NormalizationSafety_004
+import all PaperProofs.Structure.PA17_CellSafety_006
+import all PaperProofs.Structure.PA17_BuildCapacity_007
+import all PaperProofs.Structure.PA17_QueryCounts_008
+import all PaperProofs.Structure.PA17_QueryHeaderWord_022a
+import all PaperProofs.Structure.PA17_QueryDataWord_024a
+import all PaperProofs.Structure.PA17_QueryMetadata_010
+import all PaperProofs.Structure.PA17_QueryDataWord_024c
+import all PaperProofs.Structure.PA17_WordExecution_021
+import all PaperProofs.Structure.PA17_WordBounds_023
+import all PaperProofs.Structure.PA17_GivenWord_031a
+import all PaperProofs.Structure.PA17_FullBuildWord_036a
+import all PaperProofs.Structure.PA17_GivenWord_031b
+import all PaperProofs.Structure.PA17_GivenWord_031c
+import all PaperProofs.Structure.PA17_GivenWord_031d
+import all PaperProofs.Structure.PA17_QueryHeader_009
+import all PaperProofs.Structure.PA17_QueryHeaderWord_022
+import all PaperProofs.Structure.PA17_QueryRanks_011
+import all PaperProofs.Structure.PA17_QueryRanksWord_027
+import all PaperProofs.Structure.PA17_GivenWord_031e
+import all PaperProofs.Structure.PA17_LeafLabels_005
+import all PaperProofs.Structure.PA17_QueryLeafLabels_012
+import all PaperProofs.Structure.PA17_QueryPrepare_013
+import all PaperProofs.Structure.PA17_QueryLayout_014
+import all PaperProofs.Structure.PA17_QueryTests_009
+import all PaperProofs.Structure.PA17_QueryBudget_015
+import all PaperProofs.Structure.PA17_QueryDataWord_024b
+import all PaperProofs.Structure.PA17_QueryTestsWord_028
+import all PaperProofs.Structure.PA17_QueryBudgetWord_032
+import all PaperProofs.Structure.PA17_QuerySelection_010
+import all PaperProofs.Structure.PA17_QuerySelection_010b
+import all PaperProofs.Structure.PA17_QuerySelectionSafety_020
+import all PaperProofs.Structure.PA17_QuerySelectWord_029
+import all PaperProofs.Structure.PA17_QueryReply_017
+import all PaperProofs.Structure.PA17_Query_019
+import all PaperProofs.Structure.PA17_QueryFootprint_025
+import all PaperProofs.Structure.PA17_Rolling_018
+import all PaperProofs.Structure.PA17_Rolling_018B
+import all PaperProofs.Structure.PA17_Rolling_018C
+import all PaperProofs.Structure.PA17_RequestPaths_016
+import all PaperProofs.Structure.PA17_Implementation_030
+import all PaperProofs.Structure.PA17_QueryWord_033
+import all PaperProofs.Structure.PA17_FullBuildWord_036b
+import all PaperProofs.Structure.PA17_FullBuildWord_036c
+import all PaperProofs.Structure.PA17_GivenWord_031f
+import all PaperProofs.Structure.PA17_GivenWord_031g
+import all PaperProofs.Structure.PA17_NatRAM_037
+import all PaperProofs.Structure.PA17_PackedTranslator_034a
+import all PaperProofs.Structure.PA17_DataFrame_039
+import all PaperProofs.Structure.PA17_WrappedNatRAM_038a
+import all PaperProofs.Structure.PA17_WrappedNatRAM_038b
+import all PaperProofs.Structure.PA17_WrappedNatRAM_038c
+import all PaperProofs.Paid.PDROC_RecordCoupling_001
+import all PaperProofs.Paid.PDROC_RecordCoupling_002
+import all PaperProofs.Paid.PDROC_LocalRecord_001
+import all PaperProofs.Paid.PDROC_Simulator_001
+import all PaperProofs.Paid.PDROC_CoordinateCoupling_001
+import all PaperProofs.Paid.PDROC_Simulator_002
+import all PaperProofs.Paid.PDROC_Simulator_003
+import all PaperProofs.Paid.PDROC_CoordinateCoupling_002
+import all PaperProofs.Paid.PDROC_Simulator_004
+import all PaperProofs.Paid.PDROC_SimulatorLaw_003
+import all PaperProofs.Paid.PDROC_LocalRecord_002
+import all PaperProofs.Paid.PDROC_LocalRecord_003
+import all PaperProofs.Paid.PDROC_LocalRecord_004
+import all PaperProofs.Paid.PDROC_LocalRecord_005
+import all PaperProofs.Paid.PDROC_LocalRecord_006
+import all PaperProofs.Paid.PDROC_LocalRecord_007
+import all PaperProofs.Paid.PDROC_LocalRecord_008
+import all PaperProofs.Paid.PDROC_LocalRecord_012
+import all PaperProofs.Paid.PDROC_LocalRecord_013
+import all PaperProofs.Paid.PDROC_LocalRecord_014
+import all PaperProofs.Paid.PDROC_LocalRecord_009
+import all PaperProofs.Paid.PDROC_LocalRecord_010
+import all PaperProofs.Paid.PDROC_DirectEntry_001
+import all PaperProofs.Paid.PDROC_LocalRecord_011
+import all PaperProofs.Paid.PDROC_DirectEntry_002
+import all PaperProofs.Paid.PDROC_LocalRecord_015
+import all PaperProofs.Paid.PDROC_LocalRecord_016
+import all PaperProofs.Paid.PDROC_LocalRecord_017
+import all PaperProofs.Paid.PDROC_LocalRecord_019
+import all PaperProofs.Paid.PDROC_SimulatorLaw_005
+import all PaperProofs.Paid.PDROC_SimulatorLaw_007
+import all PaperProofs.Paid.PDROC_Simulator_010
+import all PaperProofs.Paid.PDROC_SimulatorLaw_001
+import all PaperProofs.Paid.PDROC_SimulatorProjection_001
+import all PaperProofs.Paid.PDROC_SimulatorLaw_002
+import all PaperProofs.Paid.PDROC_SimulatorLaw_004
+import all PaperProofs.Paid.PDROC_SimulatorProjection_002
+import all PaperProofs.Paid.PDROC_SimulatorProjection_003
+import all PaperProofs.Paid.PDROC_Simulator_005
+import all PaperProofs.Paid.PDROC_Simulator_006
+import all PaperProofs.Paid.PDROC_Simulator_007
+import all PaperProofs.Paid.PDROC_Simulator_008
+import all PaperProofs.Paid.PDROC_Simulator_009
+import all PaperProofs.Paid.PDROC_Simulator_011
+import all PaperProofs.Paid.PDROC_Simulator_012
+import all PaperProofs.Paid.PDROC_Simulator_013
+import all PaperProofs.Paid.PDROC_Simulator_014
+import all PaperProofs.Paid.PDROC_Simulator_015
+import all PaperProofs.Paid.PDROC_StageObservables_001
+import all PaperProofs.Paid.PDROC_StageObservables_002
+import all PaperProofs.Paid.PDROC_Simulator_016
+import all PaperProofs.Paid.PDROC_Simulator_017
+import all PaperProofs.Paid.PDROC_SimulatorRecords_001
+import all PaperProofs.Paid.PDROC_SimulatorRecords_002
+import all PaperProofs.Paid.PDROC_SimulatorRecords_003
+import all PaperProofs.Paid.PDROC_SimulatorRecords_004
+import all PaperProofs.Paid.PDROC_EndpointFinite_001
+import all PaperProofs.Paid.PDROC_SimulatorRecords_005
+import all PaperProofs.Paid.PDROC_SimulatorCells_001
+import all PaperProofs.Paid.PDROC_RecordCells_001
+import all PaperProofs.Paid.PDROC_SimulatorCells_002
+import all PaperProofs.Paid.PDROC_SimulatorLaw_008
+import all PaperProofs.Paid.PDROC_DirectEntry_003
+import all PaperProofs.Paid.PDROC_SimulatorLaw_006
+import all PaperProofs.Paid.PDROC_SimulatorHandles_001
+import all PaperProofs.Paid.PDROC_Postwrite_001
+import all PaperProofs.Paid.PDROC_SimulatorLaw_009
+import all PaperProofs.Paid.PDROC_SimulatorLaw_010
+import all PaperProofs.Paid.PDROC_EventualEntry_001
+import all PaperProofs.Paid.PDROC_EventualEntry_002
+import all PaperProofs.Paid.PDROC_EventualEntry_003
+import all PaperProofs.Paid.PDROC_SimulatorLaw_011
+import all PaperProofs.Paid.PDROC_SimulatorLaw_012
+import all PaperProofs.Paid.PDROC_SimulatorLaw_013
+import all PaperProofs.Paid.PDROC_SimulatorLaw_014
+import all PaperProofs.Paid.PDROC_SimulatorLaw_015
+import all PaperProofs.Paid.PDROC_StageExit_001
+import all PaperProofs.Paid.PDROC_StageExit_002
+import all PaperProofs.Paid.PDROC_Simulator_018
+import all PaperProofs.Paid.PDROC_Simulator_020
+import all PaperProofs.Paid.PDROC_Simulator_021
+import all PaperProofs.Paid.PDROC_Simulator_022
+import all PaperProofs.Paid.PDROC_Simulator_023
+import all PaperProofs.Paid.PDROC_Simulator_024
+import all PaperProofs.Paid.PDROC_Simulator_025
+import all PaperProofs.Paid.PDROC_Simulator_026
+import all PaperProofs.Paid.PDROC_Simulator_027
+import all PaperProofs.Paid.PDROC_Simulator_028
+import all PaperProofs.Paid.PDROC_Simulator_029
+import all PaperProofs.Paid.PDROC_Simulator_030
+import all PaperProofs.Paid.PDROC_Postwrite_002
+import all PaperProofs.Paid.PDROC_Simulator_031
+import all PaperProofs.Paid.PDROC_Simulator_032
+import all PaperProofs.Paid.PDROC_Simulator_033
+import all PaperProofs.Paid.PDROC_Simulator_034
+import all PaperProofs.Paid.PDROC_Simulator_035
+import all PaperProofs.Paid.PDROC_Simulator_036
+import all PaperProofs.Paid.PDROC_Simulator_037
+import all PaperProofs.Paid.PDROC_Simulator_038
+import all PaperProofs.Paid.PDROC_Postwrite_003
+import all PaperProofs.Paid.PDROC_Simulator_039
+import all PaperProofs.Paid.PDROC_Simulator_040
+import all PaperProofs.Paid.PDROC_Simulator_041
+import all PaperProofs.Paid.PDROC_Simulator_042
+import all PaperProofs.Paid.PDROC_Simulator_043
+import all PaperProofs.Paid.PDROC_Simulator_044
+import all PaperProofs.Paid.PDROC_SimulatorFlow_001
+import all PaperProofs.Paid.PDROC_SimulatorFlow_002
+import all PaperProofs.Paid.PDROC_SimulatorFlow_003
+import all PaperProofs.Paid.PDROC_SimulatorFlow_004
+import all PaperProofs.Paid.PDROC_SimulatorFlow_005
+import all PaperProofs.Paid.PDROC_SimulatorFlow_006
+import all PaperProofs.Paid.PDROC_SimulatorFlow_007
+import all PaperProofs.Paid.PDROC_TerminalTail_001
+import all PaperProofs.Paid.PDROC_TerminalLaw_001
+import all PaperProofs.Paid.PDROC_TerminalCapture_001
+import all PaperProofs.Paid.PDROC_TerminalCapture_002
+import all PaperProofs.Paid.PDROC_SourceTerminal_001
+import all PaperProofs.Paid.PDROC_InitialEntry_001
+import all PaperProofs.Paid.PDROC_SimulatorLaw_016
+import all PaperProofs.Paid.PDROC_Simulator_045
+import all PaperProofs.Paid.PDROC_Simulator_046
+import all PaperProofs.Paid.PDROC_Simulator_047
+import all PaperProofs.Paid.PDROC_Simulator_048
+import all PaperProofs.Paid.PDROC_Simulator_049
+import all PaperProofs.Paid.PDROC_Simulator_050
+import all PaperProofs.Paid.PDROC_Simulator_051
+import all PaperProofs.Paid.PDROC_SimulatorFlow_008
+import all PaperProofs.Paid.PDROC_SimulatorLaw_017
+import all PaperProofs.Paid.PDROC_SourceTerminal_002
+import all PaperProofs.Paid.PDROC_Simulator_052
+import all PaperProofs.Paid.PDROC_Termination_001
+import all PaperProofs.Paid.PDROC_Termination_002
+import all PaperProofs.Paid.PDROC_SimulatorReturns_001
+import all PaperProofs.Paid.PDROC_TerminalLaw_002
+import all PaperProofs.Paid.PDROC_CompletedLaw_001
+import all PaperProofs.Paid.PDROC_SimulatorCells_003
+import all PaperProofs.Paid.PDROC_SimulatorCells_004
+import all PaperProofs.Paid.PDROC_SimulatorCells_005
+import all PaperProofs.Paid.PDROC_LocalRecord_020
+import all PaperProofs.Paid.PDROC_SimulatorObservation_001
+import all PaperProofs.Paid.PDROC_SimulatorObservation_002
+import all PaperProofs.Paid.PDROC_SimulatorObservation_003
+import all PaperProofs.Paid.PDROC_SimulatorObservation_004
+import all PaperProofs.Paid.PDROC_SimulatorLaw_018
+import all PaperProofs.Paid.PDROC_Simulator_053
+import all PaperProofs.Paid.PDROC_Simulator_054
+import all PaperProofs.Paid.PDROC_TerminalCapture_003
+import all PaperProofs.Paid.PDROC_SimulatorFlow_009
+import all PaperProofs.Paid.PDROC_SimulatorFlow_010
+import all PaperProofs.Paid.PDROC_FinalCursor_001
+import all PaperProofs.Paid.PDROC_Simulator_055
+import all PaperProofs.Paid.PDROC_TerminalSupport_001
+import all PaperProofs.Paid.PDROC_Simulator_056
+import all PaperProofs.Paid.PDROC_Simulator_057
+import all PaperProofs.Paid.PDROC_FinalCursor_002
+import all PaperProofs.Paid.PDROC_SimulatorLaw_019
+import all PaperProofs.Paid.PDROC_MarkedFees_001
+import all PaperProofs.Paid.PDROC_MarkedFees_002
+import all PaperProofs.Paid.PDROC_MarkedRisk_002
+import all PaperProofs.Paid.PDROC_BillAssembly_001
+import all PaperProofs.Paid.PDROC_FirstFailure_001
+import all PaperProofs.Paid.PDROC_FirstFailure_004
+import all PaperProofs.Paid.PDROC_TruthfulContinuation_001
+import all PaperProofs.Paid.PDROC_FirstFailure_002
+import all PaperProofs.Paid.PDROC_FailureCharacterization_001
+import all PaperProofs.Paid.PDROC_Reachability_001
+import all PaperProofs.Paid.PDROC_FirstFailure_003
+import all PaperProofs.Paid.PDROC_FirstFailure_005
+import all PaperProofs.Paid.PDROC_FailureCharacterization_002
+import all PaperProofs.Paid.PDROC_FirstFailure_006
+import all PaperProofs.Paid.PDROC_FirstFailureFinite_001
+import all PaperProofs.Paid.PDROC_RepresentationAssembly_001
+import all PaperProofs.Paid.PDROC_RepresentationAssembly_002
+import all PaperProofs.Paid.PDROC_Infima_001
+import all PaperProofs.Paid.PDROC_ExactRepresentation_001
+import all PaperProofs.Retained.PRet_ExactTerminal_001
+import all PaperProofs.Retained.PRet_SourceTerminal_002
+import all PaperProofs.Paid.PDMenu_EndpointMinimum_001
+import all PaperProofs.Paid.PDLower_Survival_001
+import all PaperProofs.Paid.PDLower_Survival_002
+import all PaperProofs.Structure.PSTR_Callback_001
+import all PaperProofs.Structure.PSTR_Script_002
+import all PaperProofs.Paid.PDROC_OverlayScalar_001
+import all PaperProofs.Paid.PDROC_OverlayScalar_002
+import all PaperProofs.Paid.PDROC_Surrogate_001
+import all PaperProofs.Paid.PDROC_OverlayScalar_003
+import all PaperProofs.Paid.PDROC_Surrogate_002
+import all PaperProofs.Paid.PDCompute_Codec_001
+import all PaperProofs.Paid.PDCompute_CodeRefinement_002
+import all PaperProofs.Common.PSTR_ST_Overflow_001
+import all PaperProofs.Common.PSTR_ST_PathFloor_001
+import all PaperProofs.Common.PSTR_ST_Table_001
+import all PaperProofs.Common.PSTR_ST_TableNative_002
+import all PaperProofs.Paid.PDLower_Information_001
+import all PaperProofs.Paid.PDMenu_AdjacentNecessary_002
+import all PaperProofs.Paid.PDMenu_FiniteMenu_003
+import all PaperProofs.Paid.PDMenu_SuccessorAssembly_004
+
+import all PaperProofs.Paid.PDCompute_Complete_001
+import all PaperProofs.Structure.CompactControllerA19Closure
+
+meta import Lean
+
+import all PaperProofs.Common.B23PaperClosure
+import all PaperProofs.Structure.L01PaperClosure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/-!
+Whole imported-project axiom audit, using Lean 4.35's official environment
+and `Lean.collectAxioms` APIs (Lean/Util/CollectAxioms.lean).
+
+`import all` is intentional. Normal module imports may expose a proved
+theorem as `axiomInfo` and omit unreferenced private declarations. Importing
+each project module's private data lets this audit distinguish genuine axiom
+declarations from the exported representation and see unused private axioms.
+The coverage gate below rejects any imported PaperProofs module for which
+that private data was not imported.
+
+The scan covers PaperProofs names, `_private.PaperProofs` names, and every
+declaration owned by a PaperProofs module even if it uses another namespace.
+The official verifier separately byte-binds complete actual-owner audits for
+all registered private sources and products. Namespace entries owned by those
+private modules use that source-bound credit: their non-exposed export headers
+must not be reinterpreted as genuine new axioms. Unknown or unregistered owners
+retain the namespace checks below. Run this audit through the official verifier
+so that the external coverage is checked before and after the command.
+All kinds of declarations are scanned, including definitions, inductives,
+constructors, generated declarations and unreferenced private helpers.
+
+The external source-coverage check must ensure that every project source is
+imported by PaperProofs or listed above. A source never imported into this
+environment is outside this audit. Passing this test does not prove that a
+pending `def ... : Prop` holds or that a statement matches the manuscript.
+-/
+
+open Lean Elab Command
+
+example : PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims :=
+  PaperProofs.Common.Native.B23PaperClosure.full_paper_claims
+
+example : PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims :=
+  PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims
+
+run_cmd do
+  let env := (← getEnv).setExporting false
+  let projectPrefix := `PaperProofs
+  let projectModules := env.header.modules.filter fun entry =>
+    projectPrefix.isPrefixOf entry.module
+  if projectModules.isEmpty then
+    throwError "AUDIT_ALL_FAIL reason=no_project_modules"
+  for entry in projectModules do
+    unless entry.importAll && entry.hasData do
+      throwError m!"AUDIT_ALL_FAIL reason=missing_private_import module={entry.module}; add import all"
+
+  let isProjectName := fun name : Name =>
+    projectPrefix.isPrefixOf name ||
+      (`_private.PaperProofs).isPrefixOf name ||
+      projectPrefix.isPrefixOf (privateToUserName name)
+  let ownedByProjectModule := fun name : Name =>
+    match env.getModuleIdxFor? name with
+    | none => false
+    | some index =>
+      match env.header.modules[index.toNat]? with
+      | none => false
+      | some entry => projectPrefix.isPrefixOf entry.module
+  let registry ← IO.ofExcept (Json.parse
+    (← IO.FS.readFile "ProofDeps/proof-packages.json"))
+  let packages ← IO.ofExcept (registry.getObjValAs? (Array Json) "packages")
+  unless packages.size == 1 do throwError "AUDIT_ALL_FAIL registry_package_count"
+  let pkgRoot ← IO.ofExcept (packages[0]!.getObjValAs? System.FilePath "path")
+  let coverage ← IO.ofExcept (Json.parse
+    (← IO.FS.readFile (pkgRoot / "proof-coverage.json")))
+  let complete ← IO.ofExcept (coverage.getObjValAs? Bool "complete_actual_origin_coverage")
+  unless complete do throwError "AUDIT_ALL_FAIL incomplete_external_owner_coverage"
+  let sourcePins ← IO.ofExcept (coverage.getObjVal? "source_origin_sha256")
+  let _ ← IO.ofExcept sourcePins.getObj?
+  let coveredPrivateOwner := fun name : Name =>
+    match env.getModuleIdxFor? name with
+    | none => false
+    | some index =>
+      match env.header.modules[index.toNat]? with
+      | none => false
+      | some entry =>
+        !(projectPrefix.isPrefixOf entry.module) &&
+          (sourcePins.getObjValAs? String (toString entry.module)).isOk
+  let allDeclarations := env.constants.toList
+  let externalHeaders := allDeclarations.filter fun (name, _) =>
+    isProjectName name && coveredPrivateOwner name
+  logInfo m!"AXIOM_AUDIT_EXTERNAL_PRIVATE_CREDIT declarations={externalHeaders.length}"
+  for (name, _) in externalHeaders do
+    logInfo m!"AXIOM_AUDIT_EXTERNAL_PRIVATE_CREDIT declaration={name}"
+  let declarations := allDeclarations.filter fun (name, _) =>
+    ownedByProjectModule name || (isProjectName name && !coveredPrivateOwner name)
+  if declarations.isEmpty then
+    throwError "AUDIT_ALL_FAIL reason=no_project_declarations"
+
+  let allowed := #[`propext, `Classical.choice, `Quot.sound]
+  let mut checked : Nat := 0
+  let mut theoremCount : Nat := 0
+  let mut definitionCount : Nat := 0
+  let mut privateCount : Nat := 0
+  let mut newAxiomCount : Nat := 0
+  let mut forbiddenDependencyCount : Nat := 0
+  for (name, info) in declarations do
+    checked := checked + 1
+    if isPrivateName name then privateCount := privateCount + 1
+    match info with
+    | .axiomInfo _ =>
+      newAxiomCount := newAxiomCount + 1
+      logError m!"AUDIT_ALL_NEW_AXIOM declaration={name}"
+    | .thmInfo _ => theoremCount := theoremCount + 1
+    | .defnInfo _ => definitionCount := definitionCount + 1
+    | _ => pure ()
+    let axioms ← collectAxioms name
+    for axiomName in axioms do
+      unless allowed.contains axiomName do
+        forbiddenDependencyCount := forbiddenDependencyCount + 1
+        logError m!"AUDIT_ALL_FORBIDDEN_DEPENDENCY declaration={name} axiom={axiomName}"
+  unless newAxiomCount == 0 && forbiddenDependencyCount == 0 do
+    throwError m!"AUDIT_ALL_FAIL declarations={checked} new_axioms={newAxiomCount} forbidden_dependencies={forbiddenDependencyCount}"
+  logInfo m!"AXIOM_AUDIT_PASS declarations={checked} theorems={theoremCount} definitions={definitionCount} private={privateCount} modules={projectModules.size} new_axioms=0 forbidden_dependencies=0"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

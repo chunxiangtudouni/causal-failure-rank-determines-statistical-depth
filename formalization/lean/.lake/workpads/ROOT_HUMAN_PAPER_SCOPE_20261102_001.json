@@ -1,0 +1,13 @@
+{
+  "id": "HUMAN_PAPER_REQUIRED_SCOPE_20261102_001",
+  "utc": "2026-11-01T23:59:26.523857+00:00",
+  "source": "direct latest human message in Root, with annotation1 to prior paper-vs-BoolTM statement",
+  "verbatim": "以论文定义为主，实现证明论文中所写的必须项，达到该要求即可，不必要的统统砍掉",
+  "state": "RUNNING_PAPER_REQUIRED_SCOPE",
+  "precedence": "Supersedes prior Root/goal working interpretation that explicit BoolTM0/finiteStore/wholeTape/ISA completion is a mandatory paper gate. Does not weaken paper claims, risk, costs, input assumptions, comparisons or resource bounds.",
+  "scope_rule": "Paper originals are primary. Prove required executable algorithm/symbolic construction/combinatorial and arithmetic bit complexity, causal controller risk/fees/caps. Explicit bit-machine compilation/layout/VM/serialization extensions retained optional, not paper closure prerequisites.",
+  "preserve": "Retain all accepted/failed/draft source, logs, receipts and products. No deletion/cleanup/moves. Do not edit old strengthened Props to manufacture a proof; build a clearly paper-aligned specification/proof and revise mapping transparently.",
+  "inflight_rule": "Only already-started native jobs naturally finish; wait/reap/checkpoint. No next bit-model compile or new low-level helper.",
+  "old_gate_progress": "Old B233/7/L012/7 and TABLE P1-P10/SymbolicVM6-stage are HISTORICAL stronger-model implementation trackers, not current paper acceptance denominators. Formal251/253 remains unchanged until paper-scope proofs and new matching receipt verified.",
+  "goal": "Active; scope realignment, not whole-goal pause or completion."
+}

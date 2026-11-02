@@ -1,0 +1,28 @@
+# Generated files and excluded publication material.
+.DS_Store
+/.source-build/
+/review/
+/artifacts/*.zip
+# This is a standalone Lean repository. Manuscripts are distributed separately.
+/paper/
+*.pdf
+*.tex
+*.bib
+*.aux
+*.bbl
+*.synctex*
+/formalization/lean/ProofDeps/MainD_Original_014/artifacts/
+/formalization/lean/ProofDeps/MainD_Original_014/evidence/
+# Regenerable dependencies and build products; curated workpads ARE included.
+/formalization/lean/.lake/build/
+/formalization/lean/.lake/packages/
+/formalization/lean/.lake/cache/
+/formalization/lean/.lake/verification/
+/formalization/lean/.review-runs/
+/review-runs/
+/.artifact-tmp/
+**/__pycache__/
+*.pyc
+# Local copy-operation provenance is not needed by the public artifact.
+/review/copy-manifest.json
+/review/copy-report.json

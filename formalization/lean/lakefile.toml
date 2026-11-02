@@ -1,0 +1,21 @@
+name = "paper_proofs"
+version = "0.1.0"
+defaultTargets = ["PaperProofs"]
+weakLeanArgs = ["-M2048", "-DElab.async=false"]
+
+[leanOptions]
+autoImplicit = false
+warningAsError = true
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[require]]
+name = "d27_proof_deps"
+path = "ProofDeps/MainD_Original_014"
+
+[[lean_lib]]
+name = "PaperProofs"
+globs = ["PaperProofs.*"]

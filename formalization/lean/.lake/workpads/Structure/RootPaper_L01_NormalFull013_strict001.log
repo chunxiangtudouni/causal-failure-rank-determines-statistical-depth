@@ -1,0 +1,18 @@
+ROOT_RECOVERY queued ownerPid=30592
+ROOT_RECOVERY acquired=0 availableMiB=6301 ownerPid=30592
+ROOT_LEAN_SLOT queued ownerPid=30592
+ROOT_LEAN_SLOT admission ownerPid=30592
+ROOT_LEAN_SLOT acquired=0 ownerPid=30592
+NORMAL_FULL013_INTERFACE_HEADER spec=PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims owner=RootPaper_B23_Interface007 kind=axiomInfo type=Prop importAll=false hasData=true body_not_forced=true
+NORMAL_FULL013_CANONICAL_THEOREM name=PaperProofs.Common.Native.B23PaperClosure.full_paper_claims owner=PaperProofs.Common.B23PaperClosure exact_type=PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims importAll=true hasData=true
+NORMAL_FULL013_INTERFACE_HEADER spec=PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims owner=RootPaper_L01_Interface006 kind=axiomInfo type=Prop importAll=false hasData=true body_not_forced=true
+NORMAL_FULL013_CANONICAL_THEOREM name=PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims owner=PaperProofs.Structure.L01PaperClosure exact_type=PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims importAll=true hasData=true
+NORMAL_FULL013_OLD_HEADER_OWNER_PASS owner=PaperProofs.Common.PSTR_TM_Header_003
+NORMAL_FULL013_OWN_DECL owner=PaperProofs.Common.B23PaperClosure name=PaperProofs.Common.Native.B23PaperClosure.full_paper_claims private=false
+NORMAL_FULL013_OWNER_PASS owner=PaperProofs.Common.B23PaperClosure declarations=1 theorems=1 definitions=0 private=0 new_axioms=0 forbidden_dependencies=0
+NORMAL_FULL013_OWN_DECL owner=PaperProofs.Structure.L01PaperClosure name=PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims private=false
+NORMAL_FULL013_OWNER_PASS owner=PaperProofs.Structure.L01PaperClosure declarations=1 theorems=1 definitions=0 private=0 new_axioms=0 forbidden_dependencies=0
+NORMAL_FULL013_COVERAGE formal_modules=1923 total_modules=7416 new_owners=2 audited_declarations=2 typed_examples=5 interface_private_body_audit=separate old_axiom_collectors=0
+FULL_NORMAL_FACADE_B23_L01_PASS
+ROOT_LEAN_SLOT released=0 ownerPid=30592
+ROOT_RECOVERY released=0 ownerPid=30592

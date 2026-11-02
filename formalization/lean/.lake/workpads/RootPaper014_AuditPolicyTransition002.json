@@ -1,0 +1,52 @@
+{
+  "schema": "RootPaper014.AuditOwnerPolicyTransition.v2",
+  "utc": "2026-11-02T11:44:08.869483+00:00",
+  "status": "ONLY_AUDIT_SCRIPT_CHANGED_MATHEMATICAL_SOURCES_AND_REGISTERED_PRODUCTS_UNCHANGED_PENDING_ACTUAL_FULL002",
+  "changed_normal_fingerprint_keys": [
+    "lean/AuditAll.lean"
+  ],
+  "previous_AuditAll_sha256": "a35c923f62e649c47c5de17bc60abfc2692b60ef7464ec2a8bb56e92afe1d7cd",
+  "current_AuditAll_sha256": "86d624afde3c29006e21210552a89a578a11772fc7648a830f44aa10449c7a64",
+  "prior_successful_entry": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_entry_001.json",
+    "sha256": "424bd9eaddc47f579ea7fbbd623d1a43e212a029a97e92dbe53c0dfb1673b880"
+  },
+  "registered_package_manifest_sha256": "313a3ac1a2ebe9395543960afb1371771e84c615e0e8a885c09a3fcfadab48e2",
+  "private_interface_body_credit": {
+    "producer_audit_pointer": "/audit_evidence/30",
+    "audit_id": "paper014/PrivateInterfaces",
+    "MF_source_pointers": [
+      "/sources/3822",
+      "/sources/3832"
+    ],
+    "actual_owners": [
+      "RootPaper_B23_Interface007",
+      "RootPaper_L01_Interface006"
+    ],
+    "definition_value_constants": [
+      "RootPaper.B23.FullPaperClaims",
+      "RootPaper.L01.FullPaperClaims"
+    ],
+    "independent_private_owner_result": "2owners/6decl/4theorems/2defs/2private/new0/forbidden0",
+    "stage_review": "ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+    "normal_owner_evidence": "Structure/RootPaper_L01_NormalFull013_strict001.log"
+  },
+  "scope_preservation": {
+    "all_formal_actual_module_owners_private_generated": true,
+    "formal_importAll_hasData_required_unchanged": true,
+    "unknown_or_unregistered_namespace_owners_still_original_checks": true,
+    "external_namespace_owner_must_be_in_current_guard_bound_complete_source_pins": true,
+    "external_owner_full_audit_credit_and_actual_products_byte_bound_before_after": true,
+    "allowed_axioms_unchanged": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "collectAxioms_for_formal_declarations_unchanged": true,
+    "no_axiom_name_whitelist": true
+  },
+  "new_Lean_invocations": 0,
+  "parent_proof_recompiles": 0,
+  "formal_closed": 251,
+  "S7": false
+}

@@ -1,0 +1,1801 @@
+{
+  "schema": "ROOT_PAPER_S7_TARGETS_PREP_002",
+  "id": "ROOT_PAPER_S7_TARGETS014_PREP002",
+  "created_utc": "2026-11-02T09:37:15.774909+00:00",
+  "status": "EXACT_TWO_PAPER_TARGETS_PRIVATE_DEF_LOCATORS_NORMAL_TYPED_CALLS_ACCEPTED_REGISTRATION_AND_WHOLE_S7_PENDING",
+  "authority": {
+    "scope_transition": ".lake/workpads/ROOT_PAPER_S7_SCOPE_TRANSITION_20261102_001.md",
+    "user_scope_record": ".lake/workpads/ROOT_HUMAN_PAPER_SCOPE_20261102_001.json"
+  },
+  "official_progress": {
+    "closed": 251,
+    "original_ID_count": 253,
+    "S7_complete": false,
+    "credit": ".lake/workpads/RootBatch013_accept_001.json"
+  },
+  "whole_receipt_epoch": null,
+  "future_whole_receipt": {
+    "path": null,
+    "sha256": null,
+    "epoch": null,
+    "build_exit": null,
+    "audit_exit": null
+  },
+  "normal_canonical_installation": "PENDING_REGISTERED014_FORMAL_INSTALLATION",
+  "S7_execution": "NOT_RUN",
+  "source_snapshot_method": {
+    "description": "Exact fixed declaration spans from frozen Interface007/006 and Canonical015. RootFull definitions/components/quantifiers and old Bool mapping copied unchanged from PREP001; no old proof body reread.",
+    "source_byte_hashes_computed": 0,
+    "parent_or_product_hashes_computed": 0,
+    "old_Root_full_source_bodies_read": 0,
+    "new_declaration_text_hashes_computed": 4,
+    "new_NormalFull013_log_hashes_computed": 1,
+    "source_SHA_credit": "Four new source SHA pins reused from independent freeze; two RootFull pins reused from PREP001.",
+    "declaration_collector_run": false,
+    "Lean_queries_run": false,
+    "existing_span_schema_reference": ".lake/workpads/PStar_S7_GLOBAL_Bindings_001.py",
+    "private_owner_locator": ".lake/workpads/PStar_S7_GLOBAL_verify_003.py"
+  },
+  "mechanism": {
+    "verifier": ".lake/workpads/PStar_S7_GLOBAL_verify_003.py",
+    "existing_cli_flags": [
+      "--matrix",
+      "--census",
+      "--receipt",
+      "--manifest"
+    ],
+    "schema_matrix": ".lake/workpads/PStar_S7_GLOBAL_MATRIX_001.json",
+    "schema_snapshot": ".lake/workpads/PStar_S7_GLOBAL_ORIGINAL_TARGET_SPECS_001.json",
+    "old_schema_epoch": "RootBatch010",
+    "old_schema_is_current_251_acceptance": false,
+    "old_schema_package_pins": {
+      ".lake/workpads/PStar_S7_GLOBAL_MATRIX_001.json": {
+        "path": ".lake/workpads/PStar_S7_GLOBAL_MATRIX_001.json",
+        "sha256": "0a265af200326bb40db9518ec1f83bca54d10b7ace758f3c616b5e0f1c73e7ca",
+        "bytes": 4689335
+      },
+      ".lake/workpads/PStar_S7_GLOBAL_CENSUS_001.json": {
+        "path": ".lake/workpads/PStar_S7_GLOBAL_CENSUS_001.json",
+        "sha256": "f4c4349fa045b6e4436bde1295dbd9f070e47144651769b086a0d90b8dac80ec",
+        "bytes": 254517
+      },
+      ".lake/workpads/PStar_S7_GLOBAL_ORIGINAL_TARGET_SPECS_001.json": {
+        "path": ".lake/workpads/PStar_S7_GLOBAL_ORIGINAL_TARGET_SPECS_001.json",
+        "sha256": "fb089c7b3b1b62b8c97db542beaa75223772dce5617aa38ed786940759c109d2",
+        "bytes": 11420
+      }
+    },
+    "source_and_type_gate_lines": "New003 exact registered-source helper plus unchanged canonical theorem/whole-receipt gates",
+    "receipt_and_actual_log_gate_lines": "Same conditions as002; new helper shifts line numbers, no gate removed",
+    "warning": "The default matrix001 is historical RootBatch010 (245 then closed); schema reuse is not present251 or final253 acceptance. This partial prep is not a selected final S7 matrix/receipt.",
+    "private_spec_locator_plan": ".lake/workpads/ROOT_PAPER_S7_PRIVATE_SPEC_LOCATOR_PLAN001.json",
+    "whole_canonical_proof_rule_unchanged": true,
+    "exception_scope": "Only two frozen public spec defs, actual owner in a receipt-bound registered private package; whole target theorem remains canonical PaperProofs."
+  },
+  "existing_251_acceptance": {
+    "acceptance_record": ".lake/workpads/RootBatch013_accept_001.json",
+    "status": "ACCEPTED_ORIGINAL_A19_251_OF_253_S7_OPEN",
+    "official_receipt": {
+      "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+      "sha256": "d808cd90449da653d4746ee132ea39ed4418c207c96fedf589995331ef5fc74a"
+    },
+    "source_scope": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootScopeAcceptance_013.md",
+      "sha256": "1333e1cbd29af6fa7a68a38c0cd829a217a6823d841a69e073611ea7199a251c"
+    },
+    "ledger_at_acceptance": {
+      "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\DEPENDENCIES.md",
+      "sha256": "24c1b9bfaae22345fa61d944d57a2086a00a370b26e98c8463601baac7b4d298"
+    },
+    "dependency_package": {
+      "name": "d27_proof_deps",
+      "path": "ProofDeps/MainD_Original_013",
+      "manifest": "proof-manifest.json",
+      "sha256": "0ce32f46d62c6244678ec1eab2732b9515c9e562776282e19a8b9b66e1d3d775"
+    },
+    "preservation": "Published013 credit cited without rehash/re-audit; no receipt, source, matrix, ledger or old spec changed. New whole epoch must preserve this ancestry, not pretend old receipt certified new sources."
+  },
+  "frozen_new_source_bindings": [
+    {
+      "path": ".lake/workpads/Structure/RootPaper_B23_Interface007.lean",
+      "sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+      "bytes": 1019,
+      "file_identity": [
+        3781586605880687406,
+        844424931367962
+      ],
+      "published_WindowsReadOnly": true,
+      "current_size_and_file_identity_match_published_pin": true,
+      "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_B23_Interface007_strict001_FROZEN.json",
+      "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+    },
+    {
+      "path": ".lake/workpads/Structure/RootPaper_Canonical015/source/PaperProofs/Common/B23PaperClosure.lean",
+      "sha256": "c93215eb812954d7ce9b195f13147318f58d676a9865fa5e9d360d4e847c4f69",
+      "bytes": 523,
+      "file_identity": [
+        3781586605880687406,
+        844424931367967
+      ],
+      "published_WindowsReadOnly": true,
+      "current_size_and_file_identity_match_published_pin": true,
+      "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_Canonical015_B23PaperClosure_strict001_FROZEN.json",
+      "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+    },
+    {
+      "path": ".lake/workpads/Structure/RootPaper_L01_Interface006.lean",
+      "sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+      "bytes": 977,
+      "file_identity": [
+        3781586605880687406,
+        844424931367978
+      ],
+      "published_WindowsReadOnly": true,
+      "current_size_and_file_identity_match_published_pin": true,
+      "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_L01_Interface006_strict001_FROZEN.json",
+      "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+    },
+    {
+      "path": ".lake/workpads/Structure/RootPaper_Canonical015/source/PaperProofs/Structure/L01PaperClosure.lean",
+      "sha256": "4962fb3c8aaa6e4f0e49b039d4f38cd18a3b3b442018cec8f36dc9abfe0a86ff",
+      "bytes": 486,
+      "file_identity": [
+        3781586605880687406,
+        844424931367980
+      ],
+      "published_WindowsReadOnly": true,
+      "current_size_and_file_identity_match_published_pin": true,
+      "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_Canonical015_L01PaperClosure_strict001_FROZEN.json",
+      "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+    },
+    {
+      "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+      "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+      "bytes": 6984,
+      "file_identity": [
+        3781586605880687406,
+        844424931362582
+      ],
+      "published_WindowsReadOnly": true,
+      "current_size_and_file_identity_match_published_pin": true,
+      "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_B23_Full004_strict001_FROZEN.json",
+      "source_sha256_method": "REUSED_PUBLISHED_FREEZE_PIN_NO_BYTE_HASH"
+    },
+    {
+      "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+      "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+      "bytes": 13230,
+      "file_identity": [
+        3781586605880687406,
+        844424931361500
+      ],
+      "published_WindowsReadOnly": true,
+      "current_size_and_file_identity_match_published_pin": true,
+      "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_L01_Full003_strict001_FROZEN.json",
+      "source_sha256_method": "REUSED_PUBLISHED_FREEZE_PIN_NO_BYTE_HASH"
+    }
+  ],
+  "new_original_target_snapshot_payload": {
+    "B23": [
+      {
+        "name": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+        "source": "ProofDeps/MainD_Original_014/RootPaper_B23_Interface007.lean",
+        "line": 18,
+        "full_original_declaration": "def FullPaperClaims : Prop := RootPaper.B23.FullPaperClaims\n\nend PaperProofs.Common.Native.B23PaperClosure\n\nnamespace RootPaper.B23.Interface\n",
+        "source_sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+        "declaration_text_sha256": "0e39ce849c3ba7432c3b6f073e5dbd4a13be1c35bd4516d99e1419f64b95860e"
+      }
+    ],
+    "L01": [
+      {
+        "name": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+        "source": "ProofDeps/MainD_Original_014/RootPaper_L01_Interface006.lean",
+        "line": 17,
+        "full_original_declaration": "def FullPaperClaims : Prop := RootPaper.L01.FullPaperClaims\n\nend PaperProofs.Structure.LaminarTree.L01PaperClosure\n\nnamespace RootPaper.L01.Interface\n",
+        "source_sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+        "declaration_text_sha256": "54ba36ff565beebfe7775b9f1b91fcc5687758236b279f335cdd624f42914db8"
+      }
+    ]
+  },
+  "snapshot_payload_is_only_two_ID_replacements": true,
+  "formal_declaration_payload": {
+    "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims": {
+      "name": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+      "local": "FullPaperClaims",
+      "kind": "def",
+      "path": "ProofDeps/MainD_Original_014/RootPaper_B23_Interface007.lean",
+      "line": 18,
+      "sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+      "signature_start": "def FullPaperClaims : Prop := RootPaper.B23.FullPaperClaims",
+      "is_private": false,
+      "module": "RootPaper_B23_Interface007",
+      "full_declaration_source": "def FullPaperClaims : Prop := RootPaper.B23.FullPaperClaims\n\nend PaperProofs.Common.Native.B23PaperClosure\n\nnamespace RootPaper.B23.Interface\n",
+      "declaration_source_end": 23,
+      "lexical_active_section_context": {
+        "variables": [],
+        "universes": []
+      },
+      "type_evidence_kind": "Exact frozen new source span and source owner; imported ordinary header kind is not substituted for private source def/body evidence.",
+      "staged_source_path": ".lake/workpads/Structure/RootPaper_B23_Interface007.lean",
+      "declaration_text_sha256": "0e39ce849c3ba7432c3b6f073e5dbd4a13be1c35bd4516d99e1419f64b95860e",
+      "receipt_binding": {
+        "epoch": null,
+        "receipt_sha256": null,
+        "accepted_source_sha256": null,
+        "live_source_sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+        "state": "SOURCE_PIN_FROZEN_AND_NORMAL_TYPED_CALL_ACCEPTED; official registered whole receipt still pending"
+      },
+      "source_locator_kind": "ONLY_TWO_ALLOWLISTED_REGISTERED_PRIVATE_PAPER_SPECS",
+      "registration_pending": true
+    },
+    "PaperProofs.Common.Native.B23PaperClosure.full_paper_claims": {
+      "name": "PaperProofs.Common.Native.B23PaperClosure.full_paper_claims",
+      "local": "full_paper_claims",
+      "kind": "theorem",
+      "path": "PaperProofs/Common/B23PaperClosure.lean",
+      "line": 12,
+      "sha256": "c93215eb812954d7ce9b195f13147318f58d676a9865fa5e9d360d4e847c4f69",
+      "signature_start": "public theorem full_paper_claims : FullPaperClaims :=",
+      "is_private": false,
+      "module": "PaperProofs.Common.B23PaperClosure",
+      "full_declaration_source": "public theorem full_paper_claims : FullPaperClaims :=\n  RootPaper.B23.Interface.proved_full_paper\n\nend PaperProofs.Common.Native.B23PaperClosure\n\n#print axioms PaperProofs.Common.Native.B23PaperClosure.full_paper_claims",
+      "declaration_source_end": 17,
+      "lexical_active_section_context": {
+        "variables": [],
+        "universes": []
+      },
+      "type_evidence_kind": "Exact frozen new source span and source owner; imported ordinary header kind is not substituted for private source def/body evidence.",
+      "staged_source_path": ".lake/workpads/Structure/RootPaper_Canonical015/source/PaperProofs/Common/B23PaperClosure.lean",
+      "declaration_text_sha256": "5b0cddb23e84079e01a6a3410f162e39e4ab3533342781b2be15af40cf4906a8",
+      "receipt_binding": {
+        "epoch": null,
+        "receipt_sha256": null,
+        "accepted_source_sha256": null,
+        "live_source_sha256": "c93215eb812954d7ce9b195f13147318f58d676a9865fa5e9d360d4e847c4f69",
+        "state": "SOURCE_PIN_FROZEN_AND_NORMAL_TYPED_CALL_ACCEPTED; official registered whole receipt still pending"
+      }
+    },
+    "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims": {
+      "name": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+      "local": "FullPaperClaims",
+      "kind": "def",
+      "path": "ProofDeps/MainD_Original_014/RootPaper_L01_Interface006.lean",
+      "line": 17,
+      "sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+      "signature_start": "def FullPaperClaims : Prop := RootPaper.L01.FullPaperClaims",
+      "is_private": false,
+      "module": "RootPaper_L01_Interface006",
+      "full_declaration_source": "def FullPaperClaims : Prop := RootPaper.L01.FullPaperClaims\n\nend PaperProofs.Structure.LaminarTree.L01PaperClosure\n\nnamespace RootPaper.L01.Interface\n",
+      "declaration_source_end": 22,
+      "lexical_active_section_context": {
+        "variables": [],
+        "universes": []
+      },
+      "type_evidence_kind": "Exact frozen new source span and source owner; imported ordinary header kind is not substituted for private source def/body evidence.",
+      "staged_source_path": ".lake/workpads/Structure/RootPaper_L01_Interface006.lean",
+      "declaration_text_sha256": "54ba36ff565beebfe7775b9f1b91fcc5687758236b279f335cdd624f42914db8",
+      "receipt_binding": {
+        "epoch": null,
+        "receipt_sha256": null,
+        "accepted_source_sha256": null,
+        "live_source_sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+        "state": "SOURCE_PIN_FROZEN_AND_NORMAL_TYPED_CALL_ACCEPTED; official registered whole receipt still pending"
+      },
+      "source_locator_kind": "ONLY_TWO_ALLOWLISTED_REGISTERED_PRIVATE_PAPER_SPECS",
+      "registration_pending": true
+    },
+    "PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims": {
+      "name": "PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims",
+      "local": "full_paper_claims",
+      "kind": "theorem",
+      "path": "PaperProofs/Structure/L01PaperClosure.lean",
+      "line": 11,
+      "sha256": "4962fb3c8aaa6e4f0e49b039d4f38cd18a3b3b442018cec8f36dc9abfe0a86ff",
+      "signature_start": "public theorem full_paper_claims : FullPaperClaims :=",
+      "is_private": false,
+      "module": "PaperProofs.Structure.L01PaperClosure",
+      "full_declaration_source": "public theorem full_paper_claims : FullPaperClaims :=\n  RootPaper.L01.Interface.proved_full_paper\n\nend PaperProofs.Structure.LaminarTree.L01PaperClosure\n\n#print axioms PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims",
+      "declaration_source_end": 16,
+      "lexical_active_section_context": {
+        "variables": [],
+        "universes": []
+      },
+      "type_evidence_kind": "Exact frozen new source span and source owner; imported ordinary header kind is not substituted for private source def/body evidence.",
+      "staged_source_path": ".lake/workpads/Structure/RootPaper_Canonical015/source/PaperProofs/Structure/L01PaperClosure.lean",
+      "declaration_text_sha256": "87b79ecf33b9e5c0dd2ef6c180604e935e8c8cd0101abef824c1723836235ded",
+      "receipt_binding": {
+        "epoch": null,
+        "receipt_sha256": null,
+        "accepted_source_sha256": null,
+        "live_source_sha256": "4962fb3c8aaa6e4f0e49b039d4f38cd18a3b3b442018cec8f36dc9abfe0a86ff",
+        "state": "SOURCE_PIN_FROZEN_AND_NORMAL_TYPED_CALL_ACCEPTED; official registered whole receipt still pending"
+      }
+    }
+  },
+  "paper_targets": {
+    "B23": {
+      "canonical": {
+        "module": "PaperProofs.Common.B23PaperClosure",
+        "namespace": "PaperProofs.Common.Native.B23PaperClosure",
+        "final_canonical_path": "PaperProofs/Common/B23PaperClosure.lean",
+        "staged_source": {
+          "path": ".lake/workpads/Structure/RootPaper_Canonical015/source/PaperProofs/Common/B23PaperClosure.lean",
+          "sha256": "c93215eb812954d7ce9b195f13147318f58d676a9865fa5e9d360d4e847c4f69",
+          "bytes": 523,
+          "file_identity": [
+            3781586605880687406,
+            844424931367967
+          ],
+          "published_WindowsReadOnly": true,
+          "current_size_and_file_identity_match_published_pin": true,
+          "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_Canonical015_B23PaperClosure_strict001_FROZEN.json",
+          "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+        },
+        "spec_declaration": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+        "theorem_declaration": "PaperProofs.Common.Native.B23PaperClosure.full_paper_claims",
+        "public_spec_type": "Prop, imported from the registered private interface",
+        "public_theorem_type": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+        "public_theorem_premises": 0,
+        "imports": [
+          "RootPaper_B23_Interface007"
+        ],
+        "ordinary_canonical_public_type_evidence": {
+          "source_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013.lean",
+          "source_sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+          "log_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.log",
+          "log_sha256": "6cf0f4ace165a28741e33e6d2b1c6558e9126a6dde5880ba966da7cec98e2f48",
+          "actual_exit": 0,
+          "original_spec_declarations": [
+            "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims"
+          ],
+          "ordinary_example_line": 3272,
+          "ordinary_example_source": "example : PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims :=\n  PaperProofs.Common.Native.B23PaperClosure.full_paper_claims",
+          "public_premises": 0,
+          "receipt_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.json",
+          "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+          "frozen_manifest_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+          "frozen_manifest_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+          "actual_subprocess_wait": true,
+          "outer_session_reaped": 92484,
+          "actual_Root_stage_review": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+          "evidence_scope": "Actual isolated complete normal1923/typed5/canonical2-owner result; not the pending registered whole receipt",
+          "log_sha256_method": "NEW_ACCEPTED_NORMAL_FULL013_LOG_BYTES_HASHED_ONCE_FOR_THIS_PREP",
+          "exact_imported_interface_source_sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+          "exact_canonical_theorem_source_sha256": "c93215eb812954d7ce9b195f13147318f58d676a9865fa5e9d360d4e847c4f69"
+        },
+        "owns_spec_definition": false,
+        "spec_definition_owner": "RootPaper_B23_Interface007",
+        "spec_definition_source": "ProofDeps/MainD_Original_014/RootPaper_B23_Interface007.lean",
+        "theorem_public_context": "module\n\npublic import RootPaper_B23_Interface007\n\nset_option autoImplicit false\nset_option warningAsError true\n\nnamespace PaperProofs.Common.Native.B23PaperClosure",
+        "source_and_owner_credit": "Root accepted Canonical015 two theorem owners in NormalFull013; no definition is redeclared here"
+      },
+      "root_full": {
+        "module": "RootPaper_B23_Full004",
+        "namespace": "RootPaper.B23",
+        "source": {
+          "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+          "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+          "bytes": 6984,
+          "file_identity": [
+            3781586605880687406,
+            844424931362582
+          ],
+          "published_WindowsReadOnly": true,
+          "current_size_and_file_identity_match_published_pin": true,
+          "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_B23_Full004_strict001_FROZEN.json",
+          "source_sha256_method": "REUSED_PUBLISHED_FREEZE_PIN_NO_BYTE_HASH"
+        },
+        "specification": "RootPaper.B23.FullPaperClaims",
+        "source_context": "open MeasureTheory\nopen scoped ENNReal\n\nnamespace RootPaper.B23\n\nopen PaperProofs.Common PaperProofs.Statistics PaperProofs.Common.Native\nopen RationalControllerComputation\nopen RootPaper.Reference.Charged\n\nvariable {I : Instance}",
+        "full_spec_definition": {
+          "name": "RootPaper.B23.FullPaperClaims",
+          "local": "FullPaperClaims",
+          "kind": "def",
+          "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+          "line": 87,
+          "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+          "signature_start": "def FullPaperClaims : Prop :=",
+          "is_private": false,
+          "module": "RootPaper_B23_Full004",
+          "full_declaration_source": "def FullPaperClaims : Prop :=\n  PreparationPaperClaims ∧\n    ∃ runtime : WordRuntime, 0 < globalRate runtime ∧ 0 < globalDegree runtime ∧\n      NativePaperClaims runtime ∧ StatisticalPaperClaims runtime\n",
+          "declaration_source_end": 91,
+          "lexical_active_section_context": {
+            "variables": [
+              {
+                "line": 27,
+                "text": "variable {I : Instance}"
+              }
+            ],
+            "universes": []
+          },
+          "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+        },
+        "component_definitions": [
+          {
+            "name": "RootPaper.B23.PreparationPaperClaims",
+            "local": "PreparationPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+            "line": 31,
+            "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+            "signature_start": "def PreparationPaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_B23_Full004",
+            "full_declaration_source": "def PreparationPaperClaims : Prop :=\n  ∃ coefficient degree : Nat, 0 < coefficient ∧ 0 < degree ∧\n    ∀ (I : Instance) (input : StatisticalInput I) (C : Contract I) (budget : Rat) (positive : 0 < budget),\n      let calculation := RootPaper.Prep.preparationCalculation input C budget positive\n      calculation.value.exponent = computedExponent (I := I) budget ∧\n      calculation.value.rows = RootPaper.Prep.originalRows input budget ∧\n      calculation.value.qualification = numericQualification input C budget ∧\n      calculation.operations.length ≤ 1000000 * (arithmeticScale input C budget) ^ 4 ∧\n      (∀ op ∈ calculation.operations, op.Realized ∧ op.width ≤ 4096 * arithmeticScale input C budget) ∧\n      RootPaper.Prep.runningCost (inputSize input C budget) calculation ≤\n        coefficient * (arithmeticScale input C budget) ^ degree\n\n/-- A single concrete native run, its actual initialized controller,\noriginal resource certificate and all-path computation cost. -/",
+            "declaration_source_end": 44,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 27,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.B23.ExecutedReference",
+            "local": "ExecutedReference",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+            "line": 45,
+            "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+            "signature_start": "def ExecutedReference (runtime : WordRuntime) (input : StatisticalInput I)",
+            "is_private": false,
+            "module": "RootPaper_B23_Full004",
+            "full_declaration_source": "def ExecutedReference (runtime : WordRuntime) (input : StatisticalInput I)\n    (C : Contract I) (accounting : NormalAccounting I) (available : Finset I.Tool)\n    (budget : Rat) (positive : 0 < budget) (exponent : Nat)\n    (policy : Policy input C .native accounting Unit) : Prop :=\n  Core input C accounting available budget exponent policy ∧\n    (prepareOnce input C available budget positive).1.value = qualifiedResources input exponent ∧\n    (∀ sample clock,\n      ((prepareOnce input C available budget positive).2\n        (run input C .native accounting policy.rule sample clock).history).action =\n        policy.rule sample.1 (run input C .native accounting policy.rule sample clock).history) ∧\n    (∀ sample, (run input C .native accounting policy.rule sample\n      (originalHorizon input budget)).halted = true) ∧\n    ∀ sample, totalRunningCost runtime input C accounting policy available budget positive sample ≤\n      generalStructureFactor I * globalRate runtime *\n        (arithmeticScale input C budget) ^ globalDegree runtime\n",
+            "declaration_source_end": 60,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 27,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.B23.NativePaperClaims",
+            "local": "NativePaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+            "line": 61,
+            "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+            "signature_start": "def NativePaperClaims (runtime : WordRuntime) : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_B23_Full004",
+            "full_declaration_source": "def NativePaperClaims (runtime : WordRuntime) : Prop :=\n  ∀ (I : Instance) (input : StatisticalInput I) (C : Contract I) (current : C.IsCurrentAllocation)\n    (accounting : NormalAccounting I) (available : Finset I.Tool) (delta : Real)\n    (budget : Rat) (exponent : Nat) (choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n    (qualification : ReferenceCompleteOriginalQualification input C current.1 accounting available budget exponent),\n    ExecutedReference runtime input C accounting available budget choice.positive exponent\n      (GeneralNormalFees.completeNativeReferencePolicy input C current.1 accounting\n        available budget exponent qualification)\n\n/-- Risk and the full expected bill concern the same executed policy and\nthe original full starting tool set. No success conditioning is added. -/",
+            "declaration_source_end": 71,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 27,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.B23.StatisticalPaperClaims",
+            "local": "StatisticalPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+            "line": 72,
+            "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+            "signature_start": "def StatisticalPaperClaims (runtime : WordRuntime) : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_B23_Full004",
+            "full_declaration_source": "def StatisticalPaperClaims (runtime : WordRuntime) : Prop :=\n  ∀ (I : Instance) (input : StatisticalInput I) (C : Contract I) (current : C.IsCurrentAllocation)\n    (accounting : NormalAccounting I) (delta : Real), 0 < delta → delta ≤ 1 / 2 →\n    ∀ (budget : Rat) (exponent : Nat) (choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n    (qualification : ReferenceCompleteOriginalQualification input C current.1 accounting I.tools budget exponent),\n    let policy := GeneralNormalFees.completeNativeReferencePolicy input C current.1 accounting\n      I.tools budget exponent qualification\n    ExecutedReference runtime input C accounting I.tools budget choice.positive exponent policy ∧\n      risk input C .native accounting policy.rule (Measure.dirac ()) ≤ ENNReal.ofReal delta ∧\n      expectedBill input C .native accounting policy.rule (Measure.dirac ()) ≤\n        expectedBill input C .uncapped accounting\n          (referenceIdealPolicy input C current.1 accounting I.tools budget).rule (Measure.dirac ())\n\n/-- Complete paper claim with an actual fixed WORD implementation and\nuniform positive constants, not caller-supplied implementation premises. -/",
+            "declaration_source_end": 86,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 27,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.B23.FullPaperClaims",
+            "local": "FullPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+            "line": 87,
+            "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+            "signature_start": "def FullPaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_B23_Full004",
+            "full_declaration_source": "def FullPaperClaims : Prop :=\n  PreparationPaperClaims ∧\n    ∃ runtime : WordRuntime, 0 < globalRate runtime ∧ 0 < globalDegree runtime ∧\n      NativePaperClaims runtime ∧ StatisticalPaperClaims runtime\n",
+            "declaration_source_end": 91,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 27,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          }
+        ],
+        "full_theorem": {
+          "name": "RootPaper.B23.full_paper_claims",
+          "local": "full_paper_claims",
+          "kind": "theorem",
+          "path": ".lake/workpads/Structure/RootPaper_B23_Full004.lean",
+          "line": 116,
+          "sha256": "ae6da5567eb7441327900d82b7b04948d21c960b018e4190e0eed93ed65d6784",
+          "signature_start": "theorem full_paper_claims : FullPaperClaims := by",
+          "is_private": false,
+          "module": "RootPaper_B23_Full004",
+          "full_declaration_source": "theorem full_paper_claims : FullPaperClaims := by\n  obtain ⟨runtime⟩ := wordRuntime_exists\n  exact ⟨RootPaper.Prep.ordinary_original_preparation, runtime,\n    globalRate_positive runtime, globalDegree_positive runtime,\n    native_paper_claims runtime, statistical_paper_claims runtime⟩",
+          "declaration_source_end": 120,
+          "lexical_active_section_context": {
+            "variables": [
+              {
+                "line": 27,
+                "text": "variable {I : Instance}"
+              }
+            ],
+            "universes": []
+          },
+          "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+        },
+        "public_theorem_premises": 0
+      },
+      "original_paper_bindings": [
+        {
+          "source": "manuscript/sections/price-proofs.tex",
+          "start": 294,
+          "end": 300,
+          "source_sha256": "bcdd21ab9ad087387494792ee90951afdd593b14e199f868cd53026f92f0f589",
+          "span_text_sha256": "5d191a9977ba451317966c2ab2d1a7f17fb14ce56aa234ca2f42c4d5812bd3f6",
+          "text": "Posterior odds are rational products compared with the rational boundary\n$(1-p)/p$; all threshold and quota computations use integer comparisons and\nrational arithmetic.  Arithmetic cost depends on the input bit length and\nthe numerical call quotas, and is not claimed polynomial in $\\log H$.\nAn insufficient fixed cap simply fails the sufficient check.  The limit\nconcerns a family of original contracts that pass it; it does not silently\nincrease any particular contract's resources."
+        }
+      ],
+      "original_anchor_credit": "Copied published matrix001 bindings; original manuscript bytes and hashes were not recomputed",
+      "accepted_full_stage_review": {
+        "path": ".lake/workpads/ROOT_PAPER_B23_FULL_THEOREM_STAGE_REVIEW_20261102_001.json",
+        "status": "FULL_B23_PAPER_SPEC_PROVED_ORDINARY_AND_NEW_OWNER_ALL_ACCEPTED_OFFICIAL_BINDING_PENDING",
+        "main_public_premises": 0,
+        "acceptance_credit": "Existing Root stage review, not rerun by this preparation"
+      },
+      "legacy_strengthened_target_mapping": {
+        "old_snapshot_path": ".lake/workpads/PStar_S7_GLOBAL_ORIGINAL_TARGET_SPECS_001.json",
+        "old_snapshot_published_package_pin": {
+          "path": ".lake/workpads/PStar_S7_GLOBAL_ORIGINAL_TARGET_SPECS_001.json",
+          "sha256": "fb089c7b3b1b62b8c97db542beaa75223772dce5617aa38ed786940759c109d2",
+          "bytes": 11420
+        },
+        "old_snapshot_records": [
+          {
+            "name": "PaperProofs.Common.Native.RationalControllerComputation.RationalControllerComputationClaims",
+            "source": "PaperProofs/Common/RationalControllerComputation.lean",
+            "line": 306,
+            "full_original_declaration": "def RationalControllerComputationClaims : Prop :=\n  ∃ (constant degree : ℕ) (implementation : Implementation), 0 < constant ∧ 0 < degree ∧\n    EncodingClaims ∧ localArithmeticClaims constant degree implementation ∧\n    visibleRuleClaims constant degree implementation ∧\n    nativeControllerClaims constant degree implementation\n\nend PaperProofs.Common.Native.RationalControllerComputation",
+            "source_sha256": "1482ea802b0e8edb3897a7804d61fe14a7d449fc9cdb87308b780afcddb461c7",
+            "declaration_text_sha256": "b4c85421144fc51d0305dabc450ec413cb5617560cfe137ca2e006cf81eb0c8e"
+          }
+        ],
+        "old_matrix_path": ".lake/workpads/PStar_S7_GLOBAL_MATRIX_001.json",
+        "old_matrix_row_id": "B23",
+        "old_matrix_claim_text": "完整独立Bool TM0计算目标：四个固定finite-control机器及常数先于全部原input，raw数据仅incidence/channel/prior/fee/原contract/budget/available/有限public word或history；不预给E/Q/target/rank/action或trace。真计算原odds/hit/MAP、Bj/pj/badRisk/有理边界及原E/Qhat/numeric资格；RiskChoice下budget计算同原E，不输入realδ/KL oracle。完整visible referenceRule和真实native每active clock的实际machine规划trace/prepare精确对应原action、完整transition和峰值位空间为待证结论。局部统计算术poly(input bits+数值quota)，完整一般graph另显示(N+1)(q+2)^(N+1)结构因子；不宣称全graph多项式或polylogH。原complete-H0/numeric资格保留，无新增risk/cost/termination前提；批002组件：原EncodingClaims已无前提闭合，并有固定实际Bool头扫描/载荷扫描、原Runs/轨迹/空间拼接、原输出tape单射及操作数位长；完整四机器与整算法费用仍缺",
+        "old_matrix_declarations_text": "Common.Native.RationalControllerComputation.EncodingClaims；localArithmeticClaims；visibleRuleClaims；ActualExecutionCost；nativeControllerClaims；RationalControllerComputationClaims",
+        "old_definitions_edited": false,
+        "old_targets_claimed_proved_by_new_theorem": false,
+        "transition": "New paper-aligned target replaces only this ID scope in a future numbered snapshot; old stronger declarations and immutable snapshot remain retained unchanged"
+      },
+      "future_deferred_full_goal_spec": {
+        "original_spec_declarations": [
+          "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims"
+        ],
+        "whole_target_proof_bindings": [
+          {
+            "declaration": "PaperProofs.Common.Native.B23PaperClosure.full_paper_claims"
+          }
+        ],
+        "ordinary_public_original_type_evidence": {
+          "source_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013.lean",
+          "source_sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+          "log_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.log",
+          "log_sha256": "6cf0f4ace165a28741e33e6d2b1c6558e9126a6dde5880ba966da7cec98e2f48",
+          "actual_exit": 0,
+          "original_spec_declarations": [
+            "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims"
+          ],
+          "ordinary_example_line": 3272,
+          "ordinary_example_source": "example : PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims :=\n  PaperProofs.Common.Native.B23PaperClosure.full_paper_claims",
+          "public_premises": 0,
+          "receipt_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.json",
+          "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+          "frozen_manifest_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+          "frozen_manifest_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+          "actual_subprocess_wait": true,
+          "outer_session_reaped": 92484,
+          "actual_Root_stage_review": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+          "evidence_scope": "Actual isolated complete normal1923/typed5/canonical2-owner result; not the pending registered whole receipt",
+          "log_sha256_method": "NEW_ACCEPTED_NORMAL_FULL013_LOG_BYTES_HASHED_ONCE_FOR_THIS_PREP",
+          "exact_imported_interface_source_sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+          "exact_canonical_theorem_source_sha256": "c93215eb812954d7ce9b195f13147318f58d676a9865fa5e9d360d4e847c4f69"
+        },
+        "new_whole_receipt_epoch": null,
+        "reason": "Actual NormalFull013 exact canonical type call and independent private interface body/rfl/Std3 accepted. Registered14 and actual whole receipt still pending."
+      },
+      "pending": [
+        "Actual MainD_Original_014 registry/manifest/source-product provenance and normal canonical installation",
+        "New actual whole receipt/epoch and matching immutable full build/audit logs",
+        "Transparent ledger scope acceptance and final numbered S7 matrix/manifest execution"
+      ],
+      "semantic_review_references": [
+        {
+          "path": ".lake/workpads/ROOT_PAPER_B23_FULL_SEMANTIC_REVIEW001.md",
+          "credit": "Independent bounded paper/quantifier review accepted by Root"
+        },
+        {
+          "path": ".lake/workpads/ROOT_PAPER_B23_FULL_THEOREM_STAGE_REVIEW_20261102_001.json",
+          "credit": "Full004/Ordinary005/new-owner audit accepted; formal binding pending"
+        },
+        {
+          "path": ".lake/workpads/ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+          "credit": "Actual private two-owner definition/body/rfl/Std3 review accepted"
+        },
+        {
+          "path": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+          "credit": "Actual normal1923 exact public types and canonical two-theorem owners accepted"
+        }
+      ],
+      "necessary_public_quantifiers": [
+        "Preparation: uniform positive coefficient/degree precede every Instance/input/Contract/positive rational budget; no numericQualification=true premise.",
+        "Full claim chooses one WordRuntime with positive globalRate/globalDegree before NativePaperClaims and StatisticalPaperClaims quantify all original instances.",
+        "Native: every original I/input/current C/accounting/available/delta/budget/exponent and original ReferenceRiskChoice/complete qualification; the explicit original completeNativeReferencePolicy is the policy in ExecutedReference.",
+        "ExecutedReference: same initialized controller and original policy for every sample and clock; halted by originalHorizon; totalRunningCost for every sample is bounded by a single generalStructureFactor*globalRate*arithmeticScale^globalDegree.",
+        "Statistical: 0<delta<=1/2 and full initial I.tools, original complete qualification; same ExecutedReference policy has risk<=delta and full native expectedBill<=the original uncapped referenceIdealPolicy expectedBill.",
+        "Imported WordRuntime/totalRunningCost/Core meanings remain those checked in the accepted semantic review: fixed strong WORD code, preparation once, actual failed-path/full bill, original H0/caps, numerical quota scale; no real KL oracle or poly(log H) claim."
+      ],
+      "private_interface": {
+        "module": "RootPaper_B23_Interface007",
+        "source": {
+          "path": ".lake/workpads/Structure/RootPaper_B23_Interface007.lean",
+          "sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+          "bytes": 1019,
+          "file_identity": [
+            3781586605880687406,
+            844424931367962
+          ],
+          "published_WindowsReadOnly": true,
+          "current_size_and_file_identity_match_published_pin": true,
+          "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_B23_Interface007_strict001_FROZEN.json",
+          "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+        },
+        "registered_source_path": "ProofDeps/MainD_Original_014/RootPaper_B23_Interface007.lean",
+        "registration_status": "PENDING",
+        "spec_declaration": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+        "exact_def_source": "def FullPaperClaims : Prop := RootPaper.B23.FullPaperClaims\n\nend PaperProofs.Common.Native.B23PaperClosure\n\nnamespace RootPaper.B23.Interface\n",
+        "expose": false,
+        "public_section_context": "module\n\nimport RootPaper_B23_Full004\n\n/-! Public header for the complete proved B23 specification. Its exact\ndefinition and implementation proof stay in this dependency module's\nprivate data. A normal canonical theorem imports this header without\nforcing the duplicate implementation modules into its public environment. -/\n\npublic section\nset_option autoImplicit false\nset_option warningAsError true\nset_option maxHeartbeats 2000000\nset_option maxRecDepth 10000\n\nnamespace PaperProofs.Common.Native.B23PaperClosure\n",
+        "implementation_proof_name": "RootPaper.B23.Interface.proved_full_paper",
+        "implementation_proof_source": "theorem proved_full_paper :\n    PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims :=\n  RootPaper.B23.full_paper_claims",
+        "exact_private_rfl_line": 28,
+        "exact_private_rfl_source": "private theorem exact_specification :\n    PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims =\n      RootPaper.B23.FullPaperClaims := rfl",
+        "actual_private_definition_check": {
+          "name": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+          "owner": "RootPaper_B23_Interface007",
+          "actual_defnInfo_value": "mkConst RootPaper.B23.FullPaperClaims",
+          "kernel_private_rfl": true
+        },
+        "actual_owner_audit_review": ".lake/workpads/ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+        "actual_owner_audit_summary": {
+          "modules": 2,
+          "declarations": 6,
+          "theorems": 4,
+          "definitions": 2,
+          "private": 2,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0,
+          "actual_import_all_private_data_and_module_owner": true
+        },
+        "public_header_export_representation": "NormalFull013 observed axiomInfo/typeProp/importAllfalse/hasData true with correct private interface owner; not a new admitted logical axiom"
+      }
+    },
+    "L01": {
+      "canonical": {
+        "module": "PaperProofs.Structure.L01PaperClosure",
+        "namespace": "PaperProofs.Structure.LaminarTree.L01PaperClosure",
+        "final_canonical_path": "PaperProofs/Structure/L01PaperClosure.lean",
+        "staged_source": {
+          "path": ".lake/workpads/Structure/RootPaper_Canonical015/source/PaperProofs/Structure/L01PaperClosure.lean",
+          "sha256": "4962fb3c8aaa6e4f0e49b039d4f38cd18a3b3b442018cec8f36dc9abfe0a86ff",
+          "bytes": 486,
+          "file_identity": [
+            3781586605880687406,
+            844424931367980
+          ],
+          "published_WindowsReadOnly": true,
+          "current_size_and_file_identity_match_published_pin": true,
+          "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_Canonical015_L01PaperClosure_strict001_FROZEN.json",
+          "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+        },
+        "spec_declaration": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+        "theorem_declaration": "PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims",
+        "public_spec_type": "Prop, imported from the registered private interface",
+        "public_theorem_type": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+        "public_theorem_premises": 0,
+        "imports": [
+          "RootPaper_L01_Interface006"
+        ],
+        "ordinary_canonical_public_type_evidence": {
+          "source_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013.lean",
+          "source_sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+          "log_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.log",
+          "log_sha256": "6cf0f4ace165a28741e33e6d2b1c6558e9126a6dde5880ba966da7cec98e2f48",
+          "actual_exit": 0,
+          "original_spec_declarations": [
+            "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims"
+          ],
+          "ordinary_example_line": 3274,
+          "ordinary_example_source": "example : PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims :=\n  PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims",
+          "public_premises": 0,
+          "receipt_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.json",
+          "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+          "frozen_manifest_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+          "frozen_manifest_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+          "actual_subprocess_wait": true,
+          "outer_session_reaped": 92484,
+          "actual_Root_stage_review": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+          "evidence_scope": "Actual isolated complete normal1923/typed5/canonical2-owner result; not the pending registered whole receipt",
+          "log_sha256_method": "NEW_ACCEPTED_NORMAL_FULL013_LOG_BYTES_HASHED_ONCE_FOR_THIS_PREP",
+          "exact_imported_interface_source_sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+          "exact_canonical_theorem_source_sha256": "4962fb3c8aaa6e4f0e49b039d4f38cd18a3b3b442018cec8f36dc9abfe0a86ff"
+        },
+        "owns_spec_definition": false,
+        "spec_definition_owner": "RootPaper_L01_Interface006",
+        "spec_definition_source": "ProofDeps/MainD_Original_014/RootPaper_L01_Interface006.lean",
+        "theorem_public_context": "module\n\npublic import RootPaper_L01_Interface006\n\nset_option autoImplicit false\nset_option warningAsError true\n\nnamespace PaperProofs.Structure.LaminarTree.L01PaperClosure",
+        "source_and_owner_credit": "Root accepted Canonical015 two theorem owners in NormalFull013; no definition is redeclared here"
+      },
+      "root_full": {
+        "module": "RootPaper_L01_Full003",
+        "namespace": "RootPaper.L01",
+        "source": {
+          "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+          "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+          "bytes": 13230,
+          "file_identity": [
+            3781586605880687406,
+            844424931361500
+          ],
+          "published_WindowsReadOnly": true,
+          "current_size_and_file_identity_match_published_pin": true,
+          "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_L01_Full003_strict001_FROZEN.json",
+          "source_sha256_method": "REUSED_PUBLISHED_FREEZE_PIN_NO_BYTE_HASH"
+        },
+        "specification": "RootPaper.L01.FullPaperClaims",
+        "source_context": "open MeasureTheory\nopen scoped ENNReal\n\nnamespace RootPaper.L01\n\nopen PaperProofs.Common PaperProofs.Common.Native PaperProofs.Statistics\nopen PaperProofs.Structure PaperProofs.Structure.LaminarTree\nopen IndexedRAM IndexedClosureRAM AlgorithmClaims PackingMachine CompactControllerClaims\nopen RationalControllerComputation\n\nvariable {I : Instance}",
+        "full_spec_definition": {
+          "name": "RootPaper.L01.FullPaperClaims",
+          "local": "FullPaperClaims",
+          "kind": "def",
+          "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+          "line": 130,
+          "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+          "signature_start": "def FullPaperClaims : Prop :=",
+          "is_private": false,
+          "module": "RootPaper_L01_Full003",
+          "full_declaration_source": "def FullPaperClaims : Prop :=\n  PreparationPaperClaims ∧ ScalarPaperClaims ∧ CompactPrice.CallbackFormulaClaims ∧\n    StructuralPaperClaims ∧ SymbolicPaperClaims ∧\n    ∃ runtime : RootPaper.TableCost.WordCode,\n      RootPaper.TableCost.StrongWordCode runtime ∧\n      0 < RootPaper.TableCost.nativeRate runtime ∧ 0 < RootPaper.TableCost.nativeDegree runtime ∧\n      NativePaperClaims runtime ∧ SharpPaperClaims runtime ∧ InfinitePaperClaims\n",
+          "declaration_source_end": 137,
+          "lexical_active_section_context": {
+            "variables": [
+              {
+                "line": 34,
+                "text": "variable {I : Instance}"
+              }
+            ],
+            "universes": []
+          },
+          "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+        },
+        "component_definitions": [
+          {
+            "name": "RootPaper.L01.PreparationPaperClaims",
+            "local": "PreparationPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 36,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def PreparationPaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def PreparationPaperClaims : Prop :=\n  ∃ coefficient degree : Nat, 0 < coefficient ∧ 0 < degree ∧\n    ∀ (I : Instance) (input : StatisticalInput I) (C : Contract I) (budget : Rat) (positive : 0 < budget),\n      let calculation := RootPaper.Prep.preparationCalculation input C budget positive\n      calculation.value.exponent = computedExponent (I := I) budget ∧\n      calculation.value.rows = RootPaper.Prep.originalRows input budget ∧\n      calculation.value.qualification = numericQualification input C budget ∧\n      calculation.operations.length ≤ 1000000 * (arithmeticScale input C budget) ^ 4 ∧\n      (∀ op ∈ calculation.operations, op.Realized ∧ op.width ≤ 4096 * arithmeticScale input C budget) ∧\n      RootPaper.Prep.runningCost (inputSize input C budget) calculation ≤\n        coefficient * (arithmeticScale input C budget) ^ degree\n",
+            "declaration_source_end": 47,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.ScalarPaperClaims",
+            "local": "ScalarPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 48,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def ScalarPaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def ScalarPaperClaims : Prop :=\n  (∀ operation : RootPaper.Prep.Operation, operation.Realized) ∧\n  ∀ (I : Instance) (S D : Nat) (call : RootPaper.Reference.ScalarCall I),\n    RootPaper.TableCost.CallBound S D call → RootPaper.TableCost.ScalarRealized call\n",
+            "declaration_source_end": 52,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.StructuralPaperClaims",
+            "local": "StructuralPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 53,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def StructuralPaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def StructuralPaperClaims : Prop :=\n  0 < RootPaper.Table.preprocessingConstant ∧\n  ∀ (q : Nat) (full : List (Finset (Fin q))), LaminarSchedule full →\n    treeSize q full ≤ full.length + q + 1 ∧\n    ∀ used : Finset (Fin q), ∃ prepSteps headSteps,\n      RootPaper.Table.PreparedRun full used prepSteps headSteps ∧\n      (0 < full.length → 0 < q →\n        callCost q full RootPaper.Table.heads .query headSteps\n            (RootPaper.Table.preparedHeap full used prepSteps) ≤\n          120000 * (full.length * q * treeSize q full))\n",
+            "declaration_source_end": 63,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.SymbolicPaperClaims",
+            "local": "SymbolicPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 64,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def SymbolicPaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def SymbolicPaperClaims : Prop :=\n  ∀ (I : Instance) (input : StatisticalInput I), LaminarSchedule I.compatibility →\n    ∀ available : Finset I.Tool, ∃ prepSteps headSteps,\n      RootPaper.Table.PreparedRun I.compatibility (Finset.univ \\ available) prepSteps headSteps ∧\n      HeadResult input available prepSteps headSteps\n",
+            "declaration_source_end": 69,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.ChargedJointRun",
+            "local": "ChargedJointRun",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 70,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def ChargedJointRun (runtime : RootPaper.TableCost.WordCode)",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def ChargedJointRun (runtime : RootPaper.TableCost.WordCode)\n    (input : StatisticalInput I) (C : Contract I) (accounting : NormalAccounting I)\n    (available : Finset I.Tool) (budget : Rat) (positive : 0 < budget) (exponent : Nat)\n    (policy : Policy input C .native accounting Unit) : Prop :=\n  ∃ prepSteps headSteps,\n    RootPaper.Table.PreparedRun I.compatibility (Finset.univ \\ available) prepSteps headSteps ∧\n    RootPaper.Table.NativeWordRun input C accounting available (referenceQuota input exponent) policy\n      (RootPaper.Table.preparedHeap I.compatibility (Finset.univ \\ available) prepSteps) ∧\n    HeadResult input available prepSteps headSteps ∧\n    RootPaper.TableCost.NativeChargeBound runtime\n      (RootPaper.TableCost.nativeRate runtime) (RootPaper.TableCost.nativeDegree runtime)\n      input C accounting available budget positive policy\n      (RootPaper.Table.preparedHeap I.compatibility (Finset.univ \\ available) prepSteps)\n",
+            "declaration_source_end": 83,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.NativePaperClaims",
+            "local": "NativePaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 84,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def NativePaperClaims (runtime : RootPaper.TableCost.WordCode) : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def NativePaperClaims (runtime : RootPaper.TableCost.WordCode) : Prop :=\n  ∀ (I : Instance), LaminarSchedule I.compatibility →\n    ∀ (input : StatisticalInput I) (C : Contract I), C.IsCurrentAllocation →\n    ∀ (accounting : NormalAccounting I) (available : Finset I.Tool) (delta : Real),\n      0 < delta → delta ≤ 1 / 2 → ∀ (budget : Rat) (exponent : Nat)\n      (choice : ReferenceRiskChoice I.stageCount delta exponent budget),\n      CompactPrice.OriginalQualification input C accounting available budget exponent →\n      ∃ policy : Policy input C .native accounting Unit,\n        RootPaper.Table.Core input C accounting available budget exponent policy ∧\n        ChargedJointRun runtime input C accounting available budget choice.positive exponent policy ∧\n        risk input C .native accounting policy.rule (Measure.dirac ()) ≤ ENNReal.ofReal delta\n",
+            "declaration_source_end": 95,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.SharpPaperClaims",
+            "local": "SharpPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 96,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def SharpPaperClaims (runtime : RootPaper.TableCost.WordCode) : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def SharpPaperClaims (runtime : RootPaper.TableCost.WordCode) : Prop :=\n  ∀ (I : Instance), LaminarSchedule I.compatibility →\n    ∀ (input : StatisticalInput I) (available : Finset I.Tool) (depth : Nat),\n      errorRank I.compatibility available = (depth : ℕ∞) →\n      ∀ epsilon : Real, 0 < epsilon → ∃ cutoff : Real, 0 < cutoff ∧\n      ∀ delta : Real, 0 < delta → delta < cutoff → delta ≤ 1 / 2 →\n      ∀ (budget : Rat) (exponent : Nat) (choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n        (C : Contract I), C.IsCurrentAllocation → ∀ accounting : NormalAccounting I,\n        CompactPrice.OriginalQualification input C accounting available budget exponent →\n        ∃ policy : Policy input C .native accounting Unit,\n          RootPaper.Table.Core input C accounting available budget exponent policy ∧\n          ChargedJointRun runtime input C accounting available budget choice.positive exponent policy ∧\n          risk input C .native accounting policy.rule (Measure.dirac ()) ≤ ENNReal.ofReal delta ∧\n          expectedBill input C .native accounting policy.rule (Measure.dirac ()) ≤\n            ENNReal.ofReal ((1 + epsilon) * (SymbolicPrice.inputExpression input available).eval *\n              iteratedLog depth delta⁻¹)\n",
+            "declaration_source_end": 112,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.InfinitePaperClaims",
+            "local": "InfinitePaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 113,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def InfinitePaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def InfinitePaperClaims : Prop :=\n  ∀ (I : Instance), LaminarSchedule I.compatibility →\n    ∀ (input : StatisticalInput I) (available : Finset I.Tool), errorRank I.compatibility available = ⊤ →\n    ∀ (C : Contract I), C.IsCurrentAllocation → ∀ (accounting : NormalAccounting I)\n      (budget : Rat) (exponent : Nat), 0 < budget → budget ≤ 1 / 2 →\n      CompactPrice.OriginalQualification input C accounting available budget exponent →\n      ∃ policy : Policy input C .native accounting Unit,\n        RootPaper.Table.Core input C accounting available budget exponent policy ∧\n        JointWordRun input C accounting available (referenceQuota input exponent) policy ∧\n        risk input C .native accounting policy.rule (Measure.dirac ()) = 0 ∧\n        expectedObservationBill input C .native accounting policy.rule (Measure.dirac ()) = 0 ∧\n        expectedBill input C .native accounting policy.rule (Measure.dirac ()) ≤\n          (min I.stageCount I.toolCount : Nat) * input.fees.maxCorrection\n\n/-- Complete compact-controller claim at the paper's stated algorithmic\nlayer. All constants and the strong WORD code precede every original input.\nThe unrelated preserved Bool-machine target is not redefined. -/",
+            "declaration_source_end": 129,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          },
+          {
+            "name": "RootPaper.L01.FullPaperClaims",
+            "local": "FullPaperClaims",
+            "kind": "def",
+            "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+            "line": 130,
+            "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+            "signature_start": "def FullPaperClaims : Prop :=",
+            "is_private": false,
+            "module": "RootPaper_L01_Full003",
+            "full_declaration_source": "def FullPaperClaims : Prop :=\n  PreparationPaperClaims ∧ ScalarPaperClaims ∧ CompactPrice.CallbackFormulaClaims ∧\n    StructuralPaperClaims ∧ SymbolicPaperClaims ∧\n    ∃ runtime : RootPaper.TableCost.WordCode,\n      RootPaper.TableCost.StrongWordCode runtime ∧\n      0 < RootPaper.TableCost.nativeRate runtime ∧ 0 < RootPaper.TableCost.nativeDegree runtime ∧\n      NativePaperClaims runtime ∧ SharpPaperClaims runtime ∧ InfinitePaperClaims\n",
+            "declaration_source_end": 137,
+            "lexical_active_section_context": {
+              "variables": [
+                {
+                  "line": 34,
+                  "text": "variable {I : Instance}"
+                }
+              ],
+              "universes": []
+            },
+            "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+          }
+        ],
+        "full_theorem": {
+          "name": "RootPaper.L01.full_paper_claims",
+          "local": "full_paper_claims",
+          "kind": "theorem",
+          "path": ".lake/workpads/Structure/RootPaper_L01_Full003.lean",
+          "line": 209,
+          "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+          "signature_start": "theorem full_paper_claims : FullPaperClaims := by",
+          "is_private": false,
+          "module": "RootPaper_L01_Full003",
+          "full_declaration_source": "theorem full_paper_claims : FullPaperClaims := by\n  obtain ⟨runtime, strong, coefficientPositive, degreePositive, _⟩ := RootPaper.TableCost.original_cost_attachment\n  refine ⟨RootPaper.Prep.ordinary_original_preparation, ?_, PSTRStatistics.callbackFormulaClaims,\n    structural_paper_claims, symbolic_paper_claims, runtime, strong, coefficientPositive,\n    degreePositive, native_paper_claims runtime, sharp_paper_claims runtime, infinite_paper_claims⟩\n  exact ⟨RootPaper.Prep.operation_realized, fun _ S D call bounded =>\n    RootPaper.TableCost.scalar_realized S D call bounded⟩",
+          "declaration_source_end": 215,
+          "lexical_active_section_context": {
+            "variables": [
+              {
+                "line": 34,
+                "text": "variable {I : Instance}"
+              }
+            ],
+            "universes": []
+          },
+          "type_evidence_kind": "Literal fixed source span plus its active source context; no declaration collector or new kernel query was run."
+        },
+        "public_theorem_premises": 0
+      },
+      "original_paper_bindings": [
+        {
+          "source": "manuscript/sections/prices.tex",
+          "start": 127,
+          "end": 152,
+          "source_sha256": "784480ea5aa114944e62231c1c73e99e1eafa1eb0862b6fd610da2e9983e6319",
+          "span_text_sha256": "b9bd665debffec9047d31ddbe2fb90fc4de77fda13f7ee7ef9b49751fbd70d0c",
+          "text": "\\begin{corollary}[A compact leading-price controller]\n\\label{cor:computable-price}\nFor laminar compatibility, the combinatorial preprocessing in\nTheorem~\\ref{thm:laminar} computes the depth and the critical stage\nindices in~\\eqref{eq:price-head} in polynomial time. It therefore returns\nthe exact symbolic expression for the leading coefficient in terms of\nthe supplied channel probabilities, as in Theorem~\\ref{thm:price}; no\nexact real-valued KL oracle is required. Replacing the generic subset oracle by the\ncapacity table implements its causal upper controller without\nexponential tool-state expansion, under exactly the original resource\ncertificate in~\\eqref{eq:price-rational-quota}--\\eqref{eq:price-total-cap}.\n\\end{corollary}\n\\begin{proof}\nFor the fixed initial remaining set, query the table for its initial\ndepth and each stage's maximum bad-child rank. Sum $A_i$ at precisely\nthe indices in~\\eqref{eq:price-head}; this takes $O(Nqt)$\ncombinatorial work for $N,q\\ge1$, in addition to tree construction.\nDuring actual execution, the same table returns each required maximum\nbad-child rank and a compatible attaining tool. These are the only\nallocation-oracle outputs used in the risk recursion. The targets,\nobservations, mismatch handles, actual prices and finite caps are\nunchanged. Ties in bad-child rank need not be broken by comparing real\nKL expressions, because their coefficients enter only a lower-order\nparent term. The rational statistical arithmetic depends on the input bit\nlength and numerical native quotas, as specified in the price construction;\nno bound polynomial in the logarithm of the call cap is asserted."
+        },
+        {
+          "source": "manuscript/sections/prices.tex",
+          "start": 127,
+          "end": 138,
+          "source_sha256": "784480ea5aa114944e62231c1c73e99e1eafa1eb0862b6fd610da2e9983e6319",
+          "span_text_sha256": "cb7d2cca62c1a6be95d1cafc40bea9d6f243e9fc8f8378f38a711f0680167d47",
+          "text": "\\begin{corollary}[A compact leading-price controller]\n\\label{cor:computable-price}\nFor laminar compatibility, the combinatorial preprocessing in\nTheorem~\\ref{thm:laminar} computes the depth and the critical stage\nindices in~\\eqref{eq:price-head} in polynomial time. It therefore returns\nthe exact symbolic expression for the leading coefficient in terms of\nthe supplied channel probabilities, as in Theorem~\\ref{thm:price}; no\nexact real-valued KL oracle is required. Replacing the generic subset oracle by the\ncapacity table implements its causal upper controller without\nexponential tool-state expansion, under exactly the original resource\ncertificate in~\\eqref{eq:price-rational-quota}--\\eqref{eq:price-total-cap}.\n\\end{corollary}",
+          "label": "cor:computable-price"
+        }
+      ],
+      "original_anchor_credit": "Copied published matrix001 bindings; original manuscript bytes and hashes were not recomputed",
+      "accepted_full_stage_review": {
+        "path": ".lake/workpads/ROOT_PAPER_L01_FULL_THEOREM_STAGE_REVIEW_20261102_001.json",
+        "status": "FULL_L01_PAPER_SPEC_PROVED_ORDINARY_AND_NEW_OWNER_ALL_ACCEPTED_OFFICIAL_BINDING_PENDING",
+        "main_public_premises": 0,
+        "acceptance_credit": "Existing Root stage review, not rerun by this preparation"
+      },
+      "legacy_strengthened_target_mapping": {
+        "old_snapshot_path": ".lake/workpads/PStar_S7_GLOBAL_ORIGINAL_TARGET_SPECS_001.json",
+        "old_snapshot_published_package_pin": {
+          "path": ".lake/workpads/PStar_S7_GLOBAL_ORIGINAL_TARGET_SPECS_001.json",
+          "sha256": "fb089c7b3b1b62b8c97db542beaa75223772dce5617aa38ed786940759c109d2",
+          "bytes": 11420
+        },
+        "old_snapshot_records": [
+          {
+            "name": "PaperProofs.Common.Native.CompactPrice.FullClaims",
+            "source": "PaperProofs/Common/CompactPriceClaims.lean",
+            "line": 384,
+            "full_original_declaration": "def FullClaims : Prop :=\n  CompactControllerClaims.FullClaims.{0} ∧ CallbackFormulaClaims ∧ SharpUpperClaims ∧ InfiniteRankClaims ∧\n    ∃ (constant wordFactor scratchFactor degree : ℕ) (implementation : Implementation),\n      0 < constant ∧ 0 < wordFactor ∧ 0 < scratchFactor ∧ 0 < degree ∧\n      HeadExtractionClaims constant wordFactor scratchFactor implementation ∧\n      SymbolicCompilationClaims constant degree implementation ∧\n      RationalControllerComputation.localArithmeticClaims constant degree implementation.scalar ∧\n      NativeControllerClaims constant wordFactor scratchFactor degree implementation\n\nend PaperProofs.Common.Native.CompactPrice",
+            "source_sha256": "5b5e3632a241b88a93ac1a86a9eafc5647073a9e742ab9c3423cb86289b9894c",
+            "declaration_text_sha256": "0ad1a3ea01f1c9e69928e7b1f76d8301e25605043f50d07ef9487011a5e4d963"
+          }
+        ],
+        "old_matrix_path": ".lake/workpads/PStar_S7_GLOBAL_MATRIX_001.json",
+        "old_matrix_row_id": "L01",
+        "old_matrix_claim_text": "完整compact leading-price待证包：具体table版kind/target/parser/candidate/rule保原三分支预算、SPRT、guard及真实serial handle，commit接受实际table tie，不假generic同run。固定word机器预处理+O((N+1)(q+1)t) critical indices提取；固定Bool TM真输出同原input的确定rational/log AST与head indices，不给KL/rank/结果oracle。实际hybrid使用持久table heap、真实Native history生成命令及实际收费callback寄存器日志；本地planner不获compatibility/table oracle，prepare及全部实际clock TM成本/空间明确。原Q/H数值和THIS表脚本原complete-H0资格下，真实native Policy/risk≤δ/caps/费用≤TABLE ideal及固定input先于cutoff的sharp upper、∞rank零观察/风险/全部修正费均为待证结论；不新增safe/leading价前提。A06/A17/A19及局部arithmetic目标以结论合取，程序存在和性能全未证；本批组件边界：PSTR原CallbackFormulaClaims及THIS-table quota/complete-H0⇔prefix/同table native run与caps迁移已证；actual table alignment/risk/sharp/infinite-rank与完整hybrid机器仍未闭合；批002组件：原同一table实际Prefix的cache/phase对齐、真实entry/first-exit、有限target局部风险及无限review零测、全路径quota overflow≤δ/2已证；构造策略种子Unit，比较器任意私有Seed未缩小。完整有限rank风险/首项/机器仍缺",
+        "old_matrix_declarations_text": "Common.Native.CompactPrice.tableRule；OriginalQualification；HeadExtractionClaims；SymbolicCompilationClaims；ActualCompactCost；NativeControllerClaims；SharpUpperClaims；InfiniteRankClaims；FullClaims",
+        "old_definitions_edited": false,
+        "old_targets_claimed_proved_by_new_theorem": false,
+        "transition": "New paper-aligned target replaces only this ID scope in a future numbered snapshot; old stronger declarations and immutable snapshot remain retained unchanged"
+      },
+      "future_deferred_full_goal_spec": {
+        "original_spec_declarations": [
+          "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims"
+        ],
+        "whole_target_proof_bindings": [
+          {
+            "declaration": "PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims"
+          }
+        ],
+        "ordinary_public_original_type_evidence": {
+          "source_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013.lean",
+          "source_sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+          "log_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.log",
+          "log_sha256": "6cf0f4ace165a28741e33e6d2b1c6558e9126a6dde5880ba966da7cec98e2f48",
+          "actual_exit": 0,
+          "original_spec_declarations": [
+            "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims"
+          ],
+          "ordinary_example_line": 3274,
+          "ordinary_example_source": "example : PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims :=\n  PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims",
+          "public_premises": 0,
+          "receipt_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.json",
+          "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+          "frozen_manifest_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+          "frozen_manifest_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+          "actual_subprocess_wait": true,
+          "outer_session_reaped": 92484,
+          "actual_Root_stage_review": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+          "evidence_scope": "Actual isolated complete normal1923/typed5/canonical2-owner result; not the pending registered whole receipt",
+          "log_sha256_method": "NEW_ACCEPTED_NORMAL_FULL013_LOG_BYTES_HASHED_ONCE_FOR_THIS_PREP",
+          "exact_imported_interface_source_sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+          "exact_canonical_theorem_source_sha256": "4962fb3c8aaa6e4f0e49b039d4f38cd18a3b3b442018cec8f36dc9abfe0a86ff"
+        },
+        "new_whole_receipt_epoch": null,
+        "reason": "Actual NormalFull013 exact canonical type call and independent private interface body/rfl/Std3 accepted. Registered14 and actual whole receipt still pending."
+      },
+      "pending": [
+        "Actual MainD_Original_014 registry/manifest/source-product provenance and normal canonical installation",
+        "New actual whole receipt/epoch and matching immutable full build/audit logs",
+        "Transparent ledger scope acceptance and final numbered S7 matrix/manifest execution"
+      ],
+      "semantic_review_references": [
+        {
+          "path": ".lake/workpads/ROOT_PAPER_L01_FULL_THEOREM_STAGE_REVIEW_20261102_001.json",
+          "field": "semantic_review",
+          "credit": "Root accepted complete L01 stage semantic review"
+        },
+        {
+          "path": ".lake/workpads/ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+          "credit": "Actual private two-owner definition/body/rfl/Std3 review accepted"
+        },
+        {
+          "path": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+          "credit": "Actual normal1923 exact public types and canonical two-theorem owners accepted"
+        }
+      ],
+      "necessary_public_quantifiers": [
+        "Preparation uniform positive coefficient/degree precede every original input and positive rational budget, including false qualification outputs.",
+        "Structural/Symbolic: all laminar schedules and used/available sets; exact actual PreparedRun. N,q>=1 heads work <=120000*N*q*treeSize and treeSize<=N+q+1; degenerate domains retained.",
+        "Full claim chooses one WordCode, proves StrongWordCode and positive nativeRate/nativeDegree before all native inputs, risks and sharp cutoffs.",
+        "Native: all laminar I/input/current C/accounting/available, 0<delta<=1/2, original ReferenceRiskChoice and OriginalQualification; one policy has Core+ChargedJointRun+risk<=delta.",
+        "ChargedJointRun binds PreparedRun, NativeWordRun, HeadResult and NativeChargeBound on the same prepared heap and same policy; HeadResult and imported charge semantics are covered by the accepted stage semantic_review.",
+        "Sharp: I/input/available and finite errorRank depth precede epsilon>0; cutoff>0 then all smaller positive delta<=1/2 and every original budget/exponent/choice/current C/accounting/qualification. The same policy has Core+ChargedJointRun+risk and full expectedBill bound by (1+epsilon)*inputExpression.eval*iteratedLog depth delta^-1.",
+        "Infinite rank: all laminar I/input/available with errorRank=top, original current C/accounting and 0<rational budget<=1/2 plus original qualification. No ReferenceRiskChoice premise is added; same policy gives Core+JointWordRun, risk=0, expectedObservationBill=0 and full expectedBill<=min(N,q)*maxCorrection.",
+        "CallbackFormulaClaims remains a conclusion in FullPaperClaims; exact symbolic expression and actual heads are retained without adding a serializer, Bool VM or KL oracle."
+      ],
+      "private_interface": {
+        "module": "RootPaper_L01_Interface006",
+        "source": {
+          "path": ".lake/workpads/Structure/RootPaper_L01_Interface006.lean",
+          "sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+          "bytes": 977,
+          "file_identity": [
+            3781586605880687406,
+            844424931367978
+          ],
+          "published_WindowsReadOnly": true,
+          "current_size_and_file_identity_match_published_pin": true,
+          "freeze_metadata_path": ".lake/workpads/Structure/RootPaper_L01_Interface006_strict001_FROZEN.json",
+          "source_sha256_method": "REUSED_PUBLISHED_INDEPENDENT_FREEZE_PIN_NO_BYTE_HASH"
+        },
+        "registered_source_path": "ProofDeps/MainD_Original_014/RootPaper_L01_Interface006.lean",
+        "registration_status": "PENDING",
+        "spec_declaration": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+        "exact_def_source": "def FullPaperClaims : Prop := RootPaper.L01.FullPaperClaims\n\nend PaperProofs.Structure.LaminarTree.L01PaperClosure\n\nnamespace RootPaper.L01.Interface\n",
+        "expose": false,
+        "public_section_context": "module\n\nimport RootPaper_L01_Full003\n\n/-! The complete proved L01 specification is exported as a nonexposed\nheader. The exact definition, its kernel equality and its implementation\nproof stay in the registered dependency interface's private data. -/\n\npublic section\nset_option autoImplicit false\nset_option warningAsError true\nset_option maxHeartbeats 2000000\nset_option maxRecDepth 10000\n\nnamespace PaperProofs.Structure.LaminarTree.L01PaperClosure\n",
+        "implementation_proof_name": "RootPaper.L01.Interface.proved_full_paper",
+        "implementation_proof_source": "theorem proved_full_paper :\n    PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims :=\n  RootPaper.L01.full_paper_claims",
+        "exact_private_rfl_line": 27,
+        "exact_private_rfl_source": "private theorem exact_specification :\n    PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims =\n      RootPaper.L01.FullPaperClaims := rfl",
+        "actual_private_definition_check": {
+          "name": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+          "owner": "RootPaper_L01_Interface006",
+          "actual_defnInfo_value": "mkConst RootPaper.L01.FullPaperClaims",
+          "kernel_private_rfl": true
+        },
+        "actual_owner_audit_review": ".lake/workpads/ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+        "actual_owner_audit_summary": {
+          "modules": 2,
+          "declarations": 6,
+          "theorems": 4,
+          "definitions": 2,
+          "private": 2,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0,
+          "actual_import_all_private_data_and_module_owner": true
+        },
+        "public_header_export_representation": "NormalFull013 observed axiomInfo/typeProp/importAllfalse/hasData true with correct private interface owner; not a new admitted logical axiom"
+      }
+    }
+  },
+  "exact_future_matrix_update_plan": [
+    {
+      "field": "immutable_open_target_spec_snapshot",
+      "action": "Create a NEW numbered snapshot; replace only B23/L01 entries with this payload, including actual private package source paths. Retain other exact target entries and old Bool transparency.",
+      "pending": true
+    },
+    {
+      "field": "formal_declarations",
+      "action": "Use these four records: two public defs are owned by RootPaper_Interface modules at actual registered source paths; two public full_paper_claims theorems remain canonical PaperProofs modules. Do not claim canonical modules redefine the specs.",
+      "pending": true
+    },
+    {
+      "field": "direct_formal_sources",
+      "action": "Bind the two registered private spec source files plus two canonical theorem source files to their real frozen SHA. The helper requires registry and manifest/source fingerprints in the selected actual receipt.",
+      "pending": true
+    },
+    {
+      "field": "deferred_full_goal_specs[B23|L01].ordinary_public_original_type_evidence",
+      "action": "Reuse the actual NormalFull013 source/log/exit0/freeze evidence recorded here; it consumes each unchanged exact canonical spec name. This actual ordinary result is not a whole receipt.",
+      "pending": false
+    },
+    {
+      "field": "deferred_full_goal_specs[*].new_whole_receipt_epoch",
+      "action": "Still null here. Bind every deferred slot to the same actual new whole receipt epoch only when Root produces and selects it.",
+      "pending": true
+    },
+    {
+      "field": "accepted_receipt and formal_declarations[*].receipt_binding",
+      "action": "Bind actual installed registry14/manifest/source fingerprints, full build/audit/logs and accepted whole receipt. Existing isolated freezes and NormalFull013 cannot fill this whole-receipt slot.",
+      "pending": true
+    },
+    {
+      "field": "claim_rows[B23|L01].{claim,declarations,status,formal_bindings,acceptance_kind,scope_evidence}",
+      "action": "Refresh only after actual Root normal registered acceptance, exactly matching the sole ledger and transparent paper scope. This prep changes no ledger/count.",
+      "pending": true
+    },
+    {
+      "field": "original anchors/census/Root full specifications/other accepted targets/old251 ancestry",
+      "action": "Reuse PREP001 exact content unchanged. Preserve original resource/risk/comparator/quantifier domains and old strengthened Bool definitions/snapshot.",
+      "pending": false
+    },
+    {
+      "field": "new manifest.package and selected verifier",
+      "action": "Use actual new003 with selected new matrix/census/spec/receipt package after Root acceptance; no full S7 has been run and no future success/hash is assigned.",
+      "pending": true
+    }
+  ],
+  "pending_unassigned": {
+    "numbered_matrix_path": null,
+    "numbered_spec_snapshot_path": null,
+    "numbered_manifest_path": null,
+    "whole_receipt_epoch": null,
+    "S7_actual_exit": null,
+    "Root_final_acceptance": null,
+    "registry_sha256": null,
+    "registered_manifest_sha256": null
+  },
+  "boundary": "Three new files only: verifier003 and PREP002 JSON/MD. Syntax plus isolated synthetic helper rejection checks only; no whole S7 or Lean, no old source/product hash, no official source/matrix/ledger/receipt/config/registry changes.",
+  "prior_prep_path": ".lake/workpads/ROOT_PAPER_S7_TARGETS014_PREP001.json",
+  "prior_prep_unchanged": true,
+  "normal_canonical_coexistence": "ROOT_ACCEPTED_NORMAL_FULL013_ACTUAL0_REAPED92484",
+  "future_registry_sha256": null,
+  "future_registered_manifest_sha256": null,
+  "ordinary_actual_type_evidence": {
+    "B23": {
+      "source_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013.lean",
+      "source_sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+      "log_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.log",
+      "log_sha256": "6cf0f4ace165a28741e33e6d2b1c6558e9126a6dde5880ba966da7cec98e2f48",
+      "actual_exit": 0,
+      "original_spec_declarations": [
+        "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims"
+      ],
+      "ordinary_example_line": 3272,
+      "ordinary_example_source": "example : PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims :=\n  PaperProofs.Common.Native.B23PaperClosure.full_paper_claims",
+      "public_premises": 0,
+      "receipt_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.json",
+      "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+      "frozen_manifest_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+      "frozen_manifest_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+      "actual_subprocess_wait": true,
+      "outer_session_reaped": 92484,
+      "actual_Root_stage_review": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+      "evidence_scope": "Actual isolated complete normal1923/typed5/canonical2-owner result; not the pending registered whole receipt",
+      "log_sha256_method": "NEW_ACCEPTED_NORMAL_FULL013_LOG_BYTES_HASHED_ONCE_FOR_THIS_PREP",
+      "exact_imported_interface_source_sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+      "exact_canonical_theorem_source_sha256": "c93215eb812954d7ce9b195f13147318f58d676a9865fa5e9d360d4e847c4f69"
+    },
+    "L01": {
+      "source_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013.lean",
+      "source_sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+      "log_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.log",
+      "log_sha256": "6cf0f4ace165a28741e33e6d2b1c6558e9126a6dde5880ba966da7cec98e2f48",
+      "actual_exit": 0,
+      "original_spec_declarations": [
+        "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims"
+      ],
+      "ordinary_example_line": 3274,
+      "ordinary_example_source": "example : PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims :=\n  PaperProofs.Structure.LaminarTree.L01PaperClosure.full_paper_claims",
+      "public_premises": 0,
+      "receipt_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.json",
+      "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+      "frozen_manifest_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+      "frozen_manifest_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+      "actual_subprocess_wait": true,
+      "outer_session_reaped": 92484,
+      "actual_Root_stage_review": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+      "evidence_scope": "Actual isolated complete normal1923/typed5/canonical2-owner result; not the pending registered whole receipt",
+      "log_sha256_method": "NEW_ACCEPTED_NORMAL_FULL013_LOG_BYTES_HASHED_ONCE_FOR_THIS_PREP",
+      "exact_imported_interface_source_sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+      "exact_canonical_theorem_source_sha256": "4962fb3c8aaa6e4f0e49b039d4f38cd18a3b3b442018cec8f36dc9abfe0a86ff"
+    }
+  },
+  "private_interface_actual_body_credit": {
+    "path": ".lake/workpads/ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+    "status": "TWO_EXACT_FULL_SPEC_DEPENDENCY_INTERFACES_AND_ACTUAL_PRIVATE_OWNER_BODY_AUDIT_ACCEPTED_NORMAL_PUBLIC_THEOREM_INTEGRATION_PENDING",
+    "actual_owner_audit": {
+      "modules": 2,
+      "declarations": 6,
+      "theorems": 4,
+      "definitions": 2,
+      "private": 2,
+      "new_axioms": 0,
+      "forbidden_dependencies": 0,
+      "actual_import_all_private_data_and_module_owner": true
+    },
+    "exact_private_definition_checks": [
+      {
+        "name": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+        "owner": "RootPaper_B23_Interface007",
+        "actual_defnInfo_value": "mkConst RootPaper.B23.FullPaperClaims",
+        "kernel_private_rfl": true
+      },
+      {
+        "name": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+        "owner": "RootPaper_L01_Interface006",
+        "actual_defnInfo_value": "mkConst RootPaper.L01.FullPaperClaims",
+        "kernel_private_rfl": true
+      }
+    ],
+    "new_axiomInfo_allowance": false,
+    "no_private_body_audit_waiver": true
+  },
+  "NormalFull013_actual_credit": {
+    "stage_review": ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json",
+    "status": "ROOT_ACCEPTED_COMPLETE_NORMAL1923_TWO_FACADE_THEOREMS_COEXIST_TYPED_OWNER_STD3_REGISTRATION_AND_WHOLE_RECEIPT_PENDING",
+    "actual_exit": 0,
+    "subprocess_wait": true,
+    "outer_reaped": 92484,
+    "formal_modules": 1923,
+    "total_modules": 7416,
+    "typed_examples": 5,
+    "new_canonical_owners": 2,
+    "new_owned_theorems": 2,
+    "new_owned_definitions": 0,
+    "new_axioms": 0,
+    "forbidden_dependencies": 0,
+    "receipt_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.json",
+    "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+    "freeze_path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+    "freeze_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+    "source": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013.lean",
+      "sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+      "bytes": 116086,
+      "actual_readonly": true,
+      "bytes_unchanged": true
+    },
+    "log": {
+      "path": ".lake/workpads/Structure/RootPaper_L01_NormalFull013_strict001.log",
+      "sha256": "6cf0f4ace165a28741e33e6d2b1c6558e9126a6dde5880ba966da7cec98e2f48",
+      "bytes": 2107
+    },
+    "formal_registry_installed": false,
+    "whole_receipt_credit": false
+  },
+  "verifier003_validation": {
+    "new_verifier_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PStar_S7_GLOBAL_verify_003.py",
+    "base_verifier_unchanged": true,
+    "exact_patch_operations": 3,
+    "Python_syntax_valid": true,
+    "full_S7_executed": false,
+    "Lean_invocations": 0,
+    "real_registry_or_parent_source_or_product_hashes": 0,
+    "synthetic_rejection_cases": 25,
+    "all_synthetic_rejections_passed": true,
+    "synthetic_fixture_scope": "New temporary files only; synthetic text reconstructed from new declaration strings, with a copied test-local SHA profile. Actual verifier allowlist/source pins were never changed. Fixture directory verified inside workpads before automatic cleanup.",
+    "canonical_module_rule_positive_control": true,
+    "canonical_whole_theorem_restriction_preserved": true,
+    "protected_checks_preserved": [
+      "check(decls[name]['kind'] in ('theorem','lemma'),'new whole proof must be a theorem '+ID)",
+      "check(decls[name]['path'].startswith('PaperProofs/'),'whole proof must be a canonical formal module '+ID)",
+      "check(receipt['verified_progress_sha256'].get('lean/'+decls[name]['path'])==decls[name]['sha256'],'whole proof not certified by selected new receipt '+ID)",
+      "check(evidence.get('actual_exit')==0,'ordinary original-type call failed '+ID)",
+      "check(receipt['build']['returncode']==0 and receipt['audit']['returncode']==0,'selected whole receipt build/audit actual exits not0')"
+    ],
+    "cases": [
+      {
+        "case": "unlisted private theorem",
+        "expected_rejection": "NOT_ALLOWLISTED",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_NOT_ALLOWLISTED RootPaper.B23.Interface.proved_full_paper"
+        ]
+      },
+      {
+        "case": "unregistered source path",
+        "expected_rejection": "no exact registered source row",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external paper spec has no exact registered source row"
+        ]
+      },
+      {
+        "case": "escaping path",
+        "expected_rejection": "invalid/escaping relative path",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: invalid/escaping relative path"
+        ]
+      },
+      {
+        "case": "missing registry receipt fingerprint",
+        "expected_rejection": "selected receipt omits exact path",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: selected receipt omits exact path: ProofDeps/proof-packages.json"
+        ]
+      },
+      {
+        "case": "registry actual SHA mismatch",
+        "expected_rejection": "current bytes/selected-receipt SHA mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: current bytes/selected-receipt SHA mismatch: ProofDeps/proof-packages.json"
+        ]
+      },
+      {
+        "case": "overlapping registered roots",
+        "expected_rejection": "unknown/overlapping registered roots",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: unknown/overlapping registered roots"
+        ]
+      },
+      {
+        "case": "missing registered manifest SHA",
+        "expected_rejection": "registered manifest SHA missing/invalid",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registered manifest SHA missing/invalid"
+        ]
+      },
+      {
+        "case": "registry manifest SHA not selected receipt",
+        "expected_rejection": "registration/selected-receipt SHA mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registration/selected-receipt SHA mismatch: ProofDeps/MainD_Original_014/proof-manifest.json"
+        ]
+      },
+      {
+        "case": "manifest actual bytes SHA mismatch",
+        "expected_rejection": "current bytes/selected-receipt SHA mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: current bytes/selected-receipt SHA mismatch: ProofDeps/MainD_Original_014/proof-manifest.json"
+        ]
+      },
+      {
+        "case": "duplicate manifest module source",
+        "expected_rejection": "overlapping/duplicate registered source identity",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: overlapping/duplicate registered source identity"
+        ]
+      },
+      {
+        "case": "source module path mismatch",
+        "expected_rejection": "registered source path/module mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registered source path/module mismatch"
+        ]
+      },
+      {
+        "case": "unknown module row",
+        "expected_rejection": "no exact registered source row",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external paper spec has no exact registered source row"
+        ]
+      },
+      {
+        "case": "matrix real owner module mismatch",
+        "expected_rejection": "matrix/registered/allowed real module mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: matrix/registered/allowed real module mismatch"
+        ]
+      },
+      {
+        "case": "private theorem instead of def",
+        "expected_rejection": "external exception is only the two public spec defs",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external exception is only the two public spec defs"
+        ]
+      },
+      {
+        "case": "private visibility instead of public def",
+        "expected_rejection": "external exception is only the two public spec defs",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external exception is only the two public spec defs"
+        ]
+      },
+      {
+        "case": "missing source receipt fingerprint",
+        "expected_rejection": "selected receipt omits exact path",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: selected receipt omits exact path: ProofDeps/MainD_Original_014/RootPaper_B23_Interface007.lean"
+        ]
+      },
+      {
+        "case": "source selected SHA mismatch",
+        "expected_rejection": "matrix/manifest/frozen-spec/receipt source SHA mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: matrix/manifest/frozen-spec/receipt source SHA mismatch"
+        ]
+      },
+      {
+        "case": "actual source bytes mismatch",
+        "expected_rejection": "actual registered source bytes mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: actual registered source bytes mismatch"
+        ]
+      },
+      {
+        "case": "exact span line mismatch",
+        "expected_rejection": "external exact declaration span mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external exact declaration span mismatch"
+        ]
+      },
+      {
+        "case": "exact body mismatch",
+        "expected_rejection": "registered actual source/matrix exact full declaration mismatch",
+        "rejected_as_expected": true,
+        "errors": [
+          "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registered actual source/matrix exact full declaration mismatch"
+        ]
+      },
+      {
+        "case": "canonical ordinary module mismatch",
+        "expected_rejection": "unchanged ordinary path/module equality",
+        "rejected_as_expected": true,
+        "errors": []
+      },
+      {
+        "case": "snapshot original-ID mismatch",
+        "expected_rejection": "new external snapshot binding checks",
+        "rejected_as_expected": true,
+        "errors": [
+          "registered paper spec mapped to wrong original ID L01"
+        ]
+      },
+      {
+        "case": "snapshot source path mismatch",
+        "expected_rejection": "new external snapshot binding checks",
+        "rejected_as_expected": true,
+        "errors": [
+          "registered spec snapshot/source locator mismatch B23"
+        ]
+      },
+      {
+        "case": "snapshot source SHA mismatch",
+        "expected_rejection": "new external snapshot binding checks",
+        "rejected_as_expected": true,
+        "errors": [
+          "registered spec snapshot/source locator mismatch B23"
+        ]
+      },
+      {
+        "case": "snapshot exact body mismatch",
+        "expected_rejection": "new external snapshot binding checks",
+        "rejected_as_expected": true,
+        "errors": [
+          "registered spec snapshot/body mismatch B23"
+        ]
+      }
+    ],
+    "outputs_are_not_actual_registered14_validation": true
+  },
+  "strict_locator_rejection_points": [
+    {
+      "case": "unlisted private theorem",
+      "expected_rejection": "NOT_ALLOWLISTED",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_NOT_ALLOWLISTED RootPaper.B23.Interface.proved_full_paper"
+      ]
+    },
+    {
+      "case": "unregistered source path",
+      "expected_rejection": "no exact registered source row",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external paper spec has no exact registered source row"
+      ]
+    },
+    {
+      "case": "escaping path",
+      "expected_rejection": "invalid/escaping relative path",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: invalid/escaping relative path"
+      ]
+    },
+    {
+      "case": "missing registry receipt fingerprint",
+      "expected_rejection": "selected receipt omits exact path",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: selected receipt omits exact path: ProofDeps/proof-packages.json"
+      ]
+    },
+    {
+      "case": "registry actual SHA mismatch",
+      "expected_rejection": "current bytes/selected-receipt SHA mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: current bytes/selected-receipt SHA mismatch: ProofDeps/proof-packages.json"
+      ]
+    },
+    {
+      "case": "overlapping registered roots",
+      "expected_rejection": "unknown/overlapping registered roots",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: unknown/overlapping registered roots"
+      ]
+    },
+    {
+      "case": "missing registered manifest SHA",
+      "expected_rejection": "registered manifest SHA missing/invalid",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registered manifest SHA missing/invalid"
+      ]
+    },
+    {
+      "case": "registry manifest SHA not selected receipt",
+      "expected_rejection": "registration/selected-receipt SHA mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registration/selected-receipt SHA mismatch: ProofDeps/MainD_Original_014/proof-manifest.json"
+      ]
+    },
+    {
+      "case": "manifest actual bytes SHA mismatch",
+      "expected_rejection": "current bytes/selected-receipt SHA mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: current bytes/selected-receipt SHA mismatch: ProofDeps/MainD_Original_014/proof-manifest.json"
+      ]
+    },
+    {
+      "case": "duplicate manifest module source",
+      "expected_rejection": "overlapping/duplicate registered source identity",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: overlapping/duplicate registered source identity"
+      ]
+    },
+    {
+      "case": "source module path mismatch",
+      "expected_rejection": "registered source path/module mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registered source path/module mismatch"
+      ]
+    },
+    {
+      "case": "unknown module row",
+      "expected_rejection": "no exact registered source row",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external paper spec has no exact registered source row"
+      ]
+    },
+    {
+      "case": "matrix real owner module mismatch",
+      "expected_rejection": "matrix/registered/allowed real module mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: matrix/registered/allowed real module mismatch"
+      ]
+    },
+    {
+      "case": "private theorem instead of def",
+      "expected_rejection": "external exception is only the two public spec defs",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external exception is only the two public spec defs"
+      ]
+    },
+    {
+      "case": "private visibility instead of public def",
+      "expected_rejection": "external exception is only the two public spec defs",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external exception is only the two public spec defs"
+      ]
+    },
+    {
+      "case": "missing source receipt fingerprint",
+      "expected_rejection": "selected receipt omits exact path",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: selected receipt omits exact path: ProofDeps/MainD_Original_014/RootPaper_B23_Interface007.lean"
+      ]
+    },
+    {
+      "case": "source selected SHA mismatch",
+      "expected_rejection": "matrix/manifest/frozen-spec/receipt source SHA mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: matrix/manifest/frozen-spec/receipt source SHA mismatch"
+      ]
+    },
+    {
+      "case": "actual source bytes mismatch",
+      "expected_rejection": "actual registered source bytes mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: actual registered source bytes mismatch"
+      ]
+    },
+    {
+      "case": "exact span line mismatch",
+      "expected_rejection": "external exact declaration span mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: external exact declaration span mismatch"
+      ]
+    },
+    {
+      "case": "exact body mismatch",
+      "expected_rejection": "registered actual source/matrix exact full declaration mismatch",
+      "rejected_as_expected": true,
+      "errors": [
+        "REGISTERED_SPEC_LOCATOR_FAIL PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims: registered actual source/matrix exact full declaration mismatch"
+      ]
+    },
+    {
+      "case": "canonical ordinary module mismatch",
+      "expected_rejection": "unchanged ordinary path/module equality",
+      "rejected_as_expected": true,
+      "errors": []
+    },
+    {
+      "case": "snapshot original-ID mismatch",
+      "expected_rejection": "new external snapshot binding checks",
+      "rejected_as_expected": true,
+      "errors": [
+        "registered paper spec mapped to wrong original ID L01"
+      ]
+    },
+    {
+      "case": "snapshot source path mismatch",
+      "expected_rejection": "new external snapshot binding checks",
+      "rejected_as_expected": true,
+      "errors": [
+        "registered spec snapshot/source locator mismatch B23"
+      ]
+    },
+    {
+      "case": "snapshot source SHA mismatch",
+      "expected_rejection": "new external snapshot binding checks",
+      "rejected_as_expected": true,
+      "errors": [
+        "registered spec snapshot/source locator mismatch B23"
+      ]
+    },
+    {
+      "case": "snapshot exact body mismatch",
+      "expected_rejection": "new external snapshot binding checks",
+      "rejected_as_expected": true,
+      "errors": [
+        "registered spec snapshot/body mismatch B23"
+      ]
+    }
+  ]
+}

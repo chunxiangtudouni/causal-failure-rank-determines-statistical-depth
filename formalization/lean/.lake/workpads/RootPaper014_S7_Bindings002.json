@@ -1,0 +1,61 @@
+{
+  "schema": "RootPaper014_S7_Bindings002",
+  "utc": "2026-11-02T12:06:22.565226+00:00",
+  "status": "ACTUAL253_RECEIPT_BOUND_METADATA_LOCATOR_COMPLETION_NOT_NEW_PROOF",
+  "actual_receipt_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014.receipt_001.json",
+  "actual_receipt_published_sha256": "a9335d60bac45168b7489ea1fa69cb592959c87f55212c203c068fb71cbd6b84",
+  "base_generator_preserved": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Generate001.py",
+  "old_ancestry_preserved": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Ancestry001.json",
+  "whole_253_preflight": {
+    "rows": 253,
+    "declaration_tokens": 1469,
+    "unresolved_before": 3,
+    "ambiguous_before": 0,
+    "missing_exact_span_records_before": 0,
+    "base_matrix_source_SHA_mismatches": 0
+  },
+  "additional_accepted_source_pins": {
+    "PaperProofs/Paid/PDLower_NativeFinal_001.lean": "59ab1a82d109266d648bca0ad2b5969bea672ed716a30abe107efe1a73662c7c",
+    "PaperProofs/Paid/PDLower_UniformPrice_001.lean": "c67305c81d0c46d5fb213b1c3527a8e1957f55313591d7319bbcde08257a94e7",
+    "PaperProofs/Paid/PDLower_ZeroToolsSaturation_001.lean": "bf05eadd17363e2ef490840c35586760b617465309a1553f9a45ac60c1faf04b"
+  },
+  "true_declarations": [
+    {
+      "id": "D29",
+      "name": "PDLower.nativeSeparationClaims",
+      "module": "PaperProofs.Paid.PDLower_NativeFinal_001",
+      "source": "PaperProofs/Paid/PDLower_NativeFinal_001.lean",
+      "declaration_start": 15,
+      "proof_body_end": 16,
+      "source_sha256": "59ab1a82d109266d648bca0ad2b5969bea672ed716a30abe107efe1a73662c7c",
+      "source_SHA_basis": "Actual receipt verified_progress_sha256 member, no proof bytehash",
+      "naming": "Actual namespace PDLower; no synthetic alias or qualified-name rewrite"
+    },
+    {
+      "id": "D36",
+      "name": "PDLower.fixedPoolUniformFeePrice_of_nativeSeparation",
+      "module": "PaperProofs.Paid.PDLower_UniformPrice_001",
+      "source": "PaperProofs/Paid/PDLower_UniformPrice_001.lean",
+      "declaration_start": 18,
+      "proof_body_end": 54,
+      "source_sha256": "c67305c81d0c46d5fb213b1c3527a8e1957f55313591d7319bbcde08257a94e7",
+      "source_SHA_basis": "Actual receipt verified_progress_sha256 member, no proof bytehash",
+      "naming": "Actual namespace PDLower; no synthetic alias or qualified-name rewrite"
+    },
+    {
+      "id": "D36",
+      "name": "PDLower.zeroToolsStructuralSaturation",
+      "module": "PaperProofs.Paid.PDLower_ZeroToolsSaturation_001",
+      "source": "PaperProofs/Paid/PDLower_ZeroToolsSaturation_001.lean",
+      "declaration_start": 63,
+      "proof_body_end": 83,
+      "source_sha256": "bf05eadd17363e2ef490840c35586760b617465309a1553f9a45ac60c1faf04b",
+      "source_SHA_basis": "Actual receipt verified_progress_sha256 member, no proof bytehash",
+      "naming": "Actual namespace PDLower; no synthetic alias or qualified-name rewrite"
+    }
+  ],
+  "binding_rule": "Existing mature namespace/span index scans these three necessary defining sources only; imported definitions are not fabricated as declarations of PriceFinal.",
+  "old_proof_source_or_product_hashes": 0,
+  "Lean_invocations": 0,
+  "math_source_or_ledger_or_receipt_or_config_edits": 0
+}

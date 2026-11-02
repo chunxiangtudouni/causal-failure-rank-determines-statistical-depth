@@ -1,0 +1,28 @@
+{
+  "status": "ALL253_AND_S7_ROOT_ACCEPTANCE_COMMITTED",
+  "utc": "2026-11-02T12:16:06.960149+00:00",
+  "decision": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_ROOT_ACCEPTANCE001.json",
+    "sha256": "9a4485e81a9f75273d434dd8655f6a9fa5832657a4c5486528cfa598607ee1a2"
+  },
+  "current_official_receipt": {
+    "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+    "sha256": "6bb6a56d61d23cbd4c6018a8945d98cad94dabb8ba166b8c6d8c789df295da99"
+  },
+  "selected_proof_archive_unchanged": true,
+  "verified_mathematical_fingerprint_unchanged": true,
+  "ledger_unchanged": true,
+  "new_outputs_only_frozen": [
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Final002\\RootPaper014_S7_014_MATRIX.json",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Final002\\RootPaper014_S7_014_TARGETS.json",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Final002\\RootPaper014_S7_014_MANIFEST.json",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Verification001\\result.json",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Verification001\\runtime.json",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Verification001\\verify.log",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_ROOT_SEMANTIC_ACCEPTANCE001.md",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_ROOT_ACCEPTANCE001.json"
+  ],
+  "Lean_invocations": 0,
+  "formal_closed": 253,
+  "S7_complete": true
+}

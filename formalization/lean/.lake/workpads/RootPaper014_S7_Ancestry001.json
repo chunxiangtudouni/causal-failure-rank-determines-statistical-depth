@@ -1,0 +1,2205 @@
+{
+  "schema": "RootPaper014_S7_Ancestry001",
+  "status": "PREPARATION_ONLY_OLD251_EXACT_ROWS_AND_ACCEPTED_CLOSURE_REFERENCES",
+  "current_closed": 251,
+  "S7_complete": false,
+  "actual_future_receipt": null,
+  "actual_future_epoch": null,
+  "accepted251_ledger_rows": [
+    {
+      "id": "M01",
+      "original": "model:4–18",
+      "claim": "有限有序输入、有理非退化prior及全支持不同channel",
+      "declarations": "Common.Instance；Statistics.BinaryExperiment",
+      "dependencies": "—",
+      "status": "已闭合"
+    },
+    {
+      "id": "M02",
+      "original": "model:28–35；paid-extension:25–32",
+      "claim": "current payment蕴含current allocation，反向不成立，不交换比较器",
+      "declarations": "Common.Contract.currentPayment_implies_currentAllocation；currentAllocation_allows_deferredExecution",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "M03",
+      "original": "model:39–46",
+      "claim": "模型中的全可测history/private-seed比较器覆盖非MAP、弃任务、拒修、合法延迟、失败后继续消费及不返回；实际路径、任意seed编码和部分策略总化已接通，并完成逐行为原文对应复核",
+      "declarations": "Common.Native.Policy；PartialPolicy；value_eq_strategyValue；partialValue_eq_value",
+      "dependencies": "M01,M02,M03a,M03b,M03c",
+      "status": "已闭合"
+    },
+    {
+      "id": "M03a",
+      "original": "model:19–46",
+      "claim": "真实逐步执行、可见历史规则、所有实际前缀上启用动作的合法性；联合可测解释器，不以成功/费用结论作策略字段",
+      "declarations": "Common.Native.Step；Prefix；LegalRule；Policy；measurable_run；run_has_prefix",
+      "dependencies": "M01,M02",
+      "status": "已闭合"
+    },
+    {
+      "id": "M03b",
+      "original": "model:41–44",
+      "claim": "任意宇宙私有seed的可测合法协议规则可编码到Type 0完整合法历史策略空间；实际推前law保路径/risk/ENNR期望费，value等于同一小策略空间的law-inf",
+      "declarations": "Common.Native.LegalStrategy；measurable_encodeSeed；run_encoded_eq；seededWorldLaw_encoded；risk_encoded_eq；expectedBill_encoded_eq；value_le_policy_any_seed；value_eq_strategyValue",
+      "dependencies": "M03a,M06b",
+      "status": "已闭合"
+    },
+    {
+      "id": "M03c",
+      "original": "model:39–44",
+      "claim": "显式部分策略允许在有限已付观察后不返回下一动作；独立PartialStep/PartialPrefix/partialRun总化为abandon保全路径/成功/真实费用和风险，partialValue=value，不把不返回记成∞观察费",
+      "declarations": "Common.Native.PartialPolicy；partialPrefix_iff_totalized；partialRun_eq_totalized；partialNext_nonreturn_failure；partialNext_nonreturn_bill；partialValue_eq_value",
+      "dependencies": "M03a,M03b,M05a,M06b",
+      "status": "已闭合"
+    },
+    {
+      "id": "M03d",
+      "original": "model:19–46；B:185–203",
+      "claim": "从实际Prefix的公共history重建时钟、cursor、观察序列长度、写入/旧serial、占用/执行工具及halt；early report查询对齐真实truth+旧writeSerial；不输入world/truth、不把report多算一个动作",
+      "declarations": "Common.Native.prefix_historyActions_length；prefix_historyCursor；prefix_historyObservations_length；prefix_historyWritten；prefix_historyWriteSerial；prefix_historyUsed；prefix_historyHalted；prefix_historyReport_early；prefix_historyUnused_iff",
+      "dependencies": "M03a,M04,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M03e",
+      "original": "model:11–26；B:185–203、294–300",
+      "claim": "所有真实Prefix的可见观察串逐项恰等原tapes的前review.toNat个符号，且全在原字母表内；字串验证不输入隐藏world/truth，不只限成功路径",
+      "declarations": "Common.Native.prefix_historyObservations_eq_tapeWord；prefix_historyObservation_getElem；prefix_historyObservation_alphabet；historyObservationWord；prefix_historyObservationWord_score",
+      "dependencies": "M03a,M03d,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M03f",
+      "original": "model:19–55；C:58–87的实际记录前置",
+      "claim": "从真实Step/Prefix的观察、唯一write、commit/execution和advance计数派生原native逻辑动作界B=ΣQ+q+q+N+N+1；任意Seed/所有sample的合法returned-action run在B+1已halt且之后保持。不是host/墙钟返回保证，不限制uncapped或finite-paid nonreturn；后者仍由M03c总化保费用/失败",
+      "declarations": "Common.Native.actionProgress；prefix_actionProgress；nativeActionBound；prefix_native_length_le；run_prefix_of_active；run_clock_eq_index_of_active；run_halted_nativeActionBound_succ；run_halted_of_nativeActionBound_lt",
+      "dependencies": "M03a,M03d,M04b,M07a,M08a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M04",
+      "original": "model:11–26",
+      "claim": "原stage prior/iid law、实际进入前history独立、未来端口未用；Step真实write/report/handle权限与执行不变量，纠正仅执行已报告真实handle",
+      "declarations": "Common.StatisticalInput.stageLaw_truth_tape；Common.Native.run_cursorInvariant；entryHistory_jointLaw；prefix_invariant；Step",
+      "dependencies": "M01,M03,M04a,M04b,M04c,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M04a",
+      "original": "model:11–18",
+      "claim": "同一输入的阶段 prior/tape 联合法、阶段独立、私有seed独立、任意可测过去记录与下一阶段独立",
+      "declarations": "Common.StatisticalInput.stageLaw_truth_tape；worldLaw_independent_stages；preBirthRecord_independent_next；preBirthFreshness",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "M04b",
+      "original": "model:14–18",
+      "claim": "实际首次 entryHistory（包含永不进入的 None）可测地只依赖 seed 与此前阶段世界；由 Step 的未来端口不变量和 before-next 替换证明，不是独立性改名",
+      "declarations": "Common.Native.run_cursorInvariant；step_retarget_before；entryHistory_eq_of_past；nativePreBirthFactorization",
+      "dependencies": "M03a,M04a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M04c",
+      "original": "model:14–18",
+      "claim": "由已证实际因果分解，无额外前提地推出 entryHistory 与下一阶段独立及联合分布等于各自边缘乘积",
+      "declarations": "Common.Native.entryHistory_independent_next；entryHistory_jointLaw",
+      "dependencies": "M03a,M04a,M04b",
+      "status": "已闭合"
+    },
+    {
+      "id": "M04d",
+      "original": "model:14–18；B:85–93、249–258",
+      "claim": "实际(seed,entryHistory)联合记录与下一stage prior/tape独立且真实联合law为乘积，含None；允许后续target依赖全部seed和进入history，不能仅凭history单独独立性替代",
+      "declarations": "Common.Native.entrySeedHistory_independent_next；entrySeedHistory_jointLaw",
+      "dependencies": "M03a,M04a,M04b",
+      "status": "已闭合"
+    },
+    {
+      "id": "M04e",
+      "original": "model:11–18；B:87–93、212–226",
+      "claim": "同原input完整future truth/tape world的freshSuffix限制与重编号可测，精确pushforward等于原suffix product worldLaw；任意Seed宇宙/原私有概率law保持同seed的联合pushforward与全部ENNReal积分身份，含空suffix/first0/∞费用函数。仅世界分布运输，不假定Bellman或任意策略suffix Step/run；B07依赖仅为独立suffix数据定义",
+      "declarations": "Common.StatisticalInput.restrictFreshWorld；measurable_restrictFreshWorld；restrictFreshWorld_worldLaw；restrictFreshSample_seededWorldLaw；lintegral_restrictFreshSample",
+      "dependencies": "M01,M04a,B07",
+      "status": "已闭合"
+    },
+    {
+      "id": "M05",
+      "original": "model:39–55",
+      "claim": "弃任务/不返回/未完成/未修正均失败；实际run账本判据等价于完成且所有真实最终输出正确，窗口条件不额外缩小实际成功事件",
+      "declarations": "Common.Native.runSuccess；run_success_iff_physical；partialNext_nonreturn_failure；partialRunSuccess_iff_totalized",
+      "dependencies": "M02,M03,M04,M05a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M05a",
+      "original": "model:39–41",
+      "claim": "所有真实合法前缀/运行中，账本窗口判据等价于完成、未弃且各真实最终输出正确；deadline 不变量由 Step 推出",
+      "declarations": "Common.Native.prefix_deadlineInvariant；run_success_iff_physical；runSuccess",
+      "dependencies": "M02,M03a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M06",
+      "original": "model:44–55",
+      "claim": "实际账单不按pending承诺收费；观察费≤总费，失败路径不删除",
+      "declarations": "Common.Ledger.pending_commitment_not_billed；observationBill_le_actualBill",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "M06a",
+      "original": "model:11–18、44–48",
+      "claim": "局部试验与全局账本的观察费用来自同一输入，含无限观察数",
+      "declarations": "Common.StatisticalInput.observationCharge_agrees",
+      "dependencies": "M01,M06",
+      "status": "已闭合"
+    },
+    {
+      "id": "M06b",
+      "original": "model:44–55",
+      "claim": "真实 review/execute 付费、仅分配不付费；所有路径账单单调，有限停止/弃任务时极限账单等于完整已付账单",
+      "declarations": "Common.Native.step_actualBill_mono；run_bill_mono；prefixBill_le_runActualBill；runActualBill_of_halted",
+      "dependencies": "M03a,M06,M06a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M06c",
+      "original": "model:44–51；B:224–226",
+      "claim": "fmax 为兼容pair收费的有限最大值（无pair为0）；每路径实际费用介于观察费与观察费+min(N,q)fmax之间，ENNR期望亦然，含失败/未完成/无限观察费用",
+      "declarations": "Common.Fees.maxCorrection_lt_top；Ledger.correctionBill_le_max；Native.runActualBill_le_observation_add；expectedBill_le_observation_add；expectedObservationBill_le_actual",
+      "dependencies": "M01,M03a,M06a,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M06d",
+      "original": "model:44–51；D:205–212、242–255",
+      "claim": "实际修正数为全部有限真实前缀executions长度的上确界，排除pending/虚拟修复，逐path及其ENNR期望均≤min(N,q)。任意宇宙seed、native/uncapped、失败后付款均保留；证明期望有限后才接通实均值r，不要求观察期望有限",
+      "declarations": "Common.Native.runRepairCount；runRepairCount_le；measurable_runRepairCount；expectedRepairCount_le；expectedRepairCount_ne_top；meanRepairCount；ofReal_meanRepairCount",
+      "dependencies": "M03a,M04,M06b,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M07",
+      "original": "model:49–51",
+      "claim": "良构真实执行账本的执行次数≤min(N,q)",
+      "declarations": "Common.Ledger.execution_count_le",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "M07a",
+      "original": "model:49–51",
+      "claim": "Step 推出所有实际有限前缀良构、有限计数及执行次数≤min(N,q)，无成功事件前提，含 uncapped",
+      "declarations": "Common.Native.prefix_invariant；run_finiteCounters；run_ledgerWellFormed；run_actualCorrections_le",
+      "dependencies": "M03a,M07",
+      "status": "已闭合"
+    },
+    {
+      "id": "M08",
+      "original": "model:35–55；B:277–292",
+      "claim": "原抽象资源接口完整闭合：任意Seed宇宙/全部合法native前缀的wf、有限计数、原quota/H及实际修正≤min(N,q)；THIS固定bounded reference仅用原完整执行H0及原stage/total数值资格，真证与全prefix资格等价并构造同rule/同全部run的native Policy，所有prefix normal≤同H0。原稿未指定平台正常I/O adapter，未将H0假设误记为任意accounting自动满足的结论，未给比较器加H0上限",
+      "declarations": "Common.Native.NativeRunResourceClaims；ReferenceCompleteOriginalQualification；referenceCompleteOriginalQualification_iff；ReferenceCompleteResourceClaims；normalResourceClaims",
+      "dependencies": "M03,M04,M05,M07,M08a,M08c,B21b",
+      "status": "已闭合"
+    },
+    {
+      "id": "M08a",
+      "original": "model:35–36",
+      "claim": "每条合法 native 路径所有前缀满足原 reviewQuota 和 totalCallCap，不假定该路径成功；不加入额外 H0 硬上限",
+      "declarations": "Common.Native.prefix_native_obeysCaps；run_native_obeysCaps",
+      "dependencies": "M03a,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M08b",
+      "original": "model:53–55；B:277–283",
+      "claim": "批010原文规格范围完整验收：model51–55的H0是选定脚本完整执行原资格；NormalCallCertificate确为全sample/前缀，CompletedNormalCallBound覆盖全部halt含失败/abandon；THIS实际有界reference/TABLE全路径终止及normalCalls单调性证明同H0完整执行与全前缀等价，原数值额度/原accounting/同rule及比较器合法性不变。不是任意accounting自动数值界，A19/B23/L01原物理整机仍独立待证；十份正式证据指纹及原文逐行已复核，无额外数学待证义务",
+      "declarations": "Common.Native.NormalCallCertificate；PDROC.StarFirstExit.referenceRealFirstExit；Common.Native.CompletedNormalCallBound；normalCallCertificate_iff_completed_of_halts；referenceBounded_normalCalls_iff_completed；referenceCompleteOriginalQualification_iff；normalResourceClaims；PSTRStatistics.tableRule_normalCalls_iff_completed；tableNativeImplementation",
+      "dependencies": "M03a,M07a,M08a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M08c",
+      "original": "model:35–55；B:277–292",
+      "claim": "真实uncapped有限quota控制器由review额度/一次性ports/tools得有限返回动作界sumQ+2q+2N+2并全sample halt，不用native caps/H0/成功假设。normalCalls沿原run单调，故选定bounded reference的全部halt（含失败/abandon）正常调用≤原H0 iff全部前缀≤同H0；只传递原complete-execution正常I/O假设，不从任意accounting捏造H0。不涉及宿主计算/不返回调用的墙钟界，H0仍为原complete-execution假设，抽象资格传递现完整见M08",
+      "declarations": "Common.Native.quotaActionBound；prefix_length_le_of_review_bounds；run_halted_of_reviewQuotaCertificate；run_normalCalls_mono；CompletedNormalCallBound；referenceBounded_halted；referenceBounded_normalCalls_iff_completed",
+      "dependencies": "M03a,M07a,M08b,B21b",
+      "status": "已闭合"
+    },
+    {
+      "id": "M09",
+      "original": "prices:15–18、43–48",
+      "claim": "原生完整任务的全策略、同合同同风险ENNR期望最优值，保留无限费用；任意健康后缀/历史桥另属B07/B09，不混入完整任务定义",
+      "declarations": "Common.Native.value；risk；expectedBill；partialValue_eq_value；value_eq_strategyValue",
+      "dependencies": "M03,M04,M05,M06,M08a,M09a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M09a",
+      "original": "prices:20–26",
+      "claim": "已编码协议的真正可测 Policy inf；risk 为未最终成功事件，费用为 ENNR 前缀上确界积分；保留无限费用/空可行集",
+      "declarations": "Common.Native.value；risk；expectedBill；measurableSet_runSuccess；measurable_runActualBill",
+      "dependencies": "M03a,M05a,M06a,M06b,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M10",
+      "original": "model:44–55",
+      "claim": "比较器扩大则inf降低；删非负实际修正费给lower方向",
+      "declarations": "Common.constrainedValue_of_comparator_inclusion；expectedObservationBill_le_expectedActualBill",
+      "dependencies": "M06",
+      "status": "已闭合"
+    },
+    {
+      "id": "M10a",
+      "original": "prices:25–26；D:14–54",
+      "claim": "同协议、同合同、同风险、同收费仅放松 caps：策略嵌入保每路径状态/成功/实际费用，故 uncapped value≤native value",
+      "declarations": "Common.Native.Policy.relax；run_uncapped_eq_native；value_uncapped_le_native",
+      "dependencies": "M02,M03a,M05a,M06b,M08a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M10b",
+      "original": "model:28–32；paid-extension:25–32",
+      "claim": "仅将 execution 延至 terminal，其他合同字段不变；旧策略逐路径/风险/费用相同且 deferred value≤original value，不宣称最优值相等",
+      "declarations": "Common.Contract.deferExecution_fields；Common.Native.Policy.deferExecution；runSuccess_deferred_iff_original；value_deferred_le_original",
+      "dependencies": "M02,M03a,M05a,M06b",
+      "status": "已闭合"
+    },
+    {
+      "id": "M10c",
+      "original": "B:59–75",
+      "claim": "仅uncapped模式下，改变正常调用记账只改变normalCalls，或仅改变reviewQuota/H/H0数字均保持合法规则、实际路径成功/观察费及罚金inf；不改变合同权限、不推及native原额度",
+      "declarations": "Common.Native.run_reaccount；penaltyValue_reaccount_eq；run_recap_eq；penaltyValue_recap_eq；penaltyValue_currentContract",
+      "dependencies": "M03a,M05a,M06b,M10a,B07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M10d",
+      "original": "model:44–55；paid-extension:14–54",
+      "claim": "只改变非负实际修正费、保持整个experiment/合同/额度模式/正常记账：任意私有seed的合法规则、全路径run、risk和ENNR观察费相同；费用逐点增加时全策略value单调。native/uncapped均适用，保留失败后消费和无限费用，不放松付款期限",
+      "declarations": "Common.StatisticalInput.withCorrectionFee；Native.legalRule_reprice_iff；run_reprice_eq；Policy.reprice；Policy.unprice；risk_reprice_eq；expectedObservationBill_reprice_eq；expectedBill_mono_reprice；value_mono_reprice",
+      "dependencies": "M03a,M03b,M05a,M06b,M09a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M11",
+      "original": "B:302–308；model:51–55",
+      "claim": "固定任意宇宙u的一般完整FeeFamily先于全部Seed/可测空间/Policy/概率law/risk的inf选择；只用原successful正常费≥C0，证明same-u variable inf及原Native.value lower加(1−δ)C0。选定构造仅用原各path正常费≤C0得到upper加C0；另将u0实际原caps reference直接enforceCaps，原complete-H0/数值/riskchoice下真实B22a证明risk及variable≤ideal，故总native inf≤ideal变量费+C0。不要求public-trace、fee推前/表示一致性、finite-cost或新增safe/费用性能前提，保留全部失败费。不同宇宙各自取inf，不谎称统一所有宇宙收费表示",
+      "declarations": "Common.Native.GeneralNormalFees.FeeFamily；universeVariableValue；FeeFamily.totalValue；normalFeeClaims；completeNativeReferencePolicy；completeNativeReferencePolicy_performance；ReferenceNormalFeeClaims；referenceNormalFeeClaims",
+      "dependencies": "M05,M08,M09,M11a,B22a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M11a",
+      "original": "B:302–308",
+      "claim": "给定原success正常费≥C0与构造各path正常费≤C0，真实总费用积分等于variable+normal；逐δ-safe策略lower加(1−δ)C0、构造upper加C0，保留∞/失败费；费用假设与具体controller规格未自动闭合",
+      "declarations": "Common.Native.NormalCharges；totalExpectedBill_eq_add；successMeasure_eq_one_sub_risk；totalExpectedBill_lower_of_safe；totalExpectedBill_upper_of_constructed",
+      "dependencies": "M05,M06b,M09a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M11b",
+      "original": "B:302–308；model:51–55",
+      "claim": "仅选定public-trace正常计费实现：固定NormalBilling读取hist/normalCalls/cursor/clock/halted，不读hidden truth/private seed；同实际run的任意Seed编码保费用。此实现的totalValue与Native.value用同policy/law/risk类，原SuccessLower下总inf≥variable value+(1−δ)C0；原固定bounded-script正常费≤C0与原H0/caps资格下实际native总inf≤ideal variable费+C0。支持∞/失败费。原文C0两界本身不推出所有正常费均经此trace因子化，M11整体现另由一般FeeFamily完整inf闭合，不以该public-trace实现缩小原收费类",
+      "declarations": "Common.Native.NormalBilling；normalTrace_encoded_eq；NormalBilling.totalExpectedBill_encoded_eq；totalValue_le_policy_any_seed；totalValue_lower；totalValue_upper_of_constructed；totalNativeValue_le_referenceIdeal_add",
+      "dependencies": "M11a,M03b,B22a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M12",
+      "original": "prices:20–29；B:59–75",
+      "claim": "同Fin q编号的suffix/remaining输入，stage精确lift n+j，eligible为原eligible∩R；prior/channel/费用整对象同源拉回，n越过终态时Stage为空，不加n≤N",
+      "declarations": "Common.Instance.suffixRestricted；suffixRestricted_eligible；suffixStageLift_injective；Common.StatisticalInput.suffixRestricted；suffixRestricted_experiment",
+      "dependencies": "M01,M06a",
+      "status": "已闭合"
+    },
+    {
+      "id": "M12a",
+      "original": "model:57–74；prices:20–29",
+      "claim": "从独立Safe预算递推证明每stage限制到R等于初始remaining∩R；真实suffixRestricted初始全部工具的Safe/rank等于原suffix在R上的Safe/rank，不用capacity反推游戏",
+      "declarations": "Structure.safe_restrict_iff；errorRank_restrict；Common.Instance.suffixRestricted_safe；suffixRestricted_rank",
+      "dependencies": "M12,A01,A02,A03",
+      "status": "已闭合"
+    },
+    {
+      "id": "M12b",
+      "original": "prices:20–29；B:59–75",
+      "claim": "fresh suffix保持原Fin q工具类型、drop n、stage lift n+j及整个experiment/费用；工具R权限另由真实策略UsesOnly执行；freshSuffix等于既有suffixRestricted在全工具的输入，n≥N时Stage真为空",
+      "declarations": "Common.Instance.freshSuffix；freshSuffix_eq_suffixRestricted；freshSuffix_eligible；freshSuffix_isEmpty_stage；Common.StatisticalInput.freshSuffix_experiment",
+      "dependencies": "M12",
+      "status": "已闭合"
+    },
+    {
+      "id": "A01",
+      "original": "model:57–74；A:116–131",
+      "claim": "独立因果Plan及first-failure Play；所有自适应路径安全；budget0/terminal安全",
+      "declarations": "Structure.Plan；Play；Safe；safe_zero；safe_terminal",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "A02",
+      "original": "eq:laminar-budget-dp；A:134–160",
+      "claim": "独立语义推出correct保预算、error先选工具再续预算的精确递推",
+      "declarations": "Structure.safe_cons_succ_iff；budget_recurrence",
+      "dependencies": "A01",
+      "status": "已闭合"
+    },
+    {
+      "id": "A03",
+      "original": "eq:laminar-rank-membership",
+      "claim": "rank=最小unsafe budget或∞；Safe(k) iff k<rank",
+      "declarations": "Structure.errorRank；safe_iff_lt_errorRank",
+      "dependencies": "A01",
+      "status": "已闭合"
+    },
+    {
+      "id": "A04",
+      "original": "A:169–184、263–269",
+      "claim": "actual plays错误≤cardR+1；finite rank≤cardR+1；no tools/empty eligibility live rank1，terminal∞",
+      "declarations": "Structure.play_errors_le_card_add_one；errorRank_finite_le_card_add_one；errorRank_no_tools；errorRank_empty_eligibility；errorRank_terminal",
+      "dependencies": "A01,A03",
+      "status": "已闭合"
+    },
+    {
+      "id": "A05",
+      "original": "eq:laminar-safe-family、budget-dp、rank-membership",
+      "claim": "used D与remaining U\\D的insert/erase桥及同一安全族递推",
+      "declarations": "Structure.safeUsed_budget_recurrence；safeUsed_rank_membership",
+      "dependencies": "A02,A03",
+      "status": "已闭合"
+    },
+    {
+      "id": "A06",
+      "original": "laminar:12–20；A:235–243",
+      "claim": "原完整raw incidence机器目标已闭合：同一固定2089-op finite-word程序、wordFactor16及constant262144先于全部N/q/full；原ROM仅[N,q]+Nq bits，prepare/parent/card/rank/结果/trace不预给。仅原q>0；全部输入在同一O((N+q+1)^2q)实际收费界接受iff laminar，真heap序列化/解码原givenTreeROM、返回t≤N+q+1。含code/ROM加载、heap初始化、真实fetch/branch/access/HALT/物化；两段serializer和footer全prefix从实际ParentEntry串接，所有Nat clock及停机后安全已从原输入证明，原PrefixSafety无待证假设。q0依原A18独立边界语义，不塞进正q成本式；原文对应与普通public完整目标/标准三公理均通过，批次统一验收见匹配收据。",
+      "declarations": "Structure.LaminarTree.RawTreePreprocessingClaims.FullClaims；RawTreePreprocessingNat.raw_preprocessing；RawTreePreprocessingWordInterface.PrefixSafety；fullClaims_of_prefixSafety；RawTreePreprocessingStartWord.initialized_entry；RawTreePreprocessingRejectWord.rejects；RawTreePreprocessingOrderingWord.ordered_entry；RawTreePreprocessingParentWord.parent_entry；RawTreePreprocessingA06Closure.all_prefix_safe；prefixSafety；fullClaims",
+      "dependencies": "M01,A06a,A06b,A06c,A06d",
+      "status": "已闭合"
+    },
+    {
+      "id": "A06a",
+      "original": "laminar:12–20；A:235–243",
+      "claim": "原有限输入加U/非空stage/单点并去重，保持laminar；q>0时唯一最小父集、children两两不交并覆盖内部节点，t≤N+q+1",
+      "declarations": "Structure.LaminarTree.nodeFamily_laminar；node_parent_exists_unique；node_children_disjoint；node_children_cover；nodeFamily_card_le",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "A06b",
+      "original": "A:235–243",
+      "claim": "Fin q 的可执行节点枚举与 argmin 父搜索，实际输出与同一 nodeFamily/parent 一致；不把选择函数称可执行算法",
+      "declarations": "Structure.LaminarTree.explicitNodeList_toFinset；explicitNodeList_nodup；explicitNodeList_length_le；explicitParent_spec；explicitParent_agrees",
+      "dependencies": "A06a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A06c",
+      "original": "A:235–243",
+      "claim": "实际NodeId=Fin(size)的support Array、parent/children Vector缓存由原父表生成；解码注入/覆盖同nodeFamily且size≤N+q+1，q>0时父/children解码等于已证真实树；无正确性/成本目标字段，无运行成本声明",
+      "declarations": "Structure.LaminarTree.NormalizationData.indexed；prepared_indexed_size_le；prepared_indexed_decode_injective；prepared_indexed_parent_iff；prepared_indexed_children_decode",
+      "dependencies": "A06a,A06b,A09b",
+      "status": "已闭合"
+    },
+    {
+      "id": "A06d",
+      "original": "A:235–243",
+      "claim": "NodeId元数据缓存实际support.card/internal标志/root；q>0原laminar树上唯一root、非root唯一parent，缓存children总边数精确t−1，不在每次pass重新滤整表",
+      "declarations": "Structure.LaminarTree.prepared_metadata_root_exists_unique；prepared_indexed_nonroot_parent_exists_unique；prepared_indexed_parent_none_iff；prepared_indexed_edge_count",
+      "dependencies": "A06c",
+      "status": "已闭合"
+    },
+    {
+      "id": "A07",
+      "original": "eq:laminar-capacity-family；A:8–35",
+      "claim": "有限节点support容量族、向下闭包、free vector表示所有used sets",
+      "declarations": "Structure.capacityFamily；capacityFamily_downward_closed；capacityFamily_free",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "A08",
+      "original": "A:10–18",
+      "claim": "singleton覆盖时zero vector={empty}；任意非负vector语义不等VOID",
+      "declarations": "Structure.capacityFamily_zero；capacityEntry_vector_ne_void",
+      "dependencies": "A07",
+      "status": "已闭合"
+    },
+    {
+      "id": "A09a",
+      "original": "A:20–35",
+      "claim": "children active且union=parent时，单节点min(parent,children sum)保持family；disjoint时计数精确分解",
+      "declarations": "Structure.capacityFamily_normalizeAt；used_count_eq_sum_children",
+      "dependencies": "A07",
+      "status": "已闭合"
+    },
+    {
+      "id": "A09",
+      "original": "eq:laminar-normalized；A:20–35",
+      "claim": "正q同一给定树，原0≤c_T≤card(T)下真实完整bottom-up正规化保持原capacityFamily，输出normalized且全部坐标≤q；原ROM/heap/PC/5word code执行精化，含encoded HALT完整primitive trace≤176t。共享tree/ROM/code准备及有限word打包仍另属A06/A17，不把宿主Vector操作当O(1)",
+      "declarations": "Structure.LaminarTree.IndexedIntersectionRAM.prepared_normalization_correct_run",
+      "dependencies": "A06d,A07,A09a,A09c,A09d",
+      "status": "已闭合"
+    },
+    {
+      "id": "A09b",
+      "original": "eq:laminar-normalized；A:20–35",
+      "claim": "q>0、同一原输入tree预处理card升序/父表后，实际whole-tree pass保持family；原singleton≤1即输出normalized且active容量≤q；调用不再排序，不宣称O(t)",
+      "declarations": "Structure.LaminarTree.prepareNormalization；prepared_childSet_eq；prepared_normalize_preserves；prepared_normalize_normalized_of_bounded；prepared_normalize_capacity_le_q",
+      "dependencies": "A06a,A06b,A07,A09a,A11a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A09c",
+      "original": "eq:laminar-normalized；A:20–35",
+      "claim": "NodeId Vector容量与缓存child Array的真实card升序pass保持原容量族，输出normalized且原singleton≤1时坐标≤q；索引/原support语义精确一致，不宣称Lean Vector.set的宿主复制为O(1)",
+      "declarations": "Structure.LaminarTree.prepared_indexed_family_eq；prepared_indexed_normalize_normalized；prepared_indexed_normalize_preserves_original；prepared_indexed_normalize_capacity_le_q",
+      "dependencies": "A06c,A09b",
+      "status": "已闭合"
+    },
+    {
+      "id": "A09d",
+      "original": "eq:laminar-normalized；A:20–35、245–261",
+      "claim": "显式word-RAM ROM/heap/寄存器/PC/5-word编码与执行轨迹精化到同indexed normalizer；q>0实际HALT也计费，完整primitive trace≤176t；真实child accumulator前缀≤q，code+data≤94(N+q+1)。未证全部有限word无溢出，也未接完整table/query成本",
+      "declarations": "Structure.LaminarTree.IndexedRAM.Instruction.decodeWords_encodeWords；prepared_haltingNormalization_run；prepared_haltingPhysicalWords_le；prepared_actual_child_accumulator_le_q",
+      "dependencies": "A06d,A09c",
+      "status": "已闭合"
+    },
+    {
+      "id": "A10",
+      "original": "lem:laminar-extension；A:37–69",
+      "claim": "同原normalized、D∈family及非空active节点S，合法unused扩展 iff所有祖先slack；在既有prepared树/正确已用计数上实际slack-child下降返回该扩展工具。真实所走节点与测试child entries合计≤2t。仅此下降的节点/child检查界，元数据/计数构建及完整机器word/RAM成本仍属A06/A17",
+      "declarations": "Structure.LaminarTree.extension_iff_ancestorSlack；IndexedDescent.prepared_selectAt_exists；prepared_selectStage_exists；prepared_descentWork_le_twice_nodes",
+      "dependencies": "A06c,A06d,A07,A09c,A10a,A10b",
+      "status": "已闭合"
+    },
+    {
+      "id": "A10a",
+      "original": "lem:laminar-extension；A:37–69",
+      "claim": "同一真实树、normalized 和 D∈family 下，非空 active S 的合法unused扩展存在 iff所有祖先slack；按实际child/card下降证存在。此行只语义，真实cached下降及节点/子项探测界另见A10b",
+      "declarations": "Structure.LaminarTree.Normalized；AncestorSlack；extension_iff_ancestorSlack",
+      "dependencies": "A06a,A07,A09a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A10b",
+      "original": "lem:laminar-extension；A:37–69、188–231",
+      "claim": "真实cached child数组/leaf工具表/已用计数/容量上的可执行下降，child索引严格减小且fuel t足够。原Normalized/可行D/AncestorSlack下返回tool∈S且不在D，insert后仍可行；stage入口复用原stageNodes，无逐tool rank/choice。按同一first-hit分支定义实际childProbeCount，访问无重复且树总边t−1推出nodes+probes≤2t；不含counts/metadata生成、有限word/RAM或A15预算择层",
+      "declarations": "Structure.LaminarTree.IndexedDescent.singletonTool；firstSlackChild；descend；selectStage；prepared_selectAt_exists；prepared_selectStage_exists；descentTrace_nodup；prepared_descentWork_le_twice_nodes",
+      "dependencies": "A06c,A06d,A10a,A11c",
+      "status": "已闭合"
+    },
+    {
+      "id": "A11",
+      "original": "lem:laminar-closure；A:80–112",
+      "claim": "完整raw-support闭包：统一常数414、每原given tree一次program（先于S/entry），仅raw q-bit S/entry及静态card/singleton/parent输入；实际scan统计基数/选singleton，再沿parent找同基数support，未预给findNodeId或结果。真实HALT/原extend及usedExtension语义/normalized/qbound/code与time≤414t均证；intersection同常数精确原交集。q≤t由singleton缓存注入推出。输入/静态数据编码、编译预处理及finiteword另属A06/A17；此为正q的Nat-address闭包，q0走原direct分支",
+      "declarations": "Structure.LaminarTree.IndexedIntersectionRAM.RawClosureClaims；IndexedRawClosureRAM.prepared_rawExtensionResult_eq；prepared_rawExtension_correct_run；rawExtensionProgram_trace_length；prepared_q_le_nodes；rawClosureClaims",
+      "dependencies": "A08,A09,A10,A11a,A11b,A11c,A11d,A11e",
+      "status": "已闭合"
+    },
+    {
+      "id": "A11a",
+      "original": "lem:laminar-closure；A:80–112",
+      "claim": "extension 分支：空eligibility/VOID/零祖先给VOID，否则真实祖先减一精确表示extension且保持normalized；normalized active容量≤card≤q",
+      "declarations": "Structure.LaminarTree.extendEntry_sound；extendEntry_normalized；decrementAlong_normalized；normalized_capacity_le_toolCount",
+      "dependencies": "A06a,A07,A08,A09a,A10a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A11b",
+      "original": "lem:laminar-closure；A:80–112",
+      "claim": "q>0时同树实际coordinate-min后whole-tree正规化精确表示交集，normalized-or-VOID输入给normalized-or-VOID输出；不假定min本身normalized",
+      "declarations": "Structure.LaminarTree.NormalizationData.intersectEntries；prepared_intersectEntries_sound；prepared_intersectEntries_normalized",
+      "dependencies": "A06a,A09b,A11a,A12",
+      "status": "已闭合"
+    },
+    {
+      "id": "A11c",
+      "original": "lem:laminar-closure；A:80–112、245–261",
+      "claim": "真实NodeId父链索引严格增加、无重复且长度≤t，恰列support祖先；沿链零检查/逐坐标减一及cell与已有indexed操作精确相同，保持family/normalized和q0/VOID边界。起点查找、Vector.set宿主成本及整cell RAM成本仍未证明",
+      "declarations": "Structure.LaminarTree.IndexedAncestors.ancestorChain_length_le；prepared_parent_index_lt；prepared_ancestorChain_mem_iff；prepared_ancestorChain_nodup；prepared_chainZero_eq；prepared_chainDecrement_eq；prepared_chainCell_eq；prepared_chainCell_denote；prepared_chainCell_normalized_bounded",
+      "dependencies": "A06d,A11a,A11b,A13a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A11d",
+      "original": "A:80–112、245–255",
+      "claim": "正q prepared树的真实祖先extension RAM：复用7-register机器只加标准饱和减法，实际stored parentWords、0停止sentinel、零检查/heap减一显式执行；不把集合/祖先/rank操作当primitive。payload及flag精化到原chainDecrement/chainZero，Nodup由原cache定理推出；实际tag decode精确等于extendAt及cached stage-node的原IndexedEntry.extend，含VOID/空eligibility/零容量。5word codec/body fetch/encoded HALT均证，实际HaltingRuns trace≤239t，code=70t+50。此为Nat-address extension组件；intersection组件另见A11e；raw support查询/full-cell/query与有限word安全仍未证，不以此关闭A11/A17",
+      "declarations": "Structure.LaminarTree.IndexedClosureRAM.Op.decodeWords_encodeWords；decode_halting_body；ancestorLoop_payload_refines；ancestorLoop_flag_refines；prepared_extensionResult_eq；prepared_extension_halting_run；prepared_stage_extension_halting_run；extensionProgram_codeWords",
+      "dependencies": "A06d,A09d,A11c,A13d",
+      "status": "已闭合"
+    },
+    {
+      "id": "A11e",
+      "original": "A:20–35、80–112",
+      "claim": "同prepared树真实双payload/VOID tag输入，坐标min每一read/min/write显式执行，再跑原compileNodes与末tag写回；无交集/正规化primitive。所有初始heap/寄存器pc0下decoded output精确等于原IndexedEntry.intersect，denote为原两family交、normalized/qbound且encoded HALT≤274t。新增直接NodeId接口的extension同原support语义239t，不含raw support查找。未证ROM/code物化、finiteword或full-cell/table/query总成本",
+      "declarations": "Structure.LaminarTree.IndexedIntersectionRAM.intersectionResult_eq；prepared_intersection_halting_run；prepared_intersection_correct_run；prepared_tree_node_extension_correct_run",
+      "dependencies": "A06d,A09c,A09d,A11a,A11b,A11d",
+      "status": "已闭合"
+    },
+    {
+      "id": "A12",
+      "original": "eq:laminar-extension-family；A:71–112",
+      "claim": "E_empty/E_VOID=VOID、交VOID吸收、coordinate-min精确表示交集",
+      "declarations": "Structure.extension_empty；extension_void；capacityFamily_coordinate_min；CapacityEntry.denote_intersection",
+      "dependencies": "A07,A08",
+      "status": "已闭合"
+    },
+    {
+      "id": "A13",
+      "original": "A:150–160",
+      "claim": "同一full-input树仅预处理一次，实际存储全部suffix/budget数组，每项normalized且恰表示独立SafeUsed；q0独立direct分支不建树，无额外q>0前提",
+      "declarations": "Structure.LaminarTree.buildCapacityTable；buildCapacityTable_rows_correct；buildCapacityTable_entry_correct",
+      "dependencies": "A02,A05,A08,A09b,A11a,A11b,A12",
+      "status": "已闭合"
+    },
+    {
+      "id": "A13a",
+      "original": "A:150–160、80–112",
+      "claim": "固定同树NodeId的实际Vector entry，祖先零检查/减容、coordinate min与indexed normalize组成真实cell；eligible为空或原树节点、good/bad原normalized时，与旧extend/intersect容量族精确相同，输出normalized且≤q。q0/VOID/budget0显式；未把新cell当已完成整表builder",
+      "declarations": "Structure.LaminarTree.IndexedEntry.prepared_extend_denote；prepared_cell_denote；prepared_cell_normalized_bounded；prepared_reify_cell_refines；budgetCell_zero_tools；free_denote",
+      "dependencies": "A09c,A11a,A11b,A17a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A13b",
+      "original": "A:150–160、245–261",
+      "claim": "同一实际compiler的RAM归一化接入真实cell且精化到旧cell；raw实际为vector时copy+normalization+HALT trace≤176t。ancestor/support检查、min、预处理、整cell及整表成本仍待证，不能将phase界当整cell界",
+      "declarations": "Structure.LaminarTree.IndexedEntry.ramCell_refines；prepared_ramCell_refines；prepared_cell_normalization_phase_run；ramCell_zero_tools",
+      "dependencies": "A09d,A13a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A13c",
+      "original": "A:150–160",
+      "claim": "实际全suffix/budget固定坐标Vector/Array表在同full cache上构造，每cell normalized且≤q并精确表示独立SafeUsed；decoded family与旧CapacityTable对应。q0为空cache的原direct分支，不加全局q>0；没有用正确性作Table字段，也未声明全表RAM成本",
+      "declarations": "Structure.LaminarTree.IndexedTable.build；build_rows_correct；build_entry_correct；build_entry_refines_old",
+      "dependencies": "A13,A13a,A13b",
+      "status": "已闭合"
+    },
+    {
+      "id": "A13d",
+      "original": "A:80–112、245–261",
+      "claim": "正q树分支一次准备cache并实际缓存全部stage→Option NodeId和tool→singleton NodeId；空stage iff None、非空精确support、singleton索引注入、缓存条目=N+q且原树≤N+q+1。只接缓存NodeId的extendAt/cellAt/budgetCellAt精化到原chain/indexed操作，原q0仍direct；不声称RAM/O(1)宿主访问/预处理总成本",
+      "declarations": "Structure.LaminarTree.IndexedStaticMetadata.Data；buildFromCache；buildPositive；buildPositive_stage_some_iff；buildPositive_stage_none_iff；buildPositive_tool_decode；buildPositive_tool_injective；buildPositive_lookup_entries；buildPositive_budgetCellAt_eq_indexed",
+      "dependencies": "A06d,A11c,A13a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A13e",
+      "original": "A:150–160、245–261",
+      "claim": "同一prepared cache的真实fixed-slot heap预算cell：good/bad输入槽显式copy、原ancestor extension、直接heap min、原normalizer、output槽copy；无中间结果ROM，输出SlotRep可再作为cell输入。真实encoded HALT trace≤523t、code≤265t，精确原budgetCell/normalized/qbound；工作及output外heap frame、4槽布局完整保留good/bad payload/tag，budget0真写free、q0 direct含HALT≤189。程序及静态ROM依具体prepared tree/cache，freeKernel的card常数与原normalizer code准备尚未计入统一N/q/t generator；本行为Nat-address单元组件，非A17全表/任意query/finite-word packing或统一code生成完成",
+      "declarations": "Structure.LaminarTree.IndexedCellRAM.prepared_stage_budget_correct_run；fixedSlots_preserved；prepared_budgetProgram_codeWords_le；zeroTool_budget_correct_run；SlotRep；slot_eq_of_rep",
+      "dependencies": "A09,A11,A13a,A13c,A13d,A17a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A14",
+      "original": "eq:laminar-rank-extraction",
+      "claim": "实际有限active坐标membership及扫描1..q+1首unsafe预算给独立语义rank，none=∞；覆盖q0/terminal，不调用decide Safe或选择oracle",
+      "declarations": "Structure.LaminarTree.entryAccepts；CapacityTable.extractedRank；built_extractedRank_eq_errorRank",
+      "dependencies": "A03,A04,A13",
+      "status": "已闭合"
+    },
+    {
+      "id": "A15",
+      "original": "eq:laminar-bad-existence；A:188–231",
+      "claim": "实际buildPositive后继row及缓存stageNode上，原e_k恰等存在eligible/unused child rank>k且随k非增；真实首false扫描在前一层作cached slack-child下降，全true在q+1层返回∞后继。实际query的good/bad/current rank等于独立游戏秩，none恰为无兼容unused工具，some达到最大后继秩；不逐tool求rank。含空兼容集、q0的empty cache/direct表与N0终态，无额外RowCorrect输入；完整RAM成本仍属A17",
+      "declarations": "Structure.LaminarTree.IndexedQuery.stored_budgetExtensionTest_iff；stored_budgetExtensionTest_antitone；storedPositiveRow_correct；stored_query_good；stored_query_bad；stored_query_rank；stored_query_tool_none_iff；stored_query_tool_spec；zeroTool_query；terminalReply_rank",
+      "dependencies": "A10b,A13c,A13d,A14,A16",
+      "status": "已闭合"
+    },
+    {
+      "id": "A15a",
+      "original": "eq:laminar-bad-existence；A:188–231",
+      "claim": "对真实eligible/unused工具用同表实际child rank有限argmax，none iff候选为空；返回工具达到独立badChildRank并把当前Safe预算k+1接到实际下一stage Safe预算k，含∞/q0；不宣称O(t)下降",
+      "declarations": "Structure.LaminarTree.pickMaxRankTool；built_pickMaxRankTool_spec；built_pickMaxRankTool_safe_exists；built_pickMaxRankTool_at_stage",
+      "dependencies": "A02,A14,A16",
+      "status": "已闭合"
+    },
+    {
+      "id": "A15b",
+      "original": "model:66–74；A:188–231",
+      "claim": "从同一表实际结构递归提取具体Plan，无Safe/最优Plan输入或choice；SafePlan(k) iff原独立Safe(k) iff k<rank，∞覆盖全部预算。Plan树可指数展开，未作为紧凑controller交付",
+      "declarations": "Structure.LaminarTree.planFromTable；extractedSuffixPlan_safe_iff；extractedSuffixPlan_safe_iff_lt_rank；extractedSuffixPlan_safe_all_of_rank_top",
+      "dependencies": "A01,A02,A03,A13,A14,A15a,A16",
+      "status": "已闭合"
+    },
+    {
+      "id": "A16",
+      "original": "eq:price-rank；A:210–231",
+      "claim": "tool/rank单调、bad空0且max达到、good≥bad、rank=min(good,1+bad)、∞有∞child",
+      "declarations": "Structure.errorRank_tools_mono；exists_maximizing_tool；badChildRank_le_goodRank；errorRank_cons；exists_infinite_child_of_rank_top",
+      "dependencies": "A02,A03",
+      "status": "已闭合"
+    },
+    {
+      "id": "A16a",
+      "original": "eq:price-rank；B:185–203",
+      "claim": "任意有限graph的List递归genericRank可计算且等于独立errorRank，不依赖laminar/Fintype/Safe oracle；有限Fin q候选List.argmax按实际递归child值选tool并达到真实badChildRank，连接Safe后继，q0返回none。一般求值可指数，不挪用laminar复杂度",
+      "declarations": "Structure.genericRank；genericRank_eq_errorRank；safe_iff_lt_genericRank；pickGenericMaxRankTool_spec；pickGenericMaxRankTool_safe；pickGenericMaxRankTool_zero_tools",
+      "dependencies": "A02,A03,A16",
+      "status": "已闭合"
+    },
+    {
+      "id": "A17",
+      "original": "thm:laminar；A:245–261",
+      "claim": "批004原目标验收：正q原FullGivenTreeClaims完整无额外前提闭合：同一implementation同时满足全部NatRAM及真实physical packing、六程序固定统一generator；真实全表/query/rolling、任意合格物理query heap、≤N请求实际workspace复用、全prefix索引/容量/有限字、加载初始化/执行/HALT/空间全部覆盖。constant=2^58，wordFactor32表示32*clog2(N+q+2)。A06 raw及A18 q0/A19/B23/L01仍各按原目标独立验收",
+      "declarations": "Structure.LaminarTree.AlgorithmClaims.PhysicalROM；givenTreeROM；NatRAMImplementationClaims；UniformCodeGenerationClaims；PackedImplementationClaims；FullGivenTreeClaims；expectedReply_rank；PA17TableBuild005.prepared_build_correct；prepared_build_halting；PA17BuildResources006.prepared_build_resources；PA17BuildCapacity007.prepared_build_capacityThroughout；PA17WrappedNatRAM038c.implementation_claims；fullNatRAMClaims；PA17FullGivenTree049.fullGivenTreeClaims；natClaims；packedClaims；PA17UniformGenerator035ai.uniformCodeGenerationClaims",
+      "dependencies": "A09,A11,A13,A14,A15,A17a,A17b,A17c",
+      "status": "已闭合"
+    },
+    {
+      "id": "A17a",
+      "original": "A:245–261",
+      "claim": "容量entry用独立VOID tag与t*ceil(log2(q+1))位实际dense BitVec编码；验证坐标≤q及roundtrip/注入，q0仍区分zero vector与VOID；已知cell数的多entry前缀解析与总bit长≤cells*(1+t*width)。尚未声称packed随机访问O(1)或全表布局成本",
+      "declarations": "Structure.LaminarTree.CapacityBits.decodePackedEntry_encodePackedEntry；encodeEntry_injective_bounded；vector_encoding_ne_void；zero_q_decode_vector；decodePackedEntries_encodeEntries；encodeEntries_length_le",
+      "dependencies": "A06c,A08,A09c",
+      "status": "已闭合"
+    },
+    {
+      "id": "A17b",
+      "original": "A:245–261",
+      "claim": "实际indexed全表cell数量=(N+1)(B+1)，B=q+1时为(N+1)(q+2)；完整tagged/dense编码往返保持每cell独立游戏语义，总bit≤cell数*(1+t*clog2(q+1))且t≤N+q+1。未证明固定槽位随机访问、rolling两层或总RAM成本",
+      "declarations": "Structure.LaminarTree.IndexedTable.build_cells_length；build_rankTable_cells_length；build_cache_size_le；build_encode_length_le；build_encode_length_le_input；build_codec_roundtrip_prefix；build_packed_codec_roundtrip；build_entry_codec_refines_game",
+      "dependencies": "A13c,A17a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A17c",
+      "original": "A:250–255",
+      "claim": "正q的已准备树上，从node-indexed已用singleton位图，真实显式RAM header/child加法/leaf选择/heap写入自底向上生成全部usedCounts；运行中不求交集/card，任意初始heap/register，不预填正确counts。相同t−1边给body≤129t，连encoded HALT≤135t。消耗工具的单点bitmap实际更新另证33primitive；q0另走A18 direct分支。初始bitmap编码、两内存区域组合、有限word安全与完整query仍分开待证",
+      "declarations": "Structure.LaminarTree.IndexedUsedCounts.leafBitmap_bit；prepared_count_childSum；prepared_countProgram_correct；prepared_countProgram_trace_le；prepared_countProgram_halts；leafBitmap_insert；prepared_markUsedProgram",
+      "dependencies": "A06d,A09d,A11c,A13d,A15",
+      "status": "已闭合"
+    },
+    {
+      "id": "A18",
+      "original": "A:263–280",
+      "claim": "原任意列表保留重复stage/顺序，A15 actual query对任意used集仍精确；所有tool含从未出现者都保留singleton缓存。删初始unavailable保持laminar，删除后的独立秩精确等于原输入把该集合并入used；q0自动laminar/EMPTY direct表的active rank1、bad0/toolnone，N0终态rank∞；非终态∞秩时实际stored query返回compatible unused且后继∞的具体工具。此为边界语义，不含A17/A19完整复杂度",
+      "declarations": "Structure.LaminarTree.laminarSchedule_delete；errorRank_delete_unavailable；cached_tool_not_lost；stored_query_infinite_tool；emptySchedule_terminal；zeroTools_laminar；zeroTools_active",
+      "dependencies": "A04,A06a,A13d,A15,A16,M12a",
+      "status": "已闭合"
+    },
+    {
+      "id": "A19",
+      "original": "thm:laminar；A:245–280",
+      "claim": "批013完整原FullClaims.{u}五分量已无额外caller前提闭合：A06原raw预处理、A17完整给定树、精确callback独立Plan/Play安全、固定packed原raw/live机器及任意Seed宇宙Native接口均为结论。ONE固定P及正全局常数先于全部q/full/laminar/initialUsed，从原controllerInput/零heap真实构造table/metadata/header/stage/used位图，q0与正q真实HALT、全部fetch/access/有限word/packing/加载和原preprocessingWork计费。后续只给query/correct/error公开命令，同heap保持全部Allowed调用及可适应实际工具的StageScript，原路径累计费用≤2CN*liveWork(q,t)、容量位界与全部前缀保留；q0/N0/重复stage/缺席tool/任意初始不可用集未加限制。Native仅沿原Prefix给精确rank/good/bad/合法最大tool及原handle/window/resource Step权限，不宣称generic同tie/run或统计price保证。完整普通public五分量、正式全工程current build及全部formal来源公理审计通过，仅Std3；单一冻结包保留原module身份、全部2646私有源/13190实际产物与3082完整来源审计，其中20明确legacy kernel三产品、其余五产品，不伪造IR/不重命名olean。",
+      "declarations": "Structure.LaminarTree.CompactControllerA19Closure.fullClaims；CompactControllerA19Closure.machineControllerClaims；CompactControllerClaims.FullClaims；CallbackClaims；MachineControllerClaims；NativeCallbackClaims",
+      "dependencies": "A06,A09,A10,A11,A13,A14,A15,A17,A18",
+      "status": "已闭合"
+    },
+    {
+      "id": "B01",
+      "original": "prices:10–19",
+      "claim": "全支持不同信道的D_ix>0及A_i>0",
+      "declarations": "Statistics.BinaryExperiment.divergence_pos；coefficient_pos",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "B01a",
+      "original": "B:40–47",
+      "claim": "有限全支持KL和Mathlib测度KL一致，不作新增论文假设",
+      "declarations": "Statistics.BinaryExperiment.channelLaw_klDiv；channelDivergenceAgreement",
+      "dependencies": "B01",
+      "status": "已闭合"
+    },
+    {
+      "id": "B02",
+      "original": "B:5–12",
+      "claim": "J_i为可测随机顺序测试真实inf，不以log或Bellman倒定义；ENNR先行；实际进入记录freshness由M04及M04d接通，具体controller执行局部test仍见B16；本批由精确seed积分及deterministic-inf等式消去局部Type0宇宙边界，覆盖任意可测Seed/无限费用及罚金，不假定最优达到",
+      "declarations": "Statistics.BinaryExperiment.localValue；localValue_le_test_any_seed；bayesObjective_eq_seed_integral；localValue_eq_deterministic",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "B02a",
+      "original": "lem:price-local",
+      "claim": "J≤有限罚金、J有限后实数化，0≤J_real≤t、J(0)=0，不排除无限费用测试",
+      "declarations": "Statistics.BinaryExperiment.localValue_le_penalty；localValue_ne_top；localValueReal_nonneg；localValueReal_le；localValue_zero",
+      "dependencies": "B02",
+      "status": "已闭合"
+    },
+    {
+      "id": "B03",
+      "original": "B:23–31",
+      "claim": "真实posterior-target first-exit/MAP SPRT风险≤p，双方ET/费用有限且fee≤c/Dx(log(1/p)+K_E)；有限ET由bounded overshoot+有限截断Wald+单调积分推出，真实Bayeserror用停止密度与posterior odds证明",
+      "declarations": "Statistics.BinaryExperiment.posteriorSPRT；posteriorSPRT_expectedSamples_finite；posteriorSPRT_sharpObservationCharge；posteriorSPRTGuarantee",
+      "dependencies": "B01,B01a,B02,B04c,B04d",
+      "status": "已闭合"
+    },
+    {
+      "id": "B03a",
+      "original": "B:27–31",
+      "claim": "实罚金t≥4可选有理0<p≤1/4，tp≤1且logt≤log1/p≤logt+log2；不误将1/t当有理数",
+      "declarations": "Statistics.exists_rationalLocalPenaltyTarget",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "B04",
+      "original": "B:35–54",
+      "claim": "任意私有随机/非MAP真实测试stopped KL/data-processing；双方finite ET后 KL=single KL×ET，含积分/可测解码，无限费用仍保留",
+      "declarations": "Statistics.BinaryExperiment.stoppedInformationIdentity；stoppedDecisionInformationBound",
+      "dependencies": "B01a,B02,B04a,B04c,B04d",
+      "status": "已闭合"
+    },
+    {
+      "id": "B04a",
+      "original": "B:35–54",
+      "claim": "finite Bayes目标推出各truth下 finite ET/几乎必然停时；有限ET后toNat可积、积分等于ET.toReal；真实decision pushforward保四个端点概率",
+      "declarations": "Statistics.BinaryExperiment.bayesObjective_finite_expectedSamples；expectedSamples_finite_stop；expectedSamples_finite_integrable_toNat；expectedSamples_finite_integral_toNat；decisionLaw_apply",
+      "dependencies": "B01,B02",
+      "status": "已闭合"
+    },
+    {
+      "id": "B04b",
+      "original": "B:35–54",
+      "claim": "stopped transcript及其decision解码可测；有限ET时解码pushforward等于真实decision law；由已证identity无额外前提得到decision KL data-processing下界",
+      "declarations": "Statistics.BinaryExperiment.measurable_stoppedTranscript；transcriptLaw_decodedDecision；stoppedDecisionInformationBound",
+      "dependencies": "B01a,B02,B04a,B04c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B04c",
+      "original": "B:40–47",
+      "claim": "任意可测私有seed/顺序测试在两truth下finite ET时，真实stopped transcript KL=单次KL×真实ET；可预测采样指示量独立、有限截断Wald及finite ET支配收敛全部已证",
+      "declarations": "Statistics.BinaryExperiment.integral_stoppedIncrement；integral_truncatedStoppedSum；integral_stoppedSum_wald；stoppedInformationIdentity",
+      "dependencies": "B01a,B02,B04a,B04d",
+      "status": "已闭合"
+    },
+    {
+      "id": "B04d",
+      "original": "B:40–47",
+      "claim": "因果停止给同一seed gate和真实有限word概率；双方finite ET后真实transcript law具有wordLikelihood密度、互相AC、LLR为停止word对数和且可积，KL等于其真实积分；Wald漂移已由B04c闭合",
+      "declarations": "Statistics.BinaryExperiment.transcriptLaw_rectangle_singleton；transcriptLaw_withDensity；transcriptLaw_rnDeriv；transcriptLaw_llr；integrable_transcriptLaw_llr；transcriptLaw_klDiv_eq_ofReal_stoppedSum",
+      "dependencies": "B01a,B02,B04a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B05",
+      "original": "B:45–54",
+      "claim": "任意Bool概率测度/实际非MAP decision的二元KL lower，含alpha/beta=0/1；negativeLogMass 0=∞，正质量对零质量KL=∞",
+      "declarations": "Statistics.negativeLogMass；binary_kl_lower；bool_kl_eq_top_of_positive_zero；BinaryExperiment.decisionLaw_kl_lower",
+      "dependencies": "B01a,B02,B04a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B06",
+      "original": "lem:price-local",
+      "claim": "真实全测试inf的global O_i(log(1+t))与J~A_i logt，原coefficient精确，已无待证统计前提；finite J后才转实数",
+      "declarations": "Statistics.BinaryExperiment.localLogarithmicPrice；globalLogarithmicEnvelope；localValue_log_upper",
+      "dependencies": "B02a,B03,B03a,B04,B05,B06b,B06c,B06d",
+      "status": "已闭合"
+    },
+    {
+      "id": "B06a",
+      "original": "B:35–54",
+      "claim": "原prior/c/D加权真实decision信息lower与完整 Bayes objective lower；有限目标自动给finite ET，观察费用∞分支直接保留；由已证identity接通，不限制MAP/局部最优",
+      "declarations": "Statistics.BinaryExperiment.informationWeight_sum；bayesInformationLower_le_observationCharge；bayesObjective_lower_of_identity（应用 stoppedInformationIdentity）",
+      "dependencies": "B01,B02,B04c,B05",
+      "status": "已闭合"
+    },
+    {
+      "id": "B06b",
+      "original": "B:23–33；lem:price-local",
+      "claim": "已证真实SPRT接通t≥4的J≤Alogt+固定常数、全t非负global log envelope及渐近upper半边；无额外scalar渐近前提",
+      "declarations": "Statistics.BinaryExperiment.localValue_log_upper；globalLogarithmicEnvelope；localValue_ratio_eventually_le_of_sprt（应用 posteriorSPRTGuarantee）",
+      "dependencies": "B01,B02a,B03,B03a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B06c",
+      "original": "B:35–54；lem:price-local",
+      "claim": "无待证统计前提的任意测试/真实inf局部log渐近lower：cheap目标给原prior下各truth误差界，统一错误率给观察费lower，逐层le_iInf及真实scalar极限；不依赖MAP/近最优存在",
+      "declarations": "Statistics.BinaryExperiment.decision_information_lower；bayesInformationLower_le_observationCharge_unconditional；localValue_lower_curve；localValue_ratio_eventually_ge",
+      "dependencies": "B01,B02,B04c,B05,B06a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B06d",
+      "original": "lem:price-local",
+      "claim": "无条件lower与已证SPRT upper夹逼得到实际 J~Alogt，无待证前提；保留的of_sprt接口是已闭合链的通用版本",
+      "declarations": "Statistics.BinaryExperiment.localLogarithmicPrice",
+      "dependencies": "B03,B06b,B06c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B07",
+      "original": "B:59–75",
+      "claim": "健康G独立定义为同源fresh suffix、真实current-allocation/terminal-execution协议中仅R可分配的全策略观察费+一次λ失败罚金inf；caps/正常记账固定有已证uncapped等价。真实首次进入的旧history/pending识别见已闭合B09；已review中途history不得使用fresh-prior G，旧宽版本有反例。本批独立定义/原文对应审查完成，首次entry与review中途的边界保持",
+      "declarations": "Common.StatisticalInput.healthyPenalty；healthyPenaltyReal",
+      "dependencies": "M09,M10c,M12b,B07a,B07b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B07a",
+      "original": "B:59–75",
+      "claim": "同一完整原协议/合同的uncapped全策略观察费+一次task-failure罚金真实inf，覆盖任意seed，不由Bellman倒定义；弃任务给0≤value≤λ；尚不冒称已证明任意旧healthy-history continuation等价",
+      "declarations": "Common.Native.penaltyValue；penaltyObjective；penaltyValue_le_policy_any_seed；penaltyValue_le_penalty",
+      "dependencies": "M03,M04,M05,M06,M10a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B07b",
+      "original": "B:59–75",
+      "claim": "仅R可分配由所有实际达到active prefix上的allocate权限约束；AvailablePolicy真实inf覆盖任意宇宙seed并有推前law同目标表示，R扩大值不增，R=U恰等原penaltyValue，弃任务给≤λ，无成功/性能字段",
+      "declarations": "Common.Native.UsesOnly；AvailablePolicy；availablePenaltyValue；penaltyObjective_availableEncoded_eq；availablePenaltyValue_le_policy_any_seed；availablePenaltyValue_antitone；availablePenaltyValue_univ；availablePenaltyValue_le_penalty",
+      "dependencies": "M03a,M03b,B07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B07c",
+      "original": "B:59–75、157–160",
+      "claim": "独立healthyG满足0≤G≤λ、R反单调及有限λ时有限；真实stop策略证终态G=0含λ=∞，并证初始G_0,U等于原current合同deferred的全策略罚金inf；未将任意旧history桥视为已证",
+      "declarations": "Common.Native.availablePenaltyValue_empty；Common.StatisticalInput.healthyPenalty_terminal；healthyPenalty_ne_top；healthyPenaltyReal_antitone；healthyPenalty_initial",
+      "dependencies": "M10c,M12b,B07b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B07d",
+      "original": "B:59–75；model:39–44",
+      "claim": "工具R约束下显式部分策略允许有限付费后不返回；totalization保真实R权限、全部已付观察费用/失败风险，部分罚金inf恰等availablePenaltyValue，覆盖任意宇宙seed及∞费用/罚金。不把nonreturn记成∞观察费",
+      "declarations": "Common.Native.PartialUsesOnly；partialUsesOnly_iff_totalized；partialPenaltyObjective_eq_totalized；availablePenaltyValue_le_partialPolicy_any_seed；availablePartialPenaltyValue_eq",
+      "dependencies": "M03c,B07b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B08",
+      "original": "eq:price-successors、price-penalty",
+      "claim": "对独立全策略healthyPenaltyReal证明精确Bellman：Gg为原R下一stage，Gb为eligible∩R的erase后继有限min（空时λ）。任意stage/R/正price的双向递推已闭合。lower保原完整比较器；upper由三个原inf的epsilon见证、真实合法test+双child策略、实际分支全clock运行/成功/观察账单/原一次failure罚金、世界和独立私有seed产品law的ENNR积分及epsilon消去推出。不假定inf达到/finite bill/终止，不限制MAP/失败消费，不以递推定义G",
+      "declarations": "Common.StatisticalInput.CurrentPenaltyRecursion；Common.Native.currentPenaltyRecursion；currentPenaltyRecursion_lower；healthyPenalty_head_upper；healthyPenaltyReal_head_upper；currentPenaltyRecursion_head；bellmanIndependentPolicy；BellmanExpectation.someTool_objective_le；BellmanExpectation.noTool_objective_le；BellmanExpectation.selectedPolicyCharges_integral；BellmanExpectation.correctMass_add_bayesError；bellmanHeadThen_someTool_penaltyCharge_le；bellmanHeadThen_noTool_penaltyCharge_le；bellmanHeadSeedSuffix_law；BellmanPrivateSeeds.pullbackAvailable；Common.StatisticalInput.currentPenaltyRecursion_iff_freshHeads",
+      "dependencies": "A16,B06,B07,B08a,B08b,B08c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B08a",
+      "original": "eq:price-successors",
+      "claim": "对同一独立healthy值直接由工具集单调性证明0≤Gg≤Gb≤λ，包含empty eligible时Gb=λ，不用假定Bellman或结构秩",
+      "declarations": "Common.StatisticalInput.penalty_successor_order",
+      "dependencies": "B07c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B08b",
+      "original": "eq:price-successors、price-penalty；model:19–55",
+      "claim": "任意可测Seed/原native rule提取真正AdmissibleRule：真实首stage纯review前缀、停时/有限停止决策/可测性、首次非review的合法write/stop/abandon分类；保留原非MAP bit，部分不返回保有限已付观察费，无穷review真账单为∞。局部原Bayes观察费精确积分到同source world并≤原全部真实观察期望，无Bellman或测试性能额外前提。真实entry的head write/early report、公共correct标志与同一提取测试decision对应已证，保原非MAP bit；完整退出/未到达分支的Bayes拼接已由NativePenaltyHeadLower闭合；本组件是已证完整B08的一部分",
+      "declarations": "Common.Native.nativeHeadTest；run_eq_headReviewState；nativeHead_exit_classification；nativeHead_observationCharge_le；headExitStop_partial_nonreturn；nativePartialHead_observationCharge_le；bayesObservationCharge_eq_seededWorld_integral；nativeHead_bayesObservationCharge_le；firstEntry_one_head_written；prefix_early_written_reported；nativeHead_decision_of_written；firstEntry_one_local_correct_iff",
+      "dependencies": "M03a,M03c,M04,M06a,B01",
+      "status": "已闭合"
+    },
+    {
+      "id": "B08c",
+      "original": "eq:price-successors、price-penalty；B:77–114",
+      "claim": "任意原AvailablePolicy的真实下一stage首次entry分支：correct head无commit保R，实际allocated tool真属eligible交R且保存commit恰占该唯一tool，因此原独立Gg/Gb×该原子质量≤真实全部续局罚金积分；未分配的wrong head过current allocation窗后永久无可用承诺/最终必失败，原Gb≤原λ由真正failure项承担。保留延迟execute、后续花费、零质量/∞、任意Seed和原非MAP策略；公共startup正确/错误权重的nativeHead_entry_branch_lower也已自行按真实三分支证明；完整head退出/未到达分支与局部Bayes目标拼接已由NativePenaltyHeadLower闭合；完整B08现见总行",
+      "declarations": "Common.Native.prefix_commitments_usable；firstEntry_one_correct_no_commitments；firstEntry_one_committedTools_singleton；run_unallocated_behind_cursor；wrong_unallocated_behind_cursor_failure；nativeHead_good_branch_lower；nativeHead_allocated_branch_lower；nativeHead_unallocated_wrong_branch_lower；nativeHead_entry_branch_lower",
+      "dependencies": "B08a,B08b,B09f,M03a,M03d,M04,M06",
+      "status": "已闭合"
+    },
+    {
+      "id": "B09",
+      "original": "lem:price-bridge；B:77–114（2026-10-29获准首次进入修订）",
+      "claim": "原current-allocation合同/任意Seed宇宙/native合法策略，在真正首次进入stage i的public snapshot∩任意可测seed gate、原AllocationHealthyBefore（旧所需分配已解决）及剩余R上，全部future实际观察费加一次原eventualfailure罚金积分≥独立fresh G(i,R)乘gate质量。保留pending、延迟execute、abandon/nonreturn、零质量、∞及失败收费；无额外待证性能前提，DeadlineViableBefore真实执行健康仅为已证投影。现按用户明确授权限定首次进入，既有完整first-entry证明正好对应。旧宽时间Prop不改，写入前后原模型严格反例作为历史负面回归，不算其正向结论",
+      "declarations": "Common.Native.StageEntryHistoryPenaltyBridge；stageEntryHistoryPenaltyBridge；HealthyStageEntryHistoryPenaltyBridge；healthyStageEntryHistoryPenaltyBridge；历史负面：AllHealthyHistoryPenaltyBridge；B09Counterexample.concrete_counterexample；B09PrewriteCounterexample.exists_prewrite_violation；B09PrewriteCounterexample.not_allHealthyHistoryPenaltyBridge",
+      "dependencies": "M03,M04,M05,M06,B09a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B09a",
+      "original": "B:77–114；model:57–74",
+      "claim": "原current-allocation合同/任意Seed宇宙/native Policy，真实首次stage-entry的固定public snapshot∩任意可测Seed gate上，原G(next,U\\committedTools)×事件质量≤全部未来真实观察增量+一次原最终failure罚金积分。Startup无truth/tape；pending未exec/错过旧current deadline的已失败路径/abandon/nonreturn/零质量/∞全部保留。实际合法回放、完整run/账单等式、future执行forward与成功支配、Dirac逐seed值比较、完整entry record联合law/Tonelli均为已证依赖，无normalize/终止/finite-cost/Markov假设。AllocationHealthy不是新前提且证明未使用；原DeadlineViable健康版本由已证投影获得。此首次进入版本正好对应获准修订后的B09；旧宽temporal命题仍保留反例",
+      "declarations": "Common.Native.StageEntryHistoryPenaltyBridge；HealthyStageEntryHistoryPenaltyBridge；stageEntryHistoryPenaltyBridge_at；stageEntryHistoryPenaltyBridge；healthyStageEntryHistoryPenaltyBridge；historyComparisonCharge",
+      "dependencies": "M03a,M03b,M03d,M04,M05,M06,B06,B07,B09e",
+      "status": "已闭合"
+    },
+    {
+      "id": "B09b",
+      "original": "B:87–114",
+      "claim": "公共Startup及原handle/clock恢复actual run；pending工具不可重分配且沿原run持续占用。未来费用用有限起点计数增量的iSup，不做∞−∞总账单相减；原最终失败仅一次罚金且未筛成功路径。任意Seed/可测gate的真实首次entry snapshot对完整未来truth+tape世界因果分解、独立及无除法质量乘积已证，含零质量；主first-entry AvailablePolicy抽取/成功支配与罚金积分现见B09a/e，宽scope另属B09",
+      "declarations": "Common.Native.Startup；restartRun_eq_actual_suffix；pending_tool_cannot_reallocate；pending_tool_occupied_forever；measurable_futureObservationBill；entryStartupAt_factorization；entrySeedStartupAt_jointUnbornLaw；entry_snapshot_seedGate_unborn_mass",
+      "dependencies": "M03d,M03f,M04,M05,B06,B07",
+      "status": "已闭合"
+    },
+    {
+      "id": "B09c",
+      "original": "B:87–114；model:19–55",
+      "claim": "无truth/tape的真实公共旧execution模拟，任意Seed可测；合法source run上q+1 fuel必停，精确原run n→n+elapsed，整个内部区间actual观察增量0，pending占用保持且原current execution deadline不越过。future handle按真实suffix write serial动态重绑，真实early write/report事件同态及source合法下一动作投影已证。仅当前public cache→下一动作组件，固定起点缓存回放的AvailablePolicy已另见B09e；完整target Step/run/费用及failure桥另见已闭合B09e",
+      "declarations": "Common.Native.Startup.executePublic；settleOldExecutions_actual；settleOldExecutions_actual_stops；settleOldExecutions_observationIncrement_zero；old_execution_impossible_current；suffixHandleOf_valid_of_prefix；suffixEventOf_writeResponses；measurable_suffixActionAtPublicCache；suffixActionAtPublicCache_actual",
+      "dependencies": "M03a,M03d,M04,M05,B09b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B09d",
+      "original": "B:87–114、212–226；model:11–18",
+      "claim": "真实非终端首次entry的(seed,Option publicStartup)与整个重编号freshSuffix world独立，联合law精确为entry边缘×原suffix product law；任意依entry Seed/快照的可测ENNReal未来费有精确积分运输，任意public snapshot∩可测seed gate与全future事件质量精确相乘，零质量不除法且允许∞。所有Policy/seed宇宙/合同/mode/accounting均保留；仅世界法则；任意policy的suffix controller/Step/run/原failure支配及entry积分现见B09a/e（限真实first-entry），固定reference运输另见B18c",
+      "declarations": "Common.Native.entrySeedStartupAt_independent_freshSuffix；entrySeedStartupAt_jointFreshSuffixLaw；entrySeedStartupAt_freshSuffix_lintegral；entry_snapshot_seedGate_freshSuffix_mass；entryHistorySeedRecord_independent_freshSuffix；entryHistorySeedRecord_jointFreshSuffixLaw",
+      "dependencies": "M04e,B09b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B09e",
+      "original": "B:87–114；model:19–55",
+      "claim": "past/fresh可测双逆及任意Seed联合product law/ENNReal积分；七种真实response packet parser与public cache更新；允许合法延迟execute的guard对全部truth/tape前缀合法且UsesOnly，已构造具体replayedSuffixAvailablePolicy及past扩充seed版，不把未来world作为策略输入。固定past entry gate对任意fresh world恢复真实SourcePrefix，一步source Step的动态lowered packet被回放并得到精确后继public state。从合法策略及一步回放接至下列完整运行/观察费运输组件；在实际未来review计数/真值和投影动作相同的状态view下，系统canonical响应由原world限制真证对应且实际target Step的packet被replay接受；未假定packet一致。普通cursor/ledger投影view现推出真实目标Step，guard对真实early前缀及available分配步骤完整接受，延迟execute保持raw动作。真实FirstEntryAt推出view初始成立，旧execute结算及两真实Step保持，完整replayedSuffix_fullRun以实际settle计数推进source clock逐目标clock归纳，真实targetStep/guard/packet及replay缓存对应全部自行证明，无alignment/Markov/终止前提。真实entry后旧stage review恒定，源clock增长或真实halt给出sup双向cofinal，已真证回放全部观察bill=原futureObservationBill，含∞和失败路径。future执行forward由真实packet回放推出，真实source有限成功⇒同guarded target完整物理成功；一次罚金逐路径支配、Dirac逐seed合法值比较及完整joint-law/Tonelli积分已闭合StageEntry目标。旧宽healthyhistory的posterior范围已证伪；本组件闭合的是现获准B09首次entry目标，不反推旧宽命题",
+      "declarations": "Common.Native.joinPastFreshSample_law；lintegral_joinPastFreshSample；parseSuffixPackets_packets；guardedReplayRule_legal；guardedReplayRule_usesOnly；replayedSuffixAvailablePolicy；replayedSuffixPastAvailablePolicy；pastEntryGate_sourcePrefix；replaySuffixPacket_actual；responsePacket_lower_world；replaySuffixPacket_real_target；HistorySuffixStateView.step；replayAllowsAction_complete；guardedReplayRule_eq_of_step；historySuffixStateView_firstEntry；HistorySuffixStateView.settleOld；HistorySuffixStateView.next；replayedSuffix_fullRun；replayedSuffix_prefix_observationBill；replaySourceClock_grows_or_halted；replayedSuffix_observationBill_eq；replayedSuffix_runSuccess；replayedSuffix_penaltyCharge_le；healthyPenalty_le_replayedSuffix_dirac；stageEntryHistoryPenaltyBridge",
+      "dependencies": "M03a,M03d,M04,B09c,B09d",
+      "status": "已闭合"
+    },
+    {
+      "id": "B09f",
+      "original": "B:59–75、77–114",
+      "claim": "保留初始工具R的真实首次entry桥：源AvailablePolicy仅UsesOnly R，经真实分配/永久commit占用推出replay仅用R\\startup.committedTools；外守卫全局合法且在实际entry世界完整run不变。原独立healthyPenalty first (R\\committed)×真实entry质量≤原全部未来观察增量+一次原eventualfailure罚金积分，含terminal/空suffix、任意Seed宇宙、零质量、pending、延迟执行与∞。真实entryStartupAt记录事件自动给firstEntry，无外部hentry；Nat×Startup可数互斥并覆盖真实reach，全部/任意public记录子集的质量、积分与R限制加权续局lower已证，未到达路径留在reach外。无normalize/Markov/finite-cost/终止前提，不把R外未承诺工具授给续局，不证明已证伪的旧B09宽时间命题，也不单独闭合完整B08",
+      "declarations": "Common.Native.run_guardedReplayRule_eq；replayedSuffix_allocations_restricted；replayedSuffixRestricted_run_eq；replayedSuffixRestrictedPolicy；replayedSuffixRestricted_penaltyCharge_le；healthyPenalty_le_restrictedSuffix_dirac；restrictedStageEntryHistoryPenaltyBridge_at；restrictedStageEntryHistoryPenaltyBridge；Common.Native.EntryContinuationPartition.entry_record_continuation_lower；iUnion_indexedEvent_eq_reachGate；lintegral_eq_tsum_entry_records；measure_eq_tsum_entry_records；tsum_entry_continuation_lower；tsum_selected_continuation_lower",
+      "dependencies": "B07b,B09a,B09e",
+      "status": "已闭合"
+    },
+    {
+      "id": "B10",
+      "original": "eq:price-coefficient",
+      "claim": "C∞=0；按good同rank与bad+1同rank递推；finite rank下C>0，权重和兼容同源于StatisticalInput",
+      "declarations": "Statistics.orderedCoefficient；orderedCoefficient_of_infiniteRank；Common.StatisticalInput.orderedCoefficient_pos",
+      "dependencies": "A16,B01,M06a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B11",
+      "original": "B:128–140",
+      "claim": "原独立healthy G的全局等秩取消已证：goodRank=badRank=d≥1时J(Gb−Gg)=o(ell_d)。bad正首项由严格短suffix全R归纳和真实有限后继min提供，既有envelope控制局部项，允许Gb−Gg首项完全抵消且不趋∞；无待证全局渐近前提。与B12共用已证finite-leading归纳，B12不调用globalB11",
+      "declarations": "Common.StatisticalInput.EqualRankCancellation；equalRankCancellation；healthyFiniteLeading_all；healthyBad_leading_of_shorter；equalRankLocalTerm_isLittleO_of_bad_leading",
+      "dependencies": "A16,B06,B07c,B08,B11a,B12",
+      "status": "已闭合"
+    },
+    {
+      "id": "B11a",
+      "original": "B:128–140",
+      "claim": "真实J全局envelope给J(t)=o(t)；若bad/scale→B>0、scale→∞且0≤good≤bad，则J(bad−good)/scale→0，允许首项完全抵消。已对actual healthy successors接入此条件估计；严格suffix归纳与bad有限min的正首项现已由B12共享证明提供，原完整B11已另行闭合",
+      "declarations": "Statistics.BinaryExperiment.localValueReal_sublinear；localValue_difference_negligible；localValue_iteratedLog_difference_negligible；Common.StatisticalInput.equalRankLocalTerm_isLittleO_of_bad_leading",
+      "dependencies": "B06,B07c,B08a,B15b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B12",
+      "original": "lem:price-penalty-asymptotic",
+      "claim": "固定同一input后对全部next/R：无限rank独立全策略G=0（含penalty=∞）已由真实零观察/零风险reference证明；有限rank d有d>0、同源suffixCoefficient>0且G/(C ell_d)→1。有限部分按N−next严格强归纳，IH覆盖下一suffix所有R；真实bad有限min、等秩局部envelope、异秩J组合、原λ-min最终不活跃及原rank/系数公式全部已证。仅用局部B11a，不把globalB11或PenaltyAsymptotics当归纳前提",
+      "declarations": "Common.StatisticalInput.PenaltyAsymptotics；penaltyAsymptotics；healthyPenalty_finite_step；healthyFiniteLeading_all；healthyLocal_scale_of_bad_leading；badPenaltyReal_leading_minimum_of_shorter；suffixCoefficient_step；Statistics.BinaryExperiment.localValueReal_iteratedLog_succ_of_tendsto；Statistics.min_id_iteratedLog_tendsto_of_leading；healthyPenalty_zero_of_infiniteRank",
+      "dependencies": "A16,B06,B08,B10,B11a,B18",
+      "status": "已闭合"
+    },
+    {
+      "id": "B13",
+      "original": "B:157–160",
+      "claim": "原I/current-allocation合同中任意Seed:Type*的δ-safe真实native策略，观察费≥独立健康G_0,U(1/δ)−1；同Native.value下界成立，不漏失败费用，不需先假设Bellman或全局渐近",
+      "declarations": "Common.StatisticalInput.healthyPenalty_initial_observation_lower；healthyPenalty_initial_value_lower",
+      "dependencies": "B07c,B13a,M10",
+      "status": "已闭合"
+    },
+    {
+      "id": "B13a",
+      "original": "B:157–160；model:28–32",
+      "claim": "真实uncapped/deferred全策略罚金inf给任意δ-safe原native策略观察费lower，及Native.value lower；只放松caps/执行期限，所有旧path风险/已付费保留；初始独立健康G识别见B07c，首次进入旧history桥现见B09，完整Bellman已由B08闭合",
+      "declarations": "Common.Native.penaltyValue_le_nativePolicy_observation；deferredPenalty_le_nativePolicy_observation；inverseRisk_deferredPenalty_le_observation；inverseRisk_deferredPenalty_lower",
+      "dependencies": "M03,M04,M05,M06,M10a,M10b,B07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B14",
+      "original": "eq:price-head；B:161–165",
+      "claim": "all-correct R不变/rank单调，C为bad-rank=d−1的ordered A_i和，有限正rank下两种critical判据机械等价",
+      "declarations": "Common.StatisticalInput.orderedCoefficient_head_formula；Statistics.critical_head_criterion",
+      "dependencies": "A16,B10",
+      "status": "已闭合"
+    },
+    {
+      "id": "B15",
+      "original": "eq:price-threshold-asymptotic；B:169–184、231–238",
+      "claim": "真正可计算整数B_j/有理p_j与原ceil(log2)公式精确一致；固定j≥1的log(1/p_j)−ell_(j+1)有界及p_j ell_j有界（实际证收敛常数），2≤Bj≤B1≤1/r、p_j≥r/6；原bad-risk min更新预算成立",
+      "declarations": "Statistics.controllerB_one_eq_intCeil；controllerB_succ_eq_intCeil；controllerB_bounds；controllerTarget_floor；controllerTarget_log_difference_tendsto；controllerTarget_mul_iteratedLog_tendsto；controllerBadRisk_budget",
+      "dependencies": "B15b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B15c",
+      "original": "B:231–238",
+      "claim": "原reference实际active testing Prefix/首次entry所用r≥δ/2^(N+1)，真实返回tested posterior target≥δ/C_N；从实际Prefix/entry自行重建cache、testing phase和events<N，不把Alignment/path-floor/positive-entry-mass当新前提。保任意Seed宇宙、任意available、原保守R与最小E、零review立即write/null entry，原controller/no-tool scalar定理被实际调用；另得原delta/原额度的条件SPRT overflow推论。终态后未再使用的cache字段不冒称新active预算；原B19的实际入口条件概率界另行已证",
+      "declarations": "Statistics.controllerTarget_native_floor；noToolTarget_native_floor；Common.Native.PSTRStatistics.ActiveFloor.referenceEntry_current_native_floor；referenceEntry_target_native_floor；prefix_referenceTesting_originalDelta_floor；referenceEntry_controllerTarget_native_floor；referenceEntry_noToolTarget_native_floor；referenceEntry_originalQuota_overflow",
+      "dependencies": "B15,B15d,B15e,B16b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B15a",
+      "original": "B:263–275",
+      "claim": "正实δ可选δ/2≤r≤δ的正有理风险，保同一最小dyadic资格指数e≥1，供原Qhat复用",
+      "declarations": "Statistics.exists_rationalRisk_preserves_minimal_exponent",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "B15b",
+      "original": "实/有理风险接合补论证",
+      "claim": "固定正depth下任意factor-two风险选择保持iteratedLog比值趋1；由首层log夹逼及Mathlib等价函数取log证明，不要求选择函数可测",
+      "declarations": "Statistics.factorTwoRiskIteratedLogStability；factorTwo_iteratedLog_isEquivalent",
+      "dependencies": "B15a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B15d",
+      "original": "B:169–184、231–238",
+      "claim": "原三分支有理预算更新的每条有限label路径均有r_k≥r0/2^k；同最小dyadic区间有理R与原实δ共用E，真实目标floor采用R/C_N，≤N次路径时2N≤2^E p。此行为数值label层，真实reference报告/entry流转识别见B17d",
+      "declarations": "Statistics.referenceBudgetStep；referenceBudgetPath_valid_floor；referenceBudgetPath_original_target_floor；referenceBudgetPath_dyadic_target；exists_referenceRisk_same_exponent_targets",
+      "dependencies": "B15,B15a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B15e",
+      "original": "B:187–210",
+      "claim": "原三kind/target/Option step的ENNReal一阶段质量不等式：后继预算质量+即时失败质量≤r·entry质量；noTool None明确计fatal权重1，finiteBad用原p_j和min(1/4,r/(2p))，∞保r。只需实际局部error质量界/分支包含于entry，支持∞质量；系数界由原数值函数证明，非新增performance前提。与真实运行的事件桥另接B17",
+      "declarations": "Statistics.weighted_two_branch_mass_le；referenceBudget_noTool_entry_mass；referenceBudget_finiteBad_entry_mass；referenceBudgetOutcomeWeight_eq；referenceBudget_one_step_mass；referenceBudget_continuation_fatal_mass",
+      "dependencies": "B15,B15d",
+      "status": "已闭合"
+    },
+    {
+      "id": "B16",
+      "original": "B:185–203",
+      "claim": "同initialAvailable R的真实reference三分支rule已定义，报告后真handle/最大rank工具/立即执行，由实际可见history决定；理想与原quota版本均hit优先、T0/T=Q可写。全own-Prefix对齐与guard非绑定已由B16d证明，∞rank全路径零review及成功由B17b真证；一般风险/原额度另见B17/B21，不由合法性自动推出",
+      "declarations": "Common.Native.referenceRule；referenceUncappedPolicy；referenceControllerAlignment；referenceInfiniteRankZeroReviews",
+      "dependencies": "A16,A16a,B03,B15,M03,M04,B16a,B16b,B16c,B16d,B17b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B16a",
+      "original": "B:169–203、231–238",
+      "claim": "一般graph的有限early-history grammar按stage entryUsed快照计算真实rank case，report用ordinary bit/旧serial追加预算事件；accepted history给≤N事件的referenceBudgetPath及R/C_N floor，所有Some目标可测且0<p≤1/4，接受review追加下目标不变。真实Prefix对齐由B16d、实际有限target写入识别由B17a另证；全任务风险另由B17闭合",
+      "declarations": "Common.Native.referenceRankCase_semantics；referenceReplayStep_report_spec；referenceReplay_some_spec；referenceReplay_risk_bounds；measurable_referenceEntryTarget；referenceEntryTarget_bounds；referenceEntryTarget_observation_invariant",
+      "dependencies": "M03d,M03e,A16a,B15d",
+      "status": "已闭合"
+    },
+    {
+      "id": "B16b",
+      "original": "B:59–75、185–203",
+      "claim": "同一真实空初始账本/grammar显式携带初始可用R；仅rank参数中排除U\\R，当前剩余恰为R\\historyUsed，不伪造占用或可见commit。rank分类/选tool满足真实语义，R=U逐定义恢复既有replay；本行只证grammar，真实controller前缀对齐另见B16d",
+      "declarations": "Common.Native.referenceRank_remaining；referenceAvailableRankCase_semantics；referenceAvailableRepairTool_spec；referenceAvailableReplay_univ；referenceAvailableEntryTarget_univ",
+      "dependencies": "M03d,A16a,B16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B16c",
+      "original": "B:185–203；model:19–46",
+      "claim": "有限可见history权限guard经真实Prefix证明sound；reference rule对任意Seed联合可测、uncapped合法且实际allocation只用R。初始、review、完整early write/report、abandon保持及testing guard已证；其余phase和全own-Prefix由B16d闭合。无world/truth oracle，不将性能作Policy/cache字段",
+      "declarations": "Common.Native.historyAllowsAction_sound；measurable_referenceRule；referenceRule_uncapped_legal；referenceRule_usesOnly；referenceTestingAction_hit；referenceStateAligned_initial；referenceStateAligned_review；referenceStateAligned_write；referenceStateAligned_abandon；referenceRule_testing_eq_of_aligned",
+      "dependencies": "M03a,M03d,M03e,B16b,B23a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B16d",
+      "original": "B:185–203；model:19–46",
+      "claim": "原early合同、任意R/budget/limit、任意Seed:Type*，从真实Prefix归纳证明全phase对齐（含halt/abort），继而证明公开candidate guard非绑定、实际rule=candidate。allocate/execute/advance/stop均实际Step保持；旧handle serial与未来端口由Prefix推导，无Aligned/guard性能额外前提或成功路径限制",
+      "declarations": "Common.Native.referenceStateAligned_allocate；referenceStateAligned_execute；referenceStateAligned_advance；referenceStateAligned_stop；referenceStateAligned_step；prefix_referenceStateAligned；referenceCandidateAction_allowed_of_aligned；referenceRule_eq_candidate_of_prefix；referenceControllerAlignment",
+      "dependencies": "B16c,M03d,M04b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B17",
+      "original": "B:205–210",
+      "claim": "同真实current-allocation合同、任意初始R及原Unit/dirac构造，0<有理budget≤1/2时parser初始r=budget/2，已真证理想reference全任务risk≤budget/2。真实ordinary误写回溯到SPRT错误核，对全部可数entry histories汇总“本stage真实noTool失败质量+next-entry预算期望≤current-entry预算期望”，接原初值及有限正项望远镜；None/未进入/零质量/畸形history、N0及末stage均保留。无风险受控/对齐/终止或finite-cost额外前提；B18首项仍待证；原complete-H0抽象资源接口现见M08",
+      "declarations": "Common.Native.referenceBudgetMass_on_entry；referenceStage_budget_mass_nonincreasing；referenceBudgetMassAt_initial；referenceIdealRisk_le_half；referenceRiskGuarantee",
+      "dependencies": "B16,B19b,B17a,B17b,B17c,B17d,B17e",
+      "status": "已闭合"
+    },
+    {
+      "id": "B17a",
+      "original": "B:185–210、249–258；model:14–18",
+      "claim": "原early合同、任意初始available及0<有理budget≤1/2。实际有限target写入时reviews恰等原SPRT停时且写入同decision，内部执行引理覆盖任意Seed宇宙；Unit理想构造器的实际stage error包含于entry潜在error，逐entry错误概率≤target乘entry概率（含null entry）。所有有理targets共同a.s.有限，实际无限review事件概率0；不借native有限horizon假定uncapped终止，不包含∞rank零review或全任务成功/风险预算归纳",
+      "declarations": "Common.Native.prefix_referencePosteriorWrite_realization；referenceStagePosteriorError_subset_entryPosteriorError；referenceStagePosteriorError_on_entry_le；seededWorld_ae_all_posteriorSPRT_finite；referenceStageInfiniteReviews_measure_zero",
+      "dependencies": "B03,B16b,B16d,B19b,B19e,M03e,M04d,B23a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B17b",
+      "original": "B:185–210；model:19–46",
+      "claim": "原early合同、任意available与Seed宇宙、0<有理budget≤1/2及任意ideal/quota limit。初始独立rank=∞时所有真实Prefix零review、rule不abandon；零review及一次性tool/port独立给uncapped有限动作界2q+2N+1，每sample完成成功，任意seed law风险0。无native caps/H0/终止或风险额外前提；一般reference每次真实advance已正确或已实际修正亦由Prefix归纳真证，有限rank风险预算另见B17",
+      "declarations": "Common.Native.referenceInfiniteRankZeroReviews；referenceRule_ne_abandon_of_infinite_rank；referenceRun_halted_of_infinite_rank；prefix_reference_pastCorrect；referenceRun_success_of_infinite_rank；referenceRisk_zero_of_infinite_rank",
+      "dependencies": "A16a,B16b,B16d,M03d,M03f,M05a,M07a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B17c",
+      "original": "B:185–210、249–258；model:39–46",
+      "claim": "原early合同、任意available、0<有理budget≤1/2，原Unit ideal构造器的非halt样本必含某stage真实无限review，故非终止概率0；实际stop必成功，实际abandon仅来自reported noTool普通误写。全任务risk≤有限stage真实noTool失败事件质量和；内部路径/phase引理覆盖任意Seed宇宙。无native horizon、H0、终止/risk性能前提；此行为真实失败来源，预算质量望远镜及risk≤budget/2由B17另证",
+      "declarations": "Common.Native.referenceRun_ae_halts；referenceRun_nontermination_measure_zero；referenceRule_abandon_noTool_error；referenceRule_stop_success；referenceFailure_subset_nontermination_union_noTool；referenceRisk_le_sum_noToolFailure",
+      "dependencies": "B17a,B17b,B16d,M03f,M05a,M07a,A16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B17d",
+      "original": "B:185–210、249–258；model:14–18",
+      "claim": "原early合同、任意available/Seed宇宙及0<有理budget≤1/2，从实际Prefix恢复真实entry快照：testing期预算保持，reported/repair期预算恰等原kind、实际report错误及entry预算的step；真实advance把更新预算传入唯一下个真实entry，反向每个next entry必源于前一真实advance。每Some entry原预算有效、kind/target精确，初始budget/2；不添加对齐假设。此行为逐路径流转，带概率质量的积分与全任务risk由B17另证",
+      "declarations": "Common.Native.prefix_referenceEntryBudgetTrace；referenceEntryBudgetTrace_of_prefix；referenceAdvance_entry_budget；referenceEntryRisk_kind_target；referenceNextEntry_has_advance；referenceAvailableEntryRisk_initial",
+      "dependencies": "B15d,B16b,B16d,M03d,M03f,M04b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B17e",
+      "original": "B:205–210",
+      "claim": "任意ENNReal阶段失败质量F与预算质量B，只要真实一阶段F_i+B_(i+1)≤B_i，正项归纳真证sumF+B_N≤B0，故sumF≤B0≤initial。允许∞，不做扩展数相减、toReal或有限期望假设；只是望远镜代数，真实运行实例化在B17已证",
+      "declarations": "Statistics.referenceBudgetMass_telescope；referenceFailureMass_sum_le；referenceFailureMass_sum_le_initial",
+      "dependencies": "B15e",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18",
+      "original": "B:212–226",
+      "claim": "原generic ideal reference的完整实际费用目标已证明：固定任意input/初始R/独立有限rank d，cutoff先于全部current-allocation合同及NormalAccounting，全部观察与真实失败路径修正费≤(1+epsilon)原orderedCoefficient·ell_d；原最大bad-rank child的full actual bill乘原p_depth在localRisk趋0时有统一有限界，child parser预算精确2r′。真实kind三分支、严格缩短fresh suffix的stageCount强归纳消除全部child性能前提；同阶系数相加/异阶消失均真证，不将ENNR账单转实数。仅证明此原generic规则B18，不自动关闭B08/主价格lower、table-tie版L01或实现复杂度",
+      "declarations": "Common.Native.referenceCostAsymptotics_of_shorter_cost；referenceCostAsymptotics；referenceBadBranchCostBound_of_shorter_cost；referenceCostClaims（直接证明原ReferenceCostClaims）",
+      "dependencies": "B10,B15,B16,B17,B18a,B18c,B18d,B18e,B18f,B18g,B18h,M06c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18a",
+      "original": "B:212–226",
+      "claim": "真实ideal观察账单按stage及实际entry原子精确拆分；逐entry以同target SPRT和真实freshness得A_i log(1/p)+原overshoot常数上界；实际bad/good后继费用保持同run的两项非负条件积分；全总bill加原min(N,q)fmax，失败/弃任务/∞保留。内部pathwise任意Seed，积分为原Unit/dirac构造；freshSuffix后继运输另见B18c，本组件未给全局iterlog渐近或bad-child O(1)",
+      "declarations": "Common.Native.referenceStageObservationBill_entry_decomposition；lintegral_on_referenceEntry_stageFunction；referenceStageObservationBill_on_entry_sharp_le；referenceRemainingObservationBill_on_entry_le；referenceExpectedBill_le_entry_prices_add_corrections",
+      "dependencies": "B10,B16b,B17a,M04,M06c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18b",
+      "original": "B:185–226",
+      "claim": "任意early合同/accounting、初始R、原0<有理budget≤1/2及任意Seed宇宙，从真实entry恢复public snapshot/空购词；stage lift与旧action-clock/serial平移保history queries及真实handles，same general rank case/picker。原预算path重启精确2r，真实entry target与原freshSuffix/R\\historyUsed/2r脚本相同，首个真实returned action亦相同，含T0/∞rank。此行仅首动作组件；完整parser/Step/run/观察费用运输见B18c，B18渐近仍未证",
+      "declarations": "Common.Native.referenceSuffixHandleLift；referenceSuffixActionLift；referenceSuffixEventLift；historyWrite_referenceSuffixLift；referenceAvailableRankCase_freshSuffix；referenceAvailableRepairTool_freshSuffix；referenceBudgetPath_restart；referenceEntry_replay_snapshot；referenceEntry_target_eq_freshSuffix；referenceEntry_firstAction_eq_freshSuffix",
+      "dependencies": "M03d,M03e,B16d,B17d,B18a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18c",
+      "original": "B:185–226；model:11–55",
+      "claim": "同原current-allocation ideal reference/任意Seed宇宙/accounting/R/原0<budget≤1/2，从真实首次entry自行给完整base：全部响应parser/有限word inclusive test/MAP/candidate/rule与实际Native.Step同态；每k原run(n+k)和freshSuffix/R\\historyUsed/原2r的history/cursor/clock/halt及future reviews精确对应。原remaining观察账单=child全观察账单；Unit/dirac原构造每真实entry原子的条件积分精确为entry质量×fresh实际期望观察费，零质量/∞/失败/abandon/nonreturn保留。无Alignment/Markov/finite-cost/终止/horizon前提；本行仅为实际后缀运输；完整全局iterlog首项及bad-child统一O(1)现见B18",
+      "declarations": "Common.Native.referenceSuffixCacheJoin_step；referenceSuffix_candidateAction；referenceSuffix_rule_of_prefixes；referenceSuffix_run_view；referenceEntry_run_view；referenceSuffixRunTransport；referenceEntry_observationBill_eq_freshSuffix；lintegral_on_referenceEntry_freshSuffixFunction；referenceRemainingObservationBill_on_entry_eq_freshSuffix",
+      "dependencies": "M03d,M04e,B09d,B16d,B18a,B18b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18d",
+      "original": "B:212–238；model:44–51",
+      "claim": "原ideal reference/任意初始R/0<有理budget≤1/2，真实parser目标保持budget/C_N floor；全部实际观察费有显式有限对数上界，总实际费用再加原min(N,q)fmax，故两种期望均非∞。原current-allocation合同下remaining观察费精确等于各真实next-entry质量×原freshSuffix/R\\historyUsed/2r实际费用之和，并得真实一stage递推及初始上界；不假设终止、finite-cost、Markov或Alignment，保留失败/abandon/零质量。本行仅为粗界与实际递推；完整iterlog首项及bad-child统一O(1)现见B18",
+      "declarations": "Common.Native.referenceAvailableEntryTarget_original_floor；referenceExpectedObservationBill_le_global；referenceExpectedBill_le_global_add_corrections；referenceExpectedBill_ne_top；referenceRemainingObservationBill_eq_entryFreshCosts；referenceRemainingObservationBill_step_eq_entryFreshCosts；referenceEntryFreshObservationCostSum_ne_top；referenceExpectedBill_le_initial_add_entryFreshCosts_add_corrections",
+      "dependencies": "B15d,B18a,B18c,M06c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18e",
+      "original": "B:185–226",
+      "claim": "实际reference第一阶段的report/advance推导所有真实第二entry恰为固定good或实际selected最大bad-rank工具后继，原预算risk=budget/2再good减半或原badRisk；错误分支包含于真实普通write error。实际next-entry×fresh费用积分压缩为localPrice+good实际费用+原p_depth(budget/2)×bad实际费用；工具存在及最大bad-rank性质由原case/实际callback真证，无额外branch/Markov/alignment/终止/finite-cost前提。保零质量/∞，原失败修正费仍由M06c另加。本行仅为实际递推；完整全后缀iterlog归纳及bad-child界现见已闭合B18",
+      "declarations": "Common.Native.referenceAvailableReplay_repair_picker；referenceInitialNextEntry_children；lintegral_referenceNextEntryCostFunction；referenceNextEntryCostFunction_finiteBad_le；referenceAvailableEntryTarget_initial；referenceExpectedObservationBill_finiteBad_le；referenceAvailableRepairTool_exists_finiteBad；referenceExpectedObservationBill_finiteBad_maximizer",
+      "dependencies": "B16b,B16d,B17d,B18c,B18d,M06c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18f",
+      "original": "B:185–226",
+      "claim": "原实际费用后缀递推的noTool分支已证：真实进入的仅good后继维持原R与预算budget/2，剩余观察费终态为0；N0全部实际费用为0，N1有限独立秩必为1且原orderedCoefficient等于唯一局部系数。从真实粗界及固定input先于cutoff推得0/1stage完整ReferenceCostClaims，保留所有真实修正费且cutoff统一合同/accounting。本行提供归纳base与noTool递推，任意多stage完整归纳现见B18",
+      "declarations": "Common.Native.runRemainingObservationBill_terminal；referenceExpectedObservationBill_noTool_le；referenceExpectedObservationBill_empty；referenceExpectedBill_empty；reference_single_stage_finite_rank；reference_single_stage_coefficient；referenceCostAsymptotics_single_stage；referenceCostClaims_atMostOne",
+      "dependencies": "B18d,B18e,B15,M06c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18g",
+      "original": "B:195–197、212–226",
+      "claim": "原数值bad-risk r′及实际fresh child预算scale*r′在正有理风险域趋0；固定scale≥1时原p_j(r)乘ell_j(1/(scale*r′))最终非负且≤log(2)/4+1，含scale2的真实预算；给Filter和原实cutoff量词两形式。正tail单调性真证，不假设Real.log全域单调；无bad-child策略性能前提，本数值链不直接证明实际child费用界",
+      "declarations": "Statistics.controllerBadRisk_tendsto_zero；scaled_controllerBadRisk_tendsto_zero；iteratedLog_positive_mono_tail；controllerTarget_scaledBadRisk_iteratedLog_bounded；rationalEventually_positive_cutoff；controllerTarget_scaledBadRisk_iteratedLog_cutoff",
+      "dependencies": "B15,B15b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B18h",
+      "original": "B:212–226",
+      "claim": "固定正深度iterlog在任意正常数缩放下比值趋1，严格更高阶对低阶比值趋0；原正有理budget减半亦同。原finiteBad局部目标p_j(budget/2)的log/ell_d精确趋indicator(d=j+1)，含原coefficient与固定overshoot后亦证。同原freshSuffix重编号的weightedSchedule=原drop、首stage独立rank和orderedCoefficient两indicator递推亦已精确接通；不假设策略费用或将其充作完整B18；供同阶系数相加/异阶项消去的后缀归纳",
+      "declarations": "Statistics.iteratedLog_div_tendsto_zero_of_lt；iteratedLog_scale_div_tendsto_one；iteratedLog_scaled_div_tendsto_zero_of_lt；rationalRisk_iteratedLog_half_div_tendsto_one；rationalRisk_iteratedLog_half_div_tendsto_zero；controllerTarget_half_log_div_iteratedLog；controllerTarget_half_price_div_iteratedLog；Common.StatisticalInput.freshSuffix_weightedSchedule；weightedSchedule_head_freshSuffix；orderedCoefficient_head_freshSuffix；Common.Instance.errorRank_head_freshSuffix",
+      "dependencies": "B10,B15,B15b,B18g,M04e",
+      "status": "已闭合"
+    },
+    {
+      "id": "B19",
+      "original": "eq:price-analytic-quota；B:249–258、284–292",
+      "claim": "同原δ/最小E的有理R，真实ideal每stage耗尽quota且仍review的事件已逐path识别为entry SPRT溢出，全任务真实overflow≤δ/2由B19d/e真证。对每entry history及truth的乘法条件界δ/(2N)现已证明，含零概率entry；不能将无条件总界冒充逐history条件界；本批：原ReferenceOverflowClaims已无额外前提闭合，逐真实entryHistory及每truth乘法条件界含零质量/N0，不将无条件总界替代它",
+      "declarations": "Common.Native.referenceStageOverflow；referenceOverflow；ReferenceOverflowIdentification；ReferenceConditionalOverflowGuarantee；ReferenceOverflowClaims；Common.Native.PSTRStatistics.referenceOverflowClaims",
+      "dependencies": "B03,B15,B16,B19a,B19b,B19c,B19d,B19e",
+      "status": "已闭合"
+    },
+    {
+      "id": "B19a",
+      "original": "eq:price-analytic-quota",
+      "claim": "原analytic Q的2/8常数及prior偏移不变；真实iid first-exit SPRT在每truth下P(T>Q)≤δ/(2N)，由bounded-variable Hoeffding而非Markov，含真实conditionalLaw形式",
+      "declarations": "Statistics.BinaryExperiment.analyticQuota_eq_intCeil；posteriorSPRT_overflow_real_le；posteriorSPRT_overflow_le；posteriorSPRT_conditional_overflow_le",
+      "dependencies": "B01,B03",
+      "status": "已闭合"
+    },
+    {
+      "id": "B19b",
+      "original": "B:249–258",
+      "claim": "任意按完整(seed,entryHistory)可测选取且满足原范围/floor的有理target，其entry-gated真实tape SPRT error受target积分控制、overflow≤δ/(2N)*P(active)，None不计事件；实际reference review/有限target写入分别由B19e/B17a另证，整体风险和费用不由此自动推出",
+      "declarations": "Common.Native.entryPosteriorError_le；entryPosteriorOverflow_le；entryPosteriorOverflow_le_cap",
+      "dependencies": "M04d,B03,B19a,B20",
+      "status": "已闭合"
+    },
+    {
+      "id": "B19c",
+      "original": "B:249–275",
+      "claim": "原real δ/最小E可选R∈[δ/2,δ]且保持原quotaExponent；实际reference entry choice可测，对其潜在SPRT逐stage overflow≤δ/(2N)，不放大caps、不把R/C_N谎称δ/C_N；未把潜在test当真实执行",
+      "declarations": "Common.Native.ReferenceRiskChoice；exists_referenceRiskChoice；referenceEntryChoice；measurable_referenceEntryChoice；reference_entry_overflow_bound",
+      "dependencies": "B15a,B16a,B19b,B20a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B19d",
+      "original": "B:284–292",
+      "claim": "由B19e的真实逐stage事件包含和已证entry kernel，有限stage union得到原δ/原最小E下全任务overflow≤δ/2，含N0空事件；不再带未证路径识别前提，逐entry/truth条件断言仍另属B19",
+      "declarations": "Common.Native.referenceOverflow_eq_iUnion；referenceOverflowGuarantee_of_identification；referenceOverflowGuarantee",
+      "dependencies": "B19c,B19e",
+      "status": "已闭合"
+    },
+    {
+      "id": "B19e",
+      "original": "B:185–203、249–258；eq:price-analytic-quota",
+      "claim": "实际Prefix归纳证明首次entry快照及target在本stage testing/review中恒定，并沿所有此前review保first-exit进度；实际review时reviews<T，排除先命中后回穿误判。由真实word=tape推出每stage exhausted-review事件⊆entry潜在SPRT overflow，任意quota/失败path/任意Seed内部lemma均覆盖，T=Q不会触发溢出",
+      "declarations": "Common.Native.prefix_referenceTesting_origin；prefix_referenceReview_realization；referenceStageOverflow_subset_entryPosteriorOverflow；referenceOverflowIdentification",
+      "dependencies": "B16d,M03e,B23a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B20",
+      "original": "eq:price-rational-quota",
+      "claim": "paper TV=半L1，真实finite-channel Pinsker给2TV²≤d；原有理ratio/倒数整数界及最小E、原Qhat精确可算且≥analyticQ，无log/KL oracle；原生controller的执行资格仍待B21",
+      "declarations": "Statistics.BinaryExperiment.channelDriftLower_le_divergence；channelIncrementMax_le_integer；priorLogOddsMax_le_integer；quotaExponent_minimal；rationalQuota_dominates_analytic",
+      "dependencies": "B01,B15a,B19a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B20a",
+      "original": "eq:price-rational-quota；实/有理风险接合补论证",
+      "claim": "实δ选择同E的有理R∈[δ/2,δ]后，对原三分支budgetPath只用R/C_N而不谎称δ/C_N；在R下应用同原Qhat溢出界再由R≤δ得到原δ/(2N)，不扩大原caps",
+      "declarations": "Statistics.BinaryExperiment.exists_referenceRisk_originalQuota_overflow；Common.Native.entryPosteriorOverflow_referenceRisk_le",
+      "dependencies": "B15a,B15d,B19b,B20",
+      "status": "已闭合"
+    },
+    {
+      "id": "B21",
+      "original": "eq:price-total-cap",
+      "claim": "原实际bounded reference的逐sample逐prefix reviewQuota已证；THIS-script原完整执行H0由M08真实halt/normalCalls单调推出同H0全prefix资格，与原stage/total数值caps一起构造native Policy，原rule和全部sample/clock的run精确保持。无需risk/cost/finiteET或额外资源前提；H0是原选定脚本资格，不从任意accounting与数值caps自动推出，不限制比较策略。本行为协议额度迁移，非B23物理计算实现",
+      "declarations": "Common.Native.referenceBoundedPolicy；ReferenceOriginalQualification；ReferenceCompleteOriginalQualification；referenceCompleteOriginalQualification_iff；ReferenceReviewBounds；referenceReviewBounds；ReferenceNativeImplementation；referenceNativeImplementation；referenceCompleteResourceClaims",
+      "dependencies": "M08,B20,B21a,B21b",
+      "status": "已闭合"
+    },
+    {
+      "id": "B21a",
+      "original": "eq:price-total-cap；model:35–55",
+      "claim": "给定同合同uncapped合法控制器的全sample/所有前缀review≤Q与normal≤原H0、原reviewQuota≥Q和H≥H0+sumQ+min(N,q)，由真实prefix证明原native合法，保持完整run/risk/ENNR实际费用。证书先于native合法性；没有原native资格循环前提，也未宣称referenceRule已满足证书",
+      "declarations": "Common.Native.prefix_eq_run；ReviewQuotaCertificate；prefix_caps_of_certificates；Policy.enforceCaps；enforceCaps_run_eq；enforceCaps_risk_eq；enforceCaps_expectedBill_eq；native_value_le_certified_uncapped",
+      "dependencies": "M03a,M03b,M07a,M08b,M10a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B21b",
+      "original": "eq:price-total-cap；B:284–292",
+      "claim": "对实际bounded rule、任意Seed/全部truth/tape/所有有限前缀，真实reviews≤任意给定Q；Q0/T=Q/abort均覆盖，不需预算有效或成功前提。原uncapped全sample证书已真证；因此给定原H0正常调用证书和原数值caps可实际迁入native并逐path保run，仍不证明任意正常I/O自动有H0",
+      "declarations": "Common.Native.referenceRule_review_lt_quota；prefix_referenceRule_reviews_le_quota；referenceRule_reviewQuotaCertificate；referenceReviewBounds；referenceNativeImplementation",
+      "dependencies": "B16c,M03e,B21a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B22",
+      "original": "B:284–292",
+      "claim": "任意quota/budget的实际ideal与bounded在同tape上仅于真正exhausted review时分歧为abandon；无overflow时全run相同；所有sample的完整实际账单bounded≤ideal且risk bounded≤risk ideal+μoverflow。保留先前付费/失败后费/∞，无待证Alignment/risk/cost前提；原Qhat版本由此闭合",
+      "declarations": "Common.Native.referenceRule_quota_coupling；referenceRun_quota_coupling；referenceRun_eq_of_not_overflow；referenceRunActualBill_le_ideal；referenceRisk_le_ideal_add_overflow；referenceTruncationGuarantee",
+      "dependencies": "M03a,M03e,M06b,B16c",
+      "status": "已闭合"
+    },
+    {
+      "id": "B22a",
+      "original": "B:284–292",
+      "claim": "已实例化真B17、实际截断/overflow/review界，不再有待证风险前提。原selected bounded-controller真实H0/数值资格及原riskchoice下，构造真正native Policy同bounded rule、risk≤原δ、实际期望费≤ideal，并推出完整全策略Native.value≤ideal实际期望费；保留∞，无B18首项/finite-cost假设。此原资格下接口已闭合，H0为原complete-execution资格，向全prefix传递现见M08，不代表主价格上界或B18完成",
+      "declarations": "Common.Native.referenceBounded_risk；referenceNative_policy；native_value_le_reference_ideal",
+      "dependencies": "B17,B19d,B21a,B21b,B22",
+      "status": "已闭合"
+    },
+    {
+      "id": "B23a",
+      "original": "B:294–300；B:23–31",
+      "claim": "有限真实word上的有理乘积odds、阈值与MAP比较精确等同原posterior first-exit SPRT；允许0样本且T=Q时仍可写入。此处只证有限比较/真实word接口；实际referenceRule见B16c，实际review/有限target写入识别见B19e/B17a，整体bit-cost仍未证明",
+      "declarations": "Statistics.BinaryExperiment.rationalWordOdds；rationalWordHits_iff；rationalWordMAP_eq_recordDecision；posteriorThresholdStop_le_iff_rationalHit；posteriorThresholdStop_zero_iff_rationalHit；rationalHit_at_quota；rationalWordMAP_at_stop；Common.Native.prefix_historyObservationWord_hits_iff",
+      "dependencies": "M03e,B03",
+      "status": "已闭合"
+    },
+    {
+      "id": "B24",
+      "original": "thm:price",
+      "claim": "完整固定input原主统计价格law已证：有限rank正C、cap-independent全策略lower、原qualified合同族的matching native upper，以及∞rank实际zero-observation/zero-risk native见证和有限真实repair费。input固定先于ε/cutoff及后续δ/caps/accounting；upper保原THIS-reference H0/数值资格，无待证性能前提，lower不带资源资格。B23物理算术/机器成本不是本价格law前提，仍在S4独立目标中，不因本行闭合而删除",
+      "declarations": "Common.StatisticalInput.FixedGraphPriceLaw；fixedGraphPriceLaw；nativeLowerPriceLaw；nativeUpperPriceLaw；nativeInfiniteRankPriceLaw；orderedCoefficient_pos",
+      "dependencies": "B12,B13,B14,B18,B21,B22,B24a",
+      "status": "已闭合"
+    },
+    {
+      "id": "B24a",
+      "original": "thm:price；B:157–160",
+      "claim": "原独立relaxed全策略G的B12罚金渐近已实证，消去原下界连接的待证前提；固定input/有限rank后，每ε>0存在δ0使所有0<δ<δ0、任意current-allocation原合同及accounting均有ENNR Native.value≥(1−ε)C ell_d(1/δ)。不需资源证书，不将∞竞争者期望转实数。保留原条件连接定理用于溯源，同时已有无hpenalty参数的原NativeLowerPriceLaw",
+      "declarations": "Common.StatisticalInput.NativeLowerPriceLaw；nativeLowerPriceLaw；nativeLowerPriceLaw_of_penaltyAsymptotics；penaltyAsymptotics",
+      "dependencies": "B12,B13",
+      "status": "已闭合"
+    },
+    {
+      "id": "R01",
+      "original": "prices:97–107",
+      "claim": "同原输入的distinct-compatible matching独立族满足Hall及增广，构造真实Mathlib transversal matroid；circuits、girth、最早circuit heads及其对应均不加额外增广假设",
+      "declarations": "Retained.matchable_iff_matching；matchable_iff_hall；matchingAugmentation；transversalMatroid_indep；transversalMatroid_circuit；minimum_circuit_exists；girthHeads",
+      "dependencies": "M01",
+      "status": "已闭合"
+    },
+    {
+      "id": "R02",
+      "original": "B:313–325",
+      "claim": "批004原目标验收：原NativeRearrangement.{u}完整闭合：任意原Seed宇宙/NormalAccounting/mode/策略，构造同Seed真实uncapped延迟Policy；全prefix TerminalOnly与可测真实source shadow，原成功路径保成功/原实际eventual paid PAIRS/全部information prefix；所有失败/不返回路径观察与实际variable bill均支配，所有Seed概率law风险支配。无finiteET/费用/最优匹配/任意accounting native cap同run附加前提",
+      "declarations": "Retained.HealthyStepClaims；NativeRearrangement；PRetNativeRearrangement038.native_rearrangement",
+      "dependencies": "M03,M04,M05,R01,R02b",
+      "status": "已闭合"
+    },
+    {
+      "id": "R02a",
+      "original": "B:313–333；model:49–51",
+      "claim": "所有真实WF/Prefix/run的实际已执行stage均有distinct-compatible matching；成功时ordinary mismatches恰等已执行stages并可匹配；未把必要性当重排policy或retained价格桥",
+      "declarations": "Retained.executedStages_matchable；executedStages_eq_mismatches_of_success；prefix_success_mismatches_matchable；run_success_mismatches_matchable",
+      "dependencies": "M05,M07a,R01",
+      "status": "已闭合"
+    },
+    {
+      "id": "R02b",
+      "original": "B:313–319",
+      "claim": "初始健康；current不在旧H，correct保持H健康，error后健康iff insert可匹配，否则立即first-failure，任意后续并集仍dependent；直接连接原独立Retained.Play的correct/error/failed一步。只闭合健康状态图，不将任意Native policy重排计完成",
+      "declarations": "Retained.healthy_initial；healthy_correct；healthy_error_iff；healthy_error_permanent；healthy_play_correct；healthy_play_error；healthy_play_error_failure；healthyStepClaims",
+      "dependencies": "R01,R03",
+      "status": "已闭合"
+    },
+    {
+      "id": "R03",
+      "original": "B:316–341",
+      "claim": "独立retained first-failure Play的最小unsafe秩等于suffix最小additional dependent errors；初rank=girth，有限g时bad rankg−1 iff minimum circuit head，含g1；实际native history重排/随机桥仍见R02/R04，不假定高效围长oracle",
+      "declarations": "Retained.Play；Safe；errorRank；errorRank_eq_dependenceDepth；initial_errorRank_eq_girth；bad_successor_rank_iff_girthHead",
+      "dependencies": "R01",
+      "status": "已闭合"
+    },
+    {
+      "id": "R04",
+      "original": "B:324–333",
+      "claim": "批010完整原RetainedPriceClaims.{u} P-only全部十三域闭合：任意Seed宇宙策略重排/实际oldH债/FullHistoryPenaltyBridge、独立全策略fresh递推及严格短suffix渐近、等秩消去、三边界、真实alignment/TerminalScriptCompletion、THIS脚本实际risk/全路径fullBill、截断及原资格native实现均无额外待证前提；两个原有限rank/terminal枚举同时真证，失败/不返回/∞账单保留，不假设最优可达，无Paid依赖",
+      "declarations": "Retained.freshPenalty；FullHistoryPenaltyBridge；FreshPenaltyRecursion；FreshPenaltyBoundaryClaims；FreshPenaltyAsymptotics；EqualRankCancellation；ReferenceAlignment；TerminalScriptCompletion；ReferenceRiskAndCost；TruncationAndNativeImplementation；PRetFullHistoryBridge068.fullHistoryPenaltyBridge；PRetFreshInfiniteBoundary044.freshPenaltyBoundaryClaims；RootRetainedAsymp.freshAsymptotics_of_recursion；RootRetainedClosure.freshPenaltyRecursion；freshPenaltyAsymptotics；equalRankCancellation；RootRetainedQueries.rankQueryCorrect；terminalAssignmentCorrect；PRetAlignment.referenceAlignment；PRetCompletion.terminalScriptCompletion；PRetObservationEnvelope119.observationEnvelopeAsymptotics；RootRetainedComplete.retainedPriceClaims；fullRetainedClaims；PRetReferenceCost123.referenceRiskAndCost；PRetOverflow.truncationAndNativeImplementation",
+      "dependencies": "B09,B11,B16,B21,B22,M06,M08,R02,R03,R04a,R04b",
+      "status": "已闭合"
+    },
+    {
+      "id": "R04a",
+      "original": "B:324–333",
+      "claim": "terminal allocation/execution、实际Prefix完整Invariant、全写入/错项已真report且尚无commit/execute、errors可匹配时，构造逐allocate→execute→stop真实uncapped有限trace；最终真success、执行次数=errors.card、保留旧账单+真实matching纠正费。未编译完整history-policy或证明H0/原caps",
+      "declarations": "Retained.terminal_matching_trace；terminal_matching_trace_from_prefix",
+      "dependencies": "M03a,M07a,R01,R02a",
+      "status": "已闭合"
+    },
+    {
+      "id": "R04b",
+      "original": "B:324–331",
+      "claim": "已定义实际有限枚举rank/matching、原预算可见history重放及理想/截断retained controller，guarded uncapped合法性真证；保旧H的原full-policy fresh罚金、任意Seed比较/G≤λ/有限性已证。实际bounded脚本另真证所有Prefix逐stage quota、全sample有限返回动作halt及同H0下complete-execution资格与prefix证书严格等价，数值caps不变，无risk/fee/budget有效性前提。不据此声称Bellman、rank查询正确、matching完成或价格性能；批002正式修复retainedRule的终局守卫：allocate/execute不再误套current cursor，其余真handle/serial/report/compatible/commitment/unused/stage守卫保留；合法性及构造器使用原R04/R05已有的C.IsEarlyRetained，实际bounded quota/halt/原H0桥重新严格编译并public调用通过",
+      "declarations": "Retained.retainedRule；idealPolicy；boundedPolicy；OriginalQualification；retainedRule_uncapped_legal；freshRisk_encoded_eq；freshPenalty_le_policy_any_seed；freshPenalty_le_penalty；freshPenalty_ne_top；prefix_retainedRule_reviews_le_quota；retainedRule_reviewQuotaCertificate；retainedBounded_halted；retainedBounded_normalCalls_iff_completed；CompletedOriginalQualification；completedOriginalQualification_iff",
+      "dependencies": "M03a,M03b,M06,M09a,R01,M08c",
+      "status": "已闭合"
+    },
+    {
+      "id": "R05",
+      "original": "thm:retained；B:333–341",
+      "claim": "批010完整原RetainedPriceClaims.{u} P-only十三域及完整价格闭合：固定input后cutoff先于原delta/caps/accounting；有限girth精确headCoefficient的全Native lower无H0，THIS原有界脚本native upper仅原完整执行H0/数值资格；∞girth同一实际脚本每路径无review且终止、risk0/观察费0，全部真实修正费≤min(N,q)fmax，N0/q0全覆盖。所有risk/费用/终止/recursion/upper premise已内部消去，正常C0仍单列，未声称高效通用girth oracle",
+      "declarations": "Retained.headCoefficient；headCoefficient_pos；NativeLowerPriceLaw；NativeUpperPriceLaw；NativeInfiniteGirthLaw；RetainedPriceClaims；RootRetainedHead.nativeLowerPriceLaw_of_recursion；RootRetainedClosure.nativeLowerPriceLaw；PRetNativeImplementation118.nativeImplementation；PRetAlignment.referenceAlignment；PRetCompletion.terminalScriptCompletion；PRetObservationEnvelope119.observationEnvelopeAsymptotics；RootRetainedComplete.retainedPriceClaims；RootRetainedInfinite.nativeInfiniteGirthLaw；PRetCompleteUpper124.nativeUpperPriceLaw",
+      "dependencies": "B01,R01,R03,R04,M11",
+      "status": "已闭合"
+    },
+    {
+      "id": "L01a",
+      "original": "prices:127–152；eq:price-head",
+      "claim": "同一原input的纯有理/log AST与原orderedCoefficient精确相等；finite组合rank选择critical stage，未比较任何实KL，∞rank输出0；critical stage数≤N，AST节点数≤sum_i(14 alphabetSize_i+10)+1。generic selector仅作可执行规范，不宣称多项式；laminar机器提取和实际table-backed控制器/原资源性能仍属L01主行",
+      "declarations": "Common.SymbolicPrice.divergenceExpr_eval；localCoefficientExpr_eval；leadingExpression_eval；inputExpression_eval；inputHeads_length_le；inputExpression_nodes_le",
+      "dependencies": "B10,B14,A16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "C01",
+      "original": "eq:example-star；C:9–17",
+      "claim": "原q+1 stages两顺序star均laminar；Matchable(E) iff cardE≤q，唯一circuit全体/girthq+1/head第一stage，真实retained初rankq+1；重排经stage label等价保持全部离线匹配关系",
+      "declarations": "Star.starInstance；stageCount_eq；laminar；matchable_iff_card_le；circuit_iff_univ；girth_eq；girthHeads_eq；retained_initial_rank；order_matchable_iff",
+      "dependencies": "M01,R01,R03",
+      "status": "已闭合"
+    },
+    {
+      "id": "C01a",
+      "original": "intro:32–56；C:3–6",
+      "claim": "同原q≥2、固定有理c>0、0<gamma≤1/4、f≥0的公平BSC输入；两方向真实KL=kappa、局部A=a；三合同原quota/H/H0不变且I保留execution期限参数，三值直接为同源Native.value全策略inf。此定义不证明C12价格",
+      "declarations": "Statistics.BinarySymmetric.Parameters.experiment；divergence_eq_kappa；coefficient_eq_a；Star.Parameters.input；experiments_agree；currentContract；earlyRetainedContract；lateRetainedContract；currentValue；earlyRetainedValue；lateRetainedValue",
+      "dependencies": "M02,M03,M06a,M09a,C01",
+      "status": "已闭合"
+    },
+    {
+      "id": "C02",
+      "original": "C:19–35",
+      "claim": "批004原目标验收：原四结论完整闭合：独立causal allocation-game rank在universal-first为2、singletons-first为q+1；两个原StatisticalInput orderedCoefficient均精确为channel.a。实际兼容列表/局部权重已逐项识别，保原q≥2，不用价格结论或DP重定义秩，无Paid依赖",
+      "declarations": "Star.Parameters.OrderedRankCoefficientClaims；RootStarRank.orderedRankCoefficientClaims；universalFirst_rank；singletonsFirst_rank；universalFirst_coefficient；singletonsFirst_coefficient",
+      "dependencies": "A03,A16,B10,C01,C01a",
+      "status": "已闭合"
+    },
+    {
+      "id": "C03",
+      "original": "eq:example-bsc-information",
+      "claim": "中性公平BSC的真实stopped posterior MAP error由word双truth likelihood归一化，任意Seed宇宙/随机非MAP测试finite Bayes ET（等价两truth ET有限）下，真实观察费=aEφ(P)；toReal均先证有限，nontermination信息保∞。并证log(1/p)−2≤φ(p)≤log(1/p)。这是局部实验恒等式，完整Native-Z信息桥仍属C05",
+      "declarations": "Statistics.BinarySymmetric.phiReal_le_log_inv；log_inv_sub_two_le_phiReal；Parameters.bayesExpectedSamples_ne_top_iff；bayesObservationCharge_eq_posteriorInformation；stoppedPosteriorInformationIdentity",
+      "dependencies": "B02,B04,C01a,C03a,C03b",
+      "status": "已闭合"
+    },
+    {
+      "id": "C03a",
+      "original": "C:40–56；D:38–43（中性标量）",
+      "claim": "中性phiReal=(1−2p)log((1−p)/p)在(0,1/2]非负、严格递减且严格凸，精确phi第二导=1/[p²(1−p)²]；扩展phi(0)=∞、phi(1/2)=0。没有由Real.log0造零错误成本；完整局部stopped posterior信息与prebirth事件限制另由C03/D03证明",
+      "declarations": "Statistics.BinarySymmetric.phi_zero；phi_half；phiReal_nonneg；phiReal_strictAntiOn；phiReal_strictConvexOn；deriv2_phiReal；phiScalarClaims",
+      "dependencies": "C01a",
+      "status": "已闭合"
+    },
+    {
+      "id": "C03b",
+      "original": "C:40–56；D:38–68",
+      "claim": "真实finite stopped-word的双truth Bayes posterior mass/error与实际decision独立；由真实停止记录矩形质量和RN证明任意Seed的bayesStoppedLaw.withDensity(posteriorMass_x)=1/2·truthTranscriptLaw_x，再以Wald证C03；没有把posterior law作实验字段或自用信息目标前提",
+      "declarations": "Statistics.BinarySymmetric.Parameters.wordPosteriorMass；wordPosteriorError；wordPosteriorError_empty；bayesStoppedLaw_rectangle；wordPosterior_rectangle_bayes；bayesStoppedLaw_posterior_withDensity",
+      "dependencies": "B04,C01a,C03a",
+      "status": "已闭合"
+    },
+    {
+      "id": "C04",
+      "original": "C:58–68",
+      "claim": "同原两order、全部late-retained原合同/accounting、任意Seed宇宙及全合法Native Policy，真实首report前Z的完整truth posterior等于各stage实际word posterior之积。已真证非法cut strings零质量、有限truth sum-product归一化、countable public histories汇总与完整withDensity法则，对所有可测seed×history事件给原ENNR积分恒等式；无RCP/finiteET/MAP/success或seed单点质量假设",
+      "declarations": "Star.Parameters.cutPosterior_normalization；preReportLaw_rectangle；cutTruthRecordLaw_eq_withDensity；preReport_truth_event_integral；preReportProductPosterior",
+      "dependencies": "M03,M04,C03b,C04a,C04b,C04c",
+      "status": "已闭合"
+    },
+    {
+      "id": "C04a",
+      "original": "C:58–68；model:19–55",
+      "claim": "从原native有限quota派生的真实horizon构造可测Z=原seed×history.takeWhile非report；保留同write包最后wrote，去掉首report及之后repair/abort，不把State/truth放入seed。原word posterior公式、零观察fair mass/error=1/2及nonMAP decision error≥MAP已证；这仅数据/端点/标量，非完整条件posterior",
+      "declarations": "Common.Native.preReportPublicHistory；preReportRecord；measurable_preReportRecord；preReportLaw；Star.Parameters.preReportWord；preReportPosteriorMass_no_observations；preReportMAPError_no_observations；preReportMAPError_le_decision",
+      "dependencies": "M03f,C01a,C03b",
+      "status": "已闭合"
+    },
+    {
+      "id": "C04b",
+      "original": "C:58–68；model:19–55",
+      "claim": "任意Seed宇宙及可测seed事件B，实际late合同无report的完整Prefix可按公共观察word cylinder重放；其与任意完整truth赋值的联合概率精确为ν(B∩原seed gate)乘各stage prior和word likelihood之积。保留失败/abandon Prefix；证明同包最后wrote仍保留，但未把含report的末State整体retarget或据此冒称完整preReportLaw已归一化",
+      "declarations": "Common.Native.prefix_retarget_reportFree；prefix_event_eq_seedGate_prod_cylinder；prefix_jointTruth_seedEvent_law；late_write_history_takeWhile",
+      "dependencies": "M03a,M03e,M04a,C04a",
+      "status": "已闭合"
+    },
+    {
+      "id": "C04c",
+      "original": "C:58–68；model:19–55",
+      "claim": "原native完整pre-report cut含首report包最后wrote，任意Seed宇宙/全合法策略下仅同seed与已买word相同即可在任意替换truth/tape上真实重放。由原all-world合法性获得最后write，不等同truth-bearing响应后全State/normalCalls；所有失败/abandon保留。完整cut事件精确分解为公共word cylinder与同一可测原seed gate，对任意可测seed事件及完整truth向量给原prior/word联合乘积质量；真实cut字母合法性亦已证。此行仅likelihood接口，完整归一化由C04独立闭合",
+      "declarations": "Common.Native.prefix_replay_late_write_cut；prefix_replay_public_cut；preReportPublicHistory_replay；preReportPublicHistory_observation_alphabet；preReportPublicHistory_eq_iff_gate_and_cylinder；preReport_jointTruth_seedEvent_law",
+      "dependencies": "M03a,M03f,M04a,C04a,C04b",
+      "status": "已闭合"
+    },
+    {
+      "id": "C05",
+      "original": "C:66–87",
+      "claim": "已完整证明同实际Z的全Native观察费用=aEΣφ(P_i)、每可测Z事件failure质量≥积分product MAP-errors，以及每原δ-safe LR完整策略obs≥a log(1/δ)−2aN；任意Seed宇宙/非MAP/弃任务/失败后消费及两order均保留。原quota导出局部finiteET而非额外假设；Jensen直接用ENNR积分及有限1消去，不要求log可积/有限总费，不补未来实际writes或按success筛费。此为LR lower，不代表C07–C12三价格全闭合",
+      "declarations": "Star.Parameters.nativeLateObservationInformation；preReportFailureLower；nativeLateObservationLower；nativeLateLowerClaims",
+      "dependencies": "C01,C03,C04,C04a,C05a,C05b,C05c",
+      "status": "已闭合"
+    },
+    {
+      "id": "C05a",
+      "original": "C:58–72；model:19–55",
+      "claim": "已真证实际首report cut解析的全部ordinary writes等于原run最终ledger.written，报告后普通write端口不再改变。star成功必至少一ordinary write正确，故分析用opposite-write truth selector的事件逐path蕴含原失败；selector仅索引事件、不添原writes。由C04对任意可测seed×history事件作有限truth纤维汇总，得到完整PreReportFailureLower：MAP-errors乘积积分≤同事件原失败质量。任意Seed宇宙/两order/全Native LR policy、零质量/未进入/abandon及非MAP均保留，无额外finiteET/RCP/成功筛选假设",
+      "declarations": "Common.Native.prefix_preReport_historyWritten；Star.Parameters.cutBadTruth_forces_failure；preReport_badTruth_event_integral；preReport_failure_lower；preReportFailureLower",
+      "dependencies": "C04,C04a,C01a,M03f,M03d,M05a,R03",
+      "status": "已闭合"
+    },
+    {
+      "id": "C05b",
+      "original": "C:74–85",
+      "claim": "两order/全部原LR caps/accounting/任意Seed宇宙与全合法Native策略，真实总观察费=ofReal a·E_ZΣφ(MAPerror)。原quota推出逐stage finiteET；局部外部seed仅原seed×其他stage worlds，真实cut因果重放把局部stopped检验积分接回原联合分布。保失败/abandon/非MAP费用，不增可积性条件",
+      "declarations": "Common.Native.preReport_observations_length；runObservationBill_of_halted；Common.StatisticalInput.seededWorldLaw_external_current；Star.Parameters.nativeStageTest_finiteET；nativeStage_information；nativeLateObservationInformation",
+      "dependencies": "M03,M03f,C03,C04a,C04c,C05a",
+      "status": "已闭合"
+    },
+    {
+      "id": "C05c",
+      "original": "C:77–87",
+      "claim": "有限个正posterior errors≤1/2、乘积可测且乘积积分≤原δ时，直接以supporting-log不等式加非负product/δ项积分并消去有限1，得ofReal(log(1/δ)−2N)≤EΣφ。全程保ENNR及∞，不需信息/log可积或finite-cost；实例化已证明的Native观察信息/失败桥，得到原LR完整观察费lower，0<δ与任意Seed/两order不变",
+      "declarations": "Statistics.BinarySymmetric.log_inv_support；phi_sum_support；phi_sum_lintegral_lower；Star.Parameters.nativeLateObservationLower；nativeLateLowerClaims",
+      "dependencies": "C03,C05a,C05b",
+      "status": "已闭合"
+    },
+    {
+      "id": "C06",
+      "original": "C:91–97",
+      "claim": "原真实BSC posterior SPRT对每truth及Bayes观察费≤a(log(1/p)+h)，覆盖全部有理0<p≤1/2。真实单跃绝对值=h、截断score overshoot≤boundary+h，再由已证finiteET Wald闭合，不把generic 2h界错误简化成h",
+      "declarations": "Statistics.BinarySymmetric.Parameters.abs_logIncrement_eq_h；bscSPRT_expectedObservationCharge_le；bscSPRT_bayesObservationCharge_le",
+      "dependencies": "B03,C01a,C03",
+      "status": "已闭合"
+    },
+    {
+      "id": "C07",
+      "original": "C:99–112",
+      "claim": "批009完整原C07Claims P-only：原UF current合同/真实δ与r、全Prefix合法性和即时实际工具身份、同原世界risk≤r、完整观测费≤原两项envelope及原纯渐近、全部失败/不返回路径修正收费；真实head错误门控与全阶段SPRT费用已内部证明，无ET/EC/终止或oracle前提",
+      "declarations": "Star.Parameters.starReferenceRule；ReferenceRealFirstExit；UniversalFirstCurrentConstruction；UniversalFirstEnvelopeAsymptotics；C07Claims；RootStarEnvelope.universalFirstEnvelopeAsymptotics；PStarCurrentLegality006.currentReferenceLegality；PStarCurrentImmediate007.immediateExecution；PStarCurrentToolIdentity008.currentToolIdentities；PStarUniversalConstruction039.c07Claims",
+      "dependencies": "M03,M04,C02,C06,B15",
+      "status": "已闭合"
+    },
+    {
+      "id": "C08",
+      "original": "C:114–134",
+      "claim": "批009完整原C08Claims P-only：两order ER及SF current实际count规则，原target/budget递推、真实terminal matching/card/count、全部原Prefix合法性、risk≤r、真实期望观测费及all-path修正费；真实错误前缀门控和正项有限加权和精确等于独立原envelope，无ET/EC/最优可达/性能前提",
+      "declarations": "Star.Parameters.CountControllerConstruction；CountEnvelopeAsymptotics；TerminalCriterion；C08Claims；RootStarEnvelope.countEnvelopeAsymptotics；PStarCurrentLegality006.currentReferenceLegality；PStarTargetHistory010.chosenTargetReal_append_headReviewHistory；PStarCountConstruction040.c08Claims；RootStarCostSum.count_cost_sum",
+      "dependencies": "M03,M04,C01,C06,B15",
+      "status": "已闭合"
+    },
+    {
+      "id": "C09",
+      "original": "C:136–144",
+      "claim": "批007完整原LateRetainedConstruction P-only：两order/任意原LR合同与accounting/原real r/Unit脚本，真实legality、原世界risk≤r、原EC、首stage外零reviews、无earlycommit、完整原TerminalCriterion及全path真执行次数/实际账单；真实finite-stop→firstwrite/allWritten AE与真实repair/终端配对已接，无TC/performance/selection/有限ET额外前提，0/∞失败支保留",
+      "declarations": "Star.Parameters.LateRetainedConstruction；RetainedNoEarlyCommitment；ReferenceAllPathCharges；C09Claims；PStarLR.lateRetainedConstruction",
+      "dependencies": "M03,M04,C01,C06,M07",
+      "status": "已闭合"
+    },
+    {
+      "id": "C10",
+      "original": "eq:example-common-quota；C:146–157",
+      "claim": "批004原目标验收：原C10Claims完整闭合：所有正real δ的最小dyadic指数存在，原rational commonExponentRat确为同一最小指数，原commonQuota ceil界；真实chosenTargetReal对全部原run目标满足δ/10≤target≤1/2。目标floor实际对任意visible history成立，不要求C07/C08构造或H0新前提；原δ/2、脚本、Q和量词不变",
+      "declarations": "Star.Parameters.CommonQuotaArithmetic；CommonTargetFloor；commonExponentRat；commonQuota；OriginalStarQualification；C10Claims；RootStarQuota.c10Claims；commonQuotaArithmetic；commonTargetFloor",
+      "dependencies": "C07,C08,C09,M08",
+      "status": "已闭合"
+    },
+    {
+      "id": "C11",
+      "original": "C:159–176",
+      "claim": "批009完整原C11Claims.{u} P-only：任意私有Seed宇宙条件overflow/全局δ/2 union；实际entry与current target/真实firstExit已内部识别，same-tape截断全实际已付ledger及失败/不返回账单，有理/实数规则逐历史相等；仅原H0/数值资源资格构造同rule native Policy并证明risk≤δ及原ideal账单domination，无额外风险/ET/费用/识别待证前提",
+      "declarations": "Star.Parameters.ConditionalOverflow；StarOverflowAssembly；SameTapeStarTruncation；RationalStarImplementation；NativeStarImplementation；C11Claims；RootStarOverflow.conditionalOverflow；sameTapeStarTruncation；rationalStarImplementation；reviewQuotaCertificate；referenceAllPathCharges；anyStarOverflow_le；nativeStarImplementation_of_risk；RootStarOverflow.c11Claims；starOverflowAssembly；idealRisk",
+      "dependencies": "C06,C10,M06,M08",
+      "status": "已闭合"
+    },
+    {
+      "id": "C12",
+      "original": "prop:star；intro:41–56",
+      "claim": "批009完整原C12Claims P-only：固定原P先于一个统一ε-cutoff，覆盖所有原realδ/两order/三合同/原qualified caps与accounting；完整ALL随机策略Native.value同δ ENNR双边界，lower无H0；upper来自原实际native脚本、真实failed/nonreturn fullBill及原δ/2包络加q次全部修正费，统一转参吸收常数，无value/risk/cost/termination待证前提",
+      "declarations": "Star.Parameters.priceDepth；leadingScale；ThreePrices；ThreePricesLower；C12Claims；RootStarLower.threePricesLower；PStarCompletePrice043.c12Claims；RootStarPriceEnvelope.uniform_upper；RootStarLower.threePricesLower",
+      "dependencies": "C02,C05,C07,C08,C09,C11,B24,R05,M11",
+      "status": "已闭合"
+    },
+    {
+      "id": "D01",
+      "original": "paid-extension:14–54",
+      "claim": "真实共享池、公平Fin2 BSC；paid/free/native/uncapped四value直接使用同Native.value、同I_pay/δ/accounting和原caps。仅改实际修正费的任意seed策略双向运输保持合法/run/risk/观察费；f0总费恰等观察费，f增加时paid/native value不降且free≤paid，不交换I与I_pay",
+      "declarations": "Paid.Parameters.sharedInstance；experiment；input；PaymentContract；paidValue；nativeValue；uncappedValue；freeValue；repricePolicy；legalRule_same_fee；run_same_fee；risk_same_fee；expectedObservationBill_same_fee；free_expectedBill_eq_observation；paidValue_mono_fee；freeValue_le_paidValue",
+      "dependencies": "M02,M03,M04,M05,M09,M10,M10d",
+      "status": "已闭合"
+    },
+    {
+      "id": "D01a",
+      "original": "paid-extension:14–54",
+      "claim": "同实际付款合同、同输入/收费/风险仅放松quota/H，真实策略inf满足V∞≤Vnat，不变成retained/免费overwrite",
+      "declarations": "Paid.Parameters.uncappedValue_le_nativeValue",
+      "dependencies": "D01,M10a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D01b",
+      "original": "paid-extension:14–54；D:38–106",
+      "claim": "原Paid实验、p_m、kappa/a与中性BSC逐定义完全一致，单向适配不改变prior/channel/c/风险/合同/收费，不使主链依赖Paid；费用改变的整个policy coupling另见D01",
+      "declarations": "Paid.Parameters.binarySymmetric；experiment_eq_binarySymmetric；rocError_eq_endpointError；informationConstant_eq；priceCoefficient_eq",
+      "dependencies": "D01,C01a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D02",
+      "original": "eq:paid:certificate-numbers",
+      "claim": "原t0/M/E最小整数由有理可判条件、真实存在性与Nat.find构造，原Q是rational ceil/max；B=cNt0、Λ=4B/δ保留c，c/Λ消去后M/epsilon/Q仅Nγδ。只有算术资源test，不含lawful ops/H0/controller保证",
+      "declarations": "Paid.CertificateInput.t0_spec；t0_min；M_spec；M_min；E_spec；E_min；Q；Paid.Parameters.priceRatio_eq；epsilon_formula；M_original_spec；M_original_min；E_original_spec；Q_ge_menu_ceil；Q_ge_tail_ceil",
+      "dependencies": "M01,D01",
+      "status": "已闭合"
+    },
+    {
+      "id": "D03",
+      "original": "lem:paid:information；D:38–68",
+      "claim": "原Paid实验单向适配C03/C03a真实stopped posterior信息；出生前事件仅可看独立seed/生成旧history，限制版只需事件内gated ET有限、事件外允许∞，零概率事件不归一化；blind T0/P1/2与φ0∞均保留。完整abstract experiment信息及限制版已证；不冒称C04或任意旧Native历史模拟已证",
+      "declarations": "Statistics.BinarySymmetric.Parameters.gatedObservationCharge_eq_posteriorInformation；preBirthStoppedPosteriorInformationIdentity；gatedBayesExpectedSamples_ne_top_iff；Paid.Parameters.stoppedPosteriorInformationIdentity；preBirthStoppedPosteriorInformationIdentity",
+      "dependencies": "B02,C03,C03a,D01b",
+      "status": "已闭合"
+    },
+    {
+      "id": "D04",
+      "original": "eq:paid:roc-points",
+      "claim": "原m≥1实际symmetric hitting test的每truth error=p_m、ET=m(1−2p_m)/(2gamma)、实际expectedCharge=C_m=a phi(p_m)。由真实停止记录似然比和两种decision质量解精确error，再以有限ET Wald得到样本/费用，不额外要求p_m≤1/4",
+      "declarations": "Statistics.BinarySymmetric.Parameters.symmetricHitting_conditionalError_eq；symmetricHitting_expectedSamples_eq；symmetricHitting_expectedCharge_eq；symmetricHitting_expectedCharge_eq_information；symmetricHittingExactLaw；Paid.Parameters.symmetricHittingExactLaw",
+      "dependencies": "D01b,C03a,B03",
+      "status": "已闭合"
+    },
+    {
+      "id": "D04a",
+      "original": "D:71–106",
+      "claim": "实际posteriorSPRT(p_m)等同整数signedSum越出±m，有限停止精确到边界；所有m≥0/两truth ET与观察费有限，不加p_m≤1/4；符号端点Cm精确等于a phi(p_m)，含m0费用0。m≥1完整性能由D04证明；m0错误率用D05a独立公平guess处理",
+      "declarations": "Statistics.BinarySymmetric.Parameters.symmetricHittingTest；symmetricHittingTest_stop_le_iff；symmetricHittingTest_hits_exact；symmetricHittingTest_expectedSamples_finite；symmetricHittingTest_expectedCharge_finite；endpointCharge_eq_information；endpointChargeENN_eq_information",
+      "dependencies": "B03,C03a,D01b",
+      "status": "已闭合"
+    },
+    {
+      "id": "D05",
+      "original": "lem:paid:roc；D:71–115",
+      "claim": "原任意decision error e∈(0,1)的review费≥g(min(e,1−e))已证，保任意Seed宇宙、非MAP及∞费用比较器；仅在证明内部从有限fee支派生有限ET，未加为输入。实际独立初始相邻边界混合在每个truth下精确达到p与g(p)，全seed/有限stop为MAP且0分数允许双向tie；e>1/2使用原同停时互补decision达到原error/charge。原ExactROCClaims完整闭合；g0=∞/有理idx、weights及value沿既有定义和D05a，不改参数/策略类，不消费D06或后续菜单结论",
+      "declarations": "Statistics.BinarySymmetric.Parameters.ExactROCClaims；Statistics.PDROC.rocArbitraryDecisionLower；rocMAPAttains；rocArbitraryDecisionAttains；exactROCClaims",
+      "dependencies": "D03,D04,D05a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D05a",
+      "original": "D:71–115",
+      "claim": "g用真实相邻端点弦独立定义，g0=∞、g(p_m)=C_m；区间由p_m趋0保证可寻，实际Nat.find有理backend/权重和值精确同源。m0为独立公平guess，两truth错误1/2且费用0；初始Bool×Bool law及相邻混合test已证明概率/可测/停时/decision因果合法。混合性能和任意test下界仍属D05待证",
+      "declarations": "Statistics.BinarySymmetric.Parameters.rocPrice；rocPrice_zero；rocPrice_endpoint；rocIndexRat；rocPrice_rat_eq；rocInitialWeight_rat_eq；fairGuessTest；adjacentMixtureTest；adjacentMixtureSeedLaw_probability",
+      "dependencies": "C03a,D04",
+      "status": "已闭合"
+    },
+    {
+      "id": "D06",
+      "original": "lem:paid:representation；D:120–169",
+      "claim": "同I_pay实际current-payment/accounting/任意Seed宇宙及原finite-full-bill Policy，全部原mode；真实合法first-failure模拟、原seed×完整completed shadow-history联合law、真实整数boundary/坐标flip、每writing record精确C_m与p_m或1−p_m、含m0公平猜测及停止/弃任务/非返回。与first-failure stopped source的实际观察/全部失败修正费law保持，对一般原source风险保持、观察及完整账单不增；原full paidPenaltyValue与actual boundary脚本inf等值，含∞罚金。三个完整原Prop均无额外source-history/flow/finiteET/MAP待证前提，不把高效trace-oracle或性能作Policy输入。",
+      "declarations": "Paid.Parameters.FirstFailureRepresentationClaims；RecordRepresentationClaims；RepresentationAtPenaltyInfima；PDROC.recordRepresentationClaims；PDROC.representationAtPenaltyInfima；PDROC.firstFailureRepresentationClaims",
+      "dependencies": "M03,M04,M05,M06,D03,D04,D05,D16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D06a",
+      "original": "D:132–167",
+      "claim": "实际completedHistory含非返回none且可测；原full-policy付费罚金inf≤实际合法boundary脚本子类inf，此单向无需representation/ROC/finite-cost前提。未证明反向或Native模拟；none不用于抹去费用",
+      "declarations": "Paid.completedHistory_none_iff；completedHistory_some_iff；measurable_completedHistory；Parameters.paidPenaltyValue_le_symmetricRecordPenaltyValue",
+      "dependencies": "M03,M06,M09a,D16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D07",
+      "original": "lem:paid:surrogate",
+      "claim": "同原BSC/费率，0<p≤1/2时ψ=max(aφ,(c/γ)(1/2−p))满足ψ≤g≤4ψ，m≥1时C_(m+1)≤4C_m；独立精确Prop已证明，g/ψ保留扩展值而非局部价格inf倒定义；本批：原UniformLocalSurrogate现由全p/首弦/正端点分支证明闭合，g与psi仍为原扩展值定义",
+      "declarations": "Paid.Parameters.rocSurrogate；UniformLocalSurrogate；PDROC.uniformLocalSurrogate",
+      "dependencies": "D04,D05",
+      "status": "已闭合"
+    },
+    {
+      "id": "D08",
+      "original": "D:215–225",
+      "claim": "同I_pay全策略，A_i为此前所有stage已正确或实际修正的真实entry，加已resolved但advance前停止所配的唯一下个未进入stage；未写时有限review用真实word MAP，∞review单列。已证明可测preBirthView gate、next未进入且零review、至多一个未写填充、δ-safe时μ_i≥1−δ；不是仅以进入当healthy或填写所有未来bits；本批：原SurvivingEntryClaims现完整闭合，保任意Seed宇宙/原mode及未写填充全部边界",
+      "declarations": "Paid.Parameters.actualSurvivingEntry；nextStageFilledEntry；survivingEntry；filledOrdinaryDecision；SurvivingEntryClaims；PDLower.survivingEntryClaims",
+      "dependencies": "D01,M04,M05,M03d",
+      "status": "已闭合"
+    },
+    {
+      "id": "D09",
+      "original": "eq:paid:surviving-information",
+      "claim": "同I_pay/native及uncapped、任意Seed宇宙和全可测Policy，完整实际观察期望≥a sumE[1_Ai φ(P_i)]，仅出生前eligibility不condition eventual success。P_i取真实有限观察word posterior，零样本1/2、无限观察取0且φ(0)=∞；不删失败后费用，不另加finiteET或finite-cost前提；精确Prop已证明；本批：原SurvivingInformationLower已无额外前提闭合，finiteET仅在有限观察费分支内部推出，保全部失败/不返回费用",
+      "declarations": "Paid.Parameters.paidRunReviewCount；paidRunPosteriorError；SurvivingInformationLower；PDLower.survivingInformationLower",
+      "dependencies": "D03,D08,D06",
+      "status": "已闭合"
+    },
+    {
+      "id": "D10",
+      "original": "eq:paid:one-failure-allowance",
+      "claim": "同I_pay/全策略精确待证b=sumE[1_Ai P_i]≤marked错误概率和≤E R_act+δ，并陈述逐path marked数≤全部实际修正数+一次失败indicator。posterior比较仅在期望中，不误写点态P_i≤错误indicator；真实非MAP写入保留，仅当前未写decision可MAP补齐，失败后先前及后续实际付款仍计入r；批002组件：原MarkedFailureAllowance已无前提闭合，所有路径marked总量≤全部真实物理执行次数+一次原run failure，任意Seed/模式及失败/非返回付款均保留；完整后验比较仍缺；批003：原完整OneFailureAllowance已无新增前提证明；任意Seed宇宙/原mode/full可测合法策略，真实有限停止子概率law及非MAP后验积分比较，不给非返回制造有限word。所有marked错决策≤全部真实物理执行+一次原failure，失败后付款保留，不以pointwise posterior≤realized indicator代替积分",
+      "declarations": "Paid.Parameters.MarkedPosteriorComparison；MarkedFailureAllowance；PosteriorFailureAllowance；OneFailureAllowance；PDLower.oneFailureAllowance；markedPosteriorComparison；posteriorFailureAllowance；markedFailureAllowance",
+      "dependencies": "D01,D08,M05,M06d",
+      "status": "已闭合"
+    },
+    {
+      "id": "D11",
+      "original": "lem:paid:usage",
+      "claim": "同I_pay/原δ的任意宇宙seed与全δ-safe Policy，native及uncapped的ENNR完整期望费≥amφ(min(1/2,(r+δ)/m))+fE R_act，m=N(1−δ)>0、r为已证明有限的真实修正期望再转Real。不加有限观察期望/成功路径/额外H0假设；完整perspective/Jensen结论已证明；批003：原UsageLower及generic gated ENNReal perspective/Jensen已无前提证明；真实repair期望先证有限再转Real，观察/总费允许∞，source full bill保全部失败付款。原H(M,x)对正M/x的两单调、零区和正区真实导数/严格正系数亦已补齐，无新H0/MAP/finiteET/finiteEC前提",
+      "declarations": "Paid.Parameters.survivalMassLower_pos；UsageLower；PDLower.usageLower；gated_perspective；RootPaidPerspective.value_error_antitone；value_mass_monotone；realValue_hasDerivAt；perspective_derivative_positive",
+      "dependencies": "D09,D10,D03,M06d",
+      "status": "已闭合"
+    },
+    {
+      "id": "D12",
+      "original": "lem:paid:fee-scale",
+      "claim": "同I_pay/原δ的任意宇宙私有seed、可测全历史δ-safe策略，native与uncapped均EC≥aN/128 log(1+min(f/a,N/δ))；同一真实策略inf亦满足。参数统一，f≥0含小f/f0，不加MAP、finiteET或有限费用假设，原精确Prop已证明；批003：原完整policy与同一真实policy-inf value下界均已证明，精确aN/128及log(1+min(f/a,N/delta))不变，含fee0/任意小正fee/任意Seed宇宙/native与uncapped/∞费用，无最优达成前提",
+      "declarations": "Paid.Parameters.feeScaleLowerAmount；UniformFeeScalePolicyLower；UniformFeeScaleValueLower；PDLower.uniformFeeScalePolicyLower；uniformFeeScaleValueLower",
+      "dependencies": "D11,D01",
+      "status": "已闭合"
+    },
+    {
+      "id": "D13",
+      "original": "eq:paid:weighted-correction、overlay-local",
+      "claim": "对每原有理f≥0，p_f=1/[2(1+f/a)]，fp_f≤a/2 log(1+f/a)，g(p_f)≤8a log(1+f/a)。独立完整Prop已证明；f0、p_f范围和真实g(1/2)=0已见D13a；本批：原OverlayLocalClaims及实际增量17/2预算已无额外前提闭合，保fee0及任意小非负fee",
+      "declarations": "Paid.Parameters.overlayError；OverlayLocalBounds；OverlayLocalClaims；PDROC.overlayLocalClaims；overlayIncrement_le",
+      "dependencies": "D05,D07,D13a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D13a",
+      "original": "D:312–333；eq:paid:three-scales",
+      "claim": "D_f/Sδ/T使用原a=c/κ、同合同同mode free value，参数公式/非负/有限标量已证；D_f(0)=0、p_f∈(0,1/2]、p_0=1/2且真实g(p_0)=0，原overlay两不等式在f0精确成立。未把此端点证明计作D13全f完成",
+      "declarations": "Paid.Parameters.feeScale；saturationScale；separationScale；feeScaleReal_nonneg；saturationScaleReal_nonneg；feeScale_zero；overlayError_pos；overlayError_le_half；overlayError_zero_rocPrice；overlayLocalBounds_zero",
+      "dependencies": "D01,D05a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D14",
+      "original": "eq:paid:false-positive-virtual-error；D:349–398",
+      "claim": "批004原目标验收：原record-aware VirtualErrorCouplingClaims.{u}完整闭合：任意原mode/Seed宇宙/full policy，真实first-entry/minimal-before/full shadow联合law及halt-or-next-cursor，非MAP完整record后验，actual Native合法/运行/成功风险/全部实际观察修正账单与∞罚金均覆盖；Native/freshness/source-law/finite-local-ET/budget helpers已内部消去。保原输入的完整source有限bill，旧D06/RepresentationClaims不变",
+      "declarations": "PDROC.OverlayDraft.VirtualErrorCouplingClaims；VirtualOverlayRepresentation；OverlayStageRealization；OverlayPathCoupling；OverlayRecordCells；PDROC.virtualErrorCouplingClaims；overlayVirtualRepresentation",
+      "dependencies": "D06,D05,D13,M02,M04,M06",
+      "status": "已闭合"
+    },
+    {
+      "id": "D14a",
+      "original": "D:357–365、391",
+      "claim": "原FP数值在[0,1]及混合恒等式，非MAP record error与p′范围；纯Bool的actualError≤actualError∨mark；f0时两项增费预算金额=0。仅标量/布尔引理，不代表真实Native error coupling或费用模拟已证",
+      "declarations": "Paid.Parameters.falsePositiveProbability_mem_Icc；falsePositiveProbability_mix；actualError_le_coupledVirtualError；overlayRecord_falsePositive_mem_Icc；overlayObservationIncrement_zero；overlayCorrectionAmount_zero",
+      "dependencies": "D04,D13a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D15",
+      "original": "thm:paid:overlay",
+      "claim": "批004原目标验收：原任意宇宙PaidOverlayPolicy及原Type0 full-policy PaidOverlayValue均无额外待证前提闭合；真实收费overlay有原风险/实际完整费用保证，保fee0/任意小fee/∞比较值、原17/2与9常数，无最优达成/native cap/H0新前提。原D29固定native算法仍须D26",
+      "declarations": "Paid.Parameters.PaidOverlayPolicy；PaidOverlayValue；PDROC.paidOverlayPolicy；paidOverlayValue",
+      "dependencies": "D06,D13,D14,D01",
+      "status": "已闭合"
+    },
+    {
+      "id": "D16",
+      "original": "eq:paid:exact-penalty-program；D:413–451",
+      "claim": "批005完整原PaidPenaltyProgramClaims无额外前提闭合：独立真实full-policy paid F的原identification/successor order/双向精确Bellman/least endpoint minimum；原n>0及finite lambda条件不改，任意k含k≥n、fee0/lambda0、原current payment/任意accounting/全部Seed宇宙比较与失败不返回全实际费用。真实近下确界续局拼接，不假attainment；实际已执行头费与全部观察同时下界，未付错头跨窗口永久失败、no-arrival原单次失败罚金、non-MAP/∞局部比较均覆盖；无H0/性能/finiteET新前提",
+      "declarations": "Paid.paidPenaltyValue；Parameters.freshPaidPenalty；paidGoodSuccessor；paidBadSuccessor；PaidSuccessorOrder；ExactPaidPenaltyBellman；PaidEndpointMinimumExists；PaidPenaltyProgramClaims；PDMenu.paidSuccessorOrder；RootPaidToolTransport.freshPaidPenalty_tools_antitone；freshPaidPenalty_le_erased_tool_policy；deletePolicy_actualBill；RootBSCEndpointPenalty.endpointInf_le_bayesObjective_any_seed；PDMenu.paidPenaltyProgramClaims；paidExactPenaltyBellman；paidEndpointInf_le_policy",
+      "dependencies": "D01,D05,D06,D16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D16a",
+      "original": "D:413–451；model:19–55",
+      "claim": "实际观察+修正收费的独立罚金inf已接通任意Seed比较器，含失败/不返回已付费；已证F≤λ、空任务F=0。仅uncapped时重新计normal与改caps数值保真正inf，fresh初始(N,K)恰等原I_pay/accounting的full-policy罚金值；未比较I与I_pay最优值，不宣称Bellman已证",
+      "declarations": "Paid.paidPenaltyValue_le_policy_any_seed；paidPenaltyValue_le_penalty；paidPenaltyValue_reaccount_eq；paidPenaltyValue_recap_eq；Parameters.freshPaidPenalty_empty；freshPaidPenaltyOriginalIdentification",
+      "dependencies": "D01,M03b,M10c",
+      "status": "已闭合"
+    },
+    {
+      "id": "D17",
+      "original": "eq:paid:menu-necessary、menu-floor；D:452–474",
+      "claim": "真实C_m→∞且相邻增量≥c；有限λ下最小testing minimizer严格改善前端点、D p_(m−1)>c；λ≤原Λ时m≤原M且原epsilon<p_(M−1)/odds≤p_M，M≥1。所有f≥0，原Λ/M/epsilon不随f变，菜单从独立full-policy后继导出，完整Prop已证明；本批：原完整PaidPenaltyMenuClaims已闭合；正least minimizer自身强迫A≤B，直接证明必要性和原M/epsilon界，不假定完整D16 Bellman/order",
+      "declarations": "Paid.Parameters.PaidEndpointGrowth；PaidMenuNecessary；PaidFiniteMenu；PaidPenaltyMenuClaims；PDMenu.paidPenaltyMenuClaims",
+      "dependencies": "D02,D04,D16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D18",
+      "original": "D:476–482",
+      "claim": "批009完整原MenuCompilerClaims P-only五域：原Array表数据、stats、独立full-policy F等值、真实Native/compiler风险与全部实际观察/修正费用均值、guard非绑定。真实每clock测试/修复/续局、全历史entry积分和全n,k实际归纳已证，m0/零费/失败不返回与∞完整保留，无Native/means/continuation待证前提，不倒定义F",
+      "declarations": "Paid.MenuEntry；MenuSeed；menuSeedLaw；Parameters.solveMenuTable；paidEndpointRule；paidEndpointPolicy；MenuTableStatsBounds；MenuTableValueCorrect；MenuCompilerMeans；MenuCompilerGuardNonbinding；MenuCompilerClaims；PDMenu.menuTableStatsBounds；menuTableValueCorrect；menuCompilerGuardNonbinding；storedLeastTestingLevel_isLeastPaid；PDMenu.menuCompilerClaims",
+      "dependencies": "M04,M06d,D16,D17,D18a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D18a",
+      "original": "D:476–482；model:19–46",
+      "claim": "有限升序菜单用Mathlib argmin真证least minimizer tie，原有理表shape/预算zero时弃任务/局部objective与bad付款min算术已证；m0 seed为原fairGuessLaw有限乘积，边际独立且每truth错误1/2。固定visible-history脚本只读当前cursor/真实reports/已执行修正，pending仅占用；已构造原P.input/actual fee上的uncapped合法可测Policy，rule精确同paidEndpointRule。未证记录实际均值/全策略最优性或原native H0",
+      "declarations": "Paid.menuSeedLaw_eval；menuSeedLaw_independent；menuSeedLaw_conditionalError；Parameters.leastTestingLevel_spec；menuTableDataCorrect；compiledMenuRule_uncapped_legal；paidEndpointPolicy_rule",
+      "dependencies": "M03a,M03d,M06d,D01,D04,D05a,D16a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D19",
+      "original": "D:486–500",
+      "claim": "批009完整原MajorityInitialBracket P-only十一域：真实majority无execute且全路径付B、risk≤δ/2；原0/Λ端点完整SolveCorrect及独立full-policy F恒等式，零端点risk1/cost0，原Λ和rU≤3δ/4等全部初始化bracket，不仅baseline三域，无solve/means/风险或费用oracle",
+      "declarations": "Paid.Parameters.majorityRule；SolveCorrect；MajorityInitialBracket；PDMenu.majorityInitialBracket_baseline_fields；PDMenu.majorityInitialBracket",
+      "dependencies": "D02,D16,D18",
+      "status": "已闭合"
+    },
+    {
+      "id": "D20",
+      "original": "eq:paid:initial-mixture、mixture-gap；D:501–526",
+      "claim": "批009完整原ExactMixtureAndGap P-only：原实际有理search全部reachable状态/端点最优与bracket，真实初始一次coin选择整endpoint策略的risk精确δ/全实际期望费U，原w∈[0,1]/clip=w，两斜率与0≤U−L≤width(δ−rU)≤widthδ及原full-policy L≤V∞≤U，exact分支真正最优；失败/不返回/∞费用保留，无mixture/clamp/bracket/弱对偶待证前提",
+      "declarations": "Paid.Parameters.multiplierSearch；StateBracketCorrect；ExactMixtureAndGap；PDMenu.exactMixtureAndGap",
+      "dependencies": "D16,D18,D19,D20a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D20a",
+      "original": "D:494–526；model:19–55",
+      "claim": "实际初始Bool×MenuSeed一次选择whole endpoint，任意world的完整run与全部actual bill精确等于选中endpoint，保失败/弃任务/∞费用；离线有理search及实际理想规则已定义，uncapped合法性已证。仅全轨身份与合法性，不宣称混合risk、均值或最优性",
+      "declarations": "Paid.Parameters.stateRule_bracket_run；stateRule_bracket_bill；stateRule_uncapped_legal；idealSearchPolicy",
+      "dependencies": "D18a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D21",
+      "original": "eq:paid:two-factor-reference",
+      "claim": "批009完整原StoppedTwoFactor P-only：同实际search满足原width·δ≤U/2时输出真实riskδ、完整实际期望费≤2倍同I_pay全策略uncapped V；消费真实whole-policy混合及原完整gap，不以表值代替独立inf，无性能/有限ET额外前提",
+      "declarations": "Paid.Parameters.searchStopped；StoppedTwoFactor；PDMenu.stoppedTwoFactor",
+      "dependencies": "D20",
+      "status": "已闭合"
+    },
+    {
+      "id": "D22",
+      "original": "eq:paid:zero-charge-risk、bisection-count；D:530–561",
+      "claim": "批010完整原MultiplierSearchClaims.{u} P-only：全mode/任意Seed宇宙原零费Binomialtail风险与实际blind脚本fullBill0、仅THIS脚本原H0/数值资格native零费存在；真实因果first-positive censor给事件质量差下界及真实path firstChargeFloor/全策略正lower，失败不返回收费不抹；原actual search每步dyadic宽度及literal Nat.clog预算证明真正停止、zero exit及原risk delta/费用≤2V，无有限费用/最优可达/性能oracle。未据此宣称D25/D26/D27",
+      "declarations": "Paid.Parameters.ZeroChargeOriginalQualification；ZeroChargeOptimum；positiveChargeEvent；PositiveChargeLower；FiniteMultiplierTermination；MultiplierSearchClaims；PDMenu.zeroChargeOptimum；positiveChargeLower；finiteMultiplierTermination；multiplierSearchClaims",
+      "dependencies": "D01,D19,D20,D22a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D22a",
+      "original": "D:550–561",
+      "claim": "原有理ℓ>0时，以Nat.clog/ceil实际计算的Jbis等于论文实log₂公式；此只证明数值公式，不代表搜索停止次数或正费用lower已证",
+      "declarations": "Paid.Parameters.bisectionBudget；bisectionBudget_logb",
+      "dependencies": "D02",
+      "status": "已闭合"
+    },
+    {
+      "id": "D23",
+      "original": "eq:paid:bounded-tail；D:563–587",
+      "claim": "批006原目标验收：原BoundedEndpointClaims完整P-only闭合：独立实际rational Array scatter/getD双truth分布与原capped test真实tape/finiteword/fairtie law给exact q_m；原m范围/m+1/Q不改，allpath cap含T∞与T=Q，原Hoeffding exp/ceil/E/binary链及strict room均真证，无hDP/performance/资源新前提",
+      "declarations": "Paid.Parameters.walkUpdate；walkRow；walkDistribution；cappedError；cappedTest；BoundedEndpointClaims；PDROC.boundedEndpointClaims",
+      "dependencies": "D02,D04,D17",
+      "status": "已闭合"
+    },
+    {
+      "id": "D24",
+      "original": "eq:paid:calibration-weight；D:588–599",
+      "claim": "批006原目标验收：原ExactCalibrationClaims完整P-only闭合：固定原raw omega有理式/真实clipping/marks×fair独立原law，零分支及两个truth精确error=p_m、所有path≤Q及原C_(m+1)/4C_m费用范围；实际D23已内部消去，无hD23/性能/返回或费用有限新前提，不换校准器/输入量词",
+      "declarations": "Paid.Parameters.calibrationWeight；calibrationMarksLaw；calibratedTest；ExactCalibrationClaims；CalibrationMarksClaims；PDROC.exactCalibrationClaims",
+      "dependencies": "D04,D07,D23",
+      "status": "已闭合"
+    },
+    {
+      "id": "D25",
+      "original": "D:600–607",
+      "claim": "批011完整原CalibratedImplementationClaims P-only七域闭合：真实callee全路径suffix归纳/终端signature解码与纯trace law，原已写correct/wrong/实际physicalstage-tool executions/失败完整离散law与所有prefix-sup修正费law及均值相同；实际risk/观察费与完整费用≤4倍ideal及≤4U。一次初始整policy选择、未访问stage不补write、fee0/tiny/M0/失败不返回/∞账单全部保留。无SourceLaw/IH/finiteET/stop/validlevel/风险或费用新前提",
+      "declarations": "Paid.Parameters.calibratedMenuCandidate；calibratedStateRule；executionSignatureLaw；actualCorrectionBillLaw；CalibratedImplementationClaims；PDROC.calibratedImplementationClaims",
+      "dependencies": "M04,M06,D18,D20,D24",
+      "status": "已闭合"
+    },
+    {
+      "id": "D26",
+      "original": "thm:paid:native-eight；D:605–612",
+      "claim": "批011完整原CalibratedNativeEightClaims及CalibratedBackendClaims P-only闭合：THIS原固定脚本每sample/每prefix的Q/NQ/K资源、原完整H0及数值资格下同rule/全clock native迁移、真实risk≤delta与同原full-policy V∞≤Vnat≤EC_alg≤8V∞均为已证结论；整policy初始一次coin不叠加两支资源，保fee0/tiny/M0及真实fullBill，不以任意family资格或性能假设替换",
+      "declarations": "Paid.Parameters.calibratedAlgorithmPolicy；CalibratedOriginalQualification；CalibratedNativeEightClaims；CalibratedBackendClaims；PDROC.calibratedNativeEightClaims；calibratedBackendClaims",
+      "dependencies": "M08,D01,D02,D21,D22,D25",
+      "status": "已闭合"
+    },
+    {
+      "id": "D27",
+      "original": "D:614–642",
+      "claim": "批012完整原ComputationalClaims七字段已无额外前提闭合：统一prepare/solver/calibrate/core与常数在全部原P/fee前选择，原raw6实际准备/原5word readonly fetch与typed-word精化；每solve真实表与原有理操作/峰值records/全部中间operand bits，core精确输出原cached Artifact、真实solve requests及≤Jbis+2次调用、一次endpoint和一次校准及原time/peak-space；同一固定有限Bool TM在全部gamma/P/fee前，原raw编码到真实HALT的裸Artifact输出，固定gamma原rawSize及可变gamma显式数值逆gamma尺度下同轨迹time/visited-bit多项式；原六域CachedDataBitClaims及公平位coin因果/a.s.返回/精确有限族whole-seed joint law均为结论，保fee0/tiny和不返回null，无新增caller性能/trace/width/fuel/prepared-input资格或采样时间承诺。普通public七字段实际消费、全正式ALL1920来源/标准三公理及独立完整1956原来源审计和源/五产品前后指纹全部通过；冻结同module identity复用旧证明，不重命名olean或缩小审计。",
+      "declarations": "Paid.Computation.ComputationalClaims；PDCompute.computationalClaims；CodecClaims；CodeRefinementClaims；UniformRationalImplementationClaims；UniformBitImplementationClaims；ExactRationalCoinClaims；PrivateSeedSamplingClaims",
+      "dependencies": "D02,D17,D18,D22,D24,D26,D27a,D27b",
+      "status": "已闭合"
+    },
+    {
+      "id": "D27a",
+      "original": "D:614–642",
+      "claim": "固定cached frontend实际缓存endpoint常数及q_m/ω_m，每m的Q-row临时只计算一次，统一frontend供原rule与seedlaw读取；cached candidate/table/least-tie/每solve/全search state点态等旧算法，两个mode的全run/risk/实际期望费/原固定脚本H0资格相同。真实表cell数、solve日志≤Jbis+2及walk更新标签数≤6Q(M+1)^2已证；标签数/数组等价不冒充RAM时间、位运算或peak空间",
+      "declarations": "Paid.Parameters.buildCachedFrontend；cachedMultiplierSearch_eq；cachedProgram_run_eq；cachedProgram_risk_eq；cachedProgram_expectedBill_eq；cachedOriginalQualification_iff；cachedSolveMenuTable_cellCount；cachedSearchWithLog_bisection_count；calibrationUpdateLabels_bound",
+      "dependencies": "D18a,D20a,D22a,D24,D26",
+      "status": "已闭合"
+    },
+    {
+      "id": "D27b",
+      "original": "D:623–642",
+      "claim": "批007原CachedDataBitClaims六域全部P-only：MenuBitClaims/CalibrationBitClaims/MixtureBitClaims/PositiveGapBitClaims/FixedGammaPolynomialData/VariableGammaPolynomialData，原真实cached arrays/DP/raw omega/numericalSize/fee0及tiny编码/ceil(gamma^-1)依赖不变；canonical新源与正式D23/D24普通共存已验，无h/性能或资格前提；不据此计整D27机器time/peakspace闭合",
+      "declarations": "Paid.Parameters.natBits；ratDenBits；ratNumBits；menuCommonDenominator；MenuBitClaims；CalibrationBitClaims；MixtureBitClaims；PositiveGapBitClaims；FixedGammaPolynomialData；VariableGammaPolynomialData；CachedDataBitClaims；PDROC.DataBits.cachedDataBitClaims",
+      "dependencies": "D02,D17,D18,D22,D24,D26,D27a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D28",
+      "original": "lem:paid:no-correction",
+      "claim": "批004原目标验收：原NoCorrectionPolicyComparison与NoCorrectionValueComparison完整闭合：实际原majorityRule/Policy在每sample/prefix零execute，所有路径完整actualBill=B，真实risk≤δ/2≤原δ，原t0奇数rounding/整数word与product law以及B≤7S已真证；用原全策略inf，不假设最优达成，不作native caps声明",
+      "declarations": "Paid.Parameters.NoCorrectionPolicyComparison；NoCorrectionValueComparison；PDLower.noCorrectionPolicyComparison；noCorrectionValueComparison；PDMenu.majority_risk_le_half；majority_expectedBill_eq_B；PDLower.majorityBill_le_saturation",
+      "dependencies": "D01,D03",
+      "status": "已闭合"
+    },
+    {
+      "id": "D29",
+      "original": "thm:paid:separation",
+      "claim": "批011完整原NativeSeparationClaims P-only：同native I_pay/free完整value、原actualfee/原THIS脚本资格/原固定calibrated rule；T/129下界及72T上界、真正native Policy/risk≤delta/全run同uncapped及V∞≤Vnat≤EC_alg≤8V∞全部闭合，完整D26已内部调用消最后backend前提，无任意family资格或I=I_pay假设",
+      "declarations": "Paid.Parameters.NativeSeparationClaims；PDLower.nativeSeparationClaims",
+      "dependencies": "D01,D12,D15,D26,D28",
+      "status": "已闭合"
+    },
+    {
+      "id": "D29a",
+      "original": "thm:paid:separation；D:696–706",
+      "claim": "同native I_pay/free A的cap-independent必要下界T/129≤V_fnat，原精确Prop已证明；不需要数值证书。此行只lower，完整实际算法72T/sandwich目标现独立见D29，均未自动证明；批003：同原native I_pay/free A的T/129必要下界已无前提证明；直接用same-policy free≤paid及min(Df,Sdelta)=128*原fee-scale lower与ENNR min/add代数，含∞基线/原cap/accounting，不等待overlay/算法upper且不加数值/H0资格",
+      "declarations": "Paid.Parameters.NativeSeparationLower；PDLower.nativeSeparationLower；separationLower；feeScale_min_eq_lower",
+      "dependencies": "D01,D12,D13a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D30",
+      "original": "D:706–715",
+      "claim": "批004原目标验收：原同合同/同uncapped I_pay全策略比较完整闭合，精确129/9及原A_infinity基线；真实D15 full-value overlay、D28无修正见证与all-mode price lower组合，保所有非负rational fee及∞值，不引入native资格/放大预算/额外有限性或optimizer假设",
+      "declarations": "Paid.Parameters.UncappedSeparation；PDROC.uncappedSeparation",
+      "dependencies": "D12,D15,D28",
+      "status": "已闭合"
+    },
+    {
+      "id": "D31",
+      "original": "sec:paid:payment-limit；D:720–741",
+      "claim": "批006原目标验收：原RetainedPaymentUsageCounterexample.{u}完整无额外前提：原N≥6/K=N−1/delta=2^−N，两allocationDeadline及terminal实际支付、H=4N+1/H0=3N+1；真实zero-review native Unit Policy全false实际写，除全错失败path外真修复所有errors，实际risk/期望次数N/2−Ndelta/零观察费/完整fee scaling及原两usage严格违例；全Seed比较minimum已真证，无finiteET/return/MAP/guard/phase/performance外给假设",
+      "declarations": "Paid.Parameters.retainedPaymentExampleContract；BlindRiskMinimal；RetainedPaymentUsageCounterexample；PDLower.blindRiskMinimal；paid_truth_assignment_mass；delayedPayment_numeric；PDLower.retainedPaymentUsageCounterexample",
+      "dependencies": "M02,M03,M05,M06d,D11",
+      "status": "已闭合"
+    },
+    {
+      "id": "D32",
+      "original": "eq:joint-certificate",
+      "claim": "数值Qjoint=max(原Qcomp,原Qpay)及H资格不含f；固定free脚本用原δ及其原quotaExponent，原riskchoice/Quota身份真证。pointwise actual-fee JointControllerQualification保留同C/accounting/H0的两个固定脚本真实正常调用证书，加joint数值资格真推出两原qualification；不声称数字推出H0、两证书互相蕴含或新增∀fee-H0前提，M08原complete-H0抽象接口已闭合，不宣称原稿未指定的平台adapter自动满足资格",
+      "declarations": "Paid.FixedSharedPool.jointQuota；JointNumericalQualification；jointFreePolicy；JointControllerQualification；jointFreeQuota_eq；jointFreeRiskChoice；jointQualification_free；jointQualification_paid；jointCertificateClaims",
+      "dependencies": "B21a,B21b,D02,D26,D34",
+      "status": "已闭合"
+    },
+    {
+      "id": "D33",
+      "original": "bridge:41–46",
+      "claim": "批004原目标验收：原SharedPoolRankCoefficient全四字段完整闭合，含K0、原独立game rank/真实bad-child最大值、critical head sum及orderedCoefficient=a(N−K)，无新增渐近/价格/性能前提",
+      "declarations": "Paid.Parameters.SharedPoolRankCoefficient；SharedPoolSubproblemRank；PDLower.sharedPoolRankCoefficient",
+      "dependencies": "A03,A16,B10,B14,D33a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D33a",
+      "original": "bridge:41–46；model:57–74",
+      "claim": "从原独立errorRank_cons/真实bad-child最大值归纳证明任意有限Tool全集及任意available R共享pool rank：n≤cardR则∞，否则cardR+1；n0/R空/无tool均覆盖，接通fresh(n,k)完整子问题rank。不是以容量或价格定义rank，未将其冒称完整D33系数已闭合",
+      "declarations": "Paid.Parameters.sharedPool_rank_replicate；sharedPoolSubproblemRank",
+      "dependencies": "A03,A16,D01",
+      "status": "已闭合"
+    },
+    {
+      "id": "D34",
+      "original": "bridge:48–54",
+      "claim": "批004原目标验收：原固定pool FreeNativeSqueeze完整闭合：固定pool先于epsilon/cutoff，原δ与原quotaExponent直接接正式B24完整lower及原THIS固定free脚本的qualified upper，原比较器/所有caps/accounting/pointwise H0资格保持，K0包含，无额外待证渐近或性能引理",
+      "declarations": "Paid.FixedSharedPool；atRisk；structuralScaleReal；FreeControllerQualification；deferredFreeValue_le_currentPayment；FreeNativeSqueeze；PDLower.freeNativeSqueeze",
+      "dependencies": "M02,B21,B24,D01,D33",
+      "status": "已闭合"
+    },
+    {
+      "id": "D35",
+      "original": "bridge:56–65",
+      "claim": "0≤ε<1、A在(1±ε)B间时，对所有ENNR的A/B/D/S（含∞），(1−ε)min(B+D,S)≤min(A+D,S)≤(1+ε)min(B+D,S)；纯标量扰动已证明，原价格前提A~B仍待D34，不反向假定D29/D34来证该不等式",
+      "declarations": "Paid.Parameters.MinPerturbation；minPerturbation",
+      "dependencies": "—",
+      "status": "已闭合"
+    },
+    {
+      "id": "D36",
+      "original": "cor:fixed-pool-price",
+      "claim": "批011完整原FixedPoolNativePriceClaims P-only三域：固定原pool先于epsilon及一个cutoff，再统一覆盖所有原有理delta/非负fee/contract/accounting与原pointwise joint资格；原价格常数1/129与72，任意f(delta)同cutoff；K0全input/value费用独立及Bdelta/Sdelta精确渐近均真证。D29最后性能前提已内部消去，无forall-fee H0新假设，不从纯数值数据假推实际资格",
+      "declarations": "Paid.FixedSharedPool.FixedPoolUniformFeePrice；ZeroToolsStructuralSaturation；FixedPoolNativePriceClaims；PDLower.fixedPoolNativePriceClaims；fixedPoolUniformFeePrice_of_nativeSeparation；zeroToolsStructuralSaturation",
+      "dependencies": "D29,D32,D33,D34,D35,D36a",
+      "status": "已闭合"
+    },
+    {
+      "id": "D36a",
+      "original": "bridge:69–71",
+      "claim": "固定pool的K=0时，同原native合同/额度/正常记账/风险下，任意非负f的整个真实input逐定义等于f0输入，故完整Native.value精确与f无关。工具类型为空排除任何实际execution，未限制比较器或假定费用有限；不代表D36统一TB双界完成",
+      "declarations": "Paid.FixedSharedPool.input_eq_zero_of_no_tools；zeroToolsFeeIndependence",
+      "dependencies": "D01,M09a",
+      "status": "已闭合"
+    }
+  ],
+  "paper_original_fields": {
+    "B23": {
+      "original": "B:294–300",
+      "dependencies": "B15,B20,B22,B23a,M08"
+    },
+    "L01": {
+      "original": "cor:computable-price；prices:127–152",
+      "dependencies": "A15,A17,A19,B14,B20,B21,B22,B23,B24,L01a"
+    }
+  },
+  "prior_six_deferred": {
+    "D25": {
+      "original_spec_declarations": [
+        "PaperProofs.Paid.Parameters.CalibratedImplementationClaims"
+      ],
+      "whole_target_proof_bindings": [
+        {
+          "declaration": "PDROC.calibratedImplementationClaims"
+        }
+      ],
+      "ordinary_public_original_type_evidence": {
+        "source_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Root011_PDROC_CalibratedAssembly_Public_004.lean",
+        "source_sha256": "14baf3a79ede4f6bd3f5c8b3e78b7b7fb7c16f6378743be203b371ba77fd7707",
+        "log_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch011.calibrated.public001.log",
+        "log_sha256": "290908cda0c3f8f489c19d3b33b2bb66f2ea07b732d7c073b3a62b801784f263",
+        "actual_exit": 0,
+        "original_spec_declarations": [
+          "PaperProofs.Paid.Parameters.CalibratedImplementationClaims"
+        ],
+        "credit": "Previously accepted actual exact original-type consumer; not rerun by this generator preparation"
+      },
+      "ancestry": ".lake/workpads/ROOT_S7_PREAUDIT_BATCH_003.json"
+    },
+    "D26": {
+      "original_spec_declarations": [
+        "PaperProofs.Paid.Parameters.CalibratedNativeEightClaims",
+        "PaperProofs.Paid.Parameters.CalibratedBackendClaims"
+      ],
+      "whole_target_proof_bindings": [
+        {
+          "declaration": "PDROC.calibratedNativeEightClaims"
+        },
+        {
+          "declaration": "PDROC.calibratedBackendClaims"
+        }
+      ],
+      "ordinary_public_original_type_evidence": {
+        "source_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Root011_PDROC_CalibratedAssembly_Public_004.lean",
+        "source_sha256": "14baf3a79ede4f6bd3f5c8b3e78b7b7fb7c16f6378743be203b371ba77fd7707",
+        "log_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch011.calibrated.public001.log",
+        "log_sha256": "290908cda0c3f8f489c19d3b33b2bb66f2ea07b732d7c073b3a62b801784f263",
+        "actual_exit": 0,
+        "original_spec_declarations": [
+          "PaperProofs.Paid.Parameters.CalibratedNativeEightClaims",
+          "PaperProofs.Paid.Parameters.CalibratedBackendClaims"
+        ],
+        "credit": "Previously accepted actual exact original-type consumer; not rerun by this generator preparation"
+      },
+      "ancestry": ".lake/workpads/ROOT_S7_PREAUDIT_BATCH_003.json"
+    },
+    "D29": {
+      "original_spec_declarations": [
+        "PaperProofs.Paid.Parameters.NativeSeparationClaims"
+      ],
+      "whole_target_proof_bindings": [
+        {
+          "declaration": "PDLower.nativeSeparationClaims"
+        }
+      ],
+      "ordinary_public_original_type_evidence": {
+        "source_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Root011_PDLower_Final_Public_015.lean",
+        "source_sha256": "99cebf93508c7a96c6d4fdc942d71a28aaa69ee4e44890042a842a26c84d99ad",
+        "log_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch011.pricefinal.public01.log",
+        "log_sha256": "adb0785c6b15af6652e652833e4a3722529d9e02138942b977a82aad567c6626",
+        "actual_exit": 0,
+        "original_spec_declarations": [
+          "PaperProofs.Paid.Parameters.NativeSeparationClaims"
+        ],
+        "credit": "Previously accepted actual exact original-type consumer; not rerun by this generator preparation"
+      },
+      "ancestry": ".lake/workpads/ROOT_S7_PREAUDIT_BATCH_003.json"
+    },
+    "D36": {
+      "original_spec_declarations": [
+        "PaperProofs.Paid.FixedSharedPool.FixedPoolNativePriceClaims"
+      ],
+      "whole_target_proof_bindings": [
+        {
+          "declaration": "PDLower.fixedPoolNativePriceClaims"
+        }
+      ],
+      "ordinary_public_original_type_evidence": {
+        "source_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Root011_PDLower_Final_Public_015.lean",
+        "source_sha256": "99cebf93508c7a96c6d4fdc942d71a28aaa69ee4e44890042a842a26c84d99ad",
+        "log_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch011.pricefinal.public01.log",
+        "log_sha256": "adb0785c6b15af6652e652833e4a3722529d9e02138942b977a82aad567c6626",
+        "actual_exit": 0,
+        "original_spec_declarations": [
+          "PaperProofs.Paid.FixedSharedPool.FixedPoolNativePriceClaims"
+        ],
+        "credit": "Previously accepted actual exact original-type consumer; not rerun by this generator preparation"
+      },
+      "ancestry": ".lake/workpads/ROOT_S7_PREAUDIT_BATCH_003.json"
+    },
+    "D27": {
+      "original_spec_declarations": [
+        "PaperProofs.Paid.Computation.ComputationalClaims"
+      ],
+      "whole_target_proof_bindings": [
+        {
+          "declaration": "PDCompute.computationalClaims"
+        }
+      ],
+      "ordinary_public_original_type_evidence": {
+        "source_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_Public_001.lean",
+        "source_sha256": "cf59566bffe8a824aa0e5d2dbb5c897bca04d0131994e52cd684463a4d9be065",
+        "log_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_accepted_logs\\RootBatch012_public_public_001.log",
+        "log_sha256": "63264cc7b63cc57c1c0672ce828d6ca0cc5601f7dd5f540d4e08f5aecf2fbcfc",
+        "actual_exit": 0,
+        "original_spec_declarations": [
+          "PaperProofs.Paid.Computation.ComputationalClaims"
+        ],
+        "credit": "Previously accepted actual exact original-type consumer; not rerun by this generator preparation"
+      },
+      "ancestry": ".lake/workpads/RootS7_Incremental012_002.json"
+    },
+    "A19": {
+      "original_spec_declarations": [
+        "PaperProofs.Structure.LaminarTree.CompactControllerClaims.FullClaims"
+      ],
+      "whole_target_proof_bindings": [
+        {
+          "declaration": "PaperProofs.Structure.LaminarTree.CompactControllerA19Closure.fullClaims"
+        }
+      ],
+      "ordinary_public_original_type_evidence": {
+        "source_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_accepted_context\\lean\\.lake\\workpads\\RootBatch013_Public_001.lean",
+        "source_sha256": "903421f0b8d8f1ba465a2bdf4c317fe7e3521eb4bc546302d2bf44a34103c768",
+        "log_path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_accepted_logs\\RootBatch013_public_public_001.log",
+        "log_sha256": "ce3f603d2a374e734191958a058460cf51c22b58731ec58efc572c2820a49f88",
+        "actual_exit": 0,
+        "original_spec_declarations": [
+          "PaperProofs.Structure.LaminarTree.CompactControllerClaims.FullClaims"
+        ],
+        "credit": "Previously accepted actual exact original-type consumer; not rerun by this generator preparation"
+      },
+      "ancestry": ".lake/workpads/RootS7_Incremental013_Accepted_001.json"
+    }
+  },
+  "accepted_closing_source_pins": {
+    "PaperProofs/Paid/PDROC_CalibratedAssembly_004.lean": "bbd76fc22f27356c39e16a4939cbbe06f766ce69f34c817b4f69817ac11a8ca3",
+    "PaperProofs/Paid/PDLower_PriceFinal_001.lean": "70205a856b9bb7afe5d2b951cc905a6f5a170d36659c10276faad94e66940901",
+    "PaperProofs/Paid/PDCompute_Complete_001.lean": "2c22488d70bf7d540bf072e07d610086f0a56e3ae60b7601dfcf1acdc965b5f8",
+    "PaperProofs/Structure/CompactControllerA19Closure.lean": "1767d85f45a644990e462155b52c828f01529145163d42764cd1153b952c0827"
+  },
+  "semantic_credit_paths": [
+    ".lake/workpads/ROOT_S7_PREAUDIT_MANIFEST_001.json",
+    ".lake/workpads/ROOT_S7_PREAUDIT_FINAL_001.md",
+    ".lake/workpads/RootS7_IntegrityRefresh_001.json",
+    ".lake/workpads/RootS7_FormalLocatorBinding_002.json",
+    ".lake/workpads/RootS7_FormalLocatorCorrection_003.json",
+    ".lake/workpads/RootS7_Incremental012_002.json",
+    ".lake/workpads/RootS7_Incremental013_Preflight_001.json",
+    ".lake/workpads/RootS7_Incremental013_Accepted_001.json",
+    ".lake/workpads/ROOT_PAPER_S7_SCOPE_TRANSITION_20261102_001.md",
+    ".lake/workpads/ROOT_HUMAN_PAPER_SCOPE_20261102_001.json",
+    ".lake/workpads/ROOT_PAPER_B23_FULL_SEMANTIC_REVIEW001.md",
+    ".lake/workpads/ROOT_PAPER_B23_FULL_THEOREM_STAGE_REVIEW_20261102_001.json",
+    ".lake/workpads/ROOT_PAPER_L01_FULL_THEOREM_STAGE_REVIEW_20261102_001.json",
+    ".lake/workpads/ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+    ".lake/workpads/ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001.json"
+  ],
+  "retained_census": {
+    "sources": 16,
+    "original_IDs": 253,
+    "explicit_environments": 22,
+    "source_dispositions": 131,
+    "bearing_dispositions": 118
+  },
+  "existing_code_reuse": [
+    "PStar_MAIN_Index_001.clean",
+    "PStar_S7_GLOBAL_Index_001 namespace/token resolution",
+    "PStar_S7_GLOBAL_Bindings_001 full-span/active-context convention"
+  ],
+  "library001_unchanged": true,
+  "latest_audit_context": "Root reported1120/1124 actual owner credit,4 PHCompat pending; no new result inferred or credit library edited.",
+  "receipt_epoch_design": "Future --receipt is an actual immutable253 verification archive. Future --epoch is explicit. Official receipt may receive a later S7 flag/reference without rewriting the selected archive or mathematical/ledger fingerprints."
+}

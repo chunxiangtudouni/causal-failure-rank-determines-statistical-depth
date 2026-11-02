@@ -1,0 +1,85 @@
+{
+  "id": "ROOT_PAPER_NORMAL_INTEGRATION_STAGE_REVIEW_20261102_001",
+  "utc": "2026-11-02T09:10:51.654805+00:00",
+  "status": "ROOT_ACCEPTED_COMPLETE_NORMAL1923_TWO_FACADE_THEOREMS_COEXIST_TYPED_OWNER_STD3_REGISTRATION_AND_WHOLE_RECEIPT_PENDING",
+  "receipt": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_strict001.json",
+  "receipt_sha256": "006bccc6c92a2a8407be60d6c327f3bff790dc73d26ec77541a0a12068fcee84",
+  "freeze": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_strict001_FROZEN.json",
+  "freeze_sha256": "b1a3c6276088c56fd552c199fdc841bf880908bba2d1fedbce0069452bccc9c3",
+  "result": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_RESULT001.json",
+  "actual_exit": 0,
+  "subprocess_wait": true,
+  "outer_session_reaped": 92484,
+  "new_only_six_SHA_size_ReadOnly_checked": [
+    {
+      "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013.lean",
+      "sha256": "c1ac205928999ff8d7c83ad514e4e7eb3409d43e8816fced0a95d3ad6e1cdb48",
+      "bytes": 116086,
+      "actual_readonly": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_build001\\RootPaper_L01_NormalFull013.olean",
+      "sha256": "a90429000849dd21050987dbf3e7723580714d6b646dda4607f3075b9c435539",
+      "bytes": 242104,
+      "actual_readonly": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_build001\\RootPaper_L01_NormalFull013.olean.private",
+      "sha256": "47eb73dbf1ced3ccb6500b4822ffefc0ba523c74200e79dc9fea95e8cf48896b",
+      "bytes": 1120,
+      "actual_readonly": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_build001\\RootPaper_L01_NormalFull013.olean.server",
+      "sha256": "562cbba757097a1534879aefa73c9ddf8cda8f00496f4f1844259e4b6fd8e79a",
+      "bytes": 920,
+      "actual_readonly": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_build001\\RootPaper_L01_NormalFull013.ir",
+      "sha256": "7c231ec6c67db4f8b4a4828e3df401099d3e89cd2e531a893fb6b87d09034826",
+      "bytes": 242256,
+      "actual_readonly": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_NormalFull013_build001\\RootPaper_L01_NormalFull013.ir.sig",
+      "sha256": "61a93dc3365ee54f9f0aa5cc9d2e44bc24e14e772c268b41e6c6b27dc0172f70",
+      "bytes": 176,
+      "actual_readonly": true,
+      "bytes_unchanged": true
+    }
+  ],
+  "formal_modules": 1923,
+  "total_modules": 7416,
+  "typed_examples": 5,
+  "actual_new_canonical_owners": 2,
+  "new_owned_declarations": 2,
+  "new_owned_theorems": 2,
+  "new_owned_definitions": 0,
+  "new_owned_private": 0,
+  "new_axioms": 0,
+  "forbidden_dependencies": 0,
+  "spec_header_owners": [
+    "RootPaper_B23_Interface007",
+    "RootPaper_L01_Interface006"
+  ],
+  "private_body_rfl_owner_credit": "ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001.json",
+  "old_header_owner_preserved": "PaperProofs.Common.PSTR_TM_Header_003",
+  "parent_proof_recompiles": 0,
+  "parent_byte_rehashes_in_Root_review": 0,
+  "Root_new_only_bytehashes": 6,
+  "formal_registry_installed": false,
+  "formal": "251/253 unchanged until registered package/whole receipt/ledger acceptance",
+  "S7": "unfinished",
+  "necessary_next": [
+    "minimal selected new source/product cohort binding",
+    "actual owner credit only for genuinely uncredited private additions",
+    "single complete MainD014 package +canonical015 install +onlynewnormalbuilds/fullcurrentaudit receipt",
+    "ledgeronly acceptance thenS7actualmatchingmatrix/spec/manifest/finalsemanticreview"
+  ]
+}

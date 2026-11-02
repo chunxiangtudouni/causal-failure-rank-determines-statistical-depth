@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite this repository and the accompanying paper."
+title: "Causal Failure Rank Determines Statistical Depth"
+authors:
+  - family-names: Zang
+    given-names: Zhaochen
+    affiliation: "School of Computer Science and Technology / School of Artificial Intelligence, China University of Mining and Technology"
+  - family-names: Li
+    given-names: Zhongnian
+    affiliation: "School of Computer Science and Technology / School of Artificial Intelligence, China University of Mining and Technology"
+  - family-names: Jin
+    given-names: Ziyue
+    affiliation: "School of Computer Science and Technology / School of Artificial Intelligence, China University of Mining and Technology"
+  - family-names: Xu
+    given-names: Xinzheng
+    affiliation: "School of Computer Science and Technology / School of Artificial Intelligence, China University of Mining and Technology"
+url: "https://github.com/chunxiangtudouni/causal-failure-rank-determines-statistical-depth"
+repository-code: "https://github.com/chunxiangtudouni/causal-failure-rank-determines-statistical-depth"

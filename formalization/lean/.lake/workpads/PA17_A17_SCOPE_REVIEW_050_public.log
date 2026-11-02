@@ -1,0 +1,5 @@
+ROOT_LEAN_SLOT queued ownerPid=752
+ROOT_LEAN_SLOT admission ownerPid=752
+ROOT_LEAN_SLOT acquired=1 ownerPid=752
+ROOT_LEAN_SLOT released=1 ownerPid=752
+EXIT_CODE=0

@@ -1,0 +1,34 @@
+{
+  "schema": "RootPaper014.ActualS7Verification.v1",
+  "started_at_utc": "2026-11-02T12:09:27.093599+00:00",
+  "completed_at_utc": "2026-11-02T12:09:33.396038+00:00",
+  "command": [
+    "D:\\anacon\\python.exe",
+    "D:\\STOC投稿\\lean\\.lake\\workpads\\PStar_S7_GLOBAL_verify_003.py",
+    "--matrix",
+    ".lake/workpads/RootPaper014_S7_Final002/RootPaper014_S7_014_MATRIX.json",
+    "--census",
+    ".lake/workpads/PStar_S7_GLOBAL_CENSUS_001.json",
+    "--receipt",
+    ".lake/workpads/RootPaper014.receipt_001.json",
+    "--manifest",
+    ".lake/workpads/RootPaper014_S7_Final002/RootPaper014_S7_014_MANIFEST.json"
+  ],
+  "actual_exit": 0,
+  "subprocess_wait": true,
+  "verifier": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PStar_S7_GLOBAL_verify_003.py",
+    "sha256": "88621190b9595c61c11ca32a9cd44afb3ae84104e5f777791f59f22cfbfe172d"
+  },
+  "log": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Verification001\\verify.log",
+    "sha256": "27876378d9100ed7273782e242e85ff25b1f1ba0fc3ca6da15964be689505ad2"
+  },
+  "Lean_invocations": 0,
+  "result": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Verification001\\result.json",
+    "sha256": "27876378d9100ed7273782e242e85ff25b1f1ba0fc3ca6da15964be689505ad2"
+  },
+  "ready_for_Root_decision": true,
+  "global_s7_complete": false
+}

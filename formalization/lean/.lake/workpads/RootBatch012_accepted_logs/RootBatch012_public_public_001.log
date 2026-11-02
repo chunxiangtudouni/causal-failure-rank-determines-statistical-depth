@@ -1,0 +1,8 @@
+ROOT_RECOVERY queued ownerPid=27644
+ROOT_RECOVERY acquired=0 availableMiB=8083 ownerPid=27644
+ROOT_LEAN_SLOT queued ownerPid=27644
+ROOT_LEAN_SLOT admission ownerPid=27644
+ROOT_LEAN_SLOT acquired=0 ownerPid=27644
+'PDCompute.computationalClaims' depends on axioms: [propext, Classical.choice, Quot.sound]
+ROOT_LEAN_SLOT released=0 ownerPid=27644
+ROOT_RECOVERY released=0 ownerPid=27644

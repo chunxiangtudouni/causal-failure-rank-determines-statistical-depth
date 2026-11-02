@@ -1,0 +1,352 @@
+{
+  "id": "ROOT_PAPER_L01_FULL_THEOREM_STAGE_REVIEW_20261102_001",
+  "utc": "2026-11-02T04:38:19.604434+00:00",
+  "status": "FULL_L01_PAPER_SPEC_PROVED_ORDINARY_AND_NEW_OWNER_ALL_ACCEPTED_OFFICIAL_BINDING_PENDING",
+  "main_import": "RootPaper_L01_Full003",
+  "ordinary_import": "RootPaper_L01_Ordinary004",
+  "main_spec": "RootPaper.L01.FullPaperClaims",
+  "main_theorem": "RootPaper.L01.full_paper_claims",
+  "main_public_premises": 0,
+  "paper_anchors": [
+    "prices.tex127-152",
+    "price-proofs.tex294-300"
+  ],
+  "modules": [
+    {
+      "module": "RootPaper_L01_HeadBound002",
+      "source_sha256": "3dba494b71925422e4f7737f2749b3b7b7c9ddb4fc56da80d7960c5eb16625ba",
+      "receipt": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_HeadBound002_strict003.json",
+      "receipt_sha256": "ad5215bcb56dbcfb149a4e734c2161c68f044f3989e88124e95e72775f267474",
+      "actual_exit": 0,
+      "subprocess_wait": true,
+      "outer_session_reaped": 78792,
+      "freeze": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_HeadBound002_strict003_FROZEN.json",
+      "six_frozen_pins": [
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_HeadBound002.lean",
+          "sha256": "3dba494b71925422e4f7737f2749b3b7b7c9ddb4fc56da80d7960c5eb16625ba",
+          "bytes": 2177,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            1688849861492326
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_HeadBound002.olean",
+          "sha256": "f23e6260ea83ffaf2eb13bbe17697c06a6e3c0633b6d4ed36b67195a6f88a878",
+          "bytes": 10592,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931360413
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_HeadBound002.olean.private",
+          "sha256": "36e17a67d732c97703cdd18c74c326576aa5b0c9672c2e8e5ccddd407f91ee68",
+          "bytes": 97128,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931360415
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_HeadBound002.olean.server",
+          "sha256": "50f3089e6ce55283958bc8a6bc4e1b47cc29eba1e4ab1736833f476d8cd69962",
+          "bytes": 1536,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931360414
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_HeadBound002.ir",
+          "sha256": "6c459db90139e3cb5fa4a801d0af9f7fa68a2dfdf7cca837b2f7f8fb6af81d9a",
+          "bytes": 1304,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931360417
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_HeadBound002.ir.sig",
+          "sha256": "0898c42f1006ee49e96c109c98eb266c03520d3f0fc5b13f7190bf1e9d051bd4",
+          "bytes": 176,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931360416
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RootPaper_L01_Full003",
+      "source_sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+      "receipt": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Full003_strict001.json",
+      "receipt_sha256": "020187af5b97df7fef9eb361860b2f80a72f8eeff183df40dfade0077f7fcf1b",
+      "actual_exit": 0,
+      "subprocess_wait": true,
+      "outer_session_reaped": 8741,
+      "freeze": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Full003_strict001_FROZEN.json",
+      "six_frozen_pins": [
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Full003.lean",
+          "sha256": "bfbe63b43838e7c8be9d2e0ffa9dcc49257d859bfccda94c5b1e3aa7e5c69183",
+          "bytes": 13230,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361500
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Full003.olean",
+          "sha256": "03f9919cc27d9353bee504c856ee55e5d6dde7f2f8cc50c75edcfab80e8a0778",
+          "bytes": 65128,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361506
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Full003.olean.private",
+          "sha256": "3a971f2b8afce37e891211255f11d80a8dabd026fa5d6042d215c9e4235a3ade",
+          "bytes": 164240,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361508
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Full003.olean.server",
+          "sha256": "8abcca8c684c4bf325919dddf7366f42c17e39dd72b5480bef44d362d8d6af4e",
+          "bytes": 5832,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361507
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Full003.ir",
+          "sha256": "b3a89ea72f26a6fb4add07244ceb90067d5afdb0ed2e25927d0b90f30c28f47f",
+          "bytes": 1568,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361510
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Full003.ir.sig",
+          "sha256": "1bfc5c8fa7f5191ac6379cf1aabd38d92f9f5b3039f4e8a53395725937a0c5d9",
+          "bytes": 176,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361509
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RootPaper_L01_Ordinary004",
+      "source_sha256": "db0f12c1ad0a86933b25419368c628c4de7eb1da084ba8108ba9b7099400e8a0",
+      "receipt": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Ordinary004_strict001.json",
+      "receipt_sha256": "c5bc22b7af3325bab32a37b2f64881e4a29c36b749eb8a4d81eca86667575b2a",
+      "actual_exit": 0,
+      "subprocess_wait": true,
+      "outer_session_reaped": 67191,
+      "freeze": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Ordinary004_strict001_FROZEN.json",
+      "six_frozen_pins": [
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Ordinary004.lean",
+          "sha256": "db0f12c1ad0a86933b25419368c628c4de7eb1da084ba8108ba9b7099400e8a0",
+          "bytes": 1368,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361525
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Ordinary004.olean",
+          "sha256": "d33a94209728f018adbf79c742f18a6655ca19a0f451abce41497bffc05c6096",
+          "bytes": 6064,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361529
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Ordinary004.olean.private",
+          "sha256": "cdeb03ced9520afe11698d5b36f1e3b2043e6503aeffa7feb6e91397ab9fcef9",
+          "bytes": 16272,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361531
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Ordinary004.olean.server",
+          "sha256": "03f8655cb66b7dfe450356cc93602463cbb1fa98d0457256822055e560517715",
+          "bytes": 1632,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361530
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Ordinary004.ir",
+          "sha256": "253784bcb2527718502b121a6f16fdd41b3547d27935cb3bce23378d4498ee3f",
+          "bytes": 1304,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361533
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Ordinary004.ir.sig",
+          "sha256": "5c6b81fc66eb253e210f51d377b4e803eea3fb2f9df28d3a6d73ddf6f06b8dc1",
+          "bytes": 176,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361532
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RootPaper_L01_Audit005",
+      "source_sha256": "27455de56bfaf73ad4e7c59f33e74a72f65b2d3a65db4af41c7bb256d010718f",
+      "receipt": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Audit005_strict001.json",
+      "receipt_sha256": "a88c0b01b68ada2d06aee1f0e1a088c20854eaaed22e8eef6135533e262e1eb3",
+      "actual_exit": 0,
+      "subprocess_wait": true,
+      "outer_session_reaped": 9021,
+      "freeze": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Audit005_strict001_FROZEN.json",
+      "six_frozen_pins": [
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Audit005.lean",
+          "sha256": "27455de56bfaf73ad4e7c59f33e74a72f65b2d3a65db4af41c7bb256d010718f",
+          "bytes": 3175,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361536
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Audit005.olean",
+          "sha256": "5eb27d8eb06bc5fc2c353ee5a18887f96d43cce78dd68f7a1d925c125ea33298",
+          "bytes": 1592,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361544
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Audit005.olean.private",
+          "sha256": "01956fb9a88643219601968fdab65298cd258763da6233731a4854e03009df49",
+          "bytes": 1160,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361546
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Audit005.olean.server",
+          "sha256": "8ae2a6ba78a4800c89d1e8ad1a07917d6f7984759c394b506f396a6a987e7184",
+          "bytes": 960,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361545
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Audit005.ir",
+          "sha256": "9004cc7a69c1401d864397c478643fa78c642012277a96c51805addcf945c48e",
+          "bytes": 1744,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361548
+          ]
+        },
+        {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Audit005.ir.sig",
+          "sha256": "ed10352091e1dccd7f684174e0d765d35b1fc02f5f4c4977b0a5130f05d8be77",
+          "bytes": 176,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931361547
+          ]
+        }
+      ]
+    }
+  ],
+  "new_owner_all": {
+    "owners": [
+      "RootPaper_L01_HeadBound002",
+      "RootPaper_L01_Full003",
+      "RootPaper_L01_Ordinary004"
+    ],
+    "modules": 3,
+    "declarations": 27,
+    "theorems": 18,
+    "definitions": 9,
+    "private": 3,
+    "new_axioms": 0,
+    "forbidden_dependencies": 0,
+    "actual_import_all_private_data": true
+  },
+  "parent_credits_reused": [
+    "ROOT_PAPER_NEW20_OWNER_AUDIT_20261102_001.json",
+    "ROOT_PAPER_TABLE_COST_STAGE_REVIEW_20261102_001.json",
+    "accepted Scalar/Prep/TABLE/Symbolic component reviews"
+  ],
+  "semantic_review": {
+    "preparation": "Unconditional original positive-budget numerical E/rows/qualification computation, actual operations.Realized and full runningCost with global coefficient/degree; insufficient caps yield the original false numerical check rather than growing resources.",
+    "structural": "Actual fixed raw P/heads/Live Word-packing routines, exact original preprocessingWork and normalized tree size <=N+q+1; N,q>=1 heads cost <=120000*N*q*t; original degenerate branches retained.",
+    "symbolic": "Read count/heads from same actual H output; exact leading Expr/eval, original critical indices/order, binary leaf copies, bounded nodes/output size and construction work. No real KL oracle.",
+    "same_policy_and_heap": "Native and sharp each combine Core+ChargedJointRun+risk/full fees for the SAME selected TABLE policy and prepared base heap, actual saved causal archive and full active-clock sum. No generic different-tie run equality.",
+    "global_primitive_realization": "Actual binary operations and every valid scalar-call realization are conclusions; strong WORD code/port/c,d/HALT/space fixed before I, input, contract, risk and cutoffs.",
+    "quantifiers": "Original input precedes asymptotic cutoff; original H0/caps/full failed-path and nonreturning bill scope retained. Infinite-rank domain adds no RiskChoice.",
+    "explicit_scope": "Paper algorithm/complexity specification, not preserved old Bool-machine FullClaims. A19 strong theorem remains separately accepted unchanged. H and Live start from the same prepared base in their verified calls; no unproved sequential H-mutated-heap-to-Live claim is made."
+  },
+  "ordinary_consumers": [
+    "ordinary_full_paper",
+    "ordinary_fixed_native_and_sharp",
+    "ordinary_infinite"
+  ],
+  "not_claimed": [
+    "No official new receipt, ledger binding, normal whole-project coexistence, or S7 acceptance yet.",
+    "Not a proof of the preserved stronger CompactPrice.FullClaims Bool target."
+  ],
+  "remaining_for_official_L01": [
+    "Resolve actual normal canonical/private module collision using a necessary minimal coherent integration, without rebuilding accepted proofs",
+    "Canonical exact-type binding and registered source/product provenance",
+    "Matching current receipt and transparent L01 ledger scope transition",
+    "Final S7"
+  ],
+  "formal": "251/253 unchanged",
+  "five_producers": "4/5 unchanged; Reference still proving whole scalar/WORD/DFS bit costs",
+  "parent_recompiles": 0,
+  "old_parent_byte_hashes": 0
+}

@@ -1,0 +1,90 @@
+{
+  "A19": [
+    {
+      "name": "PaperProofs.Structure.LaminarTree.CompactControllerClaims.FullClaims",
+      "source": "PaperProofs/Structure/CompactControllerClaims.lean",
+      "line": 309,
+      "full_original_declaration": "def FullClaims : Prop :=\n  RawTreePreprocessingClaims.FullClaims ∧ AlgorithmClaims.FullGivenTreeClaims ∧\n    CallbackClaims ∧ MachineControllerClaims ∧ NativeCallbackClaims.{u}\n\nend PaperProofs.Structure.LaminarTree.CompactControllerClaims",
+      "source_sha256": "52047ad43a5d6cdfaf16c79215b8cf4378c235bf2d7ad5ac3e223ad76f7c225c",
+      "declaration_text_sha256": "c3d0b6882a33d8e592e9882e22ab40638075588eec36bd346e23de0bb6cce2bf"
+    }
+  ],
+  "B23": [
+    {
+      "name": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+      "source": "ProofDeps/MainD_Original_014/RootPaper_B23_Interface007.lean",
+      "line": 18,
+      "full_original_declaration": "def FullPaperClaims : Prop := RootPaper.B23.FullPaperClaims\n\nend PaperProofs.Common.Native.B23PaperClosure\n\nnamespace RootPaper.B23.Interface\n",
+      "source_sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+      "declaration_text_sha256": "0e39ce849c3ba7432c3b6f073e5dbd4a13be1c35bd4516d99e1419f64b95860e"
+    }
+  ],
+  "L01": [
+    {
+      "name": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+      "source": "ProofDeps/MainD_Original_014/RootPaper_L01_Interface006.lean",
+      "line": 17,
+      "full_original_declaration": "def FullPaperClaims : Prop := RootPaper.L01.FullPaperClaims\n\nend PaperProofs.Structure.LaminarTree.L01PaperClosure\n\nnamespace RootPaper.L01.Interface\n",
+      "source_sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+      "declaration_text_sha256": "54ba36ff565beebfe7775b9f1b91fcc5687758236b279f335cdd624f42914db8"
+    }
+  ],
+  "D25": [
+    {
+      "name": "PaperProofs.Paid.Parameters.CalibratedImplementationClaims",
+      "source": "PaperProofs/Paid/CalibratedBackend.lean",
+      "line": 440,
+      "full_original_declaration": "def CalibratedImplementationClaims (P : PaperProofs.Paid.Parameters) : Prop :=\n  ∀ (fee : ℚ) (hfee : 0 ≤ fee) (C : P.PaymentContract) (accounting : NormalAccounting P.sharedInstance) (steps : ℕ),\n    let state := P.multiplierSearch fee steps\n    P.executionSignatureLaw fee hfee C .uncapped accounting (P.calibratedStateRule state) (P.calibratedStateSeedLaw state) =\n      P.executionSignatureLaw fee hfee C .uncapped accounting (P.stateRule state) (P.searchSeedLaw state) ∧\n    risk (P.input fee hfee) C.val .uncapped accounting (P.calibratedStateRule state) (P.calibratedStateSeedLaw state) =\n      risk (P.input fee hfee) C.val .uncapped accounting (P.stateRule state) (P.searchSeedLaw state) ∧\n    P.actualCorrectionBillLaw fee hfee C .uncapped accounting (P.calibratedStateRule state) (P.calibratedStateSeedLaw state) =\n      P.actualCorrectionBillLaw fee hfee C .uncapped accounting (P.stateRule state) (P.searchSeedLaw state) ∧\n    P.expectedActualCorrectionBill fee hfee C .uncapped accounting (P.calibratedStateRule state) (P.calibratedStateSeedLaw state) =\n      P.expectedActualCorrectionBill fee hfee C .uncapped accounting (P.stateRule state) (P.searchSeedLaw state) ∧\n    expectedObservationBill (P.input fee hfee) C.val .uncapped accounting (P.calibratedStateRule state) (P.calibratedStateSeedLaw state) ≤\n      4 * expectedObservationBill (P.input fee hfee) C.val .uncapped accounting (P.stateRule state) (P.searchSeedLaw state) ∧\n    expectedBill (P.input fee hfee) C.val .uncapped accounting (P.calibratedStateRule state) (P.calibratedStateSeedLaw state) ≤\n      4 * expectedBill (P.input fee hfee) C.val .uncapped accounting (P.stateRule state) (P.searchSeedLaw state) ∧\n    expectedBill (P.input fee hfee) C.val .uncapped accounting (P.calibratedStateRule state) (P.calibratedStateSeedLaw state) ≤\n      4 * ENNReal.ofReal (P.recordedStateCost fee state : ℝ)\n\n/-- D26's resources belong to one chosen whole-policy branch, rather\nthan adding the resources of both branches of its initial selector. H0\nis the genuine fixed-script assumption above; all other bounds are targets. -/",
+      "source_sha256": "8a8579d48334fe359c7b6e7c20fc498dabb3faca7ff9f4bb1110cfa294ab509d",
+      "declaration_text_sha256": "033d6394a618fdaf1dab5b7b396a6b1040d15def6c949b21552c9bdcc23006f8"
+    }
+  ],
+  "D26": [
+    {
+      "name": "PaperProofs.Paid.Parameters.CalibratedNativeEightClaims",
+      "source": "PaperProofs/Paid/CalibratedBackend.lean",
+      "line": 461,
+      "full_original_declaration": "def CalibratedNativeEightClaims (P : PaperProofs.Paid.Parameters) : Prop :=\n  ∀ (fee : ℚ) (hfee : 0 ≤ fee) (C : P.PaymentContract) (accounting : NormalAccounting P.sharedInstance),\n    (∀ (sample : P.CalibratedSearchSeed × (P.input fee hfee).World) (n : ℕ),\n      (∀ i, (run (P.input fee hfee) C.val .uncapped accounting (P.calibratedAlgorithmRule fee) sample n).ledger.reviews i ≤\n        (P.certificate.Q : ℕ∞)) ∧\n      (∑ i, (run (P.input fee hfee) C.val .uncapped accounting (P.calibratedAlgorithmRule fee) sample n).ledger.reviews i) ≤\n        (P.certificate.stages * P.certificate.Q : ℕ) ∧\n      (run (P.input fee hfee) C.val .uncapped accounting (P.calibratedAlgorithmRule fee) sample n).ledger.executions.length ≤ P.tools) ∧\n    (P.CalibratedOriginalQualification fee hfee C accounting →\n      ∃ policy : Policy (P.input fee hfee) C.val .native accounting P.CalibratedSearchSeed,\n        policy.rule = P.calibratedAlgorithmRule fee ∧\n        (∀ sample n, run (P.input fee hfee) C.val .native accounting policy.rule sample n =\n          run (P.input fee hfee) C.val .uncapped accounting (P.calibratedAlgorithmRule fee) sample n) ∧\n        risk (P.input fee hfee) C.val .native accounting policy.rule (P.calibratedAlgorithmSeedLaw fee) ≤ P.targetRisk ∧\n        P.uncappedValue C accounting fee hfee ≤ P.nativeValue C accounting fee hfee ∧\n        P.nativeValue C accounting fee hfee ≤\n          expectedBill (P.input fee hfee) C.val .native accounting policy.rule (P.calibratedAlgorithmSeedLaw fee) ∧\n        expectedBill (P.input fee hfee) C.val .native accounting policy.rule (P.calibratedAlgorithmSeedLaw fee) ≤\n          8 * P.uncappedValue C accounting fee hfee)\n",
+      "source_sha256": "8a8579d48334fe359c7b6e7c20fc498dabb3faca7ff9f4bb1110cfa294ab509d",
+      "declaration_text_sha256": "cb58007261415ccd1b8281159ba62398a0e4b832b43147e0a87a797e32e980a8"
+    },
+    {
+      "name": "PaperProofs.Paid.Parameters.CalibratedBackendClaims",
+      "source": "PaperProofs/Paid/CalibratedBackend.lean",
+      "line": 481,
+      "full_original_declaration": "def CalibratedBackendClaims (P : PaperProofs.Paid.Parameters) : Prop :=\n  P.BoundedEndpointClaims ∧ P.ExactCalibrationClaims ∧ P.CalibrationMarksClaims ∧\n    P.CalibratedImplementationClaims ∧ P.CalibratedNativeEightClaims\n\nend PaperProofs.Paid.Parameters",
+      "source_sha256": "8a8579d48334fe359c7b6e7c20fc498dabb3faca7ff9f4bb1110cfa294ab509d",
+      "declaration_text_sha256": "b2c88338e27fbb05260afd4e716eed1ed059d0760aa7c67f80955303ad9a165d"
+    }
+  ],
+  "D27": [
+    {
+      "name": "PaperProofs.Paid.Computation.ComputationalClaims",
+      "source": "PaperProofs/Paid/ComputationalClaims.lean",
+      "line": 829,
+      "full_original_declaration": "def ComputationalClaims : Prop :=\n  CodecClaims ∧ CodeRefinementClaims ∧ UniformRationalImplementationClaims ∧ UniformBitImplementationClaims ∧\n    ExactRationalCoinClaims ∧ PrivateSeedSamplingClaims ∧\n    ∀ P : PaperProofs.Paid.Parameters, P.CachedDataBitClaims\n\nend PaperProofs.Paid.Computation",
+      "source_sha256": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "declaration_text_sha256": "b908b2f9d0cc84fd37a418164c5f6bd69552e67ff72150b1f5e610f51907ca54"
+    }
+  ],
+  "D29": [
+    {
+      "name": "PaperProofs.Paid.Parameters.NativeSeparationClaims",
+      "source": "PaperProofs/Paid/NativeJointClaims.lean",
+      "line": 41,
+      "full_original_declaration": "def NativeSeparationClaims (P : PaperProofs.Paid.Parameters) : Prop :=\n  ∀ (fee : ℚ) (hfee : 0 ≤ fee) (C : P.PaymentContract) (accounting : NormalAccounting P.sharedInstance),\n    P.separationScale C .native accounting fee / 129 ≤ P.nativeValue C accounting fee hfee ∧\n    (P.CalibratedOriginalQualification fee hfee C accounting →\n      P.nativeValue C accounting fee hfee ≤ 72 * P.separationScale C .native accounting fee ∧\n      ∃ policy : Policy (P.input fee hfee) C.val .native accounting P.CalibratedSearchSeed,\n        policy.rule = P.calibratedAlgorithmRule fee ∧\n        (∀ sample n, run (P.input fee hfee) C.val .native accounting policy.rule sample n =\n          run (P.input fee hfee) C.val .uncapped accounting (P.calibratedAlgorithmRule fee) sample n) ∧\n        risk (P.input fee hfee) C.val .native accounting policy.rule (P.calibratedAlgorithmSeedLaw fee) ≤ P.targetRisk ∧\n        P.uncappedValue C accounting fee hfee ≤ P.nativeValue C accounting fee hfee ∧\n        P.nativeValue C accounting fee hfee ≤\n          expectedBill (P.input fee hfee) C.val .native accounting policy.rule (P.calibratedAlgorithmSeedLaw fee) ∧\n        expectedBill (P.input fee hfee) C.val .native accounting policy.rule (P.calibratedAlgorithmSeedLaw fee) ≤\n          8 * P.uncappedValue C accounting fee hfee)\n\nend Parameters\n\nnamespace FixedSharedPool\n\n/-- The common BSC specialization of the ORIGINAL structural certificate,\nand the ORIGINAL fee-independent paid certificate, at EXACTLY delta. -/",
+      "source_sha256": "e98e29c3d841db1edbf81ecaa1166771a6d30ba165fd7bdc67fb530641d9b11f",
+      "declaration_text_sha256": "8c8243db961df6928ae37fd17ab1bde1a6cab8fa8a7f0e0df24a47b69c182383"
+    }
+  ],
+  "D36": [
+    {
+      "name": "PaperProofs.Paid.FixedSharedPool.FixedPoolNativePriceClaims",
+      "source": "PaperProofs/Paid/NativeJointClaims.lean",
+      "line": 197,
+      "full_original_declaration": "def FixedPoolNativePriceClaims (pool : FixedSharedPool) : Prop :=\n  pool.FixedPoolUniformFeePrice ∧ pool.ZeroToolsFeeIndependence ∧ pool.ZeroToolsStructuralSaturation\n\nend FixedSharedPool\nend PaperProofs.Paid",
+      "source_sha256": "e98e29c3d841db1edbf81ecaa1166771a6d30ba165fd7bdc67fb530641d9b11f",
+      "declaration_text_sha256": "66df21f341f973f66061e56a49e08fd7a6a727608a5615cdc5a923abb70c4a63"
+    }
+  ]
+}

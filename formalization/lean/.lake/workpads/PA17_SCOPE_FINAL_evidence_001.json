@@ -1,0 +1,219 @@
+{
+  "recorded_at_utc": "2026-10-30T13:25:54.256293+00:00",
+  "scope": "A01-A18 incl subIDs and complete original A17; not global S7",
+  "method": "read-only source and existing acceptance evidence; no fresh compiler run",
+  "formal_sources": [
+    {
+      "path": "lean/PaperProofs/Structure/Game.lean",
+      "bytes": 14165,
+      "sha256": "50fa6c76e230b9262b5fba9050cdb50dca06d44c91c5ce335144149d874d7f45"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/UsedGame.lean",
+      "bytes": 2614,
+      "sha256": "edc913bd426b90f6dea7b7f596ce07a7afb3c14826726600d1b6f200460dc57e"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/Rank.lean",
+      "bytes": 8547,
+      "sha256": "d91428f239e7ada0d9b0690865dd79b94278efc0fc6e2fb593288bd6e3f359fb"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/Capacity.lean",
+      "bytes": 11514,
+      "sha256": "7fb38d16727caae355a093b4678200848503f04d139f5bdd4d07604fe233570f"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/LaminarTree.lean",
+      "bytes": 11110,
+      "sha256": "b0714a3f8dd42bad163a3d0fc02c3c5d53a22eb9527baf0ff0125fe3f856937f"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/LaminarExtension.lean",
+      "bytes": 10799,
+      "sha256": "c85f32a248e963f05d967def4020c032f1251f2e06527acd5040bbe49549d178"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedNormalize.lean",
+      "bytes": 20113,
+      "sha256": "1bf2a4e3903ccdc0f6995938c9fbbf9b5e2ba81787925e5b2545eac55a4c7e40"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedDescent.lean",
+      "bytes": 22705,
+      "sha256": "77bc02cb210a36ff66d6ac4075d92cf561b28dbefb93ac70dfed00a4f047d5ea"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedIntersectionRAM.lean",
+      "bytes": 24548,
+      "sha256": "a050a62de89c1425cbe0ef6ed2442846b33bc46d1c245ca61a7bb7d4736c1e7e"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/RawClosureRAM.lean",
+      "bytes": 45768,
+      "sha256": "df2dfd96de7bca29628db5bc2aaf83481aac553c8c9cc6f8de17d952cec484de"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedAncestors.lean",
+      "bytes": 18459,
+      "sha256": "cc496244246c862ffadc7d9c73043a37dccfb0e37a6602bbb393199175ad992b"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/LaminarTable.lean",
+      "bytes": 17412,
+      "sha256": "9a7a7b4ccefefcc4f36c319c54ac6af152ded12b2a58be894403e9d392d31542"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedTable.lean",
+      "bytes": 18374,
+      "sha256": "c48202d2241defe690ab89e3381d37adedd7e029272d6f3e11ea2b2be8ad9342"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedQuery.lean",
+      "bytes": 39721,
+      "sha256": "d415de3b126d81404e78764493b3c09f012fda89a7e378127842e84c55b3734c"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/LaminarRankExtraction.lean",
+      "bytes": 8712,
+      "sha256": "9152caca5ad321ffb72d6b22b531d955894f6906a0c6d7fca8b463c9354639c7"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedStaticMetadata.lean",
+      "bytes": 11644,
+      "sha256": "9a5f903b07a3865b7a9c9d5615382414f21f323286999c1edeeb3a583485bb6e"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/IndexedUsedCounts.lean",
+      "bytes": 16232,
+      "sha256": "6140545e03585937323c8830bfb4c026382af37af4180345c694e68c141cb652"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/ControllerBoundaries.lean",
+      "bytes": 5617,
+      "sha256": "6ba79952d7900f07995152f32b9121493b9158be31e3123e1bb144973d763b2e"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/RawTreePreprocessingA06Closure.lean",
+      "bytes": 3004,
+      "sha256": "c3f6254b089b2431c00ac4519c8f8f80e065bd6a44030d3f1ae048342f2b52ac"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/AlgorithmClaims.lean",
+      "bytes": 32496,
+      "sha256": "bb4d42db2cfa00eee681e748e6a6879bc1f60cd94c71f18f8debd4ecb41d415d"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/PA17_FullGivenTree_049.lean",
+      "bytes": 2116,
+      "sha256": "383ff2c69bfcc4bca673897e21171986a222891e010653cbb03560dcd50444be"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/PA17_WrappedNatRAM_038c.lean",
+      "bytes": 12577,
+      "sha256": "a72c1f1d88c9be146eea26e4369087187b377e86d32735a4d23d889a35fbd9fe"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/PA17_PackedPhase_045f.lean",
+      "bytes": 8970,
+      "sha256": "2a20ce273518fc3a958f2a28ed8e9445bd2a870c3e173ba778857af206d9c39b"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/PA17_UniformGenerator_035ai.lean",
+      "bytes": 6099,
+      "sha256": "49f6661ec0c4523fab0feb8ff5b100bc4dcff09f06fbe5ae5797053404a81076"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/PA17_QueryCounts_008.lean",
+      "bytes": 21568,
+      "sha256": "e5f2b864b92a7aaa68a26228f9dd088731daec3519e8c2d7101aed1d1cc2433e"
+    },
+    {
+      "path": "lean/PaperProofs/Structure/PA17_GeneratorStatic_048d.lean",
+      "bytes": 2698,
+      "sha256": "34abae463e3e5538130c45da343178d234cd25bc710db0b6e8c04f2a17ac7494"
+    }
+  ],
+  "manuscript": [
+    {
+      "path": "compatibility_structure_research/submission_2026-10-27/manuscript/sections/laminar.tex",
+      "bytes": 5172,
+      "sha256": "34264488235813d5edf4f3f9ee7b507874d57b03910289742a27266de65a5d37",
+      "frozen_sha256": "34264488235813d5edf4f3f9ee7b507874d57b03910289742a27266de65a5d37",
+      "matches_frozen": true
+    },
+    {
+      "path": "compatibility_structure_research/submission_2026-10-27/manuscript/sections/laminar-proofs.tex",
+      "bytes": 12639,
+      "sha256": "e4349779cd119f9389649e77a9d614996e89382910940d0a6b0b24ee8ecbcb0b",
+      "frozen_sha256": "e4349779cd119f9389649e77a9d614996e89382910940d0a6b0b24ee8ecbcb0b",
+      "matches_frozen": true
+    }
+  ],
+  "manuscript_all_match_frozen": true,
+  "existing_coordinator_acceptance": {
+    "original_A17_accepted": true,
+    "receipt_sha256": "906ca4288fa60ebbe742cf28dccfb320bcc4c3436efe58fa8195fdd8c4f5354b",
+    "receipt_time": "2026-10-30T06:05:32.692642+00:00",
+    "final_manuscript_acceptance_complete": false,
+    "build_success_lines": [
+      "Build completed successfully (4352 jobs)."
+    ],
+    "axiom_audit_lines": [
+      "AXIOM_AUDIT_PASS declarations=29987 theorems=22121 definitions=7028 private=9570 modules=923 new_axioms=0 forbidden_dependencies=0"
+    ],
+    "ledger_A17_lines": [
+      {
+        "line": 244,
+        "text": "| A17 | thm:laminar；A:245–261 | 批004原目标验收：正q原FullGivenTreeClaims完整无额外前提闭合：同一implementation同时满足全部NatRAM及真实physical packing、六程序固定统一generator；真实全表/query/rolling、任意合格物理query heap、≤N请求实际workspace复用、全prefix索引/容量/有限字、加载初始化/执行/HALT/空间全部覆盖。constant=2^58，wordFactor32表示32*clog2(N+q+2)。A06 raw及A18 q0/A19/B23/L01仍各按原目标独立验收 | Structure.LaminarTree.AlgorithmClaims.PhysicalROM；givenTreeROM；NatRAMImplementationClaims；UniformCodeGenerationClaims；PackedImplementationClaims；FullGivenTreeClaims；expectedReply_rank；PA17TableBuild005.prepared_build_correct；prepared_build_halting；PA17BuildResources006.prepared_build_resources；PA17BuildCapacity007.prepared_build_capacityThroughout；PA17WrappedNatRAM038c.implementation_claims；fullNatRAMClaims；PA17FullGivenTree049.fullGivenTreeClaims；natClaims；packedClaims；PA17UniformGenerator035ai.uniformCodeGenerationClaims | A09,A11,A13,A14,A15,A17a,A17b,A17c | 已闭合 |"
+      }
+    ]
+  },
+  "bound_files": [
+    {
+      "path": "compatibility_structure_research/submission_2026-10-27/DEPENDENCIES.md",
+      "bytes": 218846,
+      "sha256": "33735cf84ba5bfd182ec1b1518d1ceb3261ad37592922f3e229fe975f798cfca"
+    },
+    {
+      "path": "lean/.lake/workpads/RootBatch004.acceptance.json",
+      "bytes": 2058,
+      "sha256": "8835a2108ff8dddf60835ca183a018cc41fcc864ac95075a52c419f6e5f822fc"
+    },
+    {
+      "path": "lean/.lake/workpads/RootScopeAcceptance_004.md",
+      "bytes": 9450,
+      "sha256": "187bbe338ff49f4e36699b98ec27c758e6226cc71439a37a4b8f39548f71a99c"
+    },
+    {
+      "path": "lean/.lake/workpads/RootBatch004.build.log",
+      "bytes": 84,
+      "sha256": "b1a2a44f25e68ab7ce88455a5d8d2e6b1f19c8c99b760353164f302454c08a56"
+    },
+    {
+      "path": "lean/.lake/workpads/RootBatch004.audit.log",
+      "bytes": 132,
+      "sha256": "779f009e010767fdbdad686af14654d83242a264f9bb42d214391f213c771101"
+    },
+    {
+      "path": "lean/.lake/workpads/PA17_A17_SCOPE_REVIEW_050.md",
+      "bytes": 10775,
+      "sha256": "bf0d23f2792f0fbf441ac41dc920923656c2bb2d8af3899b09e811e52dd7d7e3"
+    },
+    {
+      "path": "lean/.lake/workpads/PA17_HANDOFF_011.md",
+      "bytes": 10194,
+      "sha256": "a3d37a9e9831c9c55c1126e78a178da8f17c97f073e0d49920253f51fffe034d"
+    },
+    {
+      "path": "lean/.lake/workpads/PA17_SCOPE_FINAL_001.md",
+      "bytes": 11086,
+      "sha256": "62e296cc09416c043f11fe1143d3ab29c711952e4e8a4d433feaec218cfbf644"
+    },
+    {
+      "path": "lean/.lake/workpads/PA17_SCOPE_FINAL_collect_001.py",
+      "bytes": 3959,
+      "sha256": "760c1f42e039c96356b9fe8e2208c31c6a77cbdabcd6dac63fb8f561c95a65e8"
+    }
+  ]
+}

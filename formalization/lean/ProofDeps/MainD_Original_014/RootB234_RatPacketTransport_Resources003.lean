@@ -1,0 +1,287 @@
+module
+public import RootB234_RatPacketTransport_Run002
+
+/-! Same-trace boundary, internal-node, physical scanner and aggregate
+charge bounds. Input scale is the actual occupied initial stack bank. -/
+@[expose] public section
+set_option autoImplicit false
+set_option warningAsError true
+set_option maxRecDepth 10000
+set_option maxHeartbeats 2000000
+
+namespace RootB234.RatPacketTransport
+open Turing
+open PaperProofs.Common.Native PaperProofs.Common.Native.PSTRWordBool
+open PaperProofs.Common.Native.RationalControllerComputation
+open PSTRWordVM
+variable {C : Type*}
+
+def Work (slot : Stack) : Prop := slot=15 ∨ slot=4 ∨ slot=2
+instance (slot : Stack) : Decidable (Work slot) := by unfold Work;infer_instance
+
+def writesDecidable : (body : Statement C) → Decidable (StackIso.WritesOnly Work body)
+  | .push slot _ tail | .pop slot _ tail => by
+      change Decidable (Work slot ∧ StackIso.WritesOnly Work tail)
+      letI:=writesDecidable tail
+      infer_instance
+  | .peek _ _ tail | .load _ tail => writesDecidable tail
+  | .branch _ yes no => by
+      change Decidable (StackIso.WritesOnly Work yes ∧ StackIso.WritesOnly Work no)
+      letI:=writesDecidable yes
+      letI:=writesDecidable no
+      infer_instance
+  | .goto _ | .halt => isTrue trivial
+
+local instance (body : Statement C) : Decidable (StackIso.WritesOnly Work body) := writesDecidable body
+
+theorem program_writes (copy : Bool) (point : Label) :
+    StackIso.WritesOnly Work (program (C:=C) copy .halt point) := by
+  fin_cases point <;> cases copy <;> exact of_decide_eq_true rfl
+
+theorem program_actions (copy : Bool) (point : Label) :
+    ScannerClock.actions (program (C:=C) copy .halt point)≤16 := by
+  fin_cases point <;> cases copy <;> exact of_decide_eq_true rfl
+
+theorem program_pushes (copy : Bool) (point : Label) :
+    AuxWorkspace.pushes (program (C:=C) copy .halt point)≤16 := by
+  fin_cases point <;> cases copy <;> exact of_decide_eq_true rfl
+
+theorem program_readonly (copy : Bool) (point : Label) :
+    B23_4_RatWordPrep.RawGetter.Readonly (fun memory : Store C => memory.1) (program copy .halt point) := by
+  fin_cases point <;> cases copy
+  all_goals
+    dsimp [program,StackIso.statement,RatDrop.headerBody,RatDrop.fieldBody,RatDrop.put,keepSource,
+      B23_4_RatWordPrep.RawGetter.Readonly,RatDrop.capture,RatDrop.bit]
+    repeat' constructor
+    all_goals (intros;rfl)
+
+theorem step_context (copy : Bool) (before after : State C)
+    (edge : TM2.step (program copy .halt) before=some after) : after.var.1=before.var.1 := by
+  cases before with
+  | mk position memory contents =>
+    cases position with
+    | none => cases edge
+    | some point =>
+      have same : after=TM2.stepAux (program copy .halt point) memory contents := (Option.some.inj edge).symm
+      subst after
+      exact B23_4_RatWordPrep.RawGetter.nodes_readonly (fun v : Store C => v.1) _
+        (program_readonly copy point) memory contents _ (AuxWorkspace.endpoint_mem _ _ _)
+
+theorem trace_context (copy : Bool) (trace : List (State C)) (before : State C)
+    (first : trace.head?=some before) (chain : trace.IsChain (fun a b => TM2.step (program copy .halt) a=some b)) :
+    ∀ current∈trace,current.var.1=before.var.1 := by
+  induction trace generalizing before with
+  | nil => simp
+  | cons start rest ih =>
+    have same : start=before := Option.some.inj first
+    subst start
+    cases rest with
+    | nil =>
+      intro current member
+      have same:=List.mem_singleton.mp member
+      subst current;rfl
+    | cons next rest =>
+      obtain ⟨edge,later⟩:=List.isChain_cons_cons.mp chain
+      intro current member
+      rcases List.mem_cons.mp member with rfl | laterMember
+      · rfl
+      · exact (ih next rfl later current laterMember).trans (step_context copy before next edge)
+
+theorem step_resources (copy : Bool) (before after : State C) (bound : Nat)
+    (edge : TM2.step (program copy .halt) before=some after)
+    (bounded : ∀ slot,(before.stk slot).length≤bound) :
+    (∀ slot,(after.stk slot).length≤bound+16) ∧ ∀ slot,¬Work slot→after.stk slot=before.stk slot := by
+  cases before with
+  | mk position memory contents =>
+    cases position with
+    | none => cases edge
+    | some point =>
+      have same : after=TM2.stepAux (program copy .halt point) memory contents := (Option.some.inj edge).symm
+      subst after
+      exact ⟨fun slot => (AuxWorkspace.endpoint_bound _ _ _ bound bounded slot).trans
+          (Nat.add_le_add_left (program_pushes copy point) bound),
+        fun slot untouched => StackIso.nodes_frame _ _ (program_writes copy point) memory contents slot untouched
+          _ (AuxWorkspace.endpoint_mem _ _ _)⟩
+
+theorem trace_resources (copy : Bool) (trace : List (State C)) (before : State C)
+    (background : Stack → List Bool) (bound : Nat) (first : trace.head?=some before)
+    (chain : trace.IsChain (fun a b => TM2.step (program copy .halt) a=some b))
+    (bounded : ∀ slot,(before.stk slot).length≤bound)
+    (frame : ∀ slot,¬Work slot→before.stk slot=background slot) :
+    ∀ current∈trace,(∀ slot,(current.stk slot).length≤bound+16*trace.length) ∧
+      ∀ slot,¬Work slot→current.stk slot=background slot := by
+  induction trace generalizing before bound with
+  | nil => simp
+  | cons start rest ih =>
+    have same : start=before := Option.some.inj first
+    subst start
+    cases rest with
+    | nil =>
+      intro current member
+      have same:=List.mem_singleton.mp member
+      subst current
+      exact ⟨fun slot => (bounded slot).trans (by simp),frame⟩
+    | cons next rest =>
+      obtain ⟨edge,later⟩:=List.isChain_cons_cons.mp chain
+      have step:=step_resources copy before next bound edge bounded
+      intro current member
+      rcases List.mem_cons.mp member with rfl | member
+      · exact ⟨fun slot => (bounded slot).trans (Nat.le_add_right _ _),frame⟩
+      · have tail:=ih next (bound+16) rfl later step.1
+          (fun slot untouched => (step.2 slot untouched).trans (frame slot untouched)) current member
+        refine ⟨?_,tail.2⟩
+        intro slot
+        have h:=tail.1 slot
+        simp only [List.length_cons] at h ⊢
+        omega
+
+theorem internal_resources (copy : Bool) (current : State C) (point : Label) (bound : Nat)
+    (bounded : ∀ slot,(current.stk slot).length≤bound) :
+    (∀ node∈AuxWorkspace.nodes (program copy .halt point) current.var current.stk,
+      node.1.1=current.var.1 ∧ (∀ slot,(node.2 slot).length≤bound+16) ∧
+        ∀ slot,¬Work slot→node.2 slot=current.stk slot) ∧
+      ScannerStatement.clock (program copy .halt point) current.var current.stk≤32*(bound+17) := by
+  refine ⟨?_,?_⟩
+  · intro node member
+    exact ⟨B23_4_RatWordPrep.RawGetter.nodes_readonly (fun v : Store C => v.1) _
+        (program_readonly copy point) current.var current.stk node member,
+      fun slot => (AuxWorkspace.node_bound _ _ _ bound bounded node member slot).trans
+        (Nat.add_le_add_left (program_pushes copy point) bound),
+      fun slot untouched => StackIso.nodes_frame _ _ (program_writes copy point) current.var current.stk slot untouched node member⟩
+  · exact (ScannerClock.clock_bound (program copy .halt point) current.var current.stk bound bounded).trans
+      (Nat.mul_le_mul (Nat.mul_le_mul_left 2 (program_actions copy point))
+        (Nat.add_le_add_right (Nat.add_le_add_left (program_pushes copy point) bound) 1))
+
+def coefficient : Nat := 65536
+
+def inputScale (background : Stack → List Bool) (x : Rat) (source target : List Bool) : Nat :=
+  RatInput.occupied (bank background (RatInput.Encoder.packet x source) [] target)+1
+
+theorem packet_rat_length (x : Rat) (tail : List Bool) :
+    (RatInput.Encoder.packet x tail).length=2*RatInput.Encoder.fieldSize x+6+tail.length :=
+  RatDrop.packet_length _ _ _ _
+
+structure Facts (copy : Bool) (background : Stack → List Bool) (context : C) (memory : RatOutput.Store)
+    (x : Rat) (source target : List Bool) (trace : List (State C)) : Prop where
+  first : trace.head?=some (state background 0 context memory (RatInput.Encoder.packet x source) [] target)
+  chain : trace.IsChain (fun a b => TM2.step (program copy .halt) a=some b)
+  last : trace.getLast?=some (state background 4 context (false,false)
+    (if copy then RatInput.Encoder.packet x source else source) [] (RatInput.Encoder.packet x target))
+  count : trace.length≤3*RatInput.Encoder.fieldSize x+14
+  time : trace.length≤coefficient*inputScale background x source target
+  boundaries : ∀ current∈trace,current.var.1=context ∧
+    (∀ slot,(current.stk slot).length≤coefficient*inputScale background x source target) ∧
+    RatInput.occupied current.stk≤coefficient*inputScale background x source target ∧
+    ∀ slot,¬Work slot→current.stk slot=background slot
+  proper : ∀ current∈trace.dropLast,current.l≠some 4 ∧
+    ∀ point,current.l=some point→
+      (∀ node∈AuxWorkspace.nodes (program copy .halt point) current.var current.stk,
+        node.1.1=context ∧
+        (∀ slot,(node.2 slot).length≤coefficient*inputScale background x source target) ∧
+        RatInput.occupied node.2≤coefficient*inputScale background x source target ∧
+        ∀ slot,¬Work slot→node.2 slot=background slot) ∧
+      ScannerStatement.clock (program copy .halt point) current.var current.stk≤coefficient*inputScale background x source target
+
+theorem actual_bounded (copy : Bool) (background : Stack → List Bool) (context : C)
+    (memory : RatOutput.Store) (x : Rat) (source target : List Bool) :
+    ∃ trace,Facts copy background context memory x source target trace := by
+  obtain ⟨trace,first,chain,last,count⟩:=actual copy .halt background context memory x source target
+  let before:=state background 0 context memory (RatInput.Encoder.packet x source) [] target
+  let M:=RatInput.occupied before.stk
+  let K:=inputScale background x source target
+  have mscale : K=M+1 := rfl
+  have packetRoom : (RatInput.Encoder.packet x source).length≤M := RatInput.Encoder.point_mass before.stk 15
+  rw [packet_rat_length] at packetRoom
+  have short : trace.length≤16*K := by omega
+  let S:=M+16*trace.length
+  have frames : ∀ slot,¬Work slot→before.stk slot=background slot := by
+    intro slot untouched
+    have a : slot≠15 := by intro same;subst slot;exact untouched (by decide)
+    have b : slot≠4 := by intro same;subst slot;exact untouched (by decide)
+    have c : slot≠2 := by intro same;subst slot;exact untouched (by decide)
+    simp only [before,state,bank,a,b,c,ite_false]
+  have bounds:=trace_resources copy trace before background M first chain (RatInput.Encoder.point_mass before.stk) frames
+  have contexts:=trace_context copy trace before first chain
+  have bounded : ∀ current∈trace,∀ slot,(current.stk slot).length≤S := by
+    intro current member slot
+    exact (bounds current member).1 slot
+  have caps : trace.length≤coefficient*K ∧ 16*S≤coefficient*K ∧ S+16≤coefficient*K ∧
+      16*(S+16)≤coefficient*K ∧ 32*(S+17)≤coefficient*K := by
+    dsimp only [S,coefficient]
+    omega
+  have proper:=NativeMulLink.no_early_halt_port (program copy .halt) 4 rfl trace
+    (state background 4 context (false,false) (if copy then RatInput.Encoder.packet x source else source) []
+      (RatInput.Encoder.packet x target)) chain last rfl
+  refine ⟨trace,⟨first,chain,last,count,caps.1,?_,?_⟩⟩
+  · intro current member
+    refine ⟨contexts current member,?_,?_,(bounds current member).2⟩
+    · intro slot
+      exact (bounded current member slot).trans ((Nat.le_mul_of_pos_left _ (by decide : 0<16)).trans caps.2.1)
+    · exact (RatInput.Encoder.occupied_bound current.stk S (bounded current member)).trans caps.2.1
+  · intro current member
+    refine ⟨proper current member,?_⟩
+    intro point selected
+    have internal:=internal_resources copy current point S (bounded current (List.mem_of_mem_dropLast member))
+    refine ⟨?_,internal.2.trans caps.2.2.2.2⟩
+    intro node inside
+    refine ⟨((internal.1 node inside).1).trans (contexts current (List.mem_of_mem_dropLast member)),
+      fun slot => ((internal.1 node inside).2.1 slot).trans caps.2.2.1,?_,
+      fun slot untouched => ((internal.1 node inside).2.2 slot untouched).trans
+        ((bounds current (List.mem_of_mem_dropLast member)).2 slot untouched)⟩
+    exact (RatInput.Encoder.occupied_bound node.2 (S+16) ((internal.1 node inside).2.1)).trans caps.2.2.2.1
+
+def statementClock (copy : Bool) (current : State C) : Nat :=
+  match current.l with
+  | none => 0
+  | some point => ScannerStatement.clock (program copy .halt point) current.var current.stk
+
+def traceClockSum (copy : Bool) (trace : List (State C)) : Nat :=
+  (trace.dropLast.map (statementClock copy)).sum
+
+def chargedCost (copy : Bool) (trace : List (State C)) : Nat := trace.length+traceClockSum copy trace
+
+theorem traceClockSum_le {copy : Bool} {background : Stack → List Bool} {context : C} {memory : RatOutput.Store}
+    {x : Rat} {source target : List Bool} {trace : List (State C)}
+    (facts : Facts copy background context memory x source target trace) :
+    traceClockSum copy trace≤coefficient^2*(inputScale background x source target)^2 := by
+  let cap:=coefficient*inputScale background x source target
+  have term : ∀ value∈trace.dropLast.map (statementClock copy),value≤cap := by
+    intro value member
+    obtain ⟨current,present,rfl⟩:=List.mem_map.mp member
+    cases selected : current.l with
+    | none => simp only [statementClock,selected,Nat.zero_le]
+    | some point =>
+      simp only [statementClock,selected]
+      exact ((facts.proper current present).2 point selected).2
+  have sum : traceClockSum copy trace≤trace.dropLast.length*cap := by
+    simpa only [traceClockSum,List.length_map,Nat.nsmul_eq_mul] using
+      List.sum_le_length_nsmul (trace.dropLast.map (statementClock copy)) cap term
+  have count : trace.dropLast.length≤cap := by
+    rw [List.length_dropLast]
+    exact (Nat.sub_le trace.length 1).trans facts.time
+  exact (sum.trans (Nat.mul_le_mul_right cap count)).trans_eq (by dsimp only [cap];ring)
+
+theorem chargedCost_le {copy : Bool} {background : Stack → List Bool} {context : C} {memory : RatOutput.Store}
+    {x : Rat} {source target : List Bool} {trace : List (State C)}
+    (facts : Facts copy background context memory x source target trace) :
+    chargedCost copy trace≤(coefficient^2+coefficient)*(inputScale background x source target)^2 := by
+  have positive : 1 ≤ inputScale background x source target := by unfold inputScale;omega
+  have square : inputScale background x source target≤(inputScale background x source target)^2 := by nlinarith
+  have time:=facts.time
+  have sum:=traceClockSum_le facts
+  unfold chargedCost
+  nlinarith [Nat.mul_le_mul_left coefficient square]
+
+def support : Finset Label := Finset.univ
+
+private theorem supports_stmt (body : Statement C) : TM2.SupportsStmt support body := by
+  induction body with
+  | push _ _ _ ih | pop _ _ _ ih | peek _ _ _ ih | load _ _ ih => exact ih
+  | branch _ _ _ yes no => exact ⟨yes,no⟩
+  | goto target => intro _;exact Finset.mem_univ _
+  | halt => trivial
+
+theorem supports (copy : Bool) : TM2.Supports (program (C:=C) copy .halt) support :=
+  ⟨Finset.mem_univ _,fun _ _ => supports_stmt _⟩
+
+end RootB234.RatPacketTransport

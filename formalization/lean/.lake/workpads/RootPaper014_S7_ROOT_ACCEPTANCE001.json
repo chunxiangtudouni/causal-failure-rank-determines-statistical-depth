@@ -1,0 +1,69 @@
+{
+  "schema": "RootPaper014.RootFinalS7Acceptance.v1",
+  "utc": "2026-11-02T12:16:06.124505+00:00",
+  "status": "ROOT_ACCEPTED_ALL253_PAPER_CLAIMS_AND_GLOBAL_S7",
+  "formal_closed": 253,
+  "original_claims": 253,
+  "global_s7_complete": true,
+  "overall_goal_complete": true,
+  "Root_semantic_decision": true,
+  "selected_proof_epoch": "RootPaper014",
+  "proof_receipt": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014.receipt_001.json",
+    "sha256": "a9335d60bac45168b7489ea1fa69cb592959c87f55212c203c068fb71cbd6b84"
+  },
+  "actual_s7_runtime": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Verification001\\runtime.json",
+    "sha256": "a569e5a29b77e65849715de359c323a9937a935e29016c632d7b6cb92589535f"
+  },
+  "actual_s7_result": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Verification001\\result.json",
+    "sha256": "27876378d9100ed7273782e242e85ff25b1f1ba0fc3ca6da15964be689505ad2"
+  },
+  "matrix": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Final002\\RootPaper014_S7_014_MATRIX.json",
+    "sha256": "5c144c9c1f39bac22ea5095351b56e9ef3a7ece7e88a32000014b6292ca22176"
+  },
+  "targets": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Final002\\RootPaper014_S7_014_TARGETS.json",
+    "sha256": "b575f38a447fbe328a03cd7a1f1054931f11db39225fbd7ea84643f9b0cdf94c"
+  },
+  "manifest": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_Final002\\RootPaper014_S7_014_MANIFEST.json",
+    "sha256": "f758b2c137e283d1dbd1c8dad2ac459d596cf3df927f3236d8a44ed3e01de7fe"
+  },
+  "census": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PStar_S7_GLOBAL_CENSUS_001.json",
+    "sha256": "f4c4349fa045b6e4436bde1295dbd9f070e47144651769b086a0d90b8dac80ec"
+  },
+  "semantic_review": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_S7_ROOT_SEMANTIC_ACCEPTANCE001.md",
+    "sha256": "9ca586c2305c7e64aab33bb3dde8e8eb50e013ebf965e803d6f33cf4e724a9cc"
+  },
+  "audit_owner_policy_transition": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootPaper014_AuditPolicyTransition002.json",
+    "sha256": "197e7d3b4ff6c89eba77c44df0473d0638bbd29cc099719ad2560106c55081de"
+  },
+  "paper_scope_acceptance": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootScopeAcceptance_014.md",
+    "sha256": "ce76a40c93aa8ec342f39e12fd83f91c75a010fae0f6b01e3acb542624677fb3"
+  },
+  "ledger": {
+    "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\DEPENDENCIES.md",
+    "sha256": "665f9f554eb754b0a1b593fcd43471189d77af6c102c7b4b04e647bceb17b386"
+  },
+  "counts": {
+    "formal_reference_count": 1469,
+    "formal_declaration_count": 1444,
+    "direct_reviewed_sources": 320,
+    "live_project_source_files": 1923,
+    "explicit_environment_count": 22,
+    "source_disposition_count": 131,
+    "unclaimed_original_lines": 0
+  },
+  "new_axioms": 0,
+  "forbidden_dependencies": 0,
+  "parent_proof_recompiles": 0,
+  "source_statement_or_ledger_changes_at_S7_acceptance": 0,
+  "scope": "Latest authorized original-paper requirements; preserved stronger machine targets are not falsely claimed proved."
+}

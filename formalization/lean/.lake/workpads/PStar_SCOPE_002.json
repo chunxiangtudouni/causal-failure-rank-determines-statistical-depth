@@ -1,0 +1,160 @@
+{
+  "scope": "Retained and Star frozen-source correspondence final sector supplement002",
+  "sector_source_review_complete": true,
+  "global_s7_complete": false,
+  "all_retained_thirteen_interfaces_individually_proved": true,
+  "root_infinity_public_audit_actual_exits": [
+    0,
+    0
+  ],
+  "root_infinity_audit": "38 declarations,30 theorems,23 private,std3,no new axioms,no forbidden dependencies",
+  "combined_retained_wrapper": "Root owns formal/public/audit acceptance; source pure thirteen-field conjunction inspected, hash recorded",
+  "records": [
+    {
+      "path": "../compatibility_structure_research/submission_2026-10-27/manuscript/paper.tex",
+      "sha256": "db7c05a4fe9482ab740bda327c7be2e8a5b730e48898630dbc4f01afea7763d3"
+    },
+    {
+      "path": "../compatibility_structure_research/submission_2026-10-27/manuscript/sections/introduction.tex",
+      "sha256": "b640eefef7812fcda77606d900728398952f55ad1e95791b8e723d6dec34cd8b"
+    },
+    {
+      "path": "../compatibility_structure_research/submission_2026-10-27/manuscript/sections/model.tex",
+      "sha256": "b1255ca462a4f77b10e87479dc6d61a342d980580c7ae1efc76fc5a7ed79a42c"
+    },
+    {
+      "path": "../compatibility_structure_research/submission_2026-10-27/manuscript/sections/prices.tex",
+      "sha256": "784480ea5aa114944e62231c1c73e99e1eafa1eb0862b6fd610da2e9983e6319"
+    },
+    {
+      "path": "../compatibility_structure_research/submission_2026-10-27/manuscript/sections/price-proofs.tex",
+      "sha256": "bcdd21ab9ad087387494792ee90951afdd593b14e199f868cd53026f92f0f589"
+    },
+    {
+      "path": "../compatibility_structure_research/submission_2026-10-27/manuscript/sections/star-proofs.tex",
+      "sha256": "6692198a4e2c5b7c59d451804eef6f5c368e8d83bcda20d6373cb0bfa240ea95"
+    },
+    {
+      "path": ".lake/workpads/PStar_SCOPE_001.md",
+      "sha256": "4978681fc4674016e711023e5f963157408eda790fee7c47a5f29bc40e0fffd1"
+    },
+    {
+      "path": ".lake/workpads/PStar_MANIFEST_006.json",
+      "sha256": "1f0cdb5024ec3a1df0550828586d57364523d49308a936e3cf55dbcbfa2878ac"
+    },
+    {
+      "path": ".lake/workpads/PStar_MANIFEST_007.json",
+      "sha256": "b78fabc83fbcc39c53fe9443b0b40f0820911663363f6beecf3007bdabfe4779"
+    },
+    {
+      "path": ".lake/workpads/PStar_MANIFEST_008.json",
+      "sha256": "f27f93f5cd45f68ec7d7ec5c4056b682da27152326f6e863c603dce818535830"
+    },
+    {
+      "path": ".lake/workpads/PStar_MANIFEST_009.json",
+      "sha256": "748fa32f4882c0460154098e02d57c0ac9f440273ed7bbdb63eda40c2c52d4c9"
+    },
+    {
+      "path": ".lake/workpads/PRet_MANIFEST_014.json",
+      "sha256": "ee6918f81c1a9ebd6d701158d4661eefb11867fcb0d070939d9afe022c8b97dd"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_verification001.json",
+      "sha256": "e56d30376a9057feca46e976f481214edd10423e62b2bf436f3573d0b087ec2c"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_Public001.lean",
+      "sha256": "c8c7f840c9ffccb3178fcbdbf460ed5a4fbe48f20992eb6d0ba03550f3685d0f"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_Public001.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_Audit001.lean",
+      "sha256": "f6309a8114f8e5225bbd76be73bc65a88f6b2bf7b300eb14caf8c89a36e0a7cd"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_Audit001.log",
+      "sha256": "3dc7bade93113d14e8788783a5c3ee4f8882f3c83e720613241443f575a1b4da"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_001.lean",
+      "sha256": "07459f564a7f86f880777d9b0a88b20295e71705b20c7b6887c1f4989e8508f6"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_002.lean",
+      "sha256": "372f7ba8b729eaa85b4101e4ed472a48e897386181d8ab0a2f2a468cc0c019f3"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_003.lean",
+      "sha256": "185257558717e0d8267631bc4406b7b25dd360759055e2d3bded6f7addacbda9"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedComplete_001.lean",
+      "sha256": "4c3060013a168a79a71e148dd9ea574e997cc60fb5e79826b97bbee1622a2fdf"
+    }
+  ],
+  "root_infinity_products": [
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_001.olean",
+      "sha256": "1bef7c479eb06e91779270b6f9e3aa57a6afd2126b93491bf8d290ca3aeaed17"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_001.olean.private",
+      "sha256": "04d8b09c7a086574c09b9bd631da48f2a602d2d8e38e15cb6e0bd9b8d403991c"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_001.olean.server",
+      "sha256": "b432f4f4e1fa723fe227079843be9b3899eaa2469932c27d39dd586e04df4994"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_001.ir",
+      "sha256": "a59fc62d007d62aa73e88239adcdc75d7b55d5a3fed0e58258c7cc5389624f0e"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_001.ir.sig",
+      "sha256": "e86fa5c03147843e0a79c470291a84f39bdf9355cee52efec29d7ce63633b967"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_002.olean",
+      "sha256": "5d926932a36543b9cd558e5bc79393cfe58ecb45f0aee3d27160ada33f6e386f"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_002.olean.private",
+      "sha256": "01c8e7e7fa3ed24ee6a05a4c21d18f6a6e9483de058e4bed094389f26e61bf72"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_002.olean.server",
+      "sha256": "12510e9275c8037d4da1fa414f2d091a63aadee5be288e7f1e4358d159848bc8"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_002.ir",
+      "sha256": "6c3b9a52d436664104c2610c8fb003c023a06f9a89f5b69d2444961af6b9c1c7"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_002.ir.sig",
+      "sha256": "e76482ac8c70b5b6cf93c85bcef4d8de2da25a8e9ba4ae69f61eb0175e2e3116"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_003.olean",
+      "sha256": "d6a71cb780cee647c70c3aea1f7ad63461799614f1ff747994d8e9c3f273c242"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_003.olean.private",
+      "sha256": "c1f3e147c7d5a28eeed703e7b6c60add3cad5a7cc02a4ce8cfb4afebdd21278b"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_003.olean.server",
+      "sha256": "369c77580a01233fa951dbb873bf43fc4aaeb7c5d4b6fd59fb4b69bb459b1788"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_003.ir",
+      "sha256": "71c3e0a490f648696f18af684c765b6754d53c015adebbbdc9b0d9d730c60507"
+    },
+    {
+      "path": ".lake/workpads/RootRetainedInfinite_build/RootRetainedInfinite_003.ir.sig",
+      "sha256": "e9cad3e865d50f03380793b8bc39f580dfe80a59850c020d002e3f79f121a419"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "batch": "PStarMainScope001",
+  "created_utc": "2026-10-30T13:08:40.454658+00:00",
+  "read_only_source_review": true,
+  "global_s7_complete": false,
+  "ids": 124,
+  "M_ids": 41,
+  "B_ids": 83,
+  "unique_formal_declaration_references": 661,
+  "direct_formal_sources": 127,
+  "import_closure_sources": 196,
+  "all_formal_sources_match_accepted_receipt": true,
+  "source_manifest_sha256": "d61881bacf098620bea8c06268cb9224a73b480b74abc600e51cf0c3197bcb76",
+  "pdf_sha256": "c78257ce290164127c1ad0977436463f4c41af978cb00dba0957c21aaf9f06b9",
+  "new_axioms": 0,
+  "new_seed_bridge_manifest_sha256": "4e4668dd74520ca00255b96f8094a3b40641ebde0d3dfd5b979ddd616c451be4",
+  "package": [
+    {
+      "path": ".lake/workpads/PStar_MAIN_SCOPE_001.md",
+      "sha256": "201ac7cb29cab1925b6482382ab42a89a925d17d58c3d25f84c67f8e3d5aa6b6",
+      "bytes": 33200
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_SCOPE_001.json",
+      "sha256": "20f146fd0fad30c094a3a905c978c879b37d9fad834f801ec2a91009a9c24f7d",
+      "bytes": 3360201
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_SCOPE_inputs_001.json",
+      "sha256": "28ea28b6543525baa94d85d83cad0f5a5be4be9368f58682e29497da57a8847b",
+      "bytes": 91091
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_SCOPE_locators_001.json",
+      "sha256": "ae4d53fe8faad5ecddbce41e60a06b2dab8b294cc17aa8f3f2a7bb17355d37f8",
+      "bytes": 580023
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_DECL_INDEX_001.json",
+      "sha256": "5b338dc2963632b5b27c37c817c62244da8bf9bedbe77986dbc8fd3c6e13e8db",
+      "bytes": 1396244
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_BASELINE_001.json",
+      "sha256": "0c69e5de7da5f726dde66e18e2a593a2701db26f486f0a563a319e2665a7c66e",
+      "bytes": 4863
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_PROVENANCE_001.json",
+      "sha256": "c769c02513496407b8a7dae7e9906d6e6629e276220a3fc549e871312921b4cc",
+      "bytes": 57434
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_IMPORT_CLOSURE_001.json",
+      "sha256": "e224da4dcb26094d02c1d39827c7d22e9a4c0084803333936bba07b76600cdff",
+      "bytes": 88681
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_FINAL_CONTEXT_001.json",
+      "sha256": "3e5bc4c8ba7ad7db22e00b2171fffba42f9a7ec456eb85c2e36db409da0ee4b3",
+      "bytes": 3029
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_ACCEPTED_RECEIPT_009.json",
+      "sha256": "1700d5be8642fba7e24cdf270e177c3b5d5040ba13384e5d3bd4ecc8d32fec3a",
+      "bytes": 170843
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_M08b_SCOPE_001.md",
+      "sha256": "b2ddc7323ac1c3eb8547e497665ab2eba17be22e6a8bcc6fd2b397d1ec734b5b",
+      "bytes": 3743
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_M08b_SCOPE_001.json",
+      "sha256": "40f0ba1e29758f5a488f26f1e93618662f9acd9443216a0177a227ae3bc5d7f7",
+      "bytes": 6532
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_SEED_HANDOFF_001.md",
+      "sha256": "6f8e12fbf7f2d542d3454274443c13c237d7914430eff0ecbbbd81b09720bde4",
+      "bytes": 3094
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_SEED_MANIFEST_001.json",
+      "sha256": "4e4668dd74520ca00255b96f8094a3b40641ebde0d3dfd5b979ddd616c451be4",
+      "bytes": 4875
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_Index_001.py",
+      "sha256": "1e42fddff2981565b8b8a9496267acdfa70c26d3cea6d0d4d4b2d90d1790e6dc",
+      "bytes": 4849
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_Enrich_001.py",
+      "sha256": "56270ead6aa52156a0763a966638f7da36d50241005fad0a39a3674d40d97ae0",
+      "bytes": 4493
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_Provenance_001.py",
+      "sha256": "7d986d652deaa6d113d35a32082c1c2d3502832290f33203f2fe3fc2d081843b",
+      "bytes": 1720
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_VerifyBaseline_001.py",
+      "sha256": "681c188a47459e4a74a754f4d6f1c062a03bbb8dd3a0c39c65f851a90148cae3",
+      "bytes": 1438
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_FinalizeScope_001.py",
+      "sha256": "829c3ad08531a3cbd9ed00af6b1e767f700c923a0e901ec0cdb979e3cd1af69a",
+      "bytes": 24368
+    },
+    {
+      "path": ".lake/workpads/PStar_MAIN_FreezeScope_001.py",
+      "sha256": "a66079a8b619a5c6332317177d3d36d58dbd6da6ed87c6ac4101ef5847c31589",
+      "bytes": 7139
+    }
+  ],
+  "external_immutable_provenance": [
+    {
+      "path": ".lake/workpads/RootBatch009.audit.log",
+      "sha256": "228803fe52a9ed86d799cdf177787282b8363f77a3dc417db9450b7b3db8a6fc"
+    }
+  ],
+  "formal_010_seed": {
+    "path": "PaperProofs/Statistics/PStar_MAIN_SeedInformation001.lean",
+    "sha256": "b256092d5988e5589f79e5d2b390c694d225cbdbdc0ec10199984d239277a817",
+    "private_source_sha256": "fbc19a84d0108484f1b8e93d853518dd693004c5b172aadadc9c94a8715746fa",
+    "normalized_utf8_text_identical": true,
+    "root_mapping": "Neutral Statistics module. Only newline-byte representation differs from the independently frozen private proof; mathematical text and imports are identical.",
+    "root_canonical_checks": "Root owns batch010 canonical/public acceptance; this scope record does not invent a new exit code.",
+    "declarations": [
+      {
+        "name": "stoppedInformationIdentity_any_seed",
+        "line": 21
+      },
+      {
+        "name": "stoppedDecisionInformationBound_any_seed",
+        "line": 37
+      }
+    ]
+  },
+  "check": "Scope metadata consistency / original source & accepted proof fingerprint checks only. New two-theorem wrapper strict/public/module-origin audit0 is separately frozen. No new global build/audit or official original-ID transition is performed."
+}

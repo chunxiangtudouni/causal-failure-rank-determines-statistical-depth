@@ -1,0 +1,6 @@
+{"version": "1.3.0",
+ "packagesDir": ".lake/packages",
+ "packages": [],
+ "name": "d27_proof_deps",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}

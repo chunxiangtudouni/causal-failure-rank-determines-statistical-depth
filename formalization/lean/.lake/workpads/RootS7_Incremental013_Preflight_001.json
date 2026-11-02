@@ -1,0 +1,314 @@
+{
+  "kind": "RootS7_Incremental013_Preflight_001",
+  "utc": "2026-10-31T12:25:28.263797+00:00",
+  "status": "READONLY_A19_PREFLIGHT_NO_NEW_MATH_GAP_FORMAL_ACCEPTANCE_PENDING",
+  "original_ID": "A19",
+  "original_type": "PaperProofs.Structure.LaminarTree.CompactControllerClaims.FullClaims.{u}",
+  "mathematical_gaps_found": [],
+  "scope_mismatch_found": false,
+  "acceptance_boundary": {
+    "inherited_batch012_accepted": 250,
+    "original_total": 253,
+    "new_acceptances": 0,
+    "fixed_gate_count": 32,
+    "gates_changed": false,
+    "original_ID_matrix_changed": false,
+    "formal_A19_accepted_by_this_preflight": false,
+    "final_S7": false,
+    "candidate_wrapper_or_public_compiled_by_this_preflight": false
+  },
+  "inherited_coverage": {
+    "original_ID_rows": 253,
+    "explicit_environments": 22,
+    "dispositions": 131,
+    "bearing_dispositions": 118,
+    "frozen_English_inputs": 16,
+    "canonical_source_manifest": "d61881bacf098620bea8c06268cb9224a73b480b74abc600e51cf0c3197bcb76",
+    "frozen_PDF": "c78257ce290164127c1ad0977436463f4c41af978cb00dba0957c21aaf9f06b9",
+    "new_census_or_249_semantic_review": false
+  },
+  "checks": [
+    {
+      "name": "five_original_conclusions",
+      "result": "preserved",
+      "locators": [
+        "CompactControllerClaims.lean:309-311",
+        "RootA19_ImportIsolationProbe_Consumer_001.lean:22-41",
+        "RootBatch013_Public_SOURCE_001.txt:12-25"
+      ]
+    },
+    {
+      "name": "no_extra_top_level_caller_premise",
+      "result": "preserved",
+      "locators": [
+        "RootA19_OriginalFull_001.lean:21-47",
+        "RootBatch013_A19Wrapper_SOURCE_001.txt:14-19"
+      ],
+      "detail": "Original laminar/allowed-command/native Prefix and handle/resource qualifications remain; no raw proof, prepared heap or external table is added to the top-level theorem."
+    },
+    {
+      "name": "arbitrary_Seed_universe",
+      "result": "preserved",
+      "locators": [
+        "CompactControllerClaims.lean:276-305",
+        "RootBatch013_A19Wrapper_SOURCE_001.txt:11-15",
+        "RootBatch013_Public_SOURCE_001.txt:22-23"
+      ]
+    },
+    {
+      "name": "fixed_constants_programs_before_inputs",
+      "result": "preserved",
+      "locators": [
+        "PA06_A19Prepare_AllQFinal089_Expanded.lean:26",
+        "CompactControllerClaims.lean:228-256"
+      ],
+      "detail": "Actual raw fixed Cpre/code before all q/full/used; Machine constants/factors/preprocessor/live before all q/full/initialUsed."
+    },
+    {
+      "name": "raw_zero_terminal_repetitions_unused",
+      "result": "preserved",
+      "locators": [
+        "laminar-proofs.tex:263-270",
+        "CompactControllerClaims.lean:32-72",
+        "RootA19_OriginalFull_001.lean:21-41"
+      ],
+      "detail": "All-q actual raw witness includes q=0; N=0 terminal case and arbitrary full/used retain repetitions, absent tools and initial exclusions; A06/A17 original q>0 scope is unchanged."
+    },
+    {
+      "name": "metadata_bitmap_header_built",
+      "result": "preserved",
+      "locators": [
+        "CompactControllerClaims.lean:126-177",
+        "RootA19_OriginalFull_001.lean:21-41"
+      ],
+      "detail": "Raw incidence plus used input; constructed physical header/static metadata/table/bitmap, not caller-provided initialized state."
+    },
+    {
+      "name": "query_adaptive_script_all_commands_cost",
+      "result": "preserved",
+      "locators": [
+        "CompactControllerClaims.lean:102-109,181-256",
+        "AlgorithmClaims.lean:307-346"
+      ],
+      "detail": "All allowed individual commands; actual adaptive query/declaration StageScript and commandsCost; preserved internal HeapRepresents is established by preprocessing."
+    },
+    {
+      "name": "finite_words_packing_loading",
+      "result": "preserved",
+      "locators": [
+        "RawTreePreprocessingClaims.lean:45-61",
+        "AlgorithmClaims.lean:568-598",
+        "CompactControllerClaims.lean:181-256"
+      ],
+      "detail": "Real HALT/fetch/access/word/packing traces and original loading/time costs. Logical capacity/count bounds are not confused with index/header bounds."
+    },
+    {
+      "name": "table_tie_risk_price_boundary",
+      "result": "preserved",
+      "locators": [
+        "laminar-proofs.tex:272-280",
+        "CompactControllerClaims.lean:56-72,276-305"
+      ],
+      "detail": "Exact structural rank/compatible maximizing callback; no added equality to a generic tie run, statistical risk theorem or real-price optimization theorem."
+    }
+  ],
+  "original_typed_reuse": [
+    {
+      "theorem": "RawTreePreprocessingA06Closure.fullClaims",
+      "type": "RawTreePreprocessingClaims.FullClaims",
+      "locator": "RawTreePreprocessingA06Closure.lean:57",
+      "new_caller_arguments": [],
+      "accepted_basis": "batch012, not rerun"
+    },
+    {
+      "theorem": "PA17FullGivenTree049.fullGivenTreeClaims",
+      "type": "AlgorithmClaims.FullGivenTreeClaims",
+      "locator": "PA17_FullGivenTree_049.lean:35",
+      "new_caller_arguments": [],
+      "accepted_basis": "batch012, not rerun"
+    }
+  ],
+  "input_pins": {
+    "small_selected_sources_fresh_sha256": [
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_ScopePrepare_001.md",
+        "bytes": 4240,
+        "sha256": "2a19763512bdc72e98cb4f21daef16b12859004791c9a70429a4b41f58839a78"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_A19Wrapper_SOURCE_001.txt",
+        "bytes": 715,
+        "sha256": "1767d85f45a644990e462155b52c828f01529145163d42764cd1153b952c0827"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_Public_SOURCE_001.txt",
+        "bytes": 1036,
+        "sha256": "903421f0b8d8f1ba465a2bdf4c317fe7e3521eb4bc546302d2bf44a34103c768"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootA19_OriginalFull_001.lean",
+        "bytes": 1855,
+        "sha256": "1bcedd579d94e2fdd3c936f2abd0fe088f82c8d40e682be9c22a9219ee074fcc"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootA19_ImportIsolationProbe_Raw_001.lean",
+        "bytes": 1475,
+        "sha256": "aa951997c8daaaa23c97fb32225c8613d4f12954c7d7dfb422ef53a7fb8d5401"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootA19_ImportIsolationProbe_Machine_001.lean",
+        "bytes": 1975,
+        "sha256": "2688df81869e930dee8e15dba3091d98682741ed2921111c767f4d35d183961b"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootA19_ImportIsolationProbe_Consumer_001.lean",
+        "bytes": 1757,
+        "sha256": "7f9ad2d7e17a10357f1b431b8ea931d49187ee277068a893e85bc0103449a7c4"
+      }
+    ],
+    "formal_source_pins_reused": [
+      {
+        "module": "PaperProofs.Structure.CompactControllerClaims",
+        "path": "D:\\STOC投稿\\lean\\PaperProofs\\Structure\\CompactControllerClaims.lean",
+        "sha256": "52047ad43a5d6cdfaf16c79215b8cf4378c235bf2d7ad5ac3e223ad76f7c225c",
+        "pin_basis": "batch012 fingerprint equals stored Main inventory source pin; no live full-source rehash"
+      },
+      {
+        "module": "PaperProofs.Structure.RawTreePreprocessingClaims",
+        "path": "D:\\STOC投稿\\lean\\PaperProofs\\Structure\\RawTreePreprocessingClaims.lean",
+        "sha256": "f2ebffda7c8586ce83b8a97577145928c3f083dfed13d91bd83b26bbc4c79244",
+        "pin_basis": "batch012 fingerprint equals stored Main inventory source pin; no live full-source rehash"
+      },
+      {
+        "module": "PaperProofs.Structure.RawTreePreprocessingA06Closure",
+        "path": "D:\\STOC投稿\\lean\\PaperProofs\\Structure\\RawTreePreprocessingA06Closure.lean",
+        "sha256": "c3f6254b089b2431c00ac4519c8f8f80e065bd6a44030d3f1ae048342f2b52ac",
+        "pin_basis": "batch012 fingerprint equals stored Main inventory source pin; no live full-source rehash"
+      },
+      {
+        "module": "PaperProofs.Structure.PA17_FullGivenTree_049",
+        "path": "D:\\STOC投稿\\lean\\PaperProofs\\Structure\\PA17_FullGivenTree_049.lean",
+        "sha256": "383ff2c69bfcc4bca673897e21171986a222891e010653cbb03560dcd50444be",
+        "pin_basis": "batch012 fingerprint equals stored Main inventory source pin; no live full-source rehash"
+      },
+      {
+        "module": "PaperProofs.Structure.PSTR_Callback_001",
+        "path": "D:\\STOC投稿\\lean\\PaperProofs\\Structure\\PSTR_Callback_001.lean",
+        "sha256": "ed15619d2ce918444e33da23321e3ab9531563a381640ff10513eb4c192a8feb",
+        "pin_basis": "batch012 fingerprint equals stored Main inventory source pin; no live full-source rehash"
+      },
+      {
+        "module": "PaperProofs.Structure.AlgorithmClaims",
+        "path": "D:\\STOC投稿\\lean\\PaperProofs\\Structure\\AlgorithmClaims.lean",
+        "sha256": "bb4d42db2cfa00eee681e748e6a6879bc1f60cd94c71f18f8debd4ecb41d415d",
+        "pin_basis": "batch012 fingerprint equals stored Main inventory source pin; no live full-source rehash"
+      }
+    ],
+    "paper_selected_spans": [
+      {
+        "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\manuscript\\sections\\laminar.tex",
+        "lines": [
+          24,
+          49
+        ],
+        "span_sha256": "ad0833cb6dbff606e04cca85ce026fab65ab19659fc6d8e9dd9cb35194b2f272",
+        "span_bytes": 1247,
+        "digest_rule": "UTF-8 decoded selected source lines after universal-newline text decoding; selected span only"
+      },
+      {
+        "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\manuscript\\sections\\laminar-proofs.tex",
+        "lines": [
+          245,
+          280
+        ],
+        "span_sha256": "50278733cb2bf0ed6b3626e071001e940446bb3f846070a0ade2eff35acba735",
+        "span_bytes": 2093,
+        "digest_rule": "UTF-8 decoded selected source lines after universal-newline text decoding; selected span only"
+      }
+    ],
+    "paper_proof_whole_source_pin_inherited": "e4349779cd119f9389649e77a9d614996e89382910940d0a6b0b24ee8ecbcb0b",
+    "metadata_records": [
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootA19_IntegrationPreflight_002.json",
+        "sha256": "d3b35fff8d26b089810de946cb69ba45bf5d44aa98c21dfaff40d4c63346e8f2",
+        "pin_basis": "Root supplied immutable inventory pin; metadata parsed only"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_entry_001.json",
+        "sha256": "c3e0c0247185f8689d7f68441bee9518c2598f8be56794908a0fecf22a3cccc5",
+        "pin_basis": "inherited batch012 FROZEN record; only selected fingerprint values used"
+      },
+      {
+        "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt_012.json",
+        "sha256": "4841de885cd4acd6def561d234564f02ce316f9de759276499fe5e7f3a46c501",
+        "pin_basis": "inherited batch012 FROZEN record; receipt not reread or rehashed"
+      },
+      {
+        "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootA19_OriginalFull_FROZEN_001.json",
+        "sha256": "08c7a5c7293507ce23fa7309df77a8e0a494ee91422737097480acc87336993a",
+        "pin_basis": "Root PrivateEndpointAccept supplied record; old assets not rehashed"
+      }
+    ],
+    "actual_raw_source": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Structure\\PA06_A19Prepare_AllQFinal089_Expanded.lean",
+      "sha256": "f9efc448c2032ffd3e283aa6c4d731980d75b35979f07ad92a001fb6573b2a4b",
+      "pin_basis": "inherited original Full FROZEN source pin; selected small source reviewed"
+    }
+  },
+  "graph_metadata_check": {
+    "source": "RootA19_IntegrationPreflight_002.json /inventory /topological_modules",
+    "root": "RootA19_OriginalFull_001",
+    "inventory_nodes": 1215,
+    "topological_nodes": 1215,
+    "root_reachable_nodes": 1215,
+    "acyclic": true,
+    "paid_classifier_prefixes": [
+      "PaperProofs.Paid.",
+      "Paid.",
+      "RootD27"
+    ],
+    "paid_nodes_in_root_closure": [],
+    "nonpaid_to_paid_edges": [],
+    "external_import_prefixes": [
+      "Init",
+      "Lean",
+      "Mathlib"
+    ],
+    "source_body_scan": false,
+    "full_union_fresh_verifier_pending": true
+  },
+  "recorded_actual_evidence_not_replayed": {
+    "private_full_public_ownALL": "RootA19_OriginalFull_FROZEN_001 and RootA19_PrivateEndpointAccept_001 record actual0; no new command certified here",
+    "main_inventory_origins": 1215,
+    "private_origins": 831,
+    "ordinary_formal_origins": 384,
+    "legacy_kernel_triples": 20,
+    "legacy_IRs_invented": false
+  },
+  "formal_acceptance_pending": [
+    "complete coherent union staging and all source/object/origin/required-product bindings",
+    "mandatory full registered-package before/after byte guards",
+    "normal native Lake canonical wrapper and umbrella builds",
+    "actual ordinary typed Public consumption of the proposed seven examples and axiom outputs",
+    "current full build and actual formal ALL",
+    "matching official receipt and Root acceptance transition; final S7 remains separate"
+  ],
+  "limits": {
+    "lean_commands": 0,
+    "old_audit_reruns": 0,
+    "proof_object_bytes_read_or_hashed": 0,
+    "large_asset_byte_rehashes": 0,
+    "all_source_body_scan": false,
+    "whole_manuscript_reread": false,
+    "new_full_253_row_review": false,
+    "formal_source_or_helper_writes": 0,
+    "official_receipt_or_ledger_writes": 0,
+    "scope": "only new RootS7_Incremental013_Preflight_* MD/JSON"
+  },
+  "new_report_md": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootS7_Incremental013_Preflight_001.md",
+    "bytes": 5644,
+    "sha256": "dcead809074c84a97c621530af93fac110791d4ff11fee3bf9eecbb8534224e6"
+  },
+  "completion": "Assigned bounded source preflight complete; checkpoint idle; formal integration is pending with Root."
+}

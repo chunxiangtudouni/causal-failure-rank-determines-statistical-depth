@@ -1,0 +1,3 @@
+name = "d27_proof_deps"
+buildDir = "artifacts"
+leanLibDir = "lean"

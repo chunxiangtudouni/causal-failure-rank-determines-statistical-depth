@@ -1,0 +1,72 @@
+{
+  "status": "selected_and_mathematical_statements_frozen_after_authorized_b09_first_entry_revision",
+  "date": "2026-10-29",
+  "source_entry": "manuscript/paper.tex",
+  "pdf": "output/pdf/submission-paper.pdf",
+  "pdf_sha256": "c78257ce290164127c1ad0977436463f4c41af978cb00dba0957c21aaf9f06b9",
+  "source_manifest_sha256": "d61881bacf098620bea8c06268cb9224a73b480b74abc600e51cf0c3197bcb76",
+  "source_hashes": {
+    "paper.tex": "db7c05a4fe9482ab740bda327c7be2e8a5b730e48898630dbc4f01afea7763d3",
+    "paper_preamble.tex": "e448afb53a899eebd9d7aa87911879380ffe77506824f9a6cee76a58c0afcaaa",
+    "sections/introduction.tex": "b640eefef7812fcda77606d900728398952f55ad1e95791b8e723d6dec34cd8b",
+    "sections/model.tex": "b1255ca462a4f77b10e87479dc6d61a342d980580c7ae1efc76fc5a7ed79a42c",
+    "sections/laminar.tex": "34264488235813d5edf4f3f9ee7b507874d57b03910289742a27266de65a5d37",
+    "sections/prices.tex": "784480ea5aa114944e62231c1c73e99e1eafa1eb0862b6fd610da2e9983e6319",
+    "sections/related.tex": "17afb1cad87f9bc7c3a23a37210e00d866d51ba3348a39afaa3a31142cff1ea6",
+    "sections/discussion.tex": "2c9aeac7ba5c0f70bc66ccb86bb2be62bf4605dc47328aa6cc90e460529aaa97",
+    "sections/laminar-proofs.tex": "e4349779cd119f9389649e77a9d614996e89382910940d0a6b0b24ee8ecbcb0b",
+    "sections/price-proofs.tex": "bcdd21ab9ad087387494792ee90951afdd593b14e199f868cd53026f92f0f589",
+    "sections/star-proofs.tex": "6692198a4e2c5b7c59d451804eef6f5c368e8d83bcda20d6373cb0bfa240ea95",
+    "sections/paid-extension.tex": "cf03522c72ea81cb3b0c3f3d538ad4c869d87295e69e73d39ab47bd3742aa0d4",
+    "sections/bridge.tex": "431ee0dc2f98e84dc1c601ab7c8e0fa0d9a8da5b4f20eb2d86e3dcc7657a275d",
+    "sections/paid-proofs.tex": "50680b39065ea11bd32ee1533872f90586d36637302a7b3aacec409c77160e4b",
+    "sections/methodology.tex": "745654df0cb34432cd44b95eaf005a42cb286bc302e3c68930d2922c2afe354d",
+    "sections/references.tex": "29985ee143343f7edcbee81e4090f97aecfc1b7f4eb7769762adb698d8ab5224"
+  },
+  "core_checks": {
+    "core_sources_unchanged": {
+      "sections/model.tex": "b1255ca462a4f77b10e87479dc6d61a342d980580c7ae1efc76fc5a7ed79a42c",
+      "sections/laminar.tex": "34264488235813d5edf4f3f9ee7b507874d57b03910289742a27266de65a5d37",
+      "sections/prices.tex": "784480ea5aa114944e62231c1c73e99e1eafa1eb0862b6fd610da2e9983e6319",
+      "sections/laminar-proofs.tex": "e4349779cd119f9389649e77a9d614996e89382910940d0a6b0b24ee8ecbcb0b",
+      "sections/star-proofs.tex": "6692198a4e2c5b7c59d451804eef6f5c368e8d83bcda20d6373cb0bfa240ea95"
+    },
+    "star_statement_unchanged": true,
+    "independent_extension_in_main_inputs": false,
+    "main_proofs_reference_paid_extension": false,
+    "selected_entrypoint": "manuscript/paper.tex",
+    "meaning": "Document/dependency checks against the expected current core; 5 core files unchanged and 1 user-authorized B09 scope edit. Not Lean verification.",
+    "core_sources_expected": {
+      "sections/model.tex": "b1255ca462a4f77b10e87479dc6d61a342d980580c7ae1efc76fc5a7ed79a42c",
+      "sections/laminar.tex": "34264488235813d5edf4f3f9ee7b507874d57b03910289742a27266de65a5d37",
+      "sections/prices.tex": "784480ea5aa114944e62231c1c73e99e1eafa1eb0862b6fd610da2e9983e6319",
+      "sections/laminar-proofs.tex": "e4349779cd119f9389649e77a9d614996e89382910940d0a6b0b24ee8ecbcb0b",
+      "sections/price-proofs.tex": "bcdd21ab9ad087387494792ee90951afdd593b14e199f868cd53026f92f0f589",
+      "sections/star-proofs.tex": "6692198a4e2c5b7c59d451804eef6f5c368e8d83bcda20d6373cb0bfa240ea95"
+    },
+    "core_sources_unchanged_count": 5,
+    "authorized_core_source_changes": [
+      {
+        "source": "sections/price-proofs.tex",
+        "old_sha256": "543a9f3da7631e658047f68f70b08e3a0d843a35b7c23658ad02a7c286f72080",
+        "new_sha256": "bcdd21ab9ad087387494792ee90951afdd593b14e199f868cd53026f92f0f589",
+        "reason": "B09 first-entry temporal qualification, authorized by the user on 2026-10-29."
+      }
+    ],
+    "scope_revision_receipt": "checks/b09-first-entry-revision.json"
+  },
+  "main_labels": [
+    "prop:star",
+    "thm:laminar",
+    "thm:price",
+    "thm:retained",
+    "cor:computable-price"
+  ],
+  "independent_appendix": "D",
+  "formalization_status": "in_progress; authoritative claim status is maintained only in DEPENDENCIES.md",
+  "verification": "Offline cached Tectonic compile and document validator PASS; visual review of all 33 pages via six contact sheets plus full-size affected page 14 PASS. Not completed Lean formalization.",
+  "selected_date": "2026-10-27",
+  "revision": "b09-first-entry_2026-10-29",
+  "previous_baseline_archive": "archives/b09-pre-first-entry_2026-10-29",
+  "scope_revision_receipt": "checks/b09-first-entry-revision.json"
+}

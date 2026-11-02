@@ -1,0 +1,11 @@
+ROOT_RECOVERY queued ownerPid=7424
+ROOT_RECOVERY acquired=0 availableMiB=6655 ownerPid=7424
+ROOT_LEAN_SLOT queued ownerPid=7424
+ROOT_LEAN_SLOT admission ownerPid=7424
+ROOT_LEAN_SLOT acquired=0 ownerPid=7424
+AXIOM_AUDIT_EXTERNAL_PRIVATE_CREDIT declarations=2
+AXIOM_AUDIT_EXTERNAL_PRIVATE_CREDIT declaration=PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims
+AXIOM_AUDIT_EXTERNAL_PRIVATE_CREDIT declaration=PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims
+AXIOM_AUDIT_PASS declarations=48349 theorems=37097 definitions=10183 private=18155 modules=1923 new_axioms=0 forbidden_dependencies=0
+ROOT_LEAN_SLOT released=0 ownerPid=7424
+ROOT_RECOVERY released=0 ownerPid=7424

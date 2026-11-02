@@ -1,0 +1,87 @@
+{
+  "batch": "PStarPaidScope001",
+  "created_utc": "2026-10-30T13:19:17.956581+00:00",
+  "scope": "Entire original AppendixD read-only semantic/source sector review",
+  "IDs": 52,
+  "closed_original_ID_scope_matches": 47,
+  "OPEN_original_whole_IDs": [
+    "D25",
+    "D26",
+    "D27",
+    "D29",
+    "D36"
+  ],
+  "unique_ledger_declaration_refs": 323,
+  "supplementary_existing_public_refs": 7,
+  "direct_source_count": 70,
+  "transitive_source_count": 730,
+  "all_sources_match_RootBatch010_receipt": true,
+  "source_manifest_sha256": "d61881bacf098620bea8c06268cb9224a73b480b74abc600e51cf0c3197bcb76",
+  "pdf_sha256": "c78257ce290164127c1ad0977436463f4c41af978cb00dba0957c21aaf9f06b9",
+  "did_not_run_new_lean_lake_fullbuild_audit": true,
+  "did_not_edit_formal_or_ledger": true,
+  "global_s7_complete": false,
+  "package": [
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_001.md",
+      "sha256": "32e34f460346e3872475d7eed930bfdb0fe2851974229446a42dc9f9ae5c59bc",
+      "bytes": 26408
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_001.json",
+      "sha256": "bcde44fdf6f4dba77d119533ad6212b3d20e048fe9f81ab4d205511213d812f4",
+      "bytes": 1746890
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_inputs_001.json",
+      "sha256": "d982a2e5906653e6cc83ee7a635c24b6c6c5a6b116d198e4e16c51a1c77de77f",
+      "bytes": 41538
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_locators_001.json",
+      "sha256": "47f3a15c38593a515593b3ec5a23e6f54ab3d8748de8436ed0732f259cba699b",
+      "bytes": 268722
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_DECL_INDEX_001.json",
+      "sha256": "5cfb1f8b04e374716b34a731b685f6c1f30e4fb8d98b752bbdd2bd50e050f90b",
+      "bytes": 6360990
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_PROVENANCE_001.json",
+      "sha256": "524033c8d64d67706789165ad4c9c648a00394b6ed86d46d069125d7a7444a4b",
+      "bytes": 347644
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_ACCEPTED_RECEIPT_010.json",
+      "sha256": "475571ec8de9f7f36c9ae81a0f5f85080f980a3596c84935d8562f2d7a3a5cd7",
+      "bytes": 180580
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_Index_001.py",
+      "sha256": "42638274b6464308190bbed2c7824a57302b125980ed716cafcd78576ae9c4ba",
+      "bytes": 4045
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_Enrich_001.py",
+      "sha256": "4bfaba4cc88e8c9994b03c2b425df938bbf00b359e6779de08320d6c1e75537c",
+      "bytes": 4591
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_Provenance_001.py",
+      "sha256": "46efb6f0fc1eb116741a091e2a3147b7b63296727488c91175cba646140e3807",
+      "bytes": 3451
+    },
+    {
+      "path": ".lake/workpads/PStar_PAID_SCOPE_Finalize_001.py",
+      "sha256": "fe0162a1f6e24b526cb15f88106bd48edd90d725662aabdcacd1cc64f6a01030",
+      "bytes": 30046
+    }
+  ],
+  "existing_receipt": {
+    "sha256": "475571ec8de9f7f36c9ae81a0f5f85080f980a3596c84935d8562f2d7a3a5cd7",
+    "build_exit": 0,
+    "audit_exit": 0
+  },
+  "meaning": "Original scope audit and immutable fingerprint binding; not a new proof or whole-paper acceptance."
+}

@@ -1,0 +1,6 @@
+* text=auto
+*.lean text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+# Frozen evidence is byte-addressed. Preserve its original bytes.
+formalization/** -text

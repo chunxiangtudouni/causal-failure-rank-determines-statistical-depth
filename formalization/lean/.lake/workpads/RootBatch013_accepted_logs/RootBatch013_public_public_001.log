@@ -1,0 +1,13 @@
+ROOT_RECOVERY queued ownerPid=30096
+ROOT_RECOVERY acquired=0 availableMiB=8079 ownerPid=30096
+ROOT_LEAN_SLOT queued ownerPid=30096
+ROOT_LEAN_SLOT admission ownerPid=30096
+ROOT_LEAN_SLOT acquired=0 ownerPid=30096
+'PaperProofs.Structure.LaminarTree.CompactControllerA19Closure.fullClaims' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperProofs.Structure.LaminarTree.CompactControllerA19Closure.machineControllerClaims' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ROOT_LEAN_SLOT released=0 ownerPid=30096
+ROOT_RECOVERY released=0 ownerPid=30096

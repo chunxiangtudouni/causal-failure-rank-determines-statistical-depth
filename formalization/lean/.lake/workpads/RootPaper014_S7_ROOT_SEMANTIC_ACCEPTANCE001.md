@@ -1,0 +1,15 @@
+# Root全篇S7语义终签：论文必要范围
+
+Root最终决定：接受全部253项原论文主张及全篇S7。选择的不可变证明epoch为RootPaper014；本决定基于实际fullnormal build0、ALL1923正式模块审计0、完整4297来源/真实产物/39来源审计证据，以及实际verify003 exit0，不以台账状态或候选metadata代替证明。
+
+冻结原文16个源、253个既有ID、22个显式环境及131项处置记录保持原清单；实际终验无未覆盖原文行、无开放ID、无未认证当前formal源、无错误或未完成理由。旧251项的原文语义审阅与出处按相同源SHA复用；D29/D36三处只是补收当前已验证源中的真实定义位置，未创造声明或改变证明。
+
+B23对应price-proofs.tex:294–300：完整正有理budget输入上的exponent/rows/qualification计算（包括false）、实际二进制准备原语及输入位长和数值quota的统一多项式费用；固定WORD runtime及正全局常数先于原输入/合同；同一初始化native参考策略在全部sample/clock的动作、停机和完整费用，准备只计一次、一般图结构因子只出现一次。保留原H0、caps、资格与失败路径；统计结论在原full-set和原风险域给同一实际policy的risk与完整expectedBill，不输入KL oracle或另给实现/成本假设。沿用已接受完整B23语义审阅与普通精确类型消费。
+
+L01对应prices.tex:127–152：实际raw/tree准备、深度和critical indices、N/q正域O(Nqt) heads及原退化分支，构造准确leading symbolic expression而非调用实数KL oracle；TABLE使用同一实际选定策略和准备heap，原target/观察/handle/费用/caps、全失败路径及完整active-clock费用保持。原数值quota算术费用保留，不宣称poly(log cap)。原资源证书、输入先于asymptotic cutoff的量词及infinite-rank域均保持，不声称不同tie的generic trace相同。
+
+两个FullPaperClaims的普通导出头在namespace PaperProofs内而实际归属私有Interface7/6。当前MF的source+五产物与真实private import-all定义/rfl/Std3审计相同；完整private source-owner信用由正式verifier在每命令前后绑定。正式模块全部private/generated、未知namespace owner和collectAxioms检查保留，Std3不变，没有给两个名字添加axiom白名单。此分流是定义导出表示与实际模块归属的处理，没有新增逻辑假设。
+
+本次依用户最新明确指令只实现论文必要算法及复杂度，两个完整paper规格均有无额外实现前提的证明。历史更强Bool/ISA机器规格及证据保持，不将新paper定理冒称为旧强规格的全部证明；没有验证Lean编译器或CPU的额外要求。原A19/A06/A17与独立D的已接受结论及source/receipt ancestry保留；主链对独立Paid附录的隔离实际检查通过。
+
+Root确认：论文必要主张253/253与S7均已完成。所有已接受父证明复用，正常接入只编两个新facade和umbrella，未重编旧父证明。完整证据定位见同名ROOT_ACCEPTANCE001.json及实际S7 runtime/result、唯一主账和当前正式收据。

@@ -1,0 +1,2 @@
+'PDLower.nativeSeparationClaims' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PDLower.fixedPoolNativePriceClaims' depends on axioms: [propext, Classical.choice, Quot.sound]

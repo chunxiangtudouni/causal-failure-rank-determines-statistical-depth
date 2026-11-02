@@ -1,0 +1,62 @@
+{
+  "status": "ACCEPTED_ORIGINAL_A19_REPLACES_PRIOR_OPEN_ONLY_NOT_FINAL_S7",
+  "utc": "2026-10-31T12:57:43.562668+00:00",
+  "original_ID": "A19",
+  "current_formal_closed": 251,
+  "remaining_originals": [
+    "B23",
+    "L01"
+  ],
+  "whole_S7": false,
+  "exact_original_type": "PaperProofs.Structure.LaminarTree.CompactControllerClaims.FullClaims.{u}",
+  "theorem": "PaperProofs.Structure.LaminarTree.CompactControllerA19Closure.fullClaims",
+  "public_premises": 0,
+  "original_fields": 5,
+  "Seed_universe_arbitrary": true,
+  "paper_preflight": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootS7_Incremental013_Preflight_001.json",
+    "sha256": "206b57ee3ff4d7f4dcfc990ac4250ee16baacf7600502e044aad8fb65abbdaf3"
+  },
+  "accepted_scope": {
+    "path": "lean/.lake/workpads/RootScopeAcceptance_013.md",
+    "sha256": "1333e1cbd29af6fa7a68a38c0cd829a217a6823d841a69e073611ea7199a251c"
+  },
+  "current_receipt": {
+    "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt_013.json",
+    "sha256": "d808cd90449da653d4746ee132ea39ed4418c207c96fedf589995331ef5fc74a"
+  },
+  "acceptance": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_accept_001.json",
+    "sha256": "d1011960169904be9955928ad896278b1c68115d67e9d41492132f08dd7e06e5"
+  },
+  "frozen_batch": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch013_FROZEN_001.json",
+    "sha256": "75f57444bc6263afe5ced9b60da0d6a140ba5e2e2769120f85a8fa4f433593c1"
+  },
+  "official_full_imports": {
+    "modules": 4566,
+    "ordinary_formal_modules": 1920,
+    "preserved_private_modules": 2646,
+    "acyclic": true,
+    "main_independent_of_paid_modules": true
+  },
+  "formal_ALL": {
+    "modules": 1921,
+    "declarations": 48347,
+    "theorems": 37095,
+    "private": 18155,
+    "new_axioms": 0,
+    "forbidden_dependencies": 0
+  },
+  "retained_original_source_origin_audits": {
+    "origins": 3082,
+    "collectors": 25,
+    "private": 2646,
+    "products": 13190,
+    "explicit_legacy_kernel_triples": 20
+  },
+  "coverage_change": "Only replace prior A19 OPEN disposition with this accepted original five-field proof and reviewed manuscript spans. All other prior original dispositions, frozen16sources/PDF and D27 accepted012 delta retained.",
+  "fresh_selected_paper_read": "Already completed once in pinned bounded Preflight013; no repeat of full253 census or oldproof audits.",
+  "no_extra_Lean": true,
+  "no_additional_asset_rehash": true
+}

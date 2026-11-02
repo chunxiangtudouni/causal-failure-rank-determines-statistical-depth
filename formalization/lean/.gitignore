@@ -1,0 +1,8 @@
+/.lake/build/
+/.lake/packages/
+/.lake/cache/
+/.lake/verification/
+/.review-runs/
+/ProofDeps/MainD_Original_014/artifacts/
+/ProofDeps/MainD_Original_014/evidence/
+**/__pycache__/

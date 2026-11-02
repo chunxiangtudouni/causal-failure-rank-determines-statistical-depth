@@ -1,0 +1,1919 @@
+{
+  "kind": "Read-only original D27 semantic/locator increment012; NOT final S7 or new kernel acceptance",
+  "utc": "2026-10-31T11:48:34.957465+00:00",
+  "original_ID": "D27",
+  "status": "ACCEPTED_D27_REPLACES_PRIOR_OPEN_ONLY",
+  "current_progress": {
+    "closed": 250,
+    "total": 253,
+    "remaining": [
+      "A19",
+      "B23",
+      "L01"
+    ],
+    "S7": false,
+    "final_matrix_completed": false
+  },
+  "input_anchors": {
+    "official012_receipt": {
+      "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+      "sha256": "4841de885cd4acd6def561d234564f02ce316f9de759276499fe5e7f3a46c501"
+    },
+    "frozen012": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_FROZEN_001.json",
+      "sha256": "c3bf9a27d0a4a114d8d4bd9fc787c97a360014d076f03c8bc95db48c21179ce6"
+    },
+    "original011_receipt": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_Preimage_001\\lean-formalization-receipt.json",
+      "sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+      "pin_reused": true
+    },
+    "actual249_verification": {
+      "path": "lean/.lake/workpads/RootBatch012_verification_249_001.json",
+      "sha256": "588b007c3065d59cb4b49dd212df82ae742780209b7f94c5244157c4c2c4f1a1"
+    },
+    "actual_runtime_journal": {
+      "path": "lean/.lake/workpads/RootBatch012_PrivateVerification_Run_001.json",
+      "sha256": "2b8450fac60ad34e2484ab8ca3c6b72bf6c3cb822db9794fe6e2e0ad6a2b7210"
+    },
+    "preaudit_final": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_FINAL_001.md",
+      "manifest_sha256": "07c845affcb210c990f896c2fc0065a01b0d9a8844b7645ad215d677cf85c6b8",
+      "reused_without_rerun": true
+    },
+    "integrity_refresh": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootS7_IntegrityRefresh_001.json",
+      "reused_counts": {
+        "preaudit_package_files": {
+          "matched": 30,
+          "changed": 0,
+          "unbound": 0,
+          "total": 30
+        },
+        "inherited_anchors": {
+          "matched": 5,
+          "changed": 0,
+          "unbound": 0,
+          "total": 5
+        },
+        "canonical16_sources": {
+          "matched": 16,
+          "changed": 0,
+          "unbound": 0,
+          "total": 16
+        },
+        "batch_source_pin_occurrences": {
+          "matched": 16,
+          "changed": 0,
+          "unbound": 0,
+          "total": 16
+        },
+        "census16_source_pins": {
+          "matched": 16,
+          "changed": 0,
+          "unbound": 0,
+          "total": 16
+        },
+        "original253_id_rows": {
+          "matched": 253,
+          "changed": 0,
+          "unbound": 0,
+          "total": 253
+        },
+        "batch_original_span_bindings": {
+          "matched": 391,
+          "changed": 0,
+          "unbound": 0,
+          "total": 391
+        },
+        "historical_matrix_original_span_bindings": {
+          "matched": 391,
+          "changed": 0,
+          "unbound": 0,
+          "total": 391
+        },
+        "census131_source_and_span_bindings": {
+          "matched": 131,
+          "changed": 0,
+          "unbound": 0,
+          "total": 131
+        },
+        "environment22_mapping_bindings": {
+          "matched": 22,
+          "changed": 0,
+          "unbound": 0,
+          "total": 22
+        },
+        "disposition131_mapping_bindings": {
+          "matched": 131,
+          "changed": 0,
+          "unbound": 0,
+          "total": 131
+        },
+        "bearing118_mapping_bindings": {
+          "matched": 118,
+          "changed": 0,
+          "unbound": 0,
+          "total": 118
+        },
+        "current011_proof_source_pins": {
+          "matched": 6,
+          "changed": 0,
+          "unbound": 0,
+          "total": 6
+        },
+        "current011_public_source_text_snapshots": {
+          "matched": 5,
+          "changed": 0,
+          "unbound": 0,
+          "total": 5
+        },
+        "formal_source_range_locators_without_own_read_sha": {
+          "matched": 0,
+          "changed": 0,
+          "unbound": 67,
+          "total": 67
+        },
+        "declared_formal_source_hash_slots_in_report_tree": {
+          "matched": 12,
+          "changed": 0,
+          "unbound": 0,
+          "total": 12
+        },
+        "formal_file_position_dicts_without_own_read_sha": {
+          "matched": 0,
+          "changed": 0,
+          "unbound": 367,
+          "total": 367
+        },
+        "compressed_original_locators_not_sha": {
+          "matched": 0,
+          "changed": 0,
+          "unbound": 6,
+          "total": 6
+        },
+        "live22_batch_hash_pointers": {
+          "matched": 22,
+          "changed": 0,
+          "unbound": 0,
+          "total": 22
+        },
+        "historical_environment_census_file": {
+          "matched": 1,
+          "changed": 0,
+          "unbound": 0,
+          "total": 1
+        }
+      }
+    },
+    "locator_corrections": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootS7_FormalLocatorCorrection_003.json",
+      "counts": {
+        "corrected": 6,
+        "cannot_correct": 0,
+        "source_MATCH_official011": 6,
+        "complete_statement_and_proof_coverage": 6,
+        "required_start_expansion_to_recover_header": 1,
+        "additional_start_expansion_for_universe_context": 1,
+        "old_beyond_EOF_cursor": 3,
+        "old_empty_EOF_cursor_only": 3,
+        "missing_files": 0,
+        "declaration_mismatches": 0
+      },
+      "unchanged": true
+    },
+    "scope012": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootScopeAcceptance_012.md",
+      "sha256": "7b0d12c2599eeedaa658366bc7791c101438b7950eba3b47560e35e0fc259e28",
+      "fresh_bounded_check": true
+    }
+  },
+  "inherited_coverage": {
+    "original_ID_rows": 253,
+    "explicit_environments": 22,
+    "dispositions": 131,
+    "bearing_dispositions": 118,
+    "frozen_English_inputs": 16,
+    "canonical_source_manifest": "d61881bacf098620bea8c06268cb9224a73b480b74abc600e51cf0c3197bcb76",
+    "frozen_PDF": "c78257ce290164127c1ad0977436463f4c41af978cb00dba0957c21aaf9f06b9",
+    "new_census_or_249_semantic_review": false
+  },
+  "overlay": {
+    "join_key": "original ID D27",
+    "prior_entry": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_BATCH_022.json",
+      "json_pointer": "/rows/0",
+      "old_semantic_verdict": "OPEN_ORIGINAL_UNIFORM_MACHINE_TARGET_PRESERVED"
+    },
+    "replaces": "D27 OPEN/computation pending descriptions only; other252 original rows and six locator corrections remain inherited",
+    "actual_matrix_mutated": false,
+    "ledger_row": {
+      "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\DEPENDENCIES.md",
+      "line": 853,
+      "text": "| D27 | D:614–642 | 批012完整原ComputationalClaims七字段已无额外前提闭合：统一prepare/solver/calibrate/core与常数在全部原P/fee前选择，原raw6实际准备/原5word readonly fetch与typed-word精化；每solve真实表与原有理操作/峰值records/全部中间operand bits，core精确输出原cached Artifact、真实solve requests及≤Jbis+2次调用、一次endpoint和一次校准及原time/peak-space；同一固定有限Bool TM在全部gamma/P/fee前，原raw编码到真实HALT的裸Artifact输出，固定gamma原rawSize及可变gamma显式数值逆gamma尺度下同轨迹time/visited-bit多项式；原六域CachedDataBitClaims及公平位coin因果/a.s.返回/精确有限族whole-seed joint law均为结论，保fee0/tiny和不返回null，无新增caller性能/trace/width/fuel/prepared-input资格或采样时间承诺。普通public七字段实际消费、全正式ALL1920来源/标准三公理及独立完整1956原来源审计和源/五产品前后指纹全部通过；冻结同module identity复用旧证明，不重命名olean或缩小审计。 | Paid.Computation.ComputationalClaims；PDCompute.computationalClaims；CodecClaims；CodeRefinementClaims；UniformRationalImplementationClaims；UniformBitImplementationClaims；ExactRationalCoinClaims；PrivateSeedSamplingClaims | D02,D17,D18,D22,D24,D26,D27a,D27b | 已闭合 |",
+      "row_text_sha256": "4d1b60a24a052b4a8b22894dc8a3a74e7fad63c09f51aa9d95c04cee72f92dd1",
+      "file_sha256_cached": "ed7ba5dedac116a419fb22f395cb28f2b1eed23fa6c879469bed6501148d282d"
+    }
+  },
+  "metadata_diff_011_to_012": {
+    "old_keys": 1925,
+    "new_keys": 12963,
+    "added_count": 11038,
+    "removed": [],
+    "changed": [
+      {
+        "path": "compatibility_structure_research/submission_2026-10-27/DEPENDENCIES.md",
+        "old": "393329bee91693fd006000674ff964be33736e1b93dd12864a7d69d94207dee2",
+        "new": "ed7ba5dedac116a419fb22f395cb28f2b1eed23fa6c879469bed6501148d282d"
+      },
+      {
+        "path": "lean/AuditAll.lean",
+        "old": "9958c5f426cf606f6ae58d3902c0afdde6d014c9a6eeeb370307f3f7cc34501a",
+        "new": "4f21366cdd85f91395b63ee465afb573505bda9d30a4f966354e4259e14836a7"
+      },
+      {
+        "path": "lean/PaperProofs.lean",
+        "old": "2ddcb5782e8b3438e46a0d208356d0f6bf410b9b0bf1ded9d114a08e34f5674c",
+        "new": "ea707a998e476469b9256b05f03eca576c0f15e035be5fbdb83d81284ad0523c"
+      },
+      {
+        "path": "lean/lake-manifest.json",
+        "old": "32f4a0935cfea6d32d5068814670a93f25b9efc6a44564846f76594377f510fc",
+        "new": "09ba2b1839ad6c473289d04ac85d84e3f4d11b03bcff8a32bd7b7b1eb20f196f"
+      },
+      {
+        "path": "lean/lakefile.toml",
+        "old": "de7c88ba59645ff4d108f81559e54f7b848bd913d5e47c574923844a8275faa7",
+        "new": "ea4f19e4b27e6115e7ce461d8aeff444ec2bcacee227366698df07246bae71a4"
+      },
+      {
+        "path": "lean/scripts/verify_formalization.py",
+        "old": "592f4f83199483ce92dbe4c8ba490cfd47393bd13a8fd1ed51baa12ec82e048f",
+        "new": "82eae72ed7ac6bcfcb24e92cdab3336cbaefd37fb7457416bdba47b04c1cd790"
+      }
+    ],
+    "old_mathematical_file_count": 1918,
+    "old_mathematical_file_pins_unchanged": true,
+    "outside_package_additions": [
+      "lean/PaperProofs/Paid/PDCompute_Complete_001.lean",
+      "lean/ProofDeps/proof-packages.json",
+      "lean/scripts/verify_proof_dependencies.py"
+    ],
+    "added_package_keys": 11035,
+    "comparison_method": "fingerprint dictionary metadata only; necessary selected locator-span byte readings/hashes are a separately explicit operation, not a source/object tree verification"
+  },
+  "acceptance_transfer": {
+    "kind": "ledger-only after actual full verification; no proof rerun",
+    "actual_snapshot_keys": 12963,
+    "added_or_removed_fingerprint_keys": 0,
+    "changed_fingerprint_keys": [
+      "compatibility_structure_research/submission_2026-10-27/DEPENDENCIES.md"
+    ],
+    "mathematical_scripts_configs_external_fingerprint_values_identical": true,
+    "reasoning": "The actual249-state verification already contained the new D27 mathematical proof, public8, formal1920 and guarded external assets. Only its non-Lean ledger classification was then changed. The identical verified mathematics supports accepting D27 once, without pretending a fresh proof run after status transfer.",
+    "prior_actual_build": {
+      "command": [
+        "C:\\Users\\臧昭晨\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lake.exe",
+        "--no-build",
+        "--wfail",
+        "build"
+      ],
+      "returncode": 0,
+      "log": "D:\\STOC投稿\\lean\\.lake\\verification\\build.log",
+      "log_sha256": "352a2479e80538fc3de3296a58d0d75f3891c8c39e4adaf7babd9f7eee6fc54a",
+      "policy": "Full normal Lake current check; stale work fails without compiling"
+    },
+    "prior_actual_audit": {
+      "command": [
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; & 'D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_LEAN_RECOVERY_20261030.ps1' -Executable 'C:\\Users\\臧昭晨\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lake.exe' -Arguments @('env','lean','-M2048','-DautoImplicit=false','-DwarningAsError=true','-DElab.async=false','AuditAll.lean'); exit $LASTEXITCODE"
+      ],
+      "returncode": 0,
+      "log": "D:\\STOC投稿\\lean\\.lake\\verification\\axioms.log",
+      "log_sha256": "8b3b011a217c388391ea2523a9a58fc6eacb45541bb009a6be57d2bb6cec81c1",
+      "policy": "Actual full formal module-origin/private audit; Recovery2/-M2048; complete frozen external-origin coverage separately byte-bound"
+    },
+    "fresh_Lean_runs_this_increment": 0
+  },
+  "original_domain": {
+    "certificate": "N>0;0<gamma<=1/4;0<delta<=1/64",
+    "parameters": "Nat K<N, allowing K=0; c>0",
+    "fee": "ALL rational f>=0, including0 and arbitrarily small positive f",
+    "locators": [
+      "original_certificate_domain",
+      "original_P_domain"
+    ],
+    "no_new_input_performance_trace_width_fuel_prepared_or_sampling_time_qualification": true
+  },
+  "seven_fields": [
+    {
+      "field": "CodecClaims",
+      "projection": ".1",
+      "paper_ranges": [
+        [
+          614,
+          642
+        ]
+      ],
+      "formal_locator_ids": [
+        "codec",
+        "ordinary_public8"
+      ],
+      "original_quantifiers": "ALL original CachedFrontend / Artifact; one positive encoding-size constant before ALL Cells",
+      "resource_or_value_conclusion": "Actual frontend/artifact encode-decode and Bool cell encoding length <= C*Cell.bits.",
+      "boundaries": "Supporting literal output interface; it alone never substitutes for an execution or time proof.",
+      "actual_consumer": "ordinary_public8",
+      "closed_by": "formal_closed_exit",
+      "comparison": "MATCH_ORIGINAL_SCOPE"
+    },
+    {
+      "field": "CodeRefinementClaims",
+      "projection": ".2.1",
+      "paper_ranges": [
+        [
+          614,
+          621
+        ]
+      ],
+      "formal_locator_ids": [
+        "code_refinement",
+        "ram_runs",
+        "primitive_ops"
+      ],
+      "original_quantifiers": "ALL instructions, programs, PCs, inputs, states and complete typed runs",
+      "resource_or_value_conclusion": "Exact five-word decode/fetch at5*PC; real coded step/run refinement; exact primitive trace and code length5*program.size.",
+      "boundaries": "Runs includes actual fetched HALT and excludes invalid fetch/type/division termination. Array equality is not credited as runtime.",
+      "actual_consumer": "ordinary_public8",
+      "closed_by": "formal_closed_exit",
+      "comparison": "MATCH_ORIGINAL_SCOPE"
+    },
+    {
+      "field": "UniformRationalImplementationClaims",
+      "projection": ".2.2.1",
+      "paper_ranges": [
+        [
+          616,
+          621
+        ]
+      ],
+      "formal_locator_ids": [
+        "uniform_ram",
+        "raw_prepared",
+        "actual_solve_calls",
+        "resource_scales",
+        "all_live_operands"
+      ],
+      "original_quantifiers": "EXISTS prepare/solver/calibrate/core/labels/Ctime/Cspace/Cbits/Cprepare/degree BEFORE ALL P,fee>=0; ALL solver penalty:Rat,n,k:Nat.",
+      "resource_or_value_conclusion": "Raw6->prepared13 actual Runs. Each solver exact table with time C*(n+1)*(k+1)*(M+1), peak C*(n+1)*(k+1), full intermediate-bit bound. Calibration time C*Q*(M+1)^2, peak C*(M+1), complete bits. Core exact original Artifact, actual time/sourceCoreScale, peak/sourceRecordSpace, all operand bits/coreOperandBound, exact actual solve requests, <=Jbis+2 entries, one endpoint phase and one calibration, and real per-call live-table return/time refinement.",
+      "boundaries": "Original N>0 makes N+1 an absorbed constant factor; K=0 is allowed by0<=K<N. Per-solve readonly endpoint cache is charged by the single actual core phase; prepared13 contains no endpoints/tables/traces. Rational unit cost is separate from the Bool bit model. Program/readonly input are separate from live-record count.",
+      "actual_consumer": "ordinary_public8",
+      "closed_by": "formal_closed_exit",
+      "comparison": "MATCH_ORIGINAL_SCOPE"
+    },
+    {
+      "field": "UniformBitImplementationClaims",
+      "projection": ".2.2.2.1",
+      "paper_ranges": [
+        [
+          637,
+          640
+        ]
+      ],
+      "formal_locator_ids": [
+        "uniform_bit",
+        "bit_run_space",
+        "raw_prepared",
+        "resource_scales",
+        "same_fixed_bool_actual_proof"
+      ],
+      "original_quantifiers": "ONE states/machine BEFORE ALL gamma/P/fee. Fixed gamma: FORALL0<gamma<=1/4 EXISTS C,degree BEFORE ALL matching P,fee>=0. Variable gamma: ONE C,degree BEFORE ALL P,fee>=0.",
+      "resource_or_value_conclusion": "Same actual raw Bool trace reaches HALT and bare encodeArtifact right0; that trace has both transition time and visited-bit-space bound. Fixed gamma uses rawSize=N+natBitsK+bits(delta,c,f)+1; variableGammaSize adds bits(gamma)+ceil(gamma^-1)+1.",
+      "boundaries": "Fixed-gamma constants may depend on that fixed gamma, as the original statement allows. Global variable-gamma constants do not. Explicit numeric inverse gamma is not log inverse gamma. No private-sampler time and no WEST-empty requirement is added.",
+      "actual_consumer": "ordinary_public8",
+      "closed_by": "formal_closed_exit",
+      "comparison": "MATCH_ORIGINAL_SCOPE"
+    },
+    {
+      "field": "ExactRationalCoinClaims",
+      "projection": ".2.2.2.2.1",
+      "paper_ranges": [
+        [
+          641,
+          642
+        ]
+      ],
+      "formal_locator_ids": [
+        "fair_rejection",
+        "exact_coin"
+      ],
+      "original_quantifiers": "ALL rational probabilities in[0,1], all fair tapes/prefix lengths in the causality conclusion",
+      "resource_or_value_conclusion": "Actual sequential fair-bit rejection is measurable; nonreturn is null; returned law is exact rational Bernoulli; consuming <=count bits makes result depend only on that input prefix.",
+      "boundaries": "Probability0/1 read no bits. Rejected blocks consume bits. There is no native World/observation/correction primitive, worst-case bit bound, expected-time or sampling-time claim.",
+      "actual_consumer": "ordinary_public8",
+      "closed_by": "formal_closed_exit",
+      "comparison": "MATCH_ORIGINAL_SCOPE"
+    },
+    {
+      "field": "PrivateSeedSamplingClaims",
+      "projection": ".2.2.2.2.2.1",
+      "paper_ranges": [
+        [
+          641,
+          642
+        ]
+      ],
+      "formal_locator_ids": [
+        "private_seed"
+      ],
+      "original_quantifiers": "ALL original P,fee>=0; finite selector/stage/stage-level independent private fair streams",
+      "resource_or_value_conclusion": "Full sampled seed measurable; joint nonreturn event null; map of product stream law equals the original whole-policy cachedAlgorithmSeedLaw.",
+      "boundaries": "The getD false total completion is restricted to an explicitly null nonreturn event. Joint law is not replaced by independent marginal assertions, and it adds no runtime or Native bill theorem.",
+      "actual_consumer": "ordinary_public8",
+      "closed_by": "formal_closed_exit",
+      "comparison": "MATCH_ORIGINAL_SCOPE"
+    },
+    {
+      "field": "FORALL P, P.CachedDataBitClaims",
+      "projection": ".2.2.2.2.2.2",
+      "paper_ranges": [
+        [
+          623,
+          640
+        ]
+      ],
+      "formal_locator_ids": [
+        "six_data_fields",
+        "menu_encoding",
+        "calibration_bits",
+        "mixture_bits",
+        "positive_gap",
+        "polynomial_data"
+      ],
+      "original_quantifiers": "ALL original P; all six ORIGINAL menu/calibration/mixture/positive-gap/fixed-gamma/variable-gamma conclusions. Each explicit L is a paper encoding bound, not a new global caller qualification.",
+      "resource_or_value_conclusion": "Exact cached menu common denominator and all policy denominators/numerators, penalty bits and N/K magnitudes; actual Q-row calibration denominator/weight lengths; endpoint-difference mixture size; positive-gap reciprocal/log lower bound; full tiny-fee encoding; fixed/variable gamma polynomial sizes of original numericalSize.",
+      "boundaries": "This older accepted data component is retained as a conclusion, never promoted alone to the full computation target. Positive-gap statements are conditional exactly when zeta_f>delta. Fee0 and all arbitrarily small positive rational fees remain allowed.",
+      "actual_consumer": "ordinary_public8",
+      "closed_by": "formal_closed_exit",
+      "comparison": "MATCH_ORIGINAL_SCOPE"
+    }
+  ],
+  "paper_physical_line_map": [
+    {
+      "line": 614,
+      "source_text": "\\paragraph{Explicit computation and bit lengths}",
+      "disposition": "heading/context",
+      "formal_locator_ids": [
+        "seven_fields"
+      ],
+      "semantic_comparison": "Heading and blank continuation; no independent resource assertion.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 615,
+      "source_text": "",
+      "disposition": "heading/context",
+      "formal_locator_ids": [
+        "seven_fields"
+      ],
+      "semantic_comparison": "Heading and blank continuation; no independent resource assertion.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 616,
+      "source_text": "One penalty solve uses $O(N(K+1)(M+1))$ rational operations and",
+      "disposition": "solve operations and records",
+      "formal_locator_ids": [
+        "uniform_ram",
+        "all_live_operands"
+      ],
+      "semantic_comparison": "Actual per-solve Runs, exact table and n/k/M numerical time/peak; N>0 absorbs N+1.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 617,
+      "source_text": "$O(N(K+1))$ stored actions and mean-value records.  There are at most",
+      "disposition": "solve operations and records",
+      "formal_locator_ids": [
+        "uniform_ram",
+        "all_live_operands"
+      ],
+      "semantic_comparison": "Actual per-solve Runs, exact table and n/k/M numerical time/peak; N>0 absorbs N+1.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 618,
+      "source_text": "$J_{\\rm bis}+2$ solves.  The calibration uses",
+      "disposition": "solve count and calibration introduction",
+      "formal_locator_ids": [
+        "uniform_ram",
+        "actual_solve_calls"
+      ],
+      "semantic_comparison": "Actual source-matching solver requests, <=Jbis+2, not merely a label inventory.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 619,
+      "source_text": "$O(Q(M+1)^2)$ rational updates, summing the widths of the separate",
+      "disposition": "calibration cost, once, compactness",
+      "formal_locator_ids": [
+        "uniform_ram",
+        "resource_scales"
+      ],
+      "semantic_comparison": "C*Q*(M+1)^2 actual time; calibration entry exactly1; peak O(M+1) and full actual core resources.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 620,
+      "source_text": "birth--death walks; it is done once.  Thus the output is compact in these",
+      "disposition": "calibration cost, once, compactness",
+      "formal_locator_ids": [
+        "uniform_ram",
+        "resource_scales"
+      ],
+      "semantic_comparison": "C*Q*(M+1)^2 actual time; calibration entry exactly1; peak O(M+1) and full actual core resources.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 621,
+      "source_text": "displayed numerical parameters, with no exponential history tree.",
+      "disposition": "no exponential history tree",
+      "formal_locator_ids": [
+        "uniform_ram",
+        "resource_scales"
+      ],
+      "semantic_comparison": "Exact compact cached table/Artifact and polynomial numerical record space, not an alternate exponential tree.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 622,
+      "source_text": "",
+      "disposition": "paragraph boundary",
+      "formal_locator_ids": [],
+      "semantic_comparison": "Blank; no separate claim.",
+      "fragment_not_independent_sentence": true,
+      "status": "CONTEXT_ONLY"
+    },
+    {
+      "line": 623,
+      "source_text": "Let $L$ bound the bit length of menu probabilities, menu costs, and input",
+      "disposition": "L and denominator product",
+      "formal_locator_ids": [
+        "menu_encoding"
+      ],
+      "semantic_comparison": "MenuEncodingBound covers actual probabilities/costs/reviewFee/fee; common denominator bits <=(2(M+1)+2)*L.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 624,
+      "source_text": "fees.  The product of their denominators has $O((M+1)L)$ bits.",
+      "disposition": "L and denominator product",
+      "formal_locator_ids": [
+        "menu_encoding"
+      ],
+      "semantic_comparison": "MenuEncodingBound covers actual probabilities/costs/reviewFee/fee; common denominator bits <=(2(M+1)+2)*L.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 625,
+      "source_text": "Depth-$N$ policy probabilities and mean costs have denominator bit length",
+      "disposition": "depth policy denominators and penalty",
+      "formal_locator_ids": [
+        "menu_encoding"
+      ],
+      "semantic_comparison": "Exact power divisibility for all cached entry fields; objective adds penalty.den and its bits.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 626,
+      "source_text": "$O((N+1)(M+1)L)$, with multiplier bits added for penalty objectives.",
+      "disposition": "depth policy denominators and penalty",
+      "formal_locator_ids": [
+        "menu_encoding"
+      ],
+      "semantic_comparison": "Exact power divisibility for all cached entry fields; objective adds penalty.den and its bits.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 627,
+      "source_text": "Numerators additionally count value magnitudes and the bit lengths of",
+      "disposition": "numerator magnitudes, indices and calibration",
+      "formal_locator_ids": [
+        "menu_encoding",
+        "calibration_bits",
+        "all_live_operands"
+      ],
+      "semantic_comparison": "Numerator magnitude plus N/K bits; actual calibration rows use Q and channel-input encoding.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 628,
+      "source_text": "$N,K$.  The calibration denominator has $O(Q L_\\gamma)$ bits, where",
+      "disposition": "numerator magnitudes, indices and calibration",
+      "formal_locator_ids": [
+        "menu_encoding",
+        "calibration_bits",
+        "all_live_operands"
+      ],
+      "semantic_comparison": "Numerator magnitude plus N/K bits; actual calibration rows use Q and channel-input encoding.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 629,
+      "source_text": "$L_\\gamma$ is the channel input length.  Initial mixture probabilities",
+      "disposition": "calibration and initial mixture",
+      "formal_locator_ids": [
+        "calibration_bits",
+        "mixture_bits"
+      ],
+      "semantic_comparison": "Canonical calibration weight size and exact mixture weight/cost sizes include both endpoints and delta.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 630,
+      "source_text": "add endpoint and $\\delta$ bit lengths.  Subtracting rational endpoint",
+      "disposition": "calibration and initial mixture",
+      "formal_locator_ids": [
+        "calibration_bits",
+        "mixture_bits"
+      ],
+      "semantic_comparison": "Canonical calibration weight size and exact mixture weight/cost sizes include both endpoints and delta.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 631,
+      "source_text": "risks does not introduce an exponential number of bits.",
+      "disposition": "endpoint subtraction size",
+      "formal_locator_ids": [
+        "mixture_bits"
+      ],
+      "semantic_comparison": "Actual rational endpoint subtraction/division encoding is linear in operand encodings, not exponential.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 632,
+      "source_text": "",
+      "disposition": "paragraph boundary",
+      "formal_locator_ids": [],
+      "semantic_comparison": "Blank; no separate claim.",
+      "fragment_not_independent_sentence": true,
+      "status": "CONTEXT_ONLY"
+    },
+    {
+      "line": 633,
+      "source_text": "The positive difference $\\zeta_f-\\delta$ is at least the reciprocal of",
+      "disposition": "positive gap lower bound",
+      "formal_locator_ids": [
+        "positive_gap"
+      ],
+      "semantic_comparison": "Only when delta<zeroChargeRisk: gap >=1/(2^N*delta.den).",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 634,
+      "source_text": "$2^N$ times the denominator of $\\delta$; hence",
+      "disposition": "positive gap lower bound",
+      "formal_locator_ids": [
+        "positive_gap"
+      ],
+      "semantic_comparison": "Only when delta<zeroChargeRisk: gap >=1/(2^N*delta.den).",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 635,
+      "source_text": "$\\log(1/(\\zeta_f-\\delta))=O(N+L_\\delta)$ when it is positive.",
+      "disposition": "positive gap logarithm",
+      "formal_locator_ids": [
+        "positive_gap"
+      ],
+      "semantic_comparison": "Real.log(gap^-1)<=N*log2+log(delta.den), with the same positivity condition.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 636,
+      "source_text": "The bit length of a very small positive $f$ is counted in $b_f$.",
+      "disposition": "tiny fee counted",
+      "formal_locator_ids": [
+        "positive_gap",
+        "resource_scales",
+        "uniform_bit"
+      ],
+      "semantic_comparison": "Complete ratEncodingBits fee is in every size; no minimum positive fee restriction; fee0 separately included by all fee>=0 quantifiers.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 637,
+      "source_text": "For fixed rational $\\gamma$, $t_0,M,Q,J_{\\rm bis}$ and the foregoing bit",
+      "disposition": "fixed gamma polynomial",
+      "formal_locator_ids": [
+        "polynomial_data",
+        "uniform_bit"
+      ],
+      "semantic_comparison": "Fixed rational gamma coefficients are chosen before all matching P/fees; original explicit N and input lengths.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 638,
+      "source_text": "costs are polynomial in explicit $N$ and remaining input lengths.",
+      "disposition": "fixed gamma polynomial",
+      "formal_locator_ids": [
+        "polynomial_data",
+        "uniform_bit"
+      ],
+      "semantic_comparison": "Fixed rational gamma coefficients are chosen before all matching P/fees; original explicit N and input lengths.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 639,
+      "source_text": "For variable-precision $\\gamma$, dependence on numerical $1/\\gamma$ is",
+      "disposition": "variable gamma numerical scale",
+      "formal_locator_ids": [
+        "polynomial_data",
+        "uniform_bit",
+        "resource_scales"
+      ],
+      "semantic_comparison": "Explicit ceil(gamma^-1) plus gamma encoding, not a polynomial in log(gamma^-1).",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 640,
+      "source_text": "displayed; polynomial dependence on $\\log(1/\\gamma)$ is not asserted.",
+      "disposition": "variable gamma numerical scale",
+      "formal_locator_ids": [
+        "polynomial_data",
+        "uniform_bit",
+        "resource_scales"
+      ],
+      "semantic_comparison": "Explicit ceil(gamma^-1) plus gamma encoding, not a polynomial in log(gamma^-1).",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 641,
+      "source_text": "Exact rational coins can be sampled with ordinary private randomness;",
+      "disposition": "ordinary private exact coins",
+      "formal_locator_ids": [
+        "fair_rejection",
+        "exact_coin",
+        "private_seed"
+      ],
+      "semantic_comparison": "Actual fair-bit rejection, causal exact law, almost-sure finite return and exact finite-family joint law.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    },
+    {
+      "line": 642,
+      "source_text": "they consume no native observation or correction call.",
+      "disposition": "no native calls",
+      "formal_locator_ids": [
+        "fair_rejection",
+        "private_seed"
+      ],
+      "semantic_comparison": "Sampler takes private tapes only, no native World/observation/correction interface; no added sampling-time guarantee.",
+      "fragment_not_independent_sentence": true,
+      "status": "MATCH"
+    }
+  ],
+  "locators": {
+    "paper": {
+      "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\manuscript\\sections\\paid-proofs.tex",
+      "start": 614,
+      "end": 642,
+      "locator": "compatibility_structure_research/submission_2026-10-27/manuscript/sections/paid-proofs.tex:614-642",
+      "full_source_sha256_cached": "50680b39065ea11bd32ee1533872f90586d36637302a7b3aacec409c77160e4b",
+      "span_text": "\\paragraph{Explicit computation and bit lengths}\n\nOne penalty solve uses $O(N(K+1)(M+1))$ rational operations and\n$O(N(K+1))$ stored actions and mean-value records.  There are at most\n$J_{\\rm bis}+2$ solves.  The calibration uses\n$O(Q(M+1)^2)$ rational updates, summing the widths of the separate\nbirth--death walks; it is done once.  Thus the output is compact in these\ndisplayed numerical parameters, with no exponential history tree.\n\nLet $L$ bound the bit length of menu probabilities, menu costs, and input\nfees.  The product of their denominators has $O((M+1)L)$ bits.\nDepth-$N$ policy probabilities and mean costs have denominator bit length\n$O((N+1)(M+1)L)$, with multiplier bits added for penalty objectives.\nNumerators additionally count value magnitudes and the bit lengths of\n$N,K$.  The calibration denominator has $O(Q L_\\gamma)$ bits, where\n$L_\\gamma$ is the channel input length.  Initial mixture probabilities\nadd endpoint and $\\delta$ bit lengths.  Subtracting rational endpoint\nrisks does not introduce an exponential number of bits.\n\nThe positive difference $\\zeta_f-\\delta$ is at least the reciprocal of\n$2^N$ times the denominator of $\\delta$; hence\n$\\log(1/(\\zeta_f-\\delta))=O(N+L_\\delta)$ when it is positive.\nThe bit length of a very small positive $f$ is counted in $b_f$.\nFor fixed rational $\\gamma$, $t_0,M,Q,J_{\\rm bis}$ and the foregoing bit\ncosts are polynomial in explicit $N$ and remaining input lengths.\nFor variable-precision $\\gamma$, dependence on numerical $1/\\gamma$ is\ndisplayed; polynomial dependence on $\\log(1/\\gamma)$ is not asserted.\nExact rational coins can be sampled with ordinary private randomness;\nthey consume no native observation or correction call.",
+      "span_text_sha256": "3b7f73027702ec21922788576eea00cad3792a592c45ef7da4650b4dd412788c",
+      "span_raw_bytes_sha256": "d3cd64273b8e86624c10c6398b601912923f3eaf0006f0a60d0da29dfe9ea827",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "primitive_ops": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 58,
+      "end": 81,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:58-81",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "def Cell.bits : Cell → ℕ\n  | .natural value => 1 + natBits value\n  | .rational value => 1 + ratEncodingBits value\n\ninductive NatOp where\n  | add | subtract | multiply | divide | modulo\n  deriving DecidableEq\n\ndef NatOp.eval : NatOp → ℕ → ℕ → Option ℕ\n  | .add, a, b => some (a + b)\n  | .subtract, a, b => some (a - b)\n  | .multiply, a, b => some (a * b)\n  | .divide, a, b => if b = 0 then none else some (a / b)\n  | .modulo, a, b => if b = 0 then none else some (a % b)\n\ninductive RatOp where\n  | add | subtract | multiply | divide\n  deriving DecidableEq\n\ndef RatOp.eval : RatOp → ℚ → ℚ → Option ℚ\n  | .add, a, b => some (a + b)\n  | .subtract, a, b => some (a - b)\n  | .multiply, a, b => some (a * b)\n  | .divide, a, b => if b = 0 then none else some (a / b)",
+      "span_text_sha256": "12d911e042da99d2884d75ffee9fca9b8f6f0e327b67f647f37c7d40313c602a",
+      "span_raw_bytes_sha256": "9661b517a501d6aeb18a24a38dcffa1f5a443b2d804c81787bc3429457b9d999",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "ram_runs": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 225,
+      "end": 236,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:225-236",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "  List.replicate 5 .instructionWordRead ++ List.replicate 4 .addressArithmetic ++\n    [.decode, .pcArithmetic] ++ instruction.operations\n\ndef primitiveTrace (program : Program) (trace : List State) : List Primitive :=\n  trace.flatMap fun state => ((program[state.pc]?).map Instruction.primitives).getD []\n\n/-- The trace consists of actual successive machine states, including the\nfinal fetched halt. Invalid fetch/type/division termination is not success. -/\ndef Runs (program : Program) (input : List Cell) (trace : List State) (final : State) : Prop :=\n  trace.head? = some initial ∧\n    trace.IsChain (fun before after => step program input before = some after) ∧\n    trace.getLast? = some final ∧ program[final.pc]? = some .halt ∧ final ∈ eval program input",
+      "span_text_sha256": "155dd53c5e69276279169cf9681c82ea2fa004516947ab20b5be329c8a3fbcb3",
+      "span_raw_bytes_sha256": "3f93fb0e3bf6a0d9ab252c72df97000612a9ae02a2f9c50bdd42c200e0a3622d",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "code_refinement": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 357,
+      "end": 369,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:357-369",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "/-- Coded fetch, complete runs including HALT, and exact actual fetched\nprimitive-trace correspondence are all conclusions to prove. Merely naming\nsolver labels or counting host Array iterations cannot discharge this target. -/\ndef CodeRefinementClaims : Prop :=\n  (∀ instruction : Instruction, Instruction.decodeWords instruction.encodeWords = some instruction) ∧\n    (∀ (program : Program) (pc : ℕ), fetchInstruction (encodeProgram program) (5 * pc) = program[pc]?) ∧\n    (∀ (program : Program) (input : List Cell) (state : State),\n      codeStep (encodeProgram program) input (codeState state) = (step program input state).map codeState) ∧\n    (∀ (program : Program) (input : List Cell) (trace : List State) (final : State),\n      Runs program input trace final → CodeRuns (encodeProgram program) input (trace.map codeState) (codeState final)) ∧\n    (∀ (program : Program) (trace : List State),\n      codePrimitiveTrace (encodeProgram program) (trace.map codeState) = primitiveTrace program trace) ∧\n    ∀ program : Program, (encodeProgram program).length = 5 * program.size",
+      "span_text_sha256": "a02ffc5e07ec2f0b9305422e28011a176e1f8db4046bafb93977b7dd469c79a2",
+      "span_raw_bytes_sha256": "c585b6492470fc80cf3ab9fd09776768e93526029169688eace33e048947ee7a",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "all_live_operands": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 371,
+      "end": 380,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:371-380",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "def workingCells (state : State) : ℕ := state.live.card + registers.length + state.output.length\n\nnoncomputable def stateCellBits (state : State) : List ℕ :=\n  (registers.map fun register => (state.register register).bits) ++\n    (state.live.toList.flatMap fun address => [natBits address, (state.heap address).bits]) ++\n      state.output.map Cell.bits ++ [natBits state.pc]\n\ndef peakCells (trace : List State) : ℕ := (trace.map workingCells).foldl max 0\nnoncomputable def peakOperandBits (trace : List State) : ℕ := (trace.flatMap stateCellBits).foldl max 0\ndef time (program : Program) (trace : List State) : ℕ := (primitiveTrace program trace).length",
+      "span_text_sha256": "48f545d24a27ecc6c14444e942073d7866d9f5d3e47ad4f6b632e8c7607b1817",
+      "span_raw_bytes_sha256": "45c0886890959aaaa43c08c75a84edbcd161f62f244108c921fd2d6e9409dc47",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "codec": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 533,
+      "end": 536,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:533-536",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "def CodecClaims : Prop :=\n  (∀ frontend : CachedFrontend, decodeFrontend (encodeFrontend frontend) = some frontend) ∧\n    (∀ artifact : Artifact, decodeArtifact (encodeArtifact artifact) = some artifact) ∧\n    ∃ C : ℕ, 0 < C ∧ ∀ cell : Cell, (encodeCellBits cell).length ≤ C * cell.bits",
+      "span_text_sha256": "1842a4da3c704746ee5af621696243b320c99dbcf7ac983425f1afa943f6de9c",
+      "span_raw_bytes_sha256": "ff6d81d010a7f1cef32cf73bc16be5a209253288cab113e6111e16ca844798d7",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "raw_prepared": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 538,
+      "end": 558,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:538-558",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "/-- The raw input includes exactly original N,K,gamma,delta,c,f. Derived\ncertificate integers, endpoints, calibration values, tables and traces are\nABSENT. A single uniform preparation program must compute them. -/\ndef rawInput (P : PaperProofs.Paid.Parameters) (fee : ℚ) : List Cell :=\n  [.natural P.certificate.stages, .natural P.tools, .rational P.certificate.gamma,\n    .rational P.certificate.risk, .rational P.reviewFee, .rational fee]\n\ndef preparedInput (P : PaperProofs.Paid.Parameters) (fee : ℚ) : List Cell :=\n  rawInput P fee ++ [.natural P.certificate.t0, .natural P.certificate.M,\n    .natural P.certificate.E, .natural P.certificate.Q, .natural (P.bisectionBudget fee),\n    .rational P.Lambda, .rational (P.zeroChargeRisk fee)]\n\n/-- This per-solve readonly cache is charged once by the full core program,\nwhose own input has no endpoint data. It is not a free endpoint oracle. -/\ndef solveInput (P : PaperProofs.Paid.Parameters) (fee penalty : ℚ) (n k : ℕ) : List Cell :=\n  [.natural n, .natural k, .natural P.certificate.M, .rational fee, .rational penalty] ++\n    encodeList encodeEndpoint P.endpointCache.toList\n\ndef calibrationInput (P : PaperProofs.Paid.Parameters) : List Cell :=\n  [.natural P.certificate.M, .natural P.certificate.Q, .rational P.certificate.gamma] ++\n    encodeList encodeEndpoint P.endpointCache.toList",
+      "span_text_sha256": "efe9debe99dd46ea9f01a1c028d3f8c0cce23541f3020cb7926ad01b79a966d2",
+      "span_raw_bytes_sha256": "ac0793540d639cc4f7fe0600211f4883007a46680e76a2c302b4c8a595ab3d33",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "resource_scales": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 560,
+      "end": 583,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:560-583",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "def sourceCoreScale (P : PaperProofs.Paid.Parameters) (fee : ℚ) : ℕ :=\n  (P.bisectionBudget fee + 2) * (P.certificate.stages + 1) * (P.tools + 1) * (P.certificate.M + 1) +\n    P.certificate.Q * (P.certificate.M + 1)^2\n\ndef sourceRecordSpace (P : PaperProofs.Paid.Parameters) : ℕ :=\n  (P.certificate.stages + 1) * (P.tools + 1) + (P.certificate.M + 1)\n\ndef rawSize (P : PaperProofs.Paid.Parameters) (fee : ℚ) : ℕ :=\n  P.certificate.stages + natBits P.tools + ratEncodingBits P.certificate.risk +\n    ratEncodingBits P.reviewFee + ratEncodingBits fee + 1\n\ndef variableGammaSize (P : PaperProofs.Paid.Parameters) (fee : ℚ) : ℕ :=\n  rawSize P fee + ratEncodingBits P.certificate.gamma + ⌈P.certificate.gamma⁻¹⌉₊ + 1\n\ndef maximumMenuBits (P : PaperProofs.Paid.Parameters) (fee : ℚ) : ℕ :=\n  ((P.menuScalars fee).map ratEncodingBits).foldl max 1\n\n/-- Includes numerator magnitude, index/address words, every dyadic\nmultiplier, and calibration operands, not just final-table denominators. -/\ndef coreOperandBound (P : PaperProofs.Paid.Parameters) (fee : ℚ) : ℕ :=\n  (P.certificate.stages + 1) * (2 * (P.certificate.M + 1) + 2) * (maximumMenuBits P fee + 1) +\n    (P.certificate.Q + 1) * (ratEncodingBits P.certificate.gamma + 2) +\n    (P.bisectionBudget fee + 1) * (ratEncodingBits P.Lambda + ratEncodingBits P.certificate.risk + 1) +\n    rawSize P fee + natBits P.certificate.M + natBits P.certificate.Q + 1",
+      "span_text_sha256": "053539e8f4974bd28ede238523b3c604726dc2ea502e5f182254f07b79c97631",
+      "span_raw_bytes_sha256": "806e02a551799a768439158e6b83ceece2ea32b7578277ec7b9aa02cace2d024",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "actual_solve_calls": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 585,
+      "end": 614,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:585-614",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "structure RoutineLabels where\n  solveEntry : ℕ\n  solveReturn : ℕ\n  endpointEntry : ℕ\n  calibrationEntry : ℕ\n\ndef entryCount (pc : ℕ) (trace : List State) : ℕ :=\n  (trace.filter (fun state => state.pc == pc)).length\n\n/-- These requests are read from real reached RAM registers at a real code\nentry address. They are separate from the primitive-time measurement. -/\ndef actualSolveRequests (labels : RoutineLabels) (trace : List State) : List ℚ :=\n  trace.filterMap fun state => if state.pc = labels.solveEntry then (state.register .total).rat? else none\n\ndef heapSegment (state : State) (base count : ℕ) : List Cell :=\n  (List.range count).map fun offset => state.heap (base + offset)\n\n/-- Every actual solver entry has a real return with the exact original\ntable in live heap cells. A label alone never certifies a solve or its cost. -/\ndef SolverCallRefinement (program : Program) (labels : RoutineLabels)\n    (P : PaperProofs.Paid.Parameters) (fee : ℚ) (constant : ℕ) (states : List State) : Prop :=\n  ∀ index state, states[index]? = some state → state.pc = labels.solveEntry →\n    ∃ multiplier : ℚ, (state.register .total).rat? = some multiplier ∧\n      ∃ later final base, index < later ∧ states[later]? = some final ∧ final.pc = labels.solveReturn ∧\n        (final.register .address).nat? = some base ∧\n        let table := P.cachedSolveMenuTable P.endpointCache fee multiplier P.tools P.certificate.stages\n        (∀ offset < (encodeTable table).length, base + offset ∈ final.live) ∧\n        heapSegment final base (encodeTable table).length = encodeTable table ∧\n        time program ((states.drop index).take (later - index + 1)) ≤\n          constant * (P.certificate.stages + 1) * (P.tools + 1) * (P.certificate.M + 1)",
+      "span_text_sha256": "1160acc56527b37da669bcc725b88dd72e66ea2d6652e342224e3ccd90b716fd",
+      "span_raw_bytes_sha256": "3981ee9402865785a2ce9592bda31807188c793d426104b5c487033d69167e9d",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "uniform_ram": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 623,
+      "end": 655,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:623-655",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "def UniformRationalImplementationClaims : Prop :=\n  ∃ (prepare solver calibrate core : Program) (labels : RoutineLabels)\n    (Ctime Cspace Cbits Cprepare degree : ℕ),\n    0 < Ctime ∧ 0 < Cspace ∧ 0 < Cbits ∧ 0 < Cprepare ∧\n    ∀ (P : PaperProofs.Paid.Parameters) (fee : ℚ), 0 ≤ fee →\n      (∃ trace final, Runs prepare (rawInput P fee) trace final ∧ final.output = preparedInput P fee ∧\n        time prepare trace ≤ Cprepare * (variableGammaSize P fee)^degree ∧\n        peakCells trace ≤ Cprepare * (variableGammaSize P fee)^degree ∧\n        peakOperandBits trace ≤ Cprepare * (variableGammaSize P fee)^degree) ∧\n      (∀ (penalty : ℚ) (n k : ℕ), ∃ trace final,\n        Runs solver (solveInput P fee penalty n k) trace final ∧\n        final.output = encodeTable (P.cachedSolveMenuTable P.endpointCache fee penalty k n) ∧\n        time solver trace ≤ Ctime * (n + 1) * (k + 1) * (P.certificate.M + 1) ∧\n        peakCells trace ≤ Cspace * (n + 1) * (k + 1) ∧\n        peakOperandBits trace ≤ Cbits * ((n + 1) * (2 * (P.certificate.M + 1) + 2) *\n          (maximumMenuBits P fee + 1) + ratEncodingBits penalty + natBits n + natBits k + 1)) ∧\n      (∃ trace final, Runs calibrate (calibrationInput P) trace final ∧\n        final.output = encodeList encodeCalibration (P.calibrationWeightCache P.endpointCache).toList ∧\n        time calibrate trace ≤ Ctime * P.certificate.Q * (P.certificate.M + 1)^2 ∧\n        peakCells trace ≤ Cspace * (P.certificate.M + 1) ∧\n        peakOperandBits trace ≤ Cbits * ((P.certificate.Q + 1) *\n          (ratEncodingBits P.certificate.gamma + 2) + maximumMenuBits P fee + 1)) ∧\n      ∃ trace final, Runs core (preparedInput P fee) trace final ∧\n        decodeArtifact final.output = some (buildArtifact P fee) ∧\n        final.output = encodeArtifact (buildArtifact P fee) ∧\n        time core trace ≤ Ctime * sourceCoreScale P fee ∧\n        peakCells trace ≤ Cspace * sourceRecordSpace P ∧\n        peakOperandBits trace ≤ Cbits * coreOperandBound P fee ∧\n        actualSolveRequests labels trace = (P.cachedSearchWithLog P.endpointCache fee (P.bisectionBudget fee)).2 ∧\n        entryCount labels.solveEntry trace = (actualSolveRequests labels trace).length ∧\n        entryCount labels.solveEntry trace ≤ P.bisectionBudget fee + 2 ∧\n        entryCount labels.endpointEntry trace = 1 ∧ entryCount labels.calibrationEntry trace = 1 ∧\n        SolverCallRefinement core labels P fee Ctime trace",
+      "span_text_sha256": "5115dd5b298692605d9fc24f116760b6a920c063d50d35fee5810816e16c4d0f",
+      "span_raw_bytes_sha256": "508312f2189f70a8fe2c958d558020a8fcad6aa364e5e82d0e5a219f930b03c6",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "bit_run_space": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 658,
+      "end": 680,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:658-680",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "abbrev BitState (states : ℕ) := Turing.TM0.Cfg Bool (Fin (states + 1))\n\ndef BitRuns {states : ℕ} (machine : BitMachine states) (input : List Bool)\n    (trace : List (BitState states)) (final : BitState states) : Prop :=\n  trace.head? = some (Turing.TM0.init input) ∧\n    trace.IsChain (fun before after => Turing.TM0.step machine before = some after) ∧\n    trace.getLast? = some final ∧ Turing.TM0.step machine final = none ∧\n    final ∈ StateTransition.eval (Turing.TM0.step machine) (Turing.TM0.init input)\n\ndef headMovement {states : ℕ} (machine : BitMachine states) (state : BitState states) : ℤ :=\n  match machine state.q state.Tape.head with\n  | some (_, .move .left) => -1\n  | some (_, .move .right) => 1\n  | _ => 0\n\n/-- Actual tape-head displacements recover visited space even though the\nofficial TM0 configuration records a relative tape. Input cells are included. -/\ndef visitedBitSpace {states : ℕ} (machine : BitMachine states) (inputLength : ℕ)\n    (trace : List (BitState states)) : ℕ :=\n  let positions := (trace.map (headMovement machine)).scanl (· + ·) 0\n  let high := positions.foldl max (inputLength : ℤ)\n  let low := positions.foldl min 0\n  (high - low).toNat + 1",
+      "span_text_sha256": "1f2f50a6f68b02c39c19c107e6f64a736ea1ff79fe4437c29b67842d86364a38",
+      "span_raw_bytes_sha256": "c0c283a98c06aeeeaaf8b4cb3ce9908558e1bd5c9876781853bbdf67db046cdd",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "uniform_bit": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 682,
+      "end": 700,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:682-700",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "/-- A single genuine finite-control Bool TM computes the exact fixed\nfrontend from RAW input, with no rational unit-cost oracle. Its actual\ntransition count and visited-bit space are polynomial for fixed rational\ngamma and in explicit numerical 1/gamma when gamma varies. The fee's full\nencoding, however small positive f is, is included in every bound.\nNo private-coin sampling-time bound is included in this OFFLINE target. -/\ndef UniformBitImplementationClaims : Prop :=\n  ∃ (states : ℕ) (machine : BitMachine states),\n    (∀ gamma : ℚ, 0 < gamma → gamma ≤ 1 / 4 → ∃ C degree : ℕ, 0 < C ∧\n      ∀ (P : PaperProofs.Paid.Parameters) (fee : ℚ), P.certificate.gamma = gamma → 0 ≤ fee →\n        ∃ trace final, BitRuns machine (encodeBits (rawInput P fee)) trace final ∧\n          final.Tape.right₀ = Turing.ListBlank.mk (encodeBits (encodeArtifact (buildArtifact P fee))) ∧\n          trace.length ≤ C * (rawSize P fee)^degree ∧\n          visitedBitSpace machine (encodeBits (rawInput P fee)).length trace ≤ C * (rawSize P fee)^degree) ∧\n    ∃ C degree : ℕ, 0 < C ∧ ∀ (P : PaperProofs.Paid.Parameters) (fee : ℚ), 0 ≤ fee →\n      ∃ trace final, BitRuns machine (encodeBits (rawInput P fee)) trace final ∧\n        final.Tape.right₀ = Turing.ListBlank.mk (encodeBits (encodeArtifact (buildArtifact P fee))) ∧\n        trace.length ≤ C * (variableGammaSize P fee)^degree ∧\n        visitedBitSpace machine (encodeBits (rawInput P fee)).length trace ≤ C * (variableGammaSize P fee)^degree",
+      "span_text_sha256": "fa78773d3ef991f67a9f1955e0480b837a53d98f6f4ad00ba8b07c84cd53e285",
+      "span_raw_bytes_sha256": "386ee7693c770274b011341a1b0beaec79d138400c3f14762bd3157fc3c7694b",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "fair_rejection": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 702,
+      "end": 754,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:702-754",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "abbrev FairTape := ℕ → Bool\n\nnoncomputable def fairTapeLaw : Measure FairTape :=\n  Measure.infinitePi fun _ : ℕ => Statistics.BinarySymmetric.Parameters.fairGuessLaw\n\ninstance fairTapeLaw_probability : IsProbabilityMeasure fairTapeLaw := by\n  unfold fairTapeLaw\n  infer_instance\n\nstructure CoinState where\n  accumulator : ℕ\n  filled : ℕ\n  bitsRead : ℕ\n  result : Option Bool\n  deriving DecidableEq\n\ndef coinInitial : CoinState := ⟨0, 0, 0, none⟩\n\ndef coinWidth (probability : Set.Icc (0 : ℚ) 1) : ℕ := natBits probability.val.den\n\n/-- Literal private fair-bit rejection sampler. Build an unsigned width-bit\ninteger; accept below the rational denominator and compare with its numerator,\notherwise restart the block. Endpoints use no bits. A rejected block consumes\nits bits; there is no bounded-bit completion or rational-coin oracle. -/\ndef coinStep (probability : Set.Icc (0 : ℚ) 1) (tape : FairTape) (state : CoinState) : Option CoinState :=\n  if state.result.isSome then none else if probability.val = 0 then\n    some { state with result := some false }\n  else if probability.val = 1 then some { state with result := some true }\n  else if state.filled < coinWidth probability then\n    let bit := if tape state.bitsRead then 1 else 0\n    some { state with\n      accumulator := 2 * state.accumulator + bit\n      filled := state.filled + 1\n      bitsRead := state.bitsRead + 1 }\n  else if state.accumulator < probability.val.den then\n    some { state with result := some (decide (state.accumulator < probability.val.num.toNat)) }\n  else some { state with accumulator := 0, filled := 0 }\n\ndef coinRun (probability : Set.Icc (0 : ℚ) 1) (tape : FairTape) : ℕ → CoinState\n  | 0 => coinInitial\n  | steps + 1 =>\n    let previous := coinRun probability tape steps\n    (coinStep probability tape previous).getD previous\n\nnoncomputable def coinResult (probability : Set.Icc (0 : ℚ) 1) (tape : FairTape) : Option Bool := by\n  classical\n  exact if h : ∃ steps, (coinRun probability tape steps).result.isSome = true\n    then (coinRun probability tape (Nat.find h)).result else none\n\nnoncomputable def coinBits (probability : Set.Icc (0 : ℚ) 1) (tape : FairTape) : ℕ∞ := by\n  classical\n  exact if h : ∃ steps, (coinRun probability tape steps).result.isSome = true\n    then ((coinRun probability tape (Nat.find h)).bitsRead : ℕ∞) else ⊤",
+      "span_text_sha256": "96e0f6ab05ac19eef58c161b406cabac9c6d94f52c13efb4de688280ea200eb8",
+      "span_raw_bytes_sha256": "af03fa71ac6b7c02dc51d09fc8c40a1d03be40d65e1774f4959495df57d18d0f",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "exact_coin": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 769,
+      "end": 781,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:769-781",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "/-- Original D:641--642 only: ordinary private bits suffice, the sampler is\ncausal, nonreturn is null, and its returned law is the exact rational coin.\nThere is intentionally no worst-case or expected sampling-bit/time bound.\nThis pending theorem is not an assumption of any policy or value definition. -/\ndef ExactRationalCoinClaims : Prop :=\n  ∀ probability : Set.Icc (0 : ℚ) 1,\n    Measurable (coinResult probability) ∧\n    fairTapeLaw {tape | coinResult probability tape = none} = 0 ∧\n    fairTapeLaw.map (coinResult probability) =\n      (Statistics.BinarySymmetric.Parameters.rocCoinLaw (realProbability probability)).map some ∧\n    ∀ (tape tape' : FairTape) (count : ℕ),\n      (∀ k < count, tape k = tape' k) → coinBits probability tape ≤ (count : ℕ∞) →\n        coinResult probability tape' = coinResult probability tape",
+      "span_text_sha256": "7be9ef8435f0c755d4717678d4a4b61c3bb60dcc9e912186312f1f94e137c2a1",
+      "span_raw_bytes_sha256": "6671d9cb2570a42d2bf9a7be4c2ac0a20ec586ec0dce95ff5d8469e5c863474b",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "private_seed": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 783,
+      "end": 823,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:783-823",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "abbrev CoinIndex (P : PaperProofs.Paid.Parameters) :=\n  Unit ⊕ (P.sharedInstance.Stage ⊕ (P.sharedInstance.Stage × Fin (P.certificate.M + 1)))\n\nabbrev PrivateStreams (P : PaperProofs.Paid.Parameters) := CoinIndex P → FairTape\n\nnoncomputable def privateStreamsLaw (P : PaperProofs.Paid.Parameters) : Measure (PrivateStreams P) :=\n  Measure.pi fun _ : CoinIndex P => fairTapeLaw\n\ninstance privateStreamsLaw_probability (P : PaperProofs.Paid.Parameters) : IsProbabilityMeasure (privateStreamsLaw P) := by\n  unfold privateStreamsLaw\n  infer_instance\n\ndef selectorProbability (P : PaperProofs.Paid.Parameters) (fee : ℚ) : Set.Icc (0 : ℚ) 1 :=\n  rationalProbability (buildArtifact P fee).selectorWeight\n\ndef calibrationProbability (P : PaperProofs.Paid.Parameters) (fee : ℚ) (level : Fin (P.certificate.M + 1)) :\n    Set.Icc (0 : ℚ) 1 :=\n  rationalProbability (P.cachedCalibrationWeight (buildArtifact P fee).frontend.calibrationWeights level.val)\n\nnoncomputable def sampledSeed (P : PaperProofs.Paid.Parameters) (fee : ℚ) (streams : PrivateStreams P) :\n    P.CalibratedSearchSeed :=\n  ((coinResult (selectorProbability P fee) (streams (.inl ()))).getD false,\n    (fun stage => (coinResult (rationalProbability (1 / 2)) (streams (.inr (.inl stage)))).getD false),\n    fun stage level => (coinResult (calibrationProbability P fee level) (streams (.inr (.inr (stage, level))))).getD false)\n\ndef seedSamplerReturns (P : PaperProofs.Paid.Parameters) (fee : ℚ) (streams : PrivateStreams P) : Prop :=\n  (coinResult (selectorProbability P fee) (streams (.inl ()))).isSome = true ∧\n    (∀ stage, (coinResult (rationalProbability (1 / 2)) (streams (.inr (.inl stage)))).isSome = true) ∧\n    ∀ stage level, (coinResult (calibrationProbability P fee level) (streams (.inr (.inr (stage, level))))).isSome = true\n\n/-- Actual finite-family sampler for THIS cached algorithm's whole-policy\nselector, fair stage bits and independent stage/level marks. It receives only\nprivate fair tapes, no Native.World and no observation/correction interface.\nThe default on a nonreturned coin is only an explicit total completion; its\nexceptional event must be proved null, not silently deleted from native fees.\nThis is a seed-law identity, not a new delta-safety or cost guarantee. -/\ndef PrivateSeedSamplingClaims : Prop :=\n  ∀ (P : PaperProofs.Paid.Parameters) (fee : ℚ), 0 ≤ fee →\n    Measurable (sampledSeed P fee) ∧\n    privateStreamsLaw P {streams | ¬ seedSamplerReturns P fee streams} = 0 ∧\n    (privateStreamsLaw P).map (sampledSeed P fee) = P.cachedAlgorithmSeedLaw fee",
+      "span_text_sha256": "bad9af994111e560428697b7d3b26cfa5709603dd8f7669caf633dc20b4e20dc",
+      "span_raw_bytes_sha256": "d8a3b2b9f2e562dea85e720e8723ac55dcfe5331f7ce1a0c73fc2f16af7257cc",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "seven_fields": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\ComputationalClaims.lean",
+      "start": 825,
+      "end": 832,
+      "locator": "lean/PaperProofs/Paid/ComputationalClaims.lean:825-832",
+      "full_source_sha256_cached": "75c228018e885ca8988b2f794513beba53d0f3f32de4f389b6fbbae02affd997",
+      "span_text": "/-- Full first-round D27 target. Every conjunct remains an obligation.\nActual RAM/TM runs, live storage, all intermediate bit sizes and private\nsampling are now separate explicit interfaces. Existing bit/data targets\nremain conclusions here; none is assumed as a qualification of an input. -/\ndef ComputationalClaims : Prop :=\n  CodecClaims ∧ CodeRefinementClaims ∧ UniformRationalImplementationClaims ∧ UniformBitImplementationClaims ∧\n    ExactRationalCoinClaims ∧ PrivateSeedSamplingClaims ∧\n    ∀ P : PaperProofs.Paid.Parameters, P.CachedDataBitClaims",
+      "span_text_sha256": "3793d63e50bf05987a3b480ff174410914fa5f0bc8be579a6bb69df382eeff62",
+      "span_raw_bytes_sha256": "804527904ee95d3e77867f5a9ce19a7eb4cbaef6d189bdb1467f027898b0aa4a",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "menu_encoding": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\CachedFrontend.lean",
+      "start": 397,
+      "end": 432,
+      "locator": "lean/PaperProofs/Paid/CachedFrontend.lean:397-432",
+      "full_source_sha256_cached": "08b35eec8083dbd92819857d836fd5d01b6abf047e3e2996deedf11c11b73e45",
+      "span_text": "/-- Standard binary length, with one bit allotted to zero. These are\nencoding sizes of concrete rationals, not a claim about Lean object layout. -/\ndef natBits (n : ℕ) : ℕ := Nat.log2 n + 1\n\ndef ratDenBits (q : ℚ) : ℕ := natBits q.den\ndef ratNumBits (q : ℚ) : ℕ := natBits q.num.natAbs\ndef ratEncodingBits (q : ℚ) : ℕ := 1 + ratNumBits q + ratDenBits q\n\ndef menuScalars (P : PaperProofs.Paid.Parameters) (fee : ℚ) : List ℚ :=\n  P.endpointCache.toList.flatMap (fun endpoint => [endpoint.error, endpoint.charge]) ++ [P.reviewFee, fee]\n\ndef menuCommonDenominator (P : PaperProofs.Paid.Parameters) (fee : ℚ) : ℕ :=\n  ((P.menuScalars fee).map Rat.den).prod\n\ndef MenuEncodingBound (P : PaperProofs.Paid.Parameters) (fee : ℚ) (L : ℕ) : Prop :=\n  1 ≤ L ∧ ∀ scalar ∈ P.menuScalars fee, ratEncodingBits scalar ≤ L\n\n/-- Original D:623--627, with the actual cached table fields and the\nexplicit common denominator. Multiplier bits enter objective records;\nthere is no assumption of endpoint optimality or a policy-cost bound. -/\ndef MenuBitClaims (P : PaperProofs.Paid.Parameters) : Prop :=\n  ∀ (fee penalty : ℚ) (L : ℕ), P.MenuEncodingBound fee L →\n    natBits (P.menuCommonDenominator fee) ≤ (2 * (P.certificate.M + 1) + 2) * L ∧\n    ∀ n : ℕ, n ≤ P.certificate.stages → ∀ k : ℕ, k ≤ P.tools →\n      let entry := menuEntryAt (P.cachedSolveMenuTable P.endpointCache fee penalty P.tools P.certificate.stages) n k\n      entry.observation.den ∣ (P.menuCommonDenominator fee)^n ∧\n      entry.repairs.den ∣ (P.menuCommonDenominator fee)^n ∧\n      entry.failure.den ∣ (P.menuCommonDenominator fee)^n ∧\n      (entry.objective fee penalty).den ∣ (P.menuCommonDenominator fee)^(n + 1) * penalty.den ∧\n      ratDenBits entry.observation ≤ (n + 1) * (2 * (P.certificate.M + 1) + 2) * L ∧\n      ratDenBits entry.repairs ≤ (n + 1) * (2 * (P.certificate.M + 1) + 2) * L ∧\n      ratDenBits entry.failure ≤ (n + 1) * (2 * (P.certificate.M + 1) + 2) * L ∧\n      ratDenBits (entry.objective fee penalty) ≤ (n + 1) * (2 * (P.certificate.M + 1) + 2) * L + ratDenBits penalty ∧\n      (∀ scalar ∈ [entry.observation, entry.repairs, entry.failure, entry.objective fee penalty],\n        ratNumBits scalar ≤ ratDenBits scalar + natBits (⌈|scalar|⌉₊ + 1) +\n          natBits P.certificate.stages + natBits P.tools + 2)",
+      "span_text_sha256": "d3a140a5ab459f78891b2338084ed5986afe46f78d4853f3db3ffd048864b6fc",
+      "span_raw_bytes_sha256": "d0d8da45113f12e98470e908853c4bffd3d8484c27d7e42fc22269d5e69c9f38",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "calibration_bits": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\CachedFrontend.lean",
+      "start": 434,
+      "end": 449,
+      "locator": "lean/PaperProofs/Paid/CachedFrontend.lean:434-449",
+      "full_source_sha256_cached": "08b35eec8083dbd92819857d836fd5d01b6abf047e3e2996deedf11c11b73e45",
+      "span_text": "/-- A common denominator for BOTH rational BSC letters. The public\ngamma, not any sampled hidden bit, determines this constant. -/\ndef channelCommonDenominator (P : PaperProofs.Paid.Parameters) : ℕ := 2 * P.certificate.gamma.den\n\n/-- Original D:628--629. Exact q_m/omega_m values are those in the\nindependent array cache. The fixed Q dominates the endpoint levels; no\nnew asymptotic relation or successful-path restriction is a premise. -/\ndef CalibrationBitClaims : Prop :=\n  ∃ C : ℕ, 0 < C ∧ ∀ (P : PaperProofs.Paid.Parameters) (Lgamma : ℕ), ratEncodingBits P.certificate.gamma ≤ Lgamma →\n    ∀ m : ℕ, m ≤ P.certificate.M →\n      (P.cachedCappedError m).den ∣ 2 * P.channelCommonDenominator^P.certificate.Q ∧\n      ratDenBits (P.cachedCappedError m) ≤ C * (P.certificate.Q + 1) * (Lgamma + 2) ∧\n      ratDenBits (P.cachedCalibrationWeight (P.calibrationWeightCache P.endpointCache) m) ≤\n        C * (P.certificate.Q + 1) * (Lgamma + 2) ∧\n      ratEncodingBits (P.cachedCalibrationWeight (P.calibrationWeightCache P.endpointCache) m) ≤\n        C * (P.certificate.Q + 1) * (Lgamma + 2)",
+      "span_text_sha256": "1985d5f9a77bf0b15b621da8a970b75b5b8fe60579b80b48c64b890ff12aef6b",
+      "span_raw_bytes_sha256": "9791bc4dd411ac103295a98005d9a7d32f10f199e344152a0910934d5bdf88b2",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "mixture_bits": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\CachedFrontend.lean",
+      "start": 451,
+      "end": 461,
+      "locator": "lean/PaperProofs/Paid/CachedFrontend.lean:451-461",
+      "full_source_sha256_cached": "08b35eec8083dbd92819857d836fd5d01b6abf047e3e2996deedf11c11b73e45",
+      "span_text": "/-- Original D:629--631: division by the difference of the two ACTUAL\nrational endpoint risks has a linear encoding-size bound in its operands,\nincluding their numerators. It does not create an exponential bit tree. -/\ndef MixtureBitClaims : Prop :=\n  ∃ C : ℕ, 0 < C ∧ ∀ (P : PaperProofs.Paid.Parameters) (fee : ℚ) (lower upper : MultiplierSolve),\n    ratEncodingBits (P.mixtureWeight lower upper) ≤\n      C * (ratEncodingBits P.certificate.risk + ratEncodingBits (P.solveRisk lower) +\n        ratEncodingBits (P.solveRisk upper) + 1) ∧\n    ratEncodingBits (P.mixtureCost fee lower upper) ≤\n      C * (ratEncodingBits (P.mixtureWeight lower upper) + ratEncodingBits (P.solveCost fee lower) +\n        ratEncodingBits (P.solveCost fee upper) + 1)",
+      "span_text_sha256": "5d11d8267d89cad852f679169ee5800c0b09143684cc672ee1bc2aacbf7ce3dd",
+      "span_raw_bytes_sha256": "e8a4284ca0f86937d279c2b5cd3c8d28898173402e6a751414631c188c78a597",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "positive_gap": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\CachedFrontend.lean",
+      "start": 463,
+      "end": 472,
+      "locator": "lean/PaperProofs/Paid/CachedFrontend.lean:463-472",
+      "full_source_sha256_cached": "08b35eec8083dbd92819857d836fd5d01b6abf047e3e2996deedf11c11b73e45",
+      "span_text": "/-- Original D:633--636. Tiny positive f is counted by its own full\nrational encoding; neither f nor zeta_f-delta is treated as a unit-cost oracle. -/\ndef PositiveGapBitClaims (P : PaperProofs.Paid.Parameters) : Prop :=\n  ∀ (fee : ℚ), 0 ≤ fee →\n    ratEncodingBits (P.firstChargeFloor fee) ≤ ratEncodingBits P.reviewFee + ratEncodingBits fee ∧\n    (P.certificate.risk < P.zeroChargeRisk fee →\n      1 / ((2 : ℚ)^P.certificate.stages * (P.certificate.risk.den : ℚ)) ≤\n        P.zeroChargeRisk fee - P.certificate.risk ∧\n      Real.log (((P.zeroChargeRisk fee - P.certificate.risk : ℚ) : ℝ)⁻¹) ≤\n        (P.certificate.stages : ℝ) * Real.log 2 + Real.log (P.certificate.risk.den : ℝ))",
+      "span_text_sha256": "f1017a3f0d5bccab4a4e65b705c010f4a1cf4657ea52b8231bbe70bab42613e8",
+      "span_raw_bytes_sha256": "64ee1b1fbf81953f1da99acdaba4dc1e50967aa7ffd8b561823c45b247ba848d",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "polynomial_data": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\CachedFrontend.lean",
+      "start": 474,
+      "end": 511,
+      "locator": "lean/PaperProofs/Paid/CachedFrontend.lean:474-511",
+      "full_source_sha256_cached": "08b35eec8083dbd92819857d836fd5d01b6abf047e3e2996deedf11c11b73e45",
+      "span_text": "def menuActionBits : MenuAction → ℕ\n  | .finish | .abandon => 2\n  | .test level _ => 3 + natBits level\n\ndef menuEntryBits (entry : MenuEntry) : ℕ := menuActionBits entry.action +\n  ratEncodingBits entry.observation + ratEncodingBits entry.repairs + ratEncodingBits entry.failure\n\ndef menuTableBits (table : MenuTable) : ℕ :=\n  (table.toList.map (fun row => (row.toList.map menuEntryBits).sum)).sum\n\ndef solveBits (solution : MultiplierSolve) : ℕ := ratEncodingBits solution.multiplier + menuTableBits solution.table\n\ndef stateBits : MultiplierState → ℕ\n  | .exact solution => 1 + solveBits solution\n  | .bracket lower upper => 1 + solveBits lower + solveBits upper\n\ndef frontendBits (frontend : CachedFrontend) : ℕ :=\n  (frontend.endpoints.toList.map (fun endpoint => ratEncodingBits endpoint.error + ratEncodingBits endpoint.charge)).sum +\n    (frontend.calibrationWeights.toList.map (fun calibration => ratEncodingBits calibration.error + ratEncodingBits calibration.weight)).sum +\n      stateBits frontend.state\n\ndef numericalSize (P : PaperProofs.Paid.Parameters) (fee : ℚ) : ℕ :=\n  P.certificate.t0 + P.certificate.M + P.certificate.Q + P.bisectionBudget fee + frontendBits (P.buildCachedFrontend fee)\n\n/-- The data-size part of D:637--640. These are exact polynomial targets\nfor the existing fixed functions, not an existential replacement program.\nNo claim about RAM/bit running time or a private-coin sampler is included. -/\ndef FixedGammaPolynomialData (gamma : ℚ) : Prop :=\n  ∃ C degree : ℕ, 0 < C ∧ ∀ (P : PaperProofs.Paid.Parameters) (fee : ℚ),\n    P.certificate.gamma = gamma → 0 ≤ fee →\n      P.numericalSize fee ≤ C * (P.certificate.stages + ratEncodingBits P.certificate.risk +\n        ratEncodingBits P.reviewFee + ratEncodingBits fee + 1)^degree\n\ndef VariableGammaPolynomialData : Prop :=\n  ∃ C degree : ℕ, 0 < C ∧ ∀ (P : PaperProofs.Paid.Parameters) (fee : ℚ), 0 ≤ fee →\n    P.numericalSize fee ≤ C * (P.certificate.stages + ratEncodingBits P.certificate.gamma +\n      ratEncodingBits P.certificate.risk + ratEncodingBits P.reviewFee + ratEncodingBits fee +\n        ⌈P.certificate.gamma⁻¹⌉₊ + 1)^degree",
+      "span_text_sha256": "178fdde30af2ce72f851a8258b0061cd413fb46d739a590c799644c693145684",
+      "span_raw_bytes_sha256": "495f7d603dc1aa8c4a53fc8dc8773ab4d77f25d1aaf9d381ad9fa28d75fc78a6",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "six_data_fields": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\CachedFrontend.lean",
+      "start": 513,
+      "end": 519,
+      "locator": "lean/PaperProofs/Paid/CachedFrontend.lean:513-519",
+      "full_source_sha256_cached": "08b35eec8083dbd92819857d836fd5d01b6abf047e3e2996deedf11c11b73e45",
+      "span_text": "/-- Partial D27 data-bit coverage only. `Computation.ComputationalClaims`\nalso states the concrete rational/bit machines, costed evaluation, peak live\nspace and actual fair-bit sampler obligations. All remain pending proofs;\nthis conjunction alone is not the full D27 target. -/\ndef CachedDataBitClaims (P : PaperProofs.Paid.Parameters) : Prop :=\n  P.MenuBitClaims ∧ CalibrationBitClaims ∧ MixtureBitClaims ∧ P.PositiveGapBitClaims ∧\n    FixedGammaPolynomialData P.certificate.gamma ∧ VariableGammaPolynomialData",
+      "span_text_sha256": "32e64ce8062b9256854cbe35f688c51906d9e02f2bea1f1fab8e1de4e8b5523b",
+      "span_raw_bytes_sha256": "f2c5d5edb80efc0f06d59e912c7925ef06f4dad70e5c096eb327831fce7255c8",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "original_certificate_domain": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\Model.lean",
+      "start": 22,
+      "end": 32,
+      "locator": "lean/PaperProofs/Paid/Model.lean:22-32",
+      "full_source_sha256_cached": "5660ea54d93862a8d74712395910498bf6be5861585c8848252bf6f6b2038616",
+      "span_text": "/-- Fee-independent data of the original explicit certificate in Appendix D.\nAll comparisons used for the finite searches below are rational. -/\nstructure CertificateInput where\n  stages : ℕ\n  stages_pos : 0 < stages\n  gamma : ℚ\n  gamma_pos : 0 < gamma\n  gamma_le_quarter : gamma ≤ 1 / 4\n  risk : ℚ\n  risk_pos : 0 < risk\n  risk_le : risk ≤ 1 / 64",
+      "span_text_sha256": "b9c1486717cf12b0f76a77f1aeecd9e8508412e41c3f0cb6c78f8cdfad518bcb",
+      "span_raw_bytes_sha256": "bdc1d692cc5d8b91077ee789d346aa8e69e943e849f31f99aeb2fe0f1ef4468f",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "original_P_domain": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\Model.lean",
+      "start": 153,
+      "end": 161,
+      "locator": "lean/PaperProofs/Paid/Model.lean:153-161",
+      "full_source_sha256_cached": "5660ea54d93862a8d74712395910498bf6be5861585c8848252bf6f6b2038616",
+      "span_text": "/-- The restricted homogeneous shared-pool model, with K<N. The correction\nprice is intentionally a separate argument, so setting it to zero changes\nneither the experiment, original contract, accounting function nor risk. -/\nstructure Parameters where\n  certificate : CertificateInput\n  tools : ℕ\n  tools_lt_stages : tools < certificate.stages\n  reviewFee : ℚ\n  reviewFee_pos : 0 < reviewFee",
+      "span_text_sha256": "7786f0a2ea37ac9ee9e6a0779bfb02ab71ac03218029756ea50025b3cb9bea3a",
+      "span_raw_bytes_sha256": "51b9e4fc6c553d0f0059448be39fb619245f04c965f3c52debbb8e2dc129717b",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "formal_closed_exit": {
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\PDCompute_Complete_001.lean",
+      "start": 1,
+      "end": 15,
+      "locator": "lean/PaperProofs/Paid/PDCompute_Complete_001.lean:1-15",
+      "full_source_sha256_cached": "2c22488d70bf7d540bf072e07d610086f0a56e3ae60b7601dfcf1acdc965b5f8",
+      "span_text": "module\n\nimport RootD27Core_CanonicalCapsule_ActualFull_004\npublic import PaperProofs.Paid.ComputationalClaims\n\nset_option autoImplicit false\nset_option warningAsError true\n\nnamespace PDCompute\n\n/-- The complete original seven-field computation target, without extra premises. -/\npublic theorem computationalClaims : PaperProofs.Paid.Computation.ComputationalClaims :=\n  RootD27.Core.CanonicalCapsule.computationalClaims\n\nend PDCompute",
+      "span_text_sha256": "eacbecba5a7fafc96868aefcbd0c49f8217f147cb35ef71352fa8bdb1a57a2ef",
+      "span_raw_bytes_sha256": "2c22488d70bf7d540bf072e07d610086f0a56e3ae60b7601dfcf1acdc965b5f8",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "fresh bounded check of the new012 wrapper/Public/scope, explicitly permitted",
+      "selected_span_covers_whole_source": true,
+      "whole_source_sha256_fresh": "2c22488d70bf7d540bf072e07d610086f0a56e3ae60b7601dfcf1acdc965b5f8"
+    },
+    "ordinary_public8": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_Public_001.lean",
+      "start": 1,
+      "end": 20,
+      "locator": "lean/.lake/workpads/RootBatch012_Public_001.lean:1-20",
+      "full_source_sha256_cached": null,
+      "span_text": "module\n\nimport PaperProofs.Paid.PDCompute_Complete_001\n\nset_option autoImplicit false\nset_option warningAsError true\n\nopen PaperProofs.Paid.Computation\n\nexample : ComputationalClaims := PDCompute.computationalClaims\nexample : CodecClaims := PDCompute.computationalClaims.1\nexample : CodeRefinementClaims := PDCompute.computationalClaims.2.1\nexample : UniformRationalImplementationClaims := PDCompute.computationalClaims.2.2.1\nexample : UniformBitImplementationClaims := PDCompute.computationalClaims.2.2.2.1\nexample : ExactRationalCoinClaims := PDCompute.computationalClaims.2.2.2.2.1\nexample : PrivateSeedSamplingClaims := PDCompute.computationalClaims.2.2.2.2.2.1\nexample : ∀ P : PaperProofs.Paid.Parameters, P.CachedDataBitClaims :=\n  PDCompute.computationalClaims.2.2.2.2.2.2\n\n#print axioms PDCompute.computationalClaims",
+      "span_text_sha256": "a9a8fee3d21233ef47370659a875042c20edf7d0f39347888bddbb5eabb2bb1d",
+      "span_raw_bytes_sha256": "cf59566bffe8a824aa0e5d2dbb5c897bca04d0131994e52cd684463a4d9be065",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "fresh bounded check of the new012 wrapper/Public/scope, explicitly permitted",
+      "selected_span_covers_whole_source": true,
+      "whole_source_sha256_fresh": "cf59566bffe8a824aa0e5d2dbb5c897bca04d0131994e52cd684463a4d9be065"
+    },
+    "frozen_actual_exit": {
+      "path": "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_ActualFull_004.lean",
+      "start": 1,
+      "end": 17,
+      "locator": "lean/ProofDeps/D27_Original_001/RootD27Core_CanonicalCapsule_ActualFull_004.lean:1-17",
+      "full_source_sha256_cached": "3a7ff00704f7eeaca181083274ca05bab6941650297e08e50f94241860010f4d",
+      "span_text": "module\n\nimport RootD27Core_CanonicalCapsule_Conjuncts_003\nimport Paid.PDROC_BitVM_VM_OriginalClaims_015\npublic import PaperProofs.Paid.ComputationalClaims\n\nset_option autoImplicit false\nset_option warningAsError true\n\nnamespace RootD27.Core.CanonicalCapsule\n\n/-- The complete original seven-field target, with no remaining premise. -/\npublic theorem computationalClaims : PaperProofs.Paid.Computation.ComputationalClaims :=\n  computationalClaims_of_uniform_bit\n    PDROC.BitVM.VM.OriginalClaims.uniform_bit_implementation_claims\n\nend RootD27.Core.CanonicalCapsule",
+      "span_text_sha256": "94dba989630253c17e3ed38f7d2a4521c9a1ce12cee17a7c54ecd08bd44c38d5",
+      "span_raw_bytes_sha256": "3a7ff00704f7eeaca181083274ca05bab6941650297e08e50f94241860010f4d",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": true
+    },
+    "closed_seven_assembly": {
+      "path": "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_Conjuncts_003.lean",
+      "start": 1,
+      "end": 25,
+      "locator": "lean/ProofDeps/D27_Original_001/RootD27Core_CanonicalCapsule_Conjuncts_003.lean:1-25",
+      "full_source_sha256_cached": "1493c8d19e100bd65eae13ebed08190b33a1b4735aabae0fac81cc6a26092aa2",
+      "span_text": "module\n\nimport PaperProofs.Paid.PDCompute_Codec_001\nimport PaperProofs.Paid.PDCompute_CodeRefinement_002\nimport RootD27Core_CanonicalCapsule_Claims_001\nimport PaperProofs.Paid.PDROC_Sampler_007\nimport PaperProofs.Paid.PDROC_DataBits_011\npublic import PaperProofs.Paid.ComputationalClaims\n\nset_option autoImplicit false\nset_option warningAsError true\n\nnamespace RootD27.Core.CanonicalCapsule\n\n/-- Assemble exactly the seven original fields. The remaining bit theorem\nis an explicit argument here; this adapter alone is not the original closure. -/\npublic theorem computationalClaims_of_uniform_bit\n    (hbit : PaperProofs.Paid.Computation.UniformBitImplementationClaims) :\n    PaperProofs.Paid.Computation.ComputationalClaims :=\n  ⟨PDCompute.codecClaims, PDCompute.codeRefinementClaims,\n    uniform_rational_implementation_claims, hbit,\n    PDROC.exactRationalCoinClaims, PDROC.privateSeedSamplingClaims,\n    PDROC.DataBits.cachedDataBitClaims⟩\n\nend RootD27.Core.CanonicalCapsule",
+      "span_text_sha256": "8143ee0e11452b8290ef817d4c5833e5ed95bf08f6a914e7e2d3fbbac711af2f",
+      "span_raw_bytes_sha256": "1493c8d19e100bd65eae13ebed08190b33a1b4735aabae0fac81cc6a26092aa2",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": true
+    },
+    "rational_no_premise_exit": {
+      "path": "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_Claims_001.lean",
+      "start": 1,
+      "end": 17,
+      "locator": "lean/ProofDeps/D27_Original_001/RootD27Core_CanonicalCapsule_Claims_001.lean:1-17",
+      "full_source_sha256_cached": "f52f41da6c254d4d1567af8e210e989ea0b3f16f338ff5f10b5f1829f6316723",
+      "span_text": "module\n\nimport Paid.RootD27Core_UniformRational_098\npublic import PaperProofs.Paid.ComputationalClaims\n\nset_option autoImplicit false\nset_option warningAsError true\n\nnamespace RootD27.Core.CanonicalCapsule\n\n/-- The complete original claim. Only its formal statement is public;\nthe numeric implementation proof remains behind an ordinary module boundary. -/\npublic theorem uniform_rational_implementation_claims :\n    PaperProofs.Paid.Computation.UniformRationalImplementationClaims :=\n  RootD27.Core.uniform_rational_implementation_claims\n\nend RootD27.Core.CanonicalCapsule",
+      "span_text_sha256": "aaa8da9996c2b46344baddae2ff701a164338491bb14336a1eeec5041c9bae2a",
+      "span_raw_bytes_sha256": "f52f41da6c254d4d1567af8e210e989ea0b3f16f338ff5f10b5f1829f6316723",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": true
+    },
+    "same_fixed_bool_actual_proof": {
+      "path": "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\Paid\\PDROC_BitVM_VM_OriginalClaims_015.lean",
+      "start": 33,
+      "end": 88,
+      "locator": "lean/ProofDeps/D27_Original_001/Paid/PDROC_BitVM_VM_OriginalClaims_015.lean:33-88",
+      "full_source_sha256_cached": "aa09e29621b9f05ad191aac50498ce3ed79ba16fca4322b5277cfc3ed2f96624",
+      "span_text": "/-- ORIGINAL claim, as SOURCE ONLY pending parent Lean validation and\nthe final public/private-origin audit. The real eight-phase source\nproducer discharges all intermediate simulation premises. A single\nfixed Bool machine and common constants precede every gamma/P/fee;\nthe same once-selected bit run supplies exact output, time and space. -/\ntheorem uniform_bit_implementation_claims : UniformBitImplementationClaims := by\n  classical\n  obtain ⟨prepareCode, coreCode, sourceC, sourceD, _sourcePositive, sourceRuns⟩ :=\n    Phases.Original.original_source ISA.fixedRatBackend\n  let source := Phases.program ISA.fixedRatBackend prepareCode coreCode\n  have closed := Phases.supports ISA.fixedRatBackend prepareCode coreCode\n  obtain ⟨states, machine, backendC, _backendPositive, compiled⟩ :=\n    Backend.uniform_original_raw_backend_polynomial source closed\n  let A := backendC * (sourceC + 25)^2\n  let degree := (sourceD + 1) * 2\n  apply PDROC.BitVM.Size.claims_of_variable states machine (2 * A + 25) degree (by omega)\n  intro P fee nonnegative\n  obtain ⟨sourceTrace, sourceFinal, first, chain, last, halt, output, sourceTime⟩ :=\n    sourceRuns P fee nonnegative\n  have nonempty : 0 < (sourceFinal.stk (0 : ISA.Stack)).length := by\n    rw [output]\n    exact List.length_pos_iff_ne_nil.mpr (Phases.encoded_nonempty _)\n  obtain ⟨trace, final, actual, naked, clock, space, _prefixSpace⟩ :=\n    compiled P fee sourceTrace sourceFinal first chain last halt nonempty\n  let S := variableGammaSize P fee\n  have sizePositive : 1 ≤ S := PDROC.BitVM.Size.variable_positive P fee\n  have rawLength : (encodeBits (rawInput P fee)).length ≤ 24 * S :=\n    PDROC.BitVM.Size.raw_input_length P fee\n  have combined := source_sum_bound sourceC sourceD (encodeBits (rawInput P fee)).length\n    sourceTrace.length S sizePositive rawLength sourceTime\n  have backendTime : backendC * ((encodeBits (rawInput P fee)).length + sourceTrace.length + 1)^2 ≤\n      A * S^degree := by\n    simpa only [A, degree, mul_pow, ← pow_mul, Nat.mul_assoc] using\n      Nat.mul_le_mul_left backendC (Nat.pow_le_pow_left combined 2)\n  have liftSize : S ≤ S^degree := by\n    have enough : 1 ≤ degree := by dsimp only [degree]; omega\n    simpa only [pow_one] using Nat.pow_le_pow_right sizePositive enough\n  have liftRaw : (encodeBits (rawInput P fee)).length ≤ 24 * S^degree :=\n    rawLength.trans (Nat.mul_le_mul_left 24 liftSize)\n  have liftOne : 1 ≤ S^degree := sizePositive.trans liftSize\n  have coefficient : A ≤ 2 * A + 25 := by omega\n  have clockBound : trace.length ≤ (2 * A + 25) * S^degree :=\n    (clock.trans backendTime).trans (Nat.mul_le_mul_right _ coefficient)\n  have spaceBound : visitedBitSpace machine (encodeBits (rawInput P fee)).length trace ≤\n      (2 * A + 25) * S^degree := by\n    apply space.trans\n    calc\n      _ ≤ 24 * S^degree + 2 * (A * S^degree) + S^degree :=\n        Nat.add_le_add (Nat.add_le_add liftRaw (Nat.mul_le_mul_left 2 backendTime)) liftOne\n      _ = (2 * A + 25) * S^degree := by ring\n  have exactOutput : final.Tape.right₀ = ListBlank.mk (encodeBits (encodeArtifact (buildArtifact P fee))) := by\n    rw [output] at naked\n    exact naked\n  exact ⟨trace, final, actual, exactOutput, clockBound, spaceBound⟩\n\nend PDROC.BitVM.VM.OriginalClaims",
+      "span_text_sha256": "4400dde9c908c7ccb9f597c82a8369749a236f477d3a302c02cee925946b89b4",
+      "span_raw_bytes_sha256": "978cfb6a3c35aecb43aff30a9a34eaa158756e5cbabb098d7dbfd5c894661f80",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "cached ancestor/source pin; this increment hashes the selected locator span only",
+      "selected_span_covers_whole_source": false
+    },
+    "accepted_scope": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootScopeAcceptance_012.md",
+      "start": 1,
+      "end": 61,
+      "locator": "lean/.lake/workpads/RootScopeAcceptance_012.md:1-61",
+      "full_source_sha256_cached": null,
+      "span_text": "# Batch012 original scope under review\n\nThis batch accepts the complete original D27 computation claim. The exact no-argument formal theorem, all seven ordinary public consumers, normal wrapper/root builds, full current build, formal1920-module axiom audit, complete1956-origin frozen audits and every external source/object/evidence byte guard actually passed. The accepted count is250/253; A19/B23/L01 and whole-manuscript S7 remain open. The final receipt explicitly binds the ledger-only acceptance transition to the identical already-audited mathematical source and proof assets.\n\n| Frozen original text | Original Lean obligation | Completed frozen proof scope |\n|---|---|---|\n| paid-proofs.tex:614–621 | `UniformRationalImplementationClaims` | The same fixed prepare/solver/calibrate/core and routine labels precede every original P/fee. Raw6 actually produces prepared13. Every solver table, actual RAM run, numerical operation bound, peak live records and intermediate operand bits are proved, including arbitrary solver n/k/penalty. The core retains the original cached artifact, exact solve requests, at most Jbis+2 solver calls, one endpoint phase and one calibration, with actual call refinement. |\n| paid-proofs.tex:623–636 | `∀ P, P.CachedDataBitClaims` | All six original menu/calibration/mixture/positive-gap/fixed-gamma/variable-gamma fields use the actual cached arrays, rational denominators/numerators and exact numerical sizes. Fee zero and arbitrarily small positive fee retain their original encoding costs. This component was already formally accepted as D27b. |\n| paid-proofs.tex:637–640 | `UniformBitImplementationClaims` | One finite-control Bool machine precedes gamma/P/fee. It starts from the exact original raw encoding and physically computes the bare original artifact at actual HALT. Fixed rational gamma gives the original rawSize polynomial; variable gamma uses the original explicit numerical inverse-gamma scale. Both time and visited-bit space concern that same actual trace. No logarithmic-in-inverse-gamma promise is added. |\n| paid-proofs.tex:641–642 | `ExactRationalCoinClaims` and `PrivateSeedSamplingClaims` | Actual fair-bit rejection is causal, almost surely returns and has the exact rational coin law. The full finite-family private seed has the exact original joint law. No native observation/correction interface or bounded worst-case/expected sampling-time claim is introduced. These components were already formally accepted in006. |\n| Literal implementation interfaces supporting the preceding guarantees | `CodecClaims` and `CodeRefinementClaims` | Exact five-word instruction codec, readonly physical fetch/PC, typed-to-word actual run and cost refinement. These already accepted components remain conclusions of the full seven-field package. |\n\nThe no-argument frozen theorem is\n`RootD27.Core.CanonicalCapsule.computationalClaims :\nPaperProofs.Paid.Computation.ComputationalClaims`, from the actual normally\ncompiled module `RootD27Core_CanonicalCapsule_ActualFull_004`. It proves all\nseven conjuncts; no caller-supplied implementation, source trace, numerical\nresource, width, prepared-input, termination, randomness or performance\npremise remains. Original fee/nonnegative and certificate qualifications are\nunchanged. Uniformity is preserved: programs and constants are not selected\nafter individual original inputs.\n\nThe accepted ordinary formal theorem is\n`PDCompute.computationalClaims`, minimum import\n`PaperProofs.Paid.PDCompute_Complete_001`, with exactly that original type.\nIt consumes the frozen theorem through an ordinary private import. The\noriginal `ComputationalClaims` definition and all seven fields are unchanged.\n\nThe frozen implementation preserves all 1956 actual source-module identities.\nThere are 1815 private dependency sources and 141 existing formal source\norigins. Each origin has one exact selected source pin and one same-name\nfive-product binding; no olean is renamed to another module identity. Runtime\nproofs are not recompiled merely to move them under a different source prefix.\nThe registered local proof package retains every private source and the real\noriginal products, without a partial `PaperProofs` directory that could shadow\nthe complete ordinary project.\n\nActual owner coverage is checked by the union of the frozen original numeric,\nBool, arithmetic, capsule and formal audits, plus the new actual audit of the\nremaining 380 Common/Structure origins. Each collector uses real `import all`\nprivate data and original module ownership, including unused private and\ngenerated declarations, rejecting new axiom declarations and dependencies\noutside `propext`, `Classical.choice`, `Quot.sound`. An import inventory is not\nsubstituted for a collector's actual owner set. These separate coherent audit\nviews are recorded separately; no flattened fresh all-ancestor audit is claimed.\n\nNormal Lake was experimentally verified to load a registered local prebuilt\npackage and compile only a new consumer. It does not automatically track the\nexternal product bytes. Formal verification must therefore validate the full\nsource/object/configuration/audit provenance manifest before and after every\nacceptance build/audit and bind it into the official receipt. Missing or changed\nassets are a hard failure. The normal full `--no-build` check is supplementary\nand cannot replace that guard. The fallback canonical source-promotion plan is\npreserved unchanged.\n\nAll new Lean invocations remain under the two-slot Recovery2 gate, `-M2048`,\n`autoImplicit=false`, `warningAsError=true`, `Elab.async=false`. Old accepted\nproofs and original frozen manuscript are unchanged. No Paid dependency enters\nthe independent A19/B23/L01 main chain. Only after actual successful formal\nacceptance may D27 become closed and the count become 250/253. Remaining main\ntargets A19/B23/L01 and whole-manuscript S7 continue.",
+      "span_text_sha256": "6ccac8c12616dcf508a3eb6fac5d6fe48758193419ebe89e5883acfc2d14fa0a",
+      "span_raw_bytes_sha256": "7b0d12c2599eeedaa658366bc7791c101438b7950eba3b47560e35e0fc259e28",
+      "selected_span_bytes_read_and_hashed": true,
+      "source_tree_integrity_scan_or_fingerprint_replay": false,
+      "whole_source_pin_provenance": "fresh bounded check of the new012 wrapper/Public/scope, explicitly permitted",
+      "selected_span_covers_whole_source": true,
+      "whole_source_sha256_fresh": "7b0d12c2599eeedaa658366bc7791c101438b7950eba3b47560e35e0fc259e28"
+    }
+  },
+  "public8": {
+    "source": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_Public_001.lean",
+    "source_sha256_fresh": "cf59566bffe8a824aa0e5d2dbb5c897bca04d0131994e52cd684463a4d9be065",
+    "actual_exit": 0,
+    "examples": 8,
+    "full_target_examples": 1,
+    "field_projection_examples": 7,
+    "runtime_receipt": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_public_001.json",
+      "sha256": "4894f14bf64439b8965d08cebcef1d3a52d9fd4e26fd67ea01360f20c492e520"
+    },
+    "archived_log": {
+      "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_accepted_logs\\RootBatch012_public_public_001.log",
+      "sha256": "63264cc7b63cc57c1c0672ce828d6ca0cc5601f7dd5f540d4e08f5aecf2fbcfc"
+    },
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "new_run": false
+  },
+  "proof_dependencies": {
+    "package": "d27_proof_deps",
+    "manifest": {
+      "path": "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\proof-manifest.json",
+      "sha256": "6524a54875fc072e1285b2281a35496498f4fac28988ce5e90a84bcaad06ccac",
+      "cached_pin": true
+    },
+    "coverage": {
+      "path": "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\proof-coverage.json",
+      "sha256": "5e00554e0b3bb7cc742a8a03b247e91334088b49a434f423618d22e64d15b0d0",
+      "cached_pin": true
+    },
+    "actual_collector_catalog": {
+      "path": "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\evidence\\bc80a284995d78c2\\RootD27_ProofDependencyAudit_COVERAGE_003.json",
+      "sha256": "bc80a284995d78c2e08537ebbb1c12f344e6d787114308a9a3dd91fc841c376a",
+      "cached_pin": true
+    },
+    "private_sources": 1815,
+    "same_original_module_five_products": 9075,
+    "ordinary_formal_frontier": 141,
+    "total_original_origins": 1956,
+    "source_and_product_metadata_matches_for_all_private_origins": true,
+    "formal_frontier_source_metadata_matches": true,
+    "cached_credited_origins": 1576,
+    "distinct_new_audit_credited_origins": 380,
+    "cached_new_overlap": 0,
+    "uncovered_origins": 0,
+    "collector_count": 18,
+    "collectors": [
+      {
+        "id": "numeric/CoreRun001",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 971,
+        "actual_D27_DAG_origins_credited": 971,
+        "scope_json_pointer": "/audit_evidence/0/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CoreRun_Audit_001.strict007.ordinary.log",
+          "sha256": "4afe3c001eb30723dc83e873d2fb84322da5c7d719db60ab51dbe74270693a33"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CoreRun_validation_strict007.json",
+          "sha256": "1149248ecf266b3429a5451cf93a7faad1e585cd0443319e588ce02174904000",
+          "bytes": 327137
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CoreRun_Audit_001.lean",
+          "sha256": "a1246113ac6521f975789d50f29fb41f833541ca31ef4a7969c7ecc2ffe8bf82"
+        },
+        "actual_summary": {
+          "owner_count": 971,
+          "declarations": 13798,
+          "theorems": 11297,
+          "private_declarations": 6891,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0
+        },
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "numeric/CorePrelude001",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 873,
+        "actual_D27_DAG_origins_credited": 873,
+        "scope_json_pointer": "/audit_evidence/1/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CorePrelude_Audit_001.log",
+          "sha256": "d7847296def362e90c72210b96cb20e7e1cc5bb789f21acda255db1d46d4e4ce"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CorePrelude_MANIFEST_001.json",
+          "sha256": "b22d7158b0abb97a2ae9e9fb0bca166b49cbc343206d483c0fe2fa0919e8c01a",
+          "bytes": 1616493,
+          "json_pointer": "/checks",
+          "embedded_actual_audit_selector": {
+            "actual_exit": 0,
+            "source_file_basename": "PDCompute_CorePrelude_Audit_001.lean"
+          },
+          "selection_rule": "match the recorded source by normalized filename; absolute audit_source is bound separately"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CorePrelude_Audit_001.lean",
+          "sha256": "0d0b8e048f392992471fdfa2d4f5a208699beef73d664f06d91ec23e82a6f95d"
+        },
+        "actual_summary": {
+          "owner_count": 873,
+          "declarations": 11795,
+          "theorems": 9598,
+          "private_declarations": 5817,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0
+        },
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "numeric/RationalAuxiliary001",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 712,
+        "actual_D27_DAG_origins_credited": 712,
+        "scope_json_pointer": "/audit_evidence/2/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_RationalAuxiliary_Audit_001.checks001.log",
+          "sha256": "2b56bdfb463a2b956cccd83d33ef2a996c75b763b5e30eb9ba74bcb4dedf7430"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_RationalAuxiliary_Check_checks001.json",
+          "sha256": "25a1377f20c86b8ed0192aec7d0497311fca5a5922afdbf375aa262ca87bbe85",
+          "bytes": 1785
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_RationalAuxiliary_Audit_001.lean",
+          "sha256": "1203077b5a696afe2ca4de42a5dd0dbd36ea2ecadfc9a6acfc5df96ea8a34240"
+        },
+        "actual_summary": {
+          "owner_count": 712,
+          "declarations": 9602,
+          "theorems": 7755,
+          "private_declarations": 4619,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0
+        },
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "numeric/RootCore009",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 757,
+        "actual_D27_DAG_origins_credited": 757,
+        "scope_json_pointer": "/audit_evidence/3/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_Audit_009.strict001.log",
+          "sha256": "9fee50cca808b6f80702170e8bdb1d3cca7686f3b280606ea97e6048f37eb4b8"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_MANIFEST_009.json",
+          "sha256": "58abb78c05a31bead0f40857a33ed8b100ec4193a28038c0b7f541ece8ca5f0b",
+          "bytes": 1364847,
+          "json_pointer": "/public_and_audit",
+          "embedded_actual_audit_selector": {
+            "actual_exit": 0,
+            "source_file_basename": "RootD27Core_Audit_009.lean"
+          },
+          "selection_rule": "match the recorded source by normalized filename; absolute audit_source is bound separately"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_Audit_009.lean",
+          "sha256": "3545198c4513890325c93206c5f599c34d7e6bc283e8ddb77e89685fc9074321"
+        },
+        "actual_summary": {
+          "owner_count": 757,
+          "declarations": 11344,
+          "theorems": 9309,
+          "private_declarations": 5754,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0
+        },
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "numeric/CoreSuffix001",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 783,
+        "actual_D27_DAG_origins_credited": 783,
+        "scope_json_pointer": "/audit_evidence/4/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CoreSuffix_Audit_001.strict004.ordinary.log",
+          "sha256": "b7fc65a01f47d7b040c201b137a6073fda48f1e67c330e975d2c6f429103c70e"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CoreSuffix_validation_strict004.json",
+          "sha256": "8d48d25fb027e4c700fd28558348639062d766f4d9effae0f32067582cfad78b",
+          "bytes": 262776
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDCompute_CoreSuffix_Audit_001.lean",
+          "sha256": "82e39184b2ae9be4c248cb8d6c0d0fe516c2d441f6d33683aef47d89ffd5202a"
+        },
+        "actual_summary": {
+          "owner_count": 783,
+          "declarations": 11921,
+          "theorems": 9783,
+          "private_declarations": 6019,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0
+        },
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "numeric/new097098",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 2,
+        "actual_D27_DAG_origins_credited": 2,
+        "scope_json_pointer": "/audit_evidence/5/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_Audit_010.strict001.log",
+          "sha256": "56d9d27f21d235bd6c12de0c8654cfb0ffff60639bb69766463cb04241cb7d1e"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_MANIFEST_010_002.json",
+          "sha256": "85f42b939ab30826277c204cad58d8f61d64d192f6b8bb5fbec15b21f5060b2f",
+          "bytes": 2012875,
+          "json_pointer": "/new_owner_audit/public_and_new_origin_audit",
+          "embedded_actual_audit_selector": {
+            "actual_exit": 0,
+            "source_file_basename": "RootD27Core_Audit_010.lean"
+          },
+          "selection_rule": "match the recorded source by normalized filename; absolute audit_source is bound separately"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_Audit_010.lean",
+          "sha256": "6a97e014d9d0a4b6bf9abbcfbc3db243dd10e4010c81bb5f435075cd4eb5da32"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "Bool355/FinalAudit002",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 355,
+        "actual_D27_DAG_origins_credited": 355,
+        "scope_json_pointer": "/audit_evidence/6/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDROC_BitVM_VM_AllOwned_001.kernelStrict097.log",
+          "sha256": "cc26e615126f444383e762b844d1087ebc4031f64b372851974c2bf321f2d40c"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDROC_BitVM_VM_AllOwned_001.kernelStrict097.result.json",
+          "sha256": "af901441ad73f719a59f21e93ccce840ef47934607ad347a5609976c7a188f5b"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PDROC_BitVM_VM_AllOwned_001.lean",
+          "sha256": "e63396345ef1adca10c5ead4e2339b13070436f2adefb8aedf509356f520487d"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "official/Audit011",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 1919,
+        "actual_D27_DAG_origins_credited": 141,
+        "scope_json_pointer": "/audit_evidence/7/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\verification\\axioms.log",
+          "sha256": "7c567c909815713dc0dd59cc14a551f2b1d9b46cfb12471d8b8f844b9acf7c0f"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+          "sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+          "bytes": 254706
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\AuditAll.lean",
+          "sha256": "9958c5f426cf606f6ae58d3902c0afdde6d014c9a6eeeb370307f3f7cc34501a"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "capsule/RootD27Core_CanonicalCapsule_Audit_002",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 2,
+        "actual_D27_DAG_origins_credited": 2,
+        "scope_json_pointer": "/audit_evidence/8/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_CanonicalCapsule_Audit_002.strict003.log",
+          "sha256": "95389395fff42a38eb819d0c8339f290e75147f787e80cfccfaa7e4dab31bec5"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_CanonicalCapsule_Audit_002.strict003.json",
+          "sha256": "6852bcc0f2803e9421f971cb0213df4ef14ebd163832e91696f7c838fdbca3f4"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Paid\\RootD27Core_CanonicalCapsule_Audit_002.lean",
+          "sha256": "6c1a5dc9018f9ba3262917831374bee9f77593cc99fea69ed2658be2c149f86b"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "capsule/RootD27Core_CanonicalCapsule_Audit_003",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 1,
+        "actual_D27_DAG_origins_credited": 1,
+        "scope_json_pointer": "/audit_evidence/9/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_CanonicalCapsule_Audit_003.strict004.log",
+          "sha256": "51f8cae27e9644086f7114df4cb0af9a0adb885cc80b2770dff18f64e69f2d5f"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_CanonicalCapsule_Audit_003.strict004.json",
+          "sha256": "3b5f69c36a7042e3638c3af38a857c661a04672cb025e6af8e213a88937d1536"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Paid\\RootD27Core_CanonicalCapsule_Audit_003.lean",
+          "sha256": "0767fad3b926237050ee6b684954fee8e18617c41869134228921a24b7fc4ce3"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "capsule/RootD27Core_CanonicalCapsule_Audit_004",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 1,
+        "actual_D27_DAG_origins_credited": 1,
+        "scope_json_pointer": "/audit_evidence/10/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_CanonicalCapsule_Audit_004.strict005.log",
+          "sha256": "804f26eac70d06a1437da0dbf2f6abffda8599fafa64ee603ddf131c269f052d"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_CanonicalCapsule_Audit_004.strict005.json",
+          "sha256": "bcf72a9adb2d02a9cd845d6482a0278bd065cf15d9efb0f2a40ca5d7a409de1d"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\Paid\\RootD27Core_CanonicalCapsule_Audit_004.lean",
+          "sha256": "7b4b7f3d0be2bbbad69c139060c511225e3749edf255cfdbf0bba84bd2da7157"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "RawRat/PA17_TM_RatArithmetic_MulFinal_064_MANIFEST_001.json",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 9,
+        "actual_D27_DAG_origins_credited": 9,
+        "scope_json_pointer": "/audit_evidence/11/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_MulFinal_064_Audit_001.log",
+          "sha256": "c6a54435259a2cdd5e7b132f4a811e97b41aecb689c02b0c759116ac6b7a93a6"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_MulFinal_064_MANIFEST_001.json",
+          "sha256": "39a6a9a52b6452de2153326d666a419af8734b5dca81c5692dd5fc18b01d7476",
+          "bytes": 896524,
+          "json_pointer": "/checks",
+          "embedded_actual_audit_selector": {
+            "kind": "Audit",
+            "actual_exit": 0
+          }
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_MulFinal_064_Audit_001.lean",
+          "sha256": "c58e8c237c4974f68d74ecfa3542104f83216385576b5f6c9859acc8a272339d"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "RawRat/PA17_TM_RatArithmetic_RatDivFinal_071_MANIFEST_001.json",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 11,
+        "actual_D27_DAG_origins_credited": 11,
+        "scope_json_pointer": "/audit_evidence/12/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_RatDivFinal_071_Audit_001.log",
+          "sha256": "cae206006a850d5d0b1960b8d7ed3b6082293798dce2d198d2d8fe3761884f24"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_RatDivFinal_071_MANIFEST_001.json",
+          "sha256": "2781e9a9681d4ed2150bdc54abd2cc8b391513016dd4125cbfa58016492b6f39",
+          "bytes": 916547,
+          "json_pointer": "/checks",
+          "embedded_actual_audit_selector": {
+            "kind": "Audit",
+            "actual_exit": 0
+          }
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_RatDivFinal_071_Audit_001.lean",
+          "sha256": "83aadb499612ec8ee16218dff186055f75938f8624f84e2fb61a532833a73649"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "RawRat/PA17_TM_RatArithmetic_AddSubFinal_080_MANIFEST_001.json",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 12,
+        "actual_D27_DAG_origins_credited": 12,
+        "scope_json_pointer": "/audit_evidence/13/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_AddSubFinal_080_Audit_002.log",
+          "sha256": "26f889e29664c9541b77e33de7ce7a22b38f57cbf0995694cf304eb63af9493c"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_AddSubFinal_080_MANIFEST_001.json",
+          "sha256": "2e3307b8b1ff5136b01b1e57177ce55d416613451121642731a0091acbf8112f",
+          "bytes": 944914,
+          "json_pointer": "/checks",
+          "embedded_actual_audit_selector": {
+            "kind": "Audit",
+            "actual_exit": 0
+          }
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_RatArithmetic_AddSubFinal_080_Audit_002.lean",
+          "sha256": "88d4f55a8e6492282dc341ccdc65d90d8db99c8940678216f485825526fdf2ea"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "GCD/own40",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 40,
+        "actual_D27_DAG_origins_credited": 37,
+        "scope_json_pointer": "/audit_evidence/14/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_TM_GCD_Audit_003.strict001.log",
+          "sha256": "718c14c4228854bda4b9a21c4f330ef952a1ded5175791392bae4929e524020c"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_TM_GCD_MANIFEST_001.json",
+          "sha256": "806d1fcac4730a5cc4a8a841ae6d7892194cd8f8328c13f9625626c44fb0c515",
+          "bytes": 529241,
+          "json_pointer": "/public_and_all_origin",
+          "embedded_actual_audit_selector": {
+            "path": ".lake\\workpads\\ROOT_TM_GCD_Audit_003.lean",
+            "actual_exit": 0
+          }
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_TM_GCD_Audit_003.lean",
+          "sha256": "fc800caa03d0b3398e3f89dca4e86df598de22abd0a56beb6ab782c512650eef"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "Division012/own3",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 3,
+        "actual_D27_DAG_origins_credited": 3,
+        "scope_json_pointer": "/audit_evidence/15/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_Division_Full_012_Audit_strict_002.log",
+          "sha256": "5b070f2a6826ed30444a05e95a8df6e042575641528e509c3b308542359380bf"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_Division_Full_012_MANIFEST_001.json",
+          "sha256": "9397a874e0d2a28f886f7a9c316610bbf2ce36e9ea3489f542709035ffe931bd",
+          "bytes": 266450,
+          "json_pointer": "/actual_checks/Audit"
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\PA17_TM_Division_Full_012_Audit_001.lean",
+          "sha256": "77889b9960e0e48afdaa3fd545671f7da2371522cd194845d423aac2bf8cdf2f"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "Root096/own1",
+        "actual_exit": 0,
+        "evidence_kind": "frozen_actual_collector_not_rerun",
+        "complete_collector_owner_count": 1,
+        "actual_D27_DAG_origins_credited": 1,
+        "scope_json_pointer": "/audit_evidence/16/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_PolynomialAudit_096.checks001.log",
+          "sha256": "78d2111264f4cc103ab715bc011e3946a70a794471ddcb54eb9ff15636a9ea33"
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_PolynomialAudit_096.checks001.result.json",
+          "sha256": "9326300773e89f12cfe89916f49356936c7570eefcd926c9910eb4447b9555d7",
+          "bytes": 980
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27Core_PolynomialAudit_096.lean",
+          "sha256": "fbd39e853a74d04696e1b7a76e4aac7b6a724f39eaf22d1eabe3ed5cf080760d"
+        },
+        "actual_summary": null,
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      },
+      {
+        "id": "new380/one_coherent_Bool_view",
+        "actual_exit": 0,
+        "evidence_kind": "new_actual_collector_run_once",
+        "complete_collector_owner_count": 380,
+        "actual_D27_DAG_origins_credited": 380,
+        "scope_json_pointer": "/audit_evidence/17/collector_scope",
+        "actual_log": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27_ProofDependencyAudit_RUN_001.md",
+          "sha256": "d59688f74037366a7639bbc2b8e04564348248869c05d661735145c1854ded15",
+          "bytes": 47759,
+          "mtime_ns": 1793442910590057800
+        },
+        "actual_receipt": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27_ProofDependencyAudit_RESULT_001.json",
+          "sha256": "9b652a03628c66170d562e3a98b09ab62e15edc4744c77370fd98c9e56b10fdc",
+          "bytes": 126930
+        },
+        "audit_source": {
+          "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootD27_ProofDependencyAudit_All380_001.lean",
+          "sha256": "8722d5e7bf3a5fc759ae5d071eb762ff2ad5b55568c0f5e5aa73a2b3f486c77c",
+          "bytes": 41764,
+          "mtime_ns": 1793442875380897800
+        },
+        "actual_summary": {
+          "owners": 380,
+          "zero_origin_declarations": 0,
+          "declarations": 12832,
+          "theorems": 9362,
+          "private": 4622,
+          "new_axioms": 0,
+          "forbidden_dependencies": 0
+        },
+        "ownership": "original owner including private/generated/unreferenced; not import inventory",
+        "source_pin_matches_for_all_credited_origins": true,
+        "new_execution_this_increment": false
+      }
+    ],
+    "origin_to_actual_collector_pin_links_checked": true,
+    "current_formal1920": {
+      "log": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootBatch012_accepted_logs\\axioms.log",
+      "sha256": "8b3b011a217c388391ea2523a9a58fc6eacb45541bb009a6be57d2bb6cec81c1",
+      "declarations": 48345,
+      "theorems": 37093,
+      "definitions": 10183,
+      "private": 18155,
+      "modules": 1920,
+      "new_axioms": 0,
+      "forbidden_dependencies": 0,
+      "new_run": false
+    },
+    "view_boundary": "Current formal1920 audit and18 frozen actual original-origin collector views remain separate. The old official011 collector credits only the matching141 frontier origins. Union is1956 distinct origins, never the sum of overlapping collector counts or a mere import-all inventory.",
+    "payload_guard": {
+      "packages": [
+        {
+          "name": "d27_proof_deps",
+          "path": "ProofDeps/D27_Original_001",
+          "private_sources": 1815,
+          "same_identity_products": 9075,
+          "formal_frontier": 141,
+          "audited_original_origins": 1956,
+          "actual_collector_evidence": 18,
+          "evidence_assets": 140,
+          "entry": "RootD27Core_CanonicalCapsule_ActualFull_004",
+          "all_source_object_evidence_hashes_checked": true,
+          "formal_source_rehashes": 0
+        }
+      ],
+      "package_count": 1,
+      "original_module_count": 1956,
+      "stream_hashed_files": 11039,
+      "stream_hashed_bytes": 737369943,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "new_axioms": 0,
+      "forbidden_dependencies": 0,
+      "external_payload_hashes_checked_by_guard_not_Lake": true,
+      "requires_equal_fresh_pre_post_fingerprints_for_each_command": true
+    },
+    "fresh_1815_compiles_claimed": false,
+    "fresh_flattened_all_ancestor_audit_claimed": false,
+    "bulk_payload_guard_replays_this_increment": 0,
+    "targeted_registered_source_locator_files_read": [
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\Paid\\PDROC_BitVM_VM_OriginalClaims_015.lean",
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_ActualFull_004.lean",
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_Claims_001.lean",
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_Conjuncts_003.lean"
+    ],
+    "registered_object_product_bytes_read": 0,
+    "no_partial_PaperProofs_payload_in_fingerprint": true
+  },
+  "semantics_findings": {
+    "new_gap_found": false,
+    "reason": "Complete original types, all seven actual ordinary projections, raw exact outputs and explicit resource/causal boundaries agree with paid-proofs614-642.",
+    "important_precision": [
+      "Fixed-gamma C/degree may depend on that fixed gamma, but not on P or fee; machine precedes all gamma. Variable-gamma constants are global.",
+      "N+1 solver factors match original O(N...) because original N>0; K=0 remains legal.",
+      "Historic pending/SOURCE_ONLY comments are not current OPEN evidence after the no-argument theorem and accepted actual receipts.",
+      "Data-only/encoding/loop labels are never substituted for actual RAM/TM time, peak live storage, all operands or causal joint sampling.",
+      "Seed sampling has no native calls, but no additional fixed worst-case/expected CPU or fair-bit bound is invented."
+    ]
+  },
+  "limits": {
+    "Lean_invocations": 0,
+    "compiler_runs": 0,
+    "old249_reaudit": false,
+    "old_graph_byte_scan": false,
+    "old_preaudit_formal_ledger_receipt_mutations": 0,
+    "final_S7": false,
+    "bytes_read_scope": "012 receipt/FROZEN/public/scope and binding metadata; precise selected original type/paper/wrapper/actual-log locator bytes only. No private source tree or object asset traversal.",
+    "targeted_registered_source_files_read": 4,
+    "targeted_registered_source_paths": [
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\Paid\\PDROC_BitVM_VM_OriginalClaims_015.lean",
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_ActualFull_004.lean",
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_Claims_001.lean",
+      "D:\\STOC投稿\\lean\\ProofDeps\\D27_Original_001\\RootD27Core_CanonicalCapsule_Conjuncts_003.lean"
+    ],
+    "external_object_product_bytes_read": 0,
+    "bulk_payload_guard_replay": false,
+    "precise_locator_span_hashes_are_fresh": true
+  },
+  "supersedes_increment001": {
+    "path": "D:\\STOC投稿\\lean\\.lake\\workpads\\RootS7_Incremental012_001.json",
+    "sha256": "e1019750fcb214134078804a4c1c3034903f2edbd01ff516f7f48819c5970897",
+    "reason": "Provenance wording only: distinguish targeted external source/span reads from a forbidden bulk source/object guard replay. Mathematical mapping, metadata conclusions and progress unchanged."
+  }
+}

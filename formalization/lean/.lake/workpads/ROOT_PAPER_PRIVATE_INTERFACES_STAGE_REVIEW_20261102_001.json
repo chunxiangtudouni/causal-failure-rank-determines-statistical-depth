@@ -1,0 +1,253 @@
+{
+  "id": "ROOT_PAPER_PRIVATE_INTERFACES_STAGE_REVIEW_20261102_001",
+  "utc": "2026-11-02T08:57:53.968235+00:00",
+  "status": "TWO_EXACT_FULL_SPEC_DEPENDENCY_INTERFACES_AND_ACTUAL_PRIVATE_OWNER_BODY_AUDIT_ACCEPTED_NORMAL_PUBLIC_THEOREM_INTEGRATION_PENDING",
+  "modules": [
+    {
+      "module": "RootPaper_B23_Interface007",
+      "receipt": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_Interface007_strict001.json",
+      "source_sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+      "receipt_sha256": "e8351828b9102a4832174f077af28b5f9d2622c408319bb6ba7f20f08a197144",
+      "actual_exit": 0,
+      "subprocess_wait": true,
+      "outer_session_reaped": 74118,
+      "freeze": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_Interface007_strict001_FROZEN.json",
+      "six_pins": [
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_Interface007.lean",
+          "sha256": "ad5778166fea968f3ec9887455e186841fe9611f6b22896d662027b28e63302c",
+          "bytes": 1019,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367962
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_Interface007.olean",
+          "sha256": "12d13f76b484b1bcb0c4b6d69e64737c63fc47df648ef8aa0a4399c9df282bb9",
+          "bytes": 3672,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367971
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_Interface007.olean.private",
+          "sha256": "7141b3cdc54ac8c4d71be16de04e9b88c50e6cfd8ccd67fd9c0a33e12d3aa947",
+          "bytes": 1864,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367973
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_Interface007.olean.server",
+          "sha256": "d4fe52d93e3b43b76555c68e7eb93a805ef5e4c618eae3a0d1bf92cd9435e9b3",
+          "bytes": 2152,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367972
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_Interface007.ir",
+          "sha256": "0f4f538c534d52e6b882c8de9b78de6c8241027b502d4bedf33b494ec746ec4c",
+          "bytes": 1304,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367975
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_Interface007.ir.sig",
+          "sha256": "0ce21a5564dff2eb87191fafc814b3b5054f78acf2a3394525aa5743c71a0432",
+          "bytes": 176,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367974
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RootPaper_L01_Interface006",
+      "receipt": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Interface006_strict001.json",
+      "source_sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+      "receipt_sha256": "99d227f6e93e65574356a425caff1894643241670f0d6769f0f161e2c0d42eac",
+      "actual_exit": 0,
+      "subprocess_wait": true,
+      "outer_session_reaped": 28939,
+      "freeze": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Interface006_strict001_FROZEN.json",
+      "six_pins": [
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_Interface006.lean",
+          "sha256": "cdf44a9e620df2ecd9a9aa5f5a29ef089619d5bdcec6bbd206656aa67fffa79b",
+          "bytes": 977,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367978
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Interface006.olean",
+          "sha256": "dab67be3444516360cc336088c55e2c196be51eb21a75c4dfe7cf06a86ccc508",
+          "bytes": 3688,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367984
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Interface006.olean.private",
+          "sha256": "7cd0684ba44d00506584b930c7a9d66be194c54a829df971c80d5ad4fcd5f88b",
+          "bytes": 1864,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367986
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Interface006.olean.server",
+          "sha256": "dfba70d25f546755de4b30613d6c6c5cf3f38d2e7840eb3cad86104f57179415",
+          "bytes": 2080,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367985
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Interface006.ir",
+          "sha256": "d30496ba9a9c13c5aa28f9b3b3ce743a6fed84ac39a64ab503986d3857f0a1dd",
+          "bytes": 1304,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367988
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_L01_build001\\RootPaper_L01_Interface006.ir.sig",
+          "sha256": "07d4904db9248180801242bab19fba8b75ce1925bf73cf3ea0120f329e7c08db",
+          "bytes": 176,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931367987
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RootPaper_B23_InterfaceAudit008",
+      "receipt": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_InterfaceAudit008_strict001.json",
+      "source_sha256": "b9feba774c6d136125377d8de7474692fd62328c4e952a3ed77e0eedf2485690",
+      "receipt_sha256": "e2ab2762d26798a1d219fcda0fc0bb335ef4ac472342dd9e0a81d16430b39aff",
+      "actual_exit": 0,
+      "subprocess_wait": true,
+      "outer_session_reaped": 70110,
+      "freeze": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_InterfaceAudit008_strict001_FROZEN.json",
+      "six_pins": [
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_InterfaceAudit008.lean",
+          "sha256": "b9feba774c6d136125377d8de7474692fd62328c4e952a3ed77e0eedf2485690",
+          "bytes": 4013,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931368341
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_InterfaceAudit008.olean",
+          "sha256": "349e7c96b55eb90d218329efd686a9249709606243a67a6b63aa8ce90ec59179",
+          "bytes": 1472,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931368345
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_InterfaceAudit008.olean.private",
+          "sha256": "9341ea155314f31f1684b102e116915758757e2fd68a688f1407a72c20f85609",
+          "bytes": 1160,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931368347
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_InterfaceAudit008.olean.server",
+          "sha256": "a99cc8d0f61924b5397d368bda27322ceff7d19b0e45c6cb9fb1b622fc3e19e4",
+          "bytes": 896,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931368346
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_InterfaceAudit008.ir",
+          "sha256": "69b833a72f31d717b796a0d59576c8098e67d507734ffde818727c01727b3efd",
+          "bytes": 1624,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931368349
+          ]
+        },
+        {
+          "path": "D:\\STOC\u6295\u7a3f\\lean\\.lake\\workpads\\Structure\\RootPaper_B23_build001\\RootPaper_B23_InterfaceAudit008.ir.sig",
+          "sha256": "fa67321c4538b494e74236e6301f9d8bece89a764cd5066a1cc2a28ec1055e99",
+          "bytes": 176,
+          "WindowsReadOnly": true,
+          "file_identity": [
+            3781586605880687406,
+            844424931368348
+          ]
+        }
+      ]
+    }
+  ],
+  "actual_owner_audit": {
+    "modules": 2,
+    "declarations": 6,
+    "theorems": 4,
+    "definitions": 2,
+    "private": 2,
+    "new_axioms": 0,
+    "forbidden_dependencies": 0,
+    "actual_import_all_private_data_and_module_owner": true
+  },
+  "exact_private_definition_checks": [
+    {
+      "name": "PaperProofs.Common.Native.B23PaperClosure.FullPaperClaims",
+      "owner": "RootPaper_B23_Interface007",
+      "actual_defnInfo_value": "mkConst RootPaper.B23.FullPaperClaims",
+      "kernel_private_rfl": true
+    },
+    {
+      "name": "PaperProofs.Structure.LaminarTree.L01PaperClosure.FullPaperClaims",
+      "owner": "RootPaper_L01_Interface006",
+      "actual_defnInfo_value": "mkConst RootPaper.L01.FullPaperClaims",
+      "kernel_private_rfl": true
+    }
+  ],
+  "canonical015": "theorem-only publicimport these interfaces; both actual0/frozen but normalFull013 still pending",
+  "mathematical_scope_or_statement_changes": 0,
+  "old_parent_recompiles": 0,
+  "old_parent_hashes": 0,
+  "formal": "251/253 unchanged",
+  "S7": "unfinished"
+}

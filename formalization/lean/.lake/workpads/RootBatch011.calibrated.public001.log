@@ -1,0 +1,10 @@
+ROOT_RECOVERY queued ownerPid=32568
+ROOT_RECOVERY acquired=1 availableMiB=8184 ownerPid=32568
+ROOT_LEAN_SLOT queued ownerPid=32568
+ROOT_LEAN_SLOT admission ownerPid=32568
+ROOT_LEAN_SLOT acquired=1 ownerPid=32568
+'PDROC.calibratedImplementationClaims' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PDROC.calibratedNativeEightClaims' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PDROC.calibratedBackendClaims' depends on axioms: [propext, Classical.choice, Quot.sound]
+ROOT_LEAN_SLOT released=1 ownerPid=32568
+ROOT_RECOVERY released=1 ownerPid=32568

@@ -1,0 +1,544 @@
+{
+  "kind": "Explicit six-locator metadata correction003, NOT mathematical reproof or S7 acceptance",
+  "utc": "2026-10-31T05:58:23.181411+00:00",
+  "inputs": {
+    "locator002_sha256": "da9620e54ec9db0e25142a15b02bc0ef4906c6176da31ef1d625d5e827fb5df2",
+    "official011_receipt_sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+    "preaudit_manifest_sha256": "07c845affcb210c990f896c2fc0065a01b0d9a8844b7645ad215d677cf85c6b8",
+    "matrix_sha256": "0a265af200326bb40db9518ec1f83bca54d10b7ace758f3c616b5e0f1c73e7ca"
+  },
+  "line_and_hash_convention": {
+    "decoding": "UTF-8-sig through Path.read_text, universal CRLF/CR-to-LF normalization; raw source SHA remains binary",
+    "physical_lines": "1-based inclusive indices of splitlines(); byte splitlines(keepends=True) count checked identical for all6 files. A terminating newline creates no extra content line; its following empty EOF cursor is not a selectable physical line. Actual internal blank lines are preserved.",
+    "span_text_sha256": "SHA256 of UTF-8 encoding of LF.join(lines[start-1:end]), no extra final LF",
+    "span_raw_bytes_sha256": "SHA256 of original raw complete selected physical lines, preserving their original newline bytes; supplied separately",
+    "historical_boundary": "These are NEW explicit span hashes tied to current whole-file bytes that MATCH official011. No old reading of nonexistent lines or old declared span hash is invented."
+  },
+  "counts": {
+    "corrected": 6,
+    "cannot_correct": 0,
+    "source_MATCH_official011": 6,
+    "complete_statement_and_proof_coverage": 6,
+    "required_start_expansion_to_recover_header": 1,
+    "additional_start_expansion_for_universe_context": 1,
+    "old_beyond_EOF_cursor": 3,
+    "old_empty_EOF_cursor_only": 3,
+    "missing_files": 0,
+    "declaration_mismatches": 0
+  },
+  "corrections": [
+    {
+      "status": "corrected",
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Common\\BoundedNormalIO.lean",
+      "owner_original_ids": [
+        "M08b"
+      ],
+      "old_bad_locators": [
+        "PaperProofs/Common/BoundedNormalIO.lean:147-183"
+      ],
+      "old_recorded_range": {
+        "start": 147,
+        "end": 183
+      },
+      "original_JSON_sources": [
+        {
+          "file": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_BATCH_001.json",
+          "file_sha256": "e3beef1616640778942e0deda3190391cd46d5c024aa465cbaf8d2efb9e27497",
+          "JSON_position": "ROOT_S7_PREAUDIT_BATCH_001.json.semantic_rows[1].actual_formal_source_ranges_read[2]"
+        }
+      ],
+      "old_endpoint_class": "beyond_actual_EOF_cursor",
+      "physical_line_count": 172,
+      "empty_EOF_cursor_line": 173,
+      "new_legal_range": {
+        "start": 147,
+        "end": 172,
+        "convention": "1-based inclusive physical content lines",
+        "locator": "PaperProofs/Common/BoundedNormalIO.lean:147-172"
+      },
+      "start_correction_reason": "Original147 already starts a complete theorem; retain it.",
+      "full_source_sha256": "7690c0742b0aa2ac7bdc85a2cef0c367525a21639e1d7585e2b677a2598a7cc9",
+      "official011_anchor": {
+        "receipt": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+        "receipt_sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+        "field": "verified_progress_sha256.lean/PaperProofs/Common/BoundedNormalIO.lean",
+        "expected_source_sha256": "7690c0742b0aa2ac7bdc85a2cef0c367525a21639e1d7585e2b677a2598a7cc9",
+        "MATCH": true
+      },
+      "span_text_sha256": "041905fd3dc6ecb08e804e889451715b0d4b737fafb3971114599024eb19328c",
+      "span_raw_bytes_sha256": "7501eb18e296b6e7d0b21f618517b35711ab5b21a0ee323abf3036a0f38b1109",
+      "span_text": "theorem referenceBounded_halted {Seed : Type*}\n    (input : StatisticalInput I) (C : Contract I) (hearly : C.reporting = .early)\n    (accounting : NormalAccounting I) (available : Finset I.Tool) (budget : ℚ)\n    (exponent : ℕ) (sample : Seed × input.World) :\n    (run input C .uncapped accounting (referenceRule input available budget (some (referenceQuota input exponent)))\n      sample (quotaActionBound I (referenceQuota input exponent) + 1)).halted = true :=\n  run_halted_of_reviewQuotaCertificate input C accounting _\n    (referenceRule_uncapped_legal input C hearly accounting available budget (some (referenceQuota input exponent)))\n    (referenceQuota input exponent)\n    (referenceRule_reviewQuotaCertificate input C hearly accounting available budget (referenceQuota input exponent)) sample\n\n/-- The actual fixed bounded reference needs only the source's normal-I/O\nbound on complete executions to certify all prefixes under the SAME H0. -/\ntheorem referenceBounded_normalCalls_iff_completed\n    (input : StatisticalInput I) (C : Contract I) (hearly : C.reporting = .early)\n    (accounting : NormalAccounting I) (available : Finset I.Tool) (budget : ℚ)\n    (exponent H0 : ℕ) :\n    NormalCallCertificate input C .uncapped accounting\n      (referenceBoundedPolicy input C hearly accounting available budget exponent) H0 ↔\n    CompletedNormalCallBound input C .uncapped accounting\n      (referenceBoundedPolicy input C hearly accounting available budget exponent).rule H0 := by\n  apply normalCallCertificate_iff_completed_of_halts\n  intro sample\n  exact ⟨_, referenceBounded_halted input C hearly accounting available budget exponent sample⟩\n\nend PaperProofs.Common.Native",
+      "span_includes_entire_readable_tail": true,
+      "source_tail_after_last_target_proof": "\nend PaperProofs.Common.Native",
+      "complete_declarations": [
+        {
+          "source_display_name": "referenceBounded_halted",
+          "public_qualified_name": "PaperProofs.Common.Native.referenceBounded_halted",
+          "is_private_source_helper": false,
+          "declaration_start": 147,
+          "last_statement_or_proof_line": 156,
+          "actual_header": "theorem referenceBounded_halted {Seed : Type*}",
+          "complete_declaration_text": "theorem referenceBounded_halted {Seed : Type*}\n    (input : StatisticalInput I) (C : Contract I) (hearly : C.reporting = .early)\n    (accounting : NormalAccounting I) (available : Finset I.Tool) (budget : ℚ)\n    (exponent : ℕ) (sample : Seed × input.World) :\n    (run input C .uncapped accounting (referenceRule input available budget (some (referenceQuota input exponent)))\n      sample (quotaActionBound I (referenceQuota input exponent) + 1)).halted = true :=\n  run_halted_of_reviewQuotaCertificate input C accounting _\n    (referenceRule_uncapped_legal input C hearly accounting available budget (some (referenceQuota input exponent)))\n    (referenceQuota input exponent)\n    (referenceRule_reviewQuotaCertificate input C hearly accounting available budget (referenceQuota input exponent)) sample",
+          "complete_declaration_text_sha256": "717ca8fc09183731af05444cf347d245d26af28783be936d906b1e313194bedd",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        },
+        {
+          "source_display_name": "referenceBounded_normalCalls_iff_completed",
+          "public_qualified_name": "PaperProofs.Common.Native.referenceBounded_normalCalls_iff_completed",
+          "is_private_source_helper": false,
+          "declaration_start": 160,
+          "last_statement_or_proof_line": 170,
+          "actual_header": "theorem referenceBounded_normalCalls_iff_completed",
+          "complete_declaration_text": "theorem referenceBounded_normalCalls_iff_completed\n    (input : StatisticalInput I) (C : Contract I) (hearly : C.reporting = .early)\n    (accounting : NormalAccounting I) (available : Finset I.Tool) (budget : ℚ)\n    (exponent H0 : ℕ) :\n    NormalCallCertificate input C .uncapped accounting\n      (referenceBoundedPolicy input C hearly accounting available budget exponent) H0 ↔\n    CompletedNormalCallBound input C .uncapped accounting\n      (referenceBoundedPolicy input C hearly accounting available budget exponent).rule H0 := by\n  apply normalCallCertificate_iff_completed_of_halts\n  intro sample\n  exact ⟨_, referenceBounded_halted input C hearly accounting available budget exponent sample⟩",
+          "complete_declaration_text_sha256": "bf87d95e52e17926d8adf7abe91a830f43a2ecf5eabb7e986c4a7f5868153ec4",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        }
+      ],
+      "source_scope_coverage": "M08b: complete fixed-bounded-reference HALT theorem and SAME-controller complete/all-prefix H0 equivalence. Earlier CompletedNormalCallBound/general equivalence were separate valid original ranges, not silently replaced.",
+      "pinned_complete_source_snapshot": null,
+      "historical_out_of_bounds_lines_not_claimed_as_read": true,
+      "new_span_sha_computed_now_not_backfilled": true
+    },
+    {
+      "status": "corrected",
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Common\\HistorySuffixBridge.lean",
+      "owner_original_ids": [
+        "B09"
+      ],
+      "old_bad_locators": [
+        "PaperProofs/Common/HistorySuffixBridge.lean:155-176"
+      ],
+      "old_recorded_range": {
+        "start": 155,
+        "end": 176
+      },
+      "original_JSON_sources": [
+        {
+          "file": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_BATCH_001.json",
+          "file_sha256": "e3beef1616640778942e0deda3190391cd46d5c024aa465cbaf8d2efb9e27497",
+          "JSON_position": "ROOT_S7_PREAUDIT_BATCH_001.json.semantic_rows[6].actual_formal_source_ranges_read[1]"
+        }
+      ],
+      "old_endpoint_class": "beyond_actual_EOF_cursor",
+      "physical_line_count": 171,
+      "empty_EOF_cursor_line": 172,
+      "new_legal_range": {
+        "start": 151,
+        "end": 171,
+        "convention": "1-based inclusive physical content lines",
+        "locator": "PaperProofs/Common/HistorySuffixBridge.lean:151-171"
+      },
+      "start_correction_reason": "Expand155 to151 to include actual universe uBridge context before both full theorem headers.",
+      "full_source_sha256": "45379a58e9266421dac4c03bfb3f12365a0f67648c56c4c87e07ce81027e788c",
+      "official011_anchor": {
+        "receipt": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+        "receipt_sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+        "field": "verified_progress_sha256.lean/PaperProofs/Common/HistorySuffixBridge.lean",
+        "expected_source_sha256": "45379a58e9266421dac4c03bfb3f12365a0f67648c56c4c87e07ce81027e788c",
+        "MATCH": true
+      },
+      "span_text_sha256": "26e726c8669bb42eb9e43791b38454b4be8a19769e5e8f06598ef6248ea8fdd8",
+      "span_raw_bytes_sha256": "1880f09b8bfe842c7cdb3d7c961ae718558bd9a5a791cbae8423eda4f7b51f9d",
+      "span_text": "universe uBridge\n\n/-- The exact formal first-entry B09 target, derived from the actual replay policy,\nits pathwise charges/success comparison and first-entry product law. -/\ntheorem stageEntryHistoryPenaltyBridge (input : StatisticalInput I) :\n    StageEntryHistoryPenaltyBridge.{uBridge} input := by\n  intro C hC accounting Seed m\n  let : MeasurableSpace Seed := m\n  intro policy ν hν next n hnext startup gate hgate hhealthy penalty\n  let : IsProbabilityMeasure ν := hν\n  by_cases hterminal : I.stageCount ≤ next\n  · exact history_bridge_terminal input C accounting policy.rule ν next n hterminal startup gate penalty\n  · let stage : I.Stage := ⟨next, Nat.lt_of_not_ge hterminal⟩\n    exact stageEntryHistoryPenaltyBridge_at input C hC accounting policy ν stage n startup gate hgate\n      (fun sample hs => (hhealthy sample hs).1) penalty\n\ntheorem healthyStageEntryHistoryPenaltyBridge (input : StatisticalInput I) :\n    HealthyStageEntryHistoryPenaltyBridge.{uBridge} input :=\n  StageEntryHistoryPenaltyBridge.healthy_projection input (stageEntryHistoryPenaltyBridge input)\n\nend PaperProofs.Common.Native",
+      "span_includes_entire_readable_tail": true,
+      "source_tail_after_last_target_proof": "\nend PaperProofs.Common.Native",
+      "complete_declarations": [
+        {
+          "source_display_name": "stageEntryHistoryPenaltyBridge",
+          "public_qualified_name": "PaperProofs.Common.Native.stageEntryHistoryPenaltyBridge",
+          "is_private_source_helper": false,
+          "declaration_start": 155,
+          "last_statement_or_proof_line": 165,
+          "actual_header": "theorem stageEntryHistoryPenaltyBridge (input : StatisticalInput I) :",
+          "complete_declaration_text": "theorem stageEntryHistoryPenaltyBridge (input : StatisticalInput I) :\n    StageEntryHistoryPenaltyBridge.{uBridge} input := by\n  intro C hC accounting Seed m\n  let : MeasurableSpace Seed := m\n  intro policy ν hν next n hnext startup gate hgate hhealthy penalty\n  let : IsProbabilityMeasure ν := hν\n  by_cases hterminal : I.stageCount ≤ next\n  · exact history_bridge_terminal input C accounting policy.rule ν next n hterminal startup gate penalty\n  · let stage : I.Stage := ⟨next, Nat.lt_of_not_ge hterminal⟩\n    exact stageEntryHistoryPenaltyBridge_at input C hC accounting policy ν stage n startup gate hgate\n      (fun sample hs => (hhealthy sample hs).1) penalty",
+          "complete_declaration_text_sha256": "3f80c9d24ec30eb2ce6ca62f16947e951ca1035c84e365f1c00cb319ff1adad8",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        },
+        {
+          "source_display_name": "healthyStageEntryHistoryPenaltyBridge",
+          "public_qualified_name": "PaperProofs.Common.Native.healthyStageEntryHistoryPenaltyBridge",
+          "is_private_source_helper": false,
+          "declaration_start": 167,
+          "last_statement_or_proof_line": 169,
+          "actual_header": "theorem healthyStageEntryHistoryPenaltyBridge (input : StatisticalInput I) :",
+          "complete_declaration_text": "theorem healthyStageEntryHistoryPenaltyBridge (input : StatisticalInput I) :\n    HealthyStageEntryHistoryPenaltyBridge.{uBridge} input :=\n  StageEntryHistoryPenaltyBridge.healthy_projection input (stageEntryHistoryPenaltyBridge input)",
+          "complete_declaration_text_sha256": "74b356411b8ad1b5e21c6c833ddce6515eab493a05b3c12e439b45488deab942",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        }
+      ],
+      "source_scope_coverage": "B09: original first-entry bridge and its healthy projection, preserving explicit uBridge universe and complete proofs, not the invalid old all-history assertion.",
+      "pinned_complete_source_snapshot": null,
+      "historical_out_of_bounds_lines_not_claimed_as_read": true,
+      "new_span_sha_computed_now_not_backfilled": true
+    },
+    {
+      "status": "corrected",
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Common\\GeneralNormalFeeReference.lean",
+      "owner_original_ids": [
+        "M11"
+      ],
+      "old_bad_locators": [
+        "PaperProofs/Common/GeneralNormalFeeReference.lean:28-126"
+      ],
+      "old_recorded_range": {
+        "start": 28,
+        "end": 126
+      },
+      "original_JSON_sources": [
+        {
+          "file": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_BATCH_002.json",
+          "file_sha256": "2c8dad3285598b739ca3b69024a34c168c7e96edae37df0b3f4b4b7a373f9490",
+          "JSON_position": "ROOT_S7_PREAUDIT_BATCH_002.json.rows[0].actual_formal_source_ranges_read[2]"
+        }
+      ],
+      "old_endpoint_class": "EOF_cursor_only_convention_needs_clarification",
+      "physical_line_count": 125,
+      "empty_EOF_cursor_line": 126,
+      "new_legal_range": {
+        "start": 28,
+        "end": 125,
+        "convention": "1-based inclusive physical content lines",
+        "locator": "PaperProofs/Common/GeneralNormalFeeReference.lean:28-125"
+      },
+      "start_correction_reason": "Original28 starts the complete policy definition; retain it.",
+      "full_source_sha256": "c4d1985fb263dfaa39d5e2cdc59c50cf3d04b73650c8b09be022e9eb55b06c04",
+      "official011_anchor": {
+        "receipt": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+        "receipt_sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+        "field": "verified_progress_sha256.lean/PaperProofs/Common/GeneralNormalFeeReference.lean",
+        "expected_source_sha256": "c4d1985fb263dfaa39d5e2cdc59c50cf3d04b73650c8b09be022e9eb55b06c04",
+        "MATCH": true
+      },
+      "span_text_sha256": "1362ad5a3ab9ccf4fd0688f79f8a46c06b3a8b38afba759ec065a8c71285287e",
+      "span_raw_bytes_sha256": "8a908db46c180da74855b63f94a462eea69b0a3663c3cf24d7fc09585cc5745a",
+      "span_text": "def completeNativeReferencePolicy (input : StatisticalInput I) (C : Contract I)\n    (hearly : C.reporting = .early) (accounting : NormalAccounting I)\n    (available : Finset I.Tool) (budget : ℚ) (exponent : ℕ)\n    (qualification : ReferenceCompleteOriginalQualification input C hearly accounting available budget exponent) :\n    Policy input C .native accounting Unit :=\n  let source := referenceBoundedPolicy input C hearly accounting available budget exponent\n  let original := (referenceCompleteOriginalQualification_iff input C hearly accounting available budget exponent).mp qualification\n  source.enforceCaps input C accounting (referenceQuota input exponent)\n    (referenceRule_reviewQuotaCertificate input C hearly accounting available budget (referenceQuota input exponent))\n    original.normal_calls original.stage_quota original.total_calls\n\ntheorem completeNativeReferencePolicy_rule (input : StatisticalInput I) (C : Contract I)\n    (hearly : C.reporting = .early) (accounting : NormalAccounting I)\n    (available : Finset I.Tool) (budget : ℚ) (exponent : ℕ)\n    (qualification : ReferenceCompleteOriginalQualification input C hearly accounting available budget exponent) :\n    (completeNativeReferencePolicy input C hearly accounting available budget exponent qualification).rule =\n      (referenceBoundedPolicy input C hearly accounting available budget exponent).rule := rfl\n\nprivate theorem policy_eq_of_rule_eq {Seed : Type*} [MeasurableSpace Seed]\n    (input : StatisticalInput I) (C : Contract I) (mode : ResourceMode)\n    (accounting : NormalAccounting I) (left right : Policy input C mode accounting Seed)\n    (heq : left.rule = right.rule) : left = right := by\n  cases left\n  cases right\n  cases heq\n  rfl\n\n/-- B22a's actual risk and variable-fee bound, for this explicitly selected\npolicy. Neither is an added input premise of the M11 fee assembly. -/\ntheorem completeNativeReferencePolicy_performance\n    (input : StatisticalInput I) (C : Contract I) (hcurrent : C.IsCurrentAllocation)\n    (accounting : NormalAccounting I) (delta : ℝ) (hd : 0 < delta) (hsmall : delta ≤ 1 / 2)\n    (exponent : ℕ) (budget : ℚ) (choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n    (qualification : ReferenceCompleteOriginalQualification input C hcurrent.1 accounting I.tools budget exponent) :\n    let policy := completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification\n    risk input C .native accounting policy.rule (Measure.dirac ()) ≤ ENNReal.ofReal delta ∧\n      expectedBill input C .native accounting policy.rule (Measure.dirac ()) ≤\n        expectedBill input C .uncapped accounting\n          (referenceIdealPolicy input C hcurrent.1 accounting I.tools budget).rule (Measure.dirac ()) := by\n  obtain ⟨policy, hrule, hsafe, hbill⟩ := referenceNative_policy input C hcurrent accounting\n    delta hd hsmall exponent budget choice\n    ((referenceCompleteOriginalQualification_iff input C hcurrent.1 accounting I.tools budget exponent).mp qualification)\n  have heq : completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification = policy :=\n    policy_eq_of_rule_eq input C .native accounting _ policy\n      ((completeNativeReferencePolicy_rule input C hcurrent.1 accounting I.tools budget exponent qualification).trans hrule.symm)\n  dsimp only\n  rw [heq]\n  exact ⟨hsafe, hbill⟩\n\n/-- Full actual-controller M11 upper. The only normal-fee premise is the\nsource's bound on this actual constructed native execution. Family charges\nneed not factor through a public trace or be invariant under re-encoding. -/\ntheorem FeeFamily.totalNativeValue_le_referenceIdeal_add\n    (input : StatisticalInput I) (C : Contract I) (hcurrent : C.IsCurrentAllocation)\n    (accounting : NormalAccounting I) (delta : ℝ) (hd : 0 < delta) (hsmall : delta ≤ 1 / 2)\n    (exponent : ℕ) (budget : ℚ) (choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n    (qualification : ReferenceCompleteOriginalQualification input C hcurrent.1 accounting I.tools budget exponent)\n    (family : FeeFamily.{0} input C .native accounting) (C0 : ℝ≥0∞)\n    (hcharge : ConstructedNormalChargeUpper input\n      (family.charges Unit inferInstance\n        (completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification)) C0) :\n    family.totalValue input C .native accounting (ENNReal.ofReal delta) ≤\n      expectedBill input C .uncapped accounting\n        (referenceIdealPolicy input C hcurrent.1 accounting I.tools budget).rule (Measure.dirac ()) + C0 := by\n  have hperformance := completeNativeReferencePolicy_performance input C hcurrent accounting\n    delta hd hsmall exponent budget choice qualification\n  exact (family.totalValue_upper_of_constructed input C .native accounting (ENNReal.ofReal delta) C0\n    (Measure.dirac ())\n    (completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification)\n    hperformance.1 hcharge).trans (add_le_add hperformance.2 le_rfl)\n\n/-- Original complete normal-fee remark for the actual native reference.\nSuccessLower and constructed C0 upper are exactly the two source normal-fee\nassumptions. Safety and the variable comparison with ideal are conclusions\nfrom the existing reference proofs, not hidden conditions in this target. -/\ndef ReferenceNormalFeeClaims (input : StatisticalInput I) : Prop :=\n  ∀ (C : Contract I) (hcurrent : C.IsCurrentAllocation) (accounting : NormalAccounting I)\n    (delta : ℝ), 0 < delta → delta ≤ 1 / 2 →\n    ∀ (exponent : ℕ) (budget : ℚ) (_choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n      (qualification : ReferenceCompleteOriginalQualification input C hcurrent.1 accounting I.tools budget exponent)\n      (family : FeeFamily.{0} input C .native accounting) (C0 : ℝ≥0∞),\n      family.SuccessLower input C .native accounting C0 →\n      ConstructedNormalChargeUpper input\n        (family.charges Unit inferInstance\n          (completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification)) C0 →\n      (value input C .native accounting (ENNReal.ofReal delta) + (1 - ENNReal.ofReal delta) * C0 ≤\n        family.totalValue input C .native accounting (ENNReal.ofReal delta)) ∧\n      family.totalValue input C .native accounting (ENNReal.ofReal delta) ≤\n        expectedBill input C .uncapped accounting\n          (referenceIdealPolicy input C hcurrent.1 accounting I.tools budget).rule (Measure.dirac ()) + C0\n\ntheorem referenceNormalFeeClaims (input : StatisticalInput I) : ReferenceNormalFeeClaims input := by\n  intro C hcurrent accounting delta hd hsmall exponent budget choice qualification family C0 hlower hcharge\n  exact ⟨family.totalValue_lower input C .native accounting (ENNReal.ofReal delta) C0 hlower,\n    family.totalNativeValue_le_referenceIdeal_add input C hcurrent accounting delta hd hsmall exponent budget\n      choice qualification C0 hcharge⟩\n\nend PaperProofs.Common.Native.GeneralNormalFees",
+      "span_includes_entire_readable_tail": true,
+      "source_tail_after_last_target_proof": "\nend PaperProofs.Common.Native.GeneralNormalFees",
+      "complete_declarations": [
+        {
+          "source_display_name": "completeNativeReferencePolicy",
+          "public_qualified_name": "PaperProofs.Common.Native.GeneralNormalFees.completeNativeReferencePolicy",
+          "is_private_source_helper": false,
+          "declaration_start": 28,
+          "last_statement_or_proof_line": 37,
+          "actual_header": "def completeNativeReferencePolicy (input : StatisticalInput I) (C : Contract I)",
+          "complete_declaration_text": "def completeNativeReferencePolicy (input : StatisticalInput I) (C : Contract I)\n    (hearly : C.reporting = .early) (accounting : NormalAccounting I)\n    (available : Finset I.Tool) (budget : ℚ) (exponent : ℕ)\n    (qualification : ReferenceCompleteOriginalQualification input C hearly accounting available budget exponent) :\n    Policy input C .native accounting Unit :=\n  let source := referenceBoundedPolicy input C hearly accounting available budget exponent\n  let original := (referenceCompleteOriginalQualification_iff input C hearly accounting available budget exponent).mp qualification\n  source.enforceCaps input C accounting (referenceQuota input exponent)\n    (referenceRule_reviewQuotaCertificate input C hearly accounting available budget (referenceQuota input exponent))\n    original.normal_calls original.stage_quota original.total_calls",
+          "complete_declaration_text_sha256": "39feb9b26a08875ea46e87e9d89acccef30d65d8693c6a0896ebc01b171d2c06",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        },
+        {
+          "source_display_name": "completeNativeReferencePolicy_rule",
+          "public_qualified_name": "PaperProofs.Common.Native.GeneralNormalFees.completeNativeReferencePolicy_rule",
+          "is_private_source_helper": false,
+          "declaration_start": 39,
+          "last_statement_or_proof_line": 44,
+          "actual_header": "theorem completeNativeReferencePolicy_rule (input : StatisticalInput I) (C : Contract I)",
+          "complete_declaration_text": "theorem completeNativeReferencePolicy_rule (input : StatisticalInput I) (C : Contract I)\n    (hearly : C.reporting = .early) (accounting : NormalAccounting I)\n    (available : Finset I.Tool) (budget : ℚ) (exponent : ℕ)\n    (qualification : ReferenceCompleteOriginalQualification input C hearly accounting available budget exponent) :\n    (completeNativeReferencePolicy input C hearly accounting available budget exponent qualification).rule =\n      (referenceBoundedPolicy input C hearly accounting available budget exponent).rule := rfl",
+          "complete_declaration_text_sha256": "0af8d1ea44a3cd03bb5e6059d3742636a46e10d03ca5a763347931e0a57faaec",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin"
+        },
+        {
+          "source_display_name": "policy_eq_of_rule_eq",
+          "public_qualified_name": null,
+          "is_private_source_helper": true,
+          "declaration_start": 46,
+          "last_statement_or_proof_line": 53,
+          "actual_header": "private theorem policy_eq_of_rule_eq {Seed : Type*} [MeasurableSpace Seed]",
+          "complete_declaration_text": "private theorem policy_eq_of_rule_eq {Seed : Type*} [MeasurableSpace Seed]\n    (input : StatisticalInput I) (C : Contract I) (mode : ResourceMode)\n    (accounting : NormalAccounting I) (left right : Policy input C mode accounting Seed)\n    (heq : left.rule = right.rule) : left = right := by\n  cases left\n  cases right\n  cases heq\n  rfl",
+          "complete_declaration_text_sha256": "f9d9231ff491f8c098cb2fcce28164739917630114d90da169a62299010a316e",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin"
+        },
+        {
+          "source_display_name": "completeNativeReferencePolicy_performance",
+          "public_qualified_name": "PaperProofs.Common.Native.GeneralNormalFees.completeNativeReferencePolicy_performance",
+          "is_private_source_helper": false,
+          "declaration_start": 57,
+          "last_statement_or_proof_line": 75,
+          "actual_header": "theorem completeNativeReferencePolicy_performance",
+          "complete_declaration_text": "theorem completeNativeReferencePolicy_performance\n    (input : StatisticalInput I) (C : Contract I) (hcurrent : C.IsCurrentAllocation)\n    (accounting : NormalAccounting I) (delta : ℝ) (hd : 0 < delta) (hsmall : delta ≤ 1 / 2)\n    (exponent : ℕ) (budget : ℚ) (choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n    (qualification : ReferenceCompleteOriginalQualification input C hcurrent.1 accounting I.tools budget exponent) :\n    let policy := completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification\n    risk input C .native accounting policy.rule (Measure.dirac ()) ≤ ENNReal.ofReal delta ∧\n      expectedBill input C .native accounting policy.rule (Measure.dirac ()) ≤\n        expectedBill input C .uncapped accounting\n          (referenceIdealPolicy input C hcurrent.1 accounting I.tools budget).rule (Measure.dirac ()) := by\n  obtain ⟨policy, hrule, hsafe, hbill⟩ := referenceNative_policy input C hcurrent accounting\n    delta hd hsmall exponent budget choice\n    ((referenceCompleteOriginalQualification_iff input C hcurrent.1 accounting I.tools budget exponent).mp qualification)\n  have heq : completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification = policy :=\n    policy_eq_of_rule_eq input C .native accounting _ policy\n      ((completeNativeReferencePolicy_rule input C hcurrent.1 accounting I.tools budget exponent qualification).trans hrule.symm)\n  dsimp only\n  rw [heq]\n  exact ⟨hsafe, hbill⟩",
+          "complete_declaration_text_sha256": "0c409bade0e3981bb0a06c54741131d79aa848a9ddfb79995963f563618e31c2",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        },
+        {
+          "source_display_name": "FeeFamily.totalNativeValue_le_referenceIdeal_add",
+          "public_qualified_name": "PaperProofs.Common.Native.GeneralNormalFees.FeeFamily.totalNativeValue_le_referenceIdeal_add",
+          "is_private_source_helper": false,
+          "declaration_start": 80,
+          "last_statement_or_proof_line": 97,
+          "actual_header": "theorem FeeFamily.totalNativeValue_le_referenceIdeal_add",
+          "complete_declaration_text": "theorem FeeFamily.totalNativeValue_le_referenceIdeal_add\n    (input : StatisticalInput I) (C : Contract I) (hcurrent : C.IsCurrentAllocation)\n    (accounting : NormalAccounting I) (delta : ℝ) (hd : 0 < delta) (hsmall : delta ≤ 1 / 2)\n    (exponent : ℕ) (budget : ℚ) (choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n    (qualification : ReferenceCompleteOriginalQualification input C hcurrent.1 accounting I.tools budget exponent)\n    (family : FeeFamily.{0} input C .native accounting) (C0 : ℝ≥0∞)\n    (hcharge : ConstructedNormalChargeUpper input\n      (family.charges Unit inferInstance\n        (completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification)) C0) :\n    family.totalValue input C .native accounting (ENNReal.ofReal delta) ≤\n      expectedBill input C .uncapped accounting\n        (referenceIdealPolicy input C hcurrent.1 accounting I.tools budget).rule (Measure.dirac ()) + C0 := by\n  have hperformance := completeNativeReferencePolicy_performance input C hcurrent accounting\n    delta hd hsmall exponent budget choice qualification\n  exact (family.totalValue_upper_of_constructed input C .native accounting (ENNReal.ofReal delta) C0\n    (Measure.dirac ())\n    (completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification)\n    hperformance.1 hcharge).trans (add_le_add hperformance.2 le_rfl)",
+          "complete_declaration_text_sha256": "b04a8697fe180b0b130dd86d8aa606af822410d6d3d5f4d37dc24b77a6d284f1",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin"
+        },
+        {
+          "source_display_name": "ReferenceNormalFeeClaims",
+          "public_qualified_name": "PaperProofs.Common.Native.GeneralNormalFees.ReferenceNormalFeeClaims",
+          "is_private_source_helper": false,
+          "declaration_start": 103,
+          "last_statement_or_proof_line": 117,
+          "actual_header": "def ReferenceNormalFeeClaims (input : StatisticalInput I) : Prop :=",
+          "complete_declaration_text": "def ReferenceNormalFeeClaims (input : StatisticalInput I) : Prop :=\n  ∀ (C : Contract I) (hcurrent : C.IsCurrentAllocation) (accounting : NormalAccounting I)\n    (delta : ℝ), 0 < delta → delta ≤ 1 / 2 →\n    ∀ (exponent : ℕ) (budget : ℚ) (_choice : ReferenceRiskChoice I.stageCount delta exponent budget)\n      (qualification : ReferenceCompleteOriginalQualification input C hcurrent.1 accounting I.tools budget exponent)\n      (family : FeeFamily.{0} input C .native accounting) (C0 : ℝ≥0∞),\n      family.SuccessLower input C .native accounting C0 →\n      ConstructedNormalChargeUpper input\n        (family.charges Unit inferInstance\n          (completeNativeReferencePolicy input C hcurrent.1 accounting I.tools budget exponent qualification)) C0 →\n      (value input C .native accounting (ENNReal.ofReal delta) + (1 - ENNReal.ofReal delta) * C0 ≤\n        family.totalValue input C .native accounting (ENNReal.ofReal delta)) ∧\n      family.totalValue input C .native accounting (ENNReal.ofReal delta) ≤\n        expectedBill input C .uncapped accounting\n          (referenceIdealPolicy input C hcurrent.1 accounting I.tools budget).rule (Measure.dirac ()) + C0",
+          "complete_declaration_text_sha256": "5b0ce47d2f05c2bbfd179c21f555d9d543f443420574e3f07e03c6a89d36d9c7",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        },
+        {
+          "source_display_name": "referenceNormalFeeClaims",
+          "public_qualified_name": "PaperProofs.Common.Native.GeneralNormalFees.referenceNormalFeeClaims",
+          "is_private_source_helper": false,
+          "declaration_start": 119,
+          "last_statement_or_proof_line": 123,
+          "actual_header": "theorem referenceNormalFeeClaims (input : StatisticalInput I) : ReferenceNormalFeeClaims input := by",
+          "complete_declaration_text": "theorem referenceNormalFeeClaims (input : StatisticalInput I) : ReferenceNormalFeeClaims input := by\n  intro C hcurrent accounting delta hd hsmall exponent budget choice qualification family C0 hlower hcharge\n  exact ⟨family.totalValue_lower input C .native accounting (ENNReal.ofReal delta) C0 hlower,\n    family.totalNativeValue_le_referenceIdeal_add input C hcurrent accounting delta hd hsmall exponent budget\n      choice qualification C0 hcharge⟩",
+          "complete_declaration_text_sha256": "e9832c871ee74f8c23e8179e19bf33d50235670f5aa628bb3b4721872dad2a34",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        }
+      ],
+      "source_scope_coverage": "M11: actual selected original-cap policy/its rule/performance, normal-fee claim definition and proof. Includes original selected-script H0/numeric qualification; no arbitrary-accounting or fee-transport strengthening.",
+      "pinned_complete_source_snapshot": null,
+      "historical_out_of_bounds_lines_not_claimed_as_read": true,
+      "new_span_sha_computed_now_not_backfilled": true
+    },
+    {
+      "status": "corrected",
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Common\\NativePenaltyHeadLower.lean",
+      "owner_original_ids": [
+        "B08"
+      ],
+      "old_bad_locators": [
+        "PaperProofs/Common/NativePenaltyHeadLower.lean:110-120"
+      ],
+      "old_recorded_range": {
+        "start": 110,
+        "end": 120
+      },
+      "original_JSON_sources": [
+        {
+          "file": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_BATCH_002.json",
+          "file_sha256": "2c8dad3285598b739ca3b69024a34c168c7e96edae37df0b3f4b4b7a373f9490",
+          "JSON_position": "ROOT_S7_PREAUDIT_BATCH_002.json.rows[7].actual_formal_source_ranges_read[2]"
+        }
+      ],
+      "old_endpoint_class": "EOF_cursor_only_convention_needs_clarification",
+      "physical_line_count": 119,
+      "empty_EOF_cursor_line": 120,
+      "new_legal_range": {
+        "start": 110,
+        "end": 119,
+        "convention": "1-based inclusive physical content lines",
+        "locator": "PaperProofs/Common/NativePenaltyHeadLower.lean:110-119"
+      },
+      "start_correction_reason": "Original110 already starts the complete theorem; retain it.",
+      "full_source_sha256": "cc95378d0eeabbd159e88baf1e980dbd0919425130ebb890787ea0f2647acee4",
+      "official011_anchor": {
+        "receipt": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+        "receipt_sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+        "field": "verified_progress_sha256.lean/PaperProofs/Common/NativePenaltyHeadLower.lean",
+        "expected_source_sha256": "cc95378d0eeabbd159e88baf1e980dbd0919425130ebb890787ea0f2647acee4",
+        "MATCH": true
+      },
+      "span_text_sha256": "a52ac4505935ffefa30d8fc55c280c8be999fd3fa474688901ef9c6ccc6eb59e",
+      "span_raw_bytes_sha256": "040ae0dd3ca5ecf4b37d380658d8442033f9a9aaff4ba0039839bca285eadcaa",
+      "span_text": "theorem currentPenaltyRecursion_lower (input : StatisticalInput I) (stage : I.Stage)\n    (R : Finset I.Tool) (price : ℝ) (hprice : 0 < price) :\n    min price (input.goodPenaltyReal stage R price + (input.experiment stage).localValueReal\n      (input.badPenaltyReal stage R price - input.goodPenaltyReal stage R price)) ≤\n      input.healthyPenaltyReal stage.val R price := by\n  apply (input.freshHead_lower_iff stage R price).mp\n  exact currentPenaltyRecursion_head_lower (input.freshSuffix stage.val)\n    (I.freshHead stage) rfl R price hprice\n\nend PaperProofs.Common.Native",
+      "span_includes_entire_readable_tail": true,
+      "source_tail_after_last_target_proof": "\nend PaperProofs.Common.Native",
+      "complete_declarations": [
+        {
+          "source_display_name": "currentPenaltyRecursion_lower",
+          "public_qualified_name": "PaperProofs.Common.Native.currentPenaltyRecursion_lower",
+          "is_private_source_helper": false,
+          "declaration_start": 110,
+          "last_statement_or_proof_line": 117,
+          "actual_header": "theorem currentPenaltyRecursion_lower (input : StatisticalInput I) (stage : I.Stage)",
+          "complete_declaration_text": "theorem currentPenaltyRecursion_lower (input : StatisticalInput I) (stage : I.Stage)\n    (R : Finset I.Tool) (price : ℝ) (hprice : 0 < price) :\n    min price (input.goodPenaltyReal stage R price + (input.experiment stage).localValueReal\n      (input.badPenaltyReal stage R price - input.goodPenaltyReal stage R price)) ≤\n      input.healthyPenaltyReal stage.val R price := by\n  apply (input.freshHead_lower_iff stage R price).mp\n  exact currentPenaltyRecursion_head_lower (input.freshSuffix stage.val)\n    (I.freshHead stage) rfl R price hprice",
+          "complete_declaration_text_sha256": "e6c9044b52fb8b60ff27d84a6d1583de7aeec6c14f6c36644e00c03414709c3c",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        }
+      ],
+      "source_scope_coverage": "B08 lower-direction helper at every original stage, with complete fresh-head transport proof. This span alone is NOT the entire bidirectional B08 theorem; the original separate upper assembly remains separate.",
+      "pinned_complete_source_snapshot": null,
+      "historical_out_of_bounds_lines_not_claimed_as_read": true,
+      "new_span_sha_computed_now_not_backfilled": true
+    },
+    {
+      "status": "corrected",
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Statistics\\PenaltyScales.lean",
+      "owner_original_ids": [
+        "B11a"
+      ],
+      "old_bad_locators": [
+        "PaperProofs/Statistics/PenaltyScales.lean:32-105"
+      ],
+      "old_recorded_range": {
+        "start": 32,
+        "end": 105
+      },
+      "original_JSON_sources": [
+        {
+          "file": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_BATCH_002.json",
+          "file_sha256": "2c8dad3285598b739ca3b69024a34c168c7e96edae37df0b3f4b4b7a373f9490",
+          "JSON_position": "ROOT_S7_PREAUDIT_BATCH_002.json.rows[9].actual_formal_source_ranges_read[0]"
+        }
+      ],
+      "old_endpoint_class": "beyond_actual_EOF_cursor",
+      "physical_line_count": 97,
+      "empty_EOF_cursor_line": 98,
+      "new_legal_range": {
+        "start": 32,
+        "end": 97,
+        "convention": "1-based inclusive physical content lines",
+        "locator": "PaperProofs/Statistics/PenaltyScales.lean:32-97"
+      },
+      "start_correction_reason": "Original32 already starts the first complete target theorem; retain it.",
+      "full_source_sha256": "a73b5538a8400713a5b94bba27ccfa720dba243d578f45f32a2cea45b31f3175",
+      "official011_anchor": {
+        "receipt": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+        "receipt_sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+        "field": "verified_progress_sha256.lean/PaperProofs/Statistics/PenaltyScales.lean",
+        "expected_source_sha256": "a73b5538a8400713a5b94bba27ccfa720dba243d578f45f32a2cea45b31f3175",
+        "MATCH": true
+      },
+      "span_text_sha256": "fd8b49dbac209debfe56e91674a8985e175679d11a1c65823428b588497edf74",
+      "span_raw_bytes_sha256": "3b4ed17095a6ae9e82d5ce610b8f10cf24ae9784159a981ac9af58c2cb6fd555",
+      "span_text": "theorem localValueReal_sublinear (E : BinaryExperiment) :\n    Tendsto (fun t : ℝ => E.localValueReal t / t) atTop (𝓝 0) := by\n  obtain ⟨K, _, hK⟩ := E.globalLogarithmicEnvelope\n  have hupper : Tendsto (fun t : ℝ => K * Real.log (1 + t) / t) atTop (𝓝 0) := by\n    simpa only [mul_div_assoc, mul_zero] using\n      (tendsto_const_nhds.mul log_one_add_div_tendsto_zero :\n        Tendsto (fun t : ℝ => K * (Real.log (1 + t) / t)) atTop (𝓝 (K * 0)))\n  apply tendsto_of_tendsto_of_tendsto_of_le_of_le'\n    (g := fun _ : ℝ => (0 : ℝ)) (h := fun t => K * Real.log (1 + t) / t)\n    tendsto_const_nhds hupper\n  · filter_upwards [eventually_gt_atTop (0 : ℝ)] with t ht\n    exact div_nonneg (E.localValueReal_nonneg t) ht.le\n  · filter_upwards [eventually_gt_atTop (0 : ℝ)] with t ht\n    exact (div_le_div_iff_of_pos_right ht).mpr (hK t ht.le)\n\n/-- This estimate allows the good and bad leading terms to cancel exactly.\nThere is no assumption that their difference tends to infinity or is a\npositive fraction of the bad continuation. -/\ntheorem localValue_difference_negligible (E : BinaryExperiment)\n    (good bad scale : ℝ → ℝ) (B : ℝ) (hB : 0 < B)\n    (hscale : Tendsto scale atTop atTop)\n    (hbad : Tendsto (fun t => bad t / scale t) atTop (𝓝 B))\n    (horder : ∀ᶠ t in atTop, 0 ≤ good t ∧ good t ≤ bad t) :\n    Tendsto (fun t => E.localValueReal (bad t - good t) / scale t) atTop (𝓝 0) := by\n  have hscaleNe : ∀ᶠ t in atTop, scale t ≠ 0 := hscale.eventually_ne_atTop 0\n  have hbadTop : Tendsto bad atTop atTop := by\n    have hprod := Filter.Tendsto.pos_mul_atTop hB hbad hscale\n    apply hprod.congr'\n    filter_upwards [hscaleNe] with t ht\n    exact div_mul_cancel₀ (bad t) ht\n  have hbadPos : ∀ᶠ t in atTop, 0 < bad t := hbadTop.eventually_gt_atTop 0\n  obtain ⟨K, hK, hbound⟩ := E.globalLogarithmicEnvelope\n  have hupper : Tendsto (fun t => K * Real.log (1 + bad t) / bad t) atTop (𝓝 0) := by\n    have hlog := log_one_add_div_tendsto_zero.comp hbadTop\n    simpa only [mul_div_assoc, mul_zero] using\n      (tendsto_const_nhds.mul hlog :\n        Tendsto (fun t => K * (Real.log (1 + bad t) / bad t)) atTop (𝓝 (K * 0)))\n  have hratio : Tendsto (fun t => E.localValueReal (bad t - good t) / bad t) atTop (𝓝 0) := by\n    apply tendsto_of_tendsto_of_tendsto_of_le_of_le'\n      (g := fun _ : ℝ => (0 : ℝ)) (h := fun t => K * Real.log (1 + bad t) / bad t)\n      tendsto_const_nhds hupper\n    · filter_upwards [hbadPos] with t ht\n      exact div_nonneg (E.localValueReal_nonneg _) ht.le\n    · filter_upwards [hbadPos, horder] with t ht ho\n      apply (div_le_div_iff_of_pos_right ht).mpr\n      apply (hbound _ (sub_nonneg.mpr ho.2)).trans\n      apply mul_le_mul_of_nonneg_left _ hK\n      exact Real.log_le_log (by linarith : 0 < 1 + (bad t - good t)) (by linarith)\n  have hprod : Tendsto (fun t =>\n      (E.localValueReal (bad t - good t) / bad t) * (bad t / scale t)) atTop (𝓝 0) := by\n    simpa only [zero_mul] using hratio.mul hbad\n  apply hprod.congr'\n  filter_upwards [hscaleNe, hbadPos] with t hs hb\n  field_simp [hs, ne_of_gt hb]\n\ntheorem localValue_iteratedLog_difference_negligible (E : BinaryExperiment)\n    (good bad : ℝ → ℝ) (depth : ℕ) (B : ℝ) (hB : 0 < B)\n    (hbad : Tendsto (fun t => bad t / iteratedLog depth t) atTop (𝓝 B))\n    (horder : ∀ᶠ t in atTop, 0 ≤ good t ∧ good t ≤ bad t) :\n    Tendsto (fun t => E.localValueReal (bad t - good t) / iteratedLog depth t)\n      atTop (𝓝 0) :=\n  E.localValue_difference_negligible good bad (iteratedLog depth) B hB\n    (iteratedLog_tendsto_atTop depth) hbad horder\n\nend BinaryExperiment\nend PaperProofs.Statistics",
+      "span_includes_entire_readable_tail": true,
+      "source_tail_after_last_target_proof": "\nend BinaryExperiment\nend PaperProofs.Statistics",
+      "complete_declarations": [
+        {
+          "source_display_name": "localValueReal_sublinear",
+          "public_qualified_name": "PaperProofs.Statistics.BinaryExperiment.localValueReal_sublinear",
+          "is_private_source_helper": false,
+          "declaration_start": 32,
+          "last_statement_or_proof_line": 45,
+          "actual_header": "theorem localValueReal_sublinear (E : BinaryExperiment) :",
+          "complete_declaration_text": "theorem localValueReal_sublinear (E : BinaryExperiment) :\n    Tendsto (fun t : ℝ => E.localValueReal t / t) atTop (𝓝 0) := by\n  obtain ⟨K, _, hK⟩ := E.globalLogarithmicEnvelope\n  have hupper : Tendsto (fun t : ℝ => K * Real.log (1 + t) / t) atTop (𝓝 0) := by\n    simpa only [mul_div_assoc, mul_zero] using\n      (tendsto_const_nhds.mul log_one_add_div_tendsto_zero :\n        Tendsto (fun t : ℝ => K * (Real.log (1 + t) / t)) atTop (𝓝 (K * 0)))\n  apply tendsto_of_tendsto_of_tendsto_of_le_of_le'\n    (g := fun _ : ℝ => (0 : ℝ)) (h := fun t => K * Real.log (1 + t) / t)\n    tendsto_const_nhds hupper\n  · filter_upwards [eventually_gt_atTop (0 : ℝ)] with t ht\n    exact div_nonneg (E.localValueReal_nonneg t) ht.le\n  · filter_upwards [eventually_gt_atTop (0 : ℝ)] with t ht\n    exact (div_le_div_iff_of_pos_right ht).mpr (hK t ht.le)",
+          "complete_declaration_text_sha256": "173670132a35b037c76919fef797c13dac6630c1216e15f19f2f288aa7b095aa",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        },
+        {
+          "source_display_name": "localValue_difference_negligible",
+          "public_qualified_name": "PaperProofs.Statistics.BinaryExperiment.localValue_difference_negligible",
+          "is_private_source_helper": false,
+          "declaration_start": 50,
+          "last_statement_or_proof_line": 85,
+          "actual_header": "theorem localValue_difference_negligible (E : BinaryExperiment)",
+          "complete_declaration_text": "theorem localValue_difference_negligible (E : BinaryExperiment)\n    (good bad scale : ℝ → ℝ) (B : ℝ) (hB : 0 < B)\n    (hscale : Tendsto scale atTop atTop)\n    (hbad : Tendsto (fun t => bad t / scale t) atTop (𝓝 B))\n    (horder : ∀ᶠ t in atTop, 0 ≤ good t ∧ good t ≤ bad t) :\n    Tendsto (fun t => E.localValueReal (bad t - good t) / scale t) atTop (𝓝 0) := by\n  have hscaleNe : ∀ᶠ t in atTop, scale t ≠ 0 := hscale.eventually_ne_atTop 0\n  have hbadTop : Tendsto bad atTop atTop := by\n    have hprod := Filter.Tendsto.pos_mul_atTop hB hbad hscale\n    apply hprod.congr'\n    filter_upwards [hscaleNe] with t ht\n    exact div_mul_cancel₀ (bad t) ht\n  have hbadPos : ∀ᶠ t in atTop, 0 < bad t := hbadTop.eventually_gt_atTop 0\n  obtain ⟨K, hK, hbound⟩ := E.globalLogarithmicEnvelope\n  have hupper : Tendsto (fun t => K * Real.log (1 + bad t) / bad t) atTop (𝓝 0) := by\n    have hlog := log_one_add_div_tendsto_zero.comp hbadTop\n    simpa only [mul_div_assoc, mul_zero] using\n      (tendsto_const_nhds.mul hlog :\n        Tendsto (fun t => K * (Real.log (1 + bad t) / bad t)) atTop (𝓝 (K * 0)))\n  have hratio : Tendsto (fun t => E.localValueReal (bad t - good t) / bad t) atTop (𝓝 0) := by\n    apply tendsto_of_tendsto_of_tendsto_of_le_of_le'\n      (g := fun _ : ℝ => (0 : ℝ)) (h := fun t => K * Real.log (1 + bad t) / bad t)\n      tendsto_const_nhds hupper\n    · filter_upwards [hbadPos] with t ht\n      exact div_nonneg (E.localValueReal_nonneg _) ht.le\n    · filter_upwards [hbadPos, horder] with t ht ho\n      apply (div_le_div_iff_of_pos_right ht).mpr\n      apply (hbound _ (sub_nonneg.mpr ho.2)).trans\n      apply mul_le_mul_of_nonneg_left _ hK\n      exact Real.log_le_log (by linarith : 0 < 1 + (bad t - good t)) (by linarith)\n  have hprod : Tendsto (fun t =>\n      (E.localValueReal (bad t - good t) / bad t) * (bad t / scale t)) atTop (𝓝 0) := by\n    simpa only [zero_mul] using hratio.mul hbad\n  apply hprod.congr'\n  filter_upwards [hscaleNe, hbadPos] with t hs hb\n  field_simp [hs, ne_of_gt hb]",
+          "complete_declaration_text_sha256": "0d6e7346b1630add6d14d1f6d1208aa921e493e4e8e83fea095209f915c7c1e7",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        },
+        {
+          "source_display_name": "localValue_iteratedLog_difference_negligible",
+          "public_qualified_name": "PaperProofs.Statistics.BinaryExperiment.localValue_iteratedLog_difference_negligible",
+          "is_private_source_helper": false,
+          "declaration_start": 87,
+          "last_statement_or_proof_line": 94,
+          "actual_header": "theorem localValue_iteratedLog_difference_negligible (E : BinaryExperiment)",
+          "complete_declaration_text": "theorem localValue_iteratedLog_difference_negligible (E : BinaryExperiment)\n    (good bad : ℝ → ℝ) (depth : ℕ) (B : ℝ) (hB : 0 < B)\n    (hbad : Tendsto (fun t => bad t / iteratedLog depth t) atTop (𝓝 B))\n    (horder : ∀ᶠ t in atTop, 0 ≤ good t ∧ good t ≤ bad t) :\n    Tendsto (fun t => E.localValueReal (bad t - good t) / iteratedLog depth t)\n      atTop (𝓝 0) :=\n  E.localValue_difference_negligible good bad (iteratedLog depth) B hB\n    (iteratedLog_tendsto_atTop depth) hbad horder",
+          "complete_declaration_text_sha256": "d917f32d541d6cbab869ae3ca9a3cf6a944dd8e9a1f310de772651cc99e0d689",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin + exact manifest-pinned MATRIX declaration text"
+        }
+      ],
+      "source_scope_coverage": "B11a: all three complete local estimates and proofs. The little-o result retains its real bad-leading/order hypotheses and does not assume the continuation difference diverges or is positive.",
+      "pinned_complete_source_snapshot": null,
+      "historical_out_of_bounds_lines_not_claimed_as_read": true,
+      "new_span_sha_computed_now_not_backfilled": true
+    },
+    {
+      "status": "corrected",
+      "path": "D:\\STOC投稿\\lean\\PaperProofs\\Paid\\PDROC_CalibratedAssembly_004.lean",
+      "owner_original_ids": [
+        "D26"
+      ],
+      "old_bad_locators": [
+        "PDROC_CalibratedAssembly_00427-35"
+      ],
+      "old_recorded_range": {
+        "start": 27,
+        "end": 35
+      },
+      "original_JSON_sources": [
+        {
+          "file": "D:\\STOC投稿\\lean\\.lake\\workpads\\ROOT_S7_PREAUDIT_BATCH_003.json",
+          "file_sha256": "df8a72a62e652d0c0b85b8ee9ffe1f7ca3eefc1be558868a3686379d1ef9aa56",
+          "JSON_position": "ROOT_S7_PREAUDIT_BATCH_003.json.rows[1].actual_semantic_source_ranges_read[3]"
+        }
+      ],
+      "old_endpoint_class": "EOF_cursor_only_convention_needs_clarification",
+      "physical_line_count": 34,
+      "empty_EOF_cursor_line": 35,
+      "new_legal_range": {
+        "start": 26,
+        "end": 34,
+        "convention": "1-based inclusive physical content lines",
+        "locator": "PaperProofs/Paid/PDROC_CalibratedAssembly_004.lean:26-34"
+      },
+      "start_correction_reason": "Required expansion27 to26 to include the complete original D26 theorem header;31-32 also retained.",
+      "full_source_sha256": "bbd76fc22f27356c39e16a4939cbbe06f766ce69f34c817b4f69817ac11a8ca3",
+      "official011_anchor": {
+        "receipt": "D:\\STOC投稿\\compatibility_structure_research\\submission_2026-10-27\\checks\\lean-formalization-receipt.json",
+        "receipt_sha256": "25c22c458582334e1dea1094d9b517c2502fdac4497b996899a5f6a17de253f7",
+        "field": "verified_progress_sha256.lean/PaperProofs/Paid/PDROC_CalibratedAssembly_004.lean",
+        "expected_source_sha256": "bbd76fc22f27356c39e16a4939cbbe06f766ce69f34c817b4f69817ac11a8ca3",
+        "MATCH": true
+      },
+      "span_text_sha256": "2246c62012e14352c51c4ea7ddc584d5d9709e28d5ef2567438460979513f456",
+      "span_raw_bytes_sha256": "ca12aaca2030bd278e6736376373ffb333b3b927f23380641b0a9307f0f516a3",
+      "span_text": "theorem calibratedNativeEightClaims (P : Parameters) : P.CalibratedNativeEightClaims :=\n  CalibratedAssembly.nativeEight_of_implementation P (calibratedImplementationClaims P)\n\n/-- All five complete original calibrated backend claims, with no\nperformance, duration, risk, cost or continuation supplied by the caller. -/\ntheorem calibratedBackendClaims (P : Parameters) : P.CalibratedBackendClaims :=\n  CalibratedAssembly.backend_of_implementation P (calibratedImplementationClaims P)\n\nend PDROC",
+      "span_includes_entire_readable_tail": true,
+      "source_tail_after_last_target_proof": "\nend PDROC",
+      "complete_declarations": [
+        {
+          "source_display_name": "calibratedNativeEightClaims",
+          "public_qualified_name": "PDROC.calibratedNativeEightClaims",
+          "is_private_source_helper": false,
+          "declaration_start": 26,
+          "last_statement_or_proof_line": 27,
+          "actual_header": "theorem calibratedNativeEightClaims (P : Parameters) : P.CalibratedNativeEightClaims :=",
+          "complete_declaration_text": "theorem calibratedNativeEightClaims (P : Parameters) : P.CalibratedNativeEightClaims :=\n  CalibratedAssembly.nativeEight_of_implementation P (calibratedImplementationClaims P)",
+          "complete_declaration_text_sha256": "efe55bb2c3f2bda5c9d1e941e817c93f953ca1f6ea412512bc7bccd5ca12aaf6",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin"
+        },
+        {
+          "source_display_name": "calibratedBackendClaims",
+          "public_qualified_name": "PDROC.calibratedBackendClaims",
+          "is_private_source_helper": false,
+          "declaration_start": 31,
+          "last_statement_or_proof_line": 32,
+          "actual_header": "theorem calibratedBackendClaims (P : Parameters) : P.CalibratedBackendClaims :=",
+          "complete_declaration_text": "theorem calibratedBackendClaims (P : Parameters) : P.CalibratedBackendClaims :=\n  CalibratedAssembly.backend_of_implementation P (calibratedImplementationClaims P)",
+          "complete_declaration_text_sha256": "decb93e16de3fef314b12d3208913fe1d7686e5b0fc353b71d6426ebda87edac",
+          "proof_and_statement_in_new_span": true,
+          "evidence": "actual header/body read + direct011 full-file pin"
+        }
+      ],
+      "source_scope_coverage": "D26: full P.CalibratedNativeEightClaims statement plus its actual assembly proof, and full calibratedBackendClaims exit. Old27 started only at the proof term and did not include the26 theorem statement.",
+      "pinned_complete_source_snapshot": {
+        "field": "ROOT_S7_PREAUDIT_BATCH_003.json.rows[1].actual_complete_exit_text",
+        "pinned_complete_text_matches_current": true,
+        "derived_snapshot_text_sha256": "75f31b38ac433605f65c5d3405f9d506f273793ba34135c6ae003a88955e61da",
+        "note": "New011 assembly is not attributed to the old010 declaration index; use real BATCH003 complete text + official011 whole-file pin."
+      },
+      "historical_out_of_bounds_lines_not_claimed_as_read": true,
+      "new_span_sha_computed_now_not_backfilled": true
+    }
+  ],
+  "new_Lean_invocations": 0,
+  "old_preaudit_or001002_modified": false,
+  "formal_or_ledger_or_receipt_mutations": 0,
+  "not_final_S7": true
+}

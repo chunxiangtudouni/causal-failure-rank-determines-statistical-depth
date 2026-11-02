@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "packages": [
+    {
+      "name": "d27_proof_deps",
+      "path": "ProofDeps/MainD_Original_014",
+      "manifest": "proof-manifest.json",
+      "sha256": "313a3ac1a2ebe9395543960afb1371771e84c615e0e8a885c09a3fcfadab48e2"
+    }
+  ]
+}

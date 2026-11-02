@@ -1,0 +1,20 @@
+{
+  "metadata_consistency_pass": true,
+  "final_acceptance_ready_for_Root_decision": true,
+  "global_s7_complete": false,
+  "Root_final_acceptance_required": true,
+  "existing_ID_count": 253,
+  "formal_reference_count": 1469,
+  "formal_declaration_count": 1444,
+  "direct_reviewed_sources": 320,
+  "live_project_source_files": 1923,
+  "live_sources_uncertified_by_selected_receipt": 0,
+  "uncertified_examples": [],
+  "explicit_environment_count": 22,
+  "source_disposition_count": 131,
+  "unclaimed_original_lines": 0,
+  "open_original_IDs": [],
+  "errors": [],
+  "incomplete_reasons": [],
+  "meaning": "Exit0 only means all evidence is ready for Root final acceptance; script never declares globalS7 complete. Exit2 diagnoses expected open goals/stale whole receipt. Exit1 means broken/stale derived bindings must be repaired before acceptance."
+}
