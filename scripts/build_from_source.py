@@ -199,7 +199,7 @@ def check_graph(sources: dict) -> dict:
     }
 
 
-def generated_config(module_names: list[str]) -> str:
+def generated_config(module_names: list[str], memory_mb: int) -> str:
     # Glob.one is selected by an exact module name.  Empty roots are legal;
     # membership and buildability then follow the explicit globs.
     globs = ",\n".join("  " + json.dumps(name) for name in module_names)
@@ -207,7 +207,7 @@ def generated_config(module_names: list[str]) -> str:
 name = "{PACKAGE}"
 version = "0.1.0"
 defaultTargets = ["{LIBRARY}"]
-weakLeanArgs = ["-M2048", "-DElab.async=false"]
+weakLeanArgs = ["-M{memory_mb}", "-DElab.async=false"]
 
 [leanOptions]
 autoImplicit = false
@@ -230,7 +230,7 @@ globs = [
 '''
 
 
-def prepare(repo: Path) -> tuple[Path, dict]:
+def prepare(repo: Path, memory_mb: int) -> tuple[Path, dict]:
     sources, private_manifest = collect_sources(repo)
     graph = check_graph(sources)
     project = repo / "formalization/lean"
@@ -278,7 +278,7 @@ def prepare(repo: Path) -> tuple[Path, dict]:
             raise ValueError(f"Generated audit metadata target escapes the workspace: {target}")
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(project / relative, target)
-    config = generated_config(sorted(sources))
+    config = generated_config(sorted(sources), memory_mb)
     parsed = tomllib.loads(config)
     assert parsed["lean_lib"][0]["globs"] == sorted(sources)
     assert parsed["lean_lib"][0]["roots"] == []
@@ -317,11 +317,15 @@ def main() -> int:
     mode.add_argument("--build", action="store_true", help="Explicitly fetch dependencies and compile the source view.")
     parser.add_argument("--no-mathlib-cache", action="store_true", help="Skip Mathlib's cache getter; Lake will build missing dependencies.")
     parser.add_argument("--threads", type=int, choices=(1, 2), default=2, help="LEAN_NUM_THREADS setting, not a hard compiler-process limit.")
+    parser.add_argument("--memory-mb", type=int, default=4096,
+                        help="Lean per-process memory threshold in megabytes (default: %(default)s).")
     parser.add_argument("--lake", default="lake", help="Lake executable used with --build.")
     args = parser.parse_args()
+    if args.memory_mb <= 0:
+        parser.error("--memory-mb must be positive.")
     repo = Path(__file__).resolve().parents[1]
     try:
-        view, report = prepare(repo)
+        view, report = prepare(repo, args.memory_mb)
         graph = report["graph"]
         print(f"Prepared {graph['modules']} modules in {view}")
         print(f"Sources: {graph['owners']}; internal import graph is acyclic.")
@@ -336,7 +340,7 @@ def main() -> int:
                              "separately, then rerun with --build. Preparation is complete.")
         env = dict(os.environ)
         env["LEAN_NUM_THREADS"] = str(args.threads)
-        print(f"LEAN_NUM_THREADS={args.threads}; compiler arguments include -M2048 and "
+        print(f"LEAN_NUM_THREADS={args.threads}; compiler arguments include -M{args.memory_mb} and "
               "-DElab.async=false. This is not an OS-level process or memory limit.")
         commands = []
         if not args.no_mathlib_cache:

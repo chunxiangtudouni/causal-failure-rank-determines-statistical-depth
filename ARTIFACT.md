@@ -48,7 +48,7 @@ To skip downloading the Mathlib cache and compile missing dependencies instead:
 python scripts/build_from_source.py --build --no-mathlib-cache
 ```
 
-The `--threads 1` or `--threads 2` option sets `LEAN_NUM_THREADS`, with 2 as the default. This controls Lean runtime threads and is not a hard limit on the number of compiler processes. The generated configuration also preserves `-M2048`, `Elab.async=false`, `autoImplicit=false` and warnings as errors. Plan sufficient memory and control machine-level concurrency when reproducing a large build; the historical execution used at most two compiler slots.
+The `--threads 1` or `--threads 2` option sets `LEAN_NUM_THREADS`, with 2 as the default. This controls Lean runtime threads. The `--memory-mb` option sets Lean's per-process memory threshold, with 4096 as the default. Adjust it to fit the build and available memory. The generated configuration preserves `Elab.async=false`, `autoImplicit=false` and warnings as errors. The historical execution used at most two compiler slots.
 
 A complete fresh build has not been performed as part of this publication. The prepared graph is acyclic and has no unresolved internal imports, while Lean elaboration, external dependencies and resulting audit output remain checks of the explicit build. Newly compiled outputs and new audit reports belong separately from the historical acceptance records.
 
