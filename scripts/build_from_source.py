@@ -270,6 +270,14 @@ def prepare(repo: Path) -> tuple[Path, dict]:
     if extras:
         raise ValueError("The generated source view has stale modules. Remove .source-build "
                          f"and prepare again. Examples: {sorted(extras)[:5]}")
+    # AuditAll reads the registry and coverage relative to Lake's working directory.
+    for relative in ("ProofDeps/proof-packages.json",
+                     "ProofDeps/MainD_Original_014/proof-coverage.json"):
+        target = view / relative
+        if target.is_symlink() or not target.resolve().is_relative_to(view.resolve()):
+            raise ValueError(f"Generated audit metadata target escapes the workspace: {target}")
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(project / relative, target)
     config = generated_config(sorted(sources))
     parsed = tomllib.loads(config)
     assert parsed["lean_lib"][0]["globs"] == sorted(sources)

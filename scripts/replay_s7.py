@@ -136,9 +136,19 @@ def main():
     for kind, filename in [("build", "build.log"), ("audit", "axioms.log")]:
         old = receipt[kind]["log"]
         new = ".lake/workpads/RootPaper014_accepted_logs/" + filename
-        assert sha(LEAN / new) == receipt[kind]["log_sha256"]
+        expected = receipt[kind]["log_sha256"]
+        archived_log = LEAN / new
+        if sha(archived_log) != expected:
+            raise ValueError("Archived log SHA256 mismatch: " + new)
+        legacy = ".lake/verification/" + filename
+        entries = [record for record in manifest["package"] if record["path"] == legacy]
+        if (len(entries) != 1 or entries[0]["sha256"] != expected
+                or entries[0]["bytes"] != archived_log.stat().st_size):
+            raise ValueError("Frozen manifest log binding mismatch: " + legacy)
+        entries[0]["path"] = new
         receipt[kind]["log"] = new
-        edits.append({"from": old, "to": new, "sha256": receipt[kind]["log_sha256"]})
+        edits.append({"from": old, "to": new, "sha256": expected})
+        edits.append({"from": legacy, "to": new, "sha256": expected, "scope": "manifest.package"})
     assert receipt["verified_progress_sha256"] == original_fp
     assert matrix["claim_rows"] == original_claims and matrix["formal_declarations"] == original_declarations
 
